@@ -1,2 +1,2 @@
 # TDR-MP
-TDR's custom MP mod
+TDR's custom vanilla-flavored MP mod
