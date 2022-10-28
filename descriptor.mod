@@ -8,5 +8,6 @@ tags={
 	"Map"
 	"National Ideas"
 }
-name="TDR MP"
+name="TDR-MP"
+path="mod/TDR-MP"
 supported_version="1.34.4"
