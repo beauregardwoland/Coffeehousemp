@@ -31,7 +31,7 @@ aristocracy_ideas = {
 	}
 	noble_knights = {
 		cavalry_power = 0.10
-		cavalry_breakthrough = 0.05
+		CAVALRY_BREAKTHROUGH = 0.05
 	}
 	military_traditions = {
 		mil_tech_cost_modifier  = -0.1
@@ -428,7 +428,7 @@ offensive_ideas = {
 
 	bayonet_leaders = {
 		leader_land_shock = 1
-		infantry_breakthrough = 0.05
+		INFANTRY_BREAKTHROUGH = 0.05
 	}
 	national_conscripts = {
 		global_regiment_recruit_speed = -0.1

@@ -289,7 +289,7 @@ brittany_area = { #5
 }
 
 normandy_area = { #4
-	167 168 1879 4385
+	167 168 1879 4385 4945
 }
 
 provence_area = { #3
@@ -476,7 +476,7 @@ piedmont_area = { #4
 }
 
 tuscany_area = { #5
-	115 116 117 2978 2980
+	115 116 117 2978 2980 4946
 }
 
 liguria_area = { #3

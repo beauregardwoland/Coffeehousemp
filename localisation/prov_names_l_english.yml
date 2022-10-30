@@ -3635,6 +3635,8 @@
  PROV4942:0 "Copenhagen"
  PROV4943:0 "Flensburg"
  PROV4944:0 "Arkalochori"
+ PROV4945:0 "Channel Islands"
+ PROV4946:0 "Carrara"
  test_province_name:0 "Test Province Name"
  other_province_name:0 "Other Province Name"
  rand_prov_straits_of:0 "Straits of $prov$"
