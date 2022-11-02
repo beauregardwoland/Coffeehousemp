@@ -3713,7 +3713,7 @@ greater_antilles_area = { #4
 }
 
 lucayan_area = { #2
-	482 483
+	482 483 4951 4952 4953 4954
 }
 
 leeward_islands_area = { #5
