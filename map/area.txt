@@ -3070,7 +3070,7 @@ banda_oriental_area = { #5
 }
 
 guyana_area = { #4
-	502 743 744 2803 
+	502 743 744 2803 4947
 }
 
 suriname_area = { #3
@@ -3717,11 +3717,11 @@ lucayan_area = { #2
 }
 
 leeward_islands_area = { #5
-    493 494 495 496 1881
+    493 494 495 496 1881 4949
 }
 
 windward_islands_area = { #5
-    497 498 499 500 501
+    497 498 499 500 501 4948
 }
 
 transvaal_area = { #4

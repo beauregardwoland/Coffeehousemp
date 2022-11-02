@@ -66,6 +66,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 249;4121;sea;1284;-1;-1;-1;-1;Ayrshire-Ulster
 536;2100;sea;1340;4044;796;4050;793;Madurai-Vanni
 2803;502;sea;1522;-1;-1;-1;-1;Orinoco Delta-Trinidad
+502;4947;sea;1522;-1;-1;-1;-1;Orinoco Trinidad-Tobago
 500;499;sea;1522;-1;-1;-1;-1;St Vincent-St Lucia
 499;498;sea;1523;-1;-1;-1;-1;St Lucia-Martinique
 498;497;sea;1523;-1;-1;-1;-1;Martinique-Dominica

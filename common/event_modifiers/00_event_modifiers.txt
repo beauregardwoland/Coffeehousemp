@@ -1864,7 +1864,33 @@ trade_post_modifier = {
 
 jersey_trade_post_modifier = {
 	province_trade_power_value = 10
-	naval_forcelimit = 2
+	naval_forcelimit = 4
+	picture = "province_trade_power_value"
+}
+
+cambrais_trade_post_modifier = {
+	province_trade_power_value = 10
+	trade_goods_size_modifier = 0.10
+	picture = "province_trade_power_value"
+}
+
+boston_trade_post_modifier = {
+	trade_goods_size_modifier = 0.10
+	allowed_num_of_buildings = 1
+	picture = "province_trade_power_value"
+}
+
+manhattan_trade_post_modifier = {
+	province_trade_power_value = 10
+	local_development_cost = -0.30
+	local_defensiveness = 0.50
+	picture = "province_trade_power_value"
+}
+
+bermuda_trade_post_modifier = {
+	province_trade_power_value = 10
+	local_ship_repair = 0.33
+	allowed_marine_fraction = 0.10
 	picture = "province_trade_power_value"
 }
 

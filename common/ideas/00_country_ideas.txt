@@ -709,7 +709,7 @@ NED_ideas = {
 	
 	bonus = {
 		trade_efficiency = 0.15
-		colonists = 2
+		colonists = 1
 	}
 
 	trigger = {
@@ -773,7 +773,7 @@ FRA_ideas = {
 	native_trading_principles = {
 		native_uprising_chance = -0.5
 		native_assimilation = 0.5
-		colonists = 1
+		colonists = 2
 	}
 	vauban_fortifications = {
 		fort_maintenance_modifier = -0.33
