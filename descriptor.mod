@@ -9,5 +9,6 @@ tags={
 	"National Ideas"
 }
 name="TDR-MP"
-path="mod/TDR-MP"
 supported_version="1.34.4"
+path="C:/Users/josep/Documents/Paradox Interactive/Europa Universalis IV/mod/TDR-MP"
+remote_file_id="2883293660"

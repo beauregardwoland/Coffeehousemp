@@ -3709,7 +3709,7 @@ dominica_area = { #5
 }
 
 greater_antilles_area = { #4
-    487 481 491 492
+    487 481 491 492 4950
 }
 
 lucayan_area = { #2

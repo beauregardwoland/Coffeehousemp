@@ -3640,6 +3640,7 @@
  PROV4947:0 "Tobago"
  PROV4948:0 "Grenada"
  PROV4949:0 "Smuggler's Cove"
+ PROV4950:0 "Cayman Islands"
  test_province_name:0 "Test Province Name"
  other_province_name:0 "Other Province Name"
  rand_prov_straits_of:0 "Straits of $prov$"

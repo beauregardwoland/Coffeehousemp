@@ -533,6 +533,11 @@ emp_france_missions_2 = {
 				owned_by = ENG
 				owned_by = GBR
 			}
+			NOT = { province_id = 4945 }
+			OR = {
+				owned_by = ENG
+				owned_by = GBR
+			}
 		}
 		trigger = {
 			is_subject = no
@@ -542,6 +547,11 @@ emp_france_missions_2 = {
 					type = all
 					OR = {
 						province_id = 87
+						AND = {
+							NOT = { owned_by = ENG }
+							NOT = { owned_by = GBR }
+						}
+						province_id = 4945
 						AND = {
 							NOT = { owned_by = ENG }
 							NOT = { owned_by = GBR }
