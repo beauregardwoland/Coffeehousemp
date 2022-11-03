@@ -232,6 +232,7 @@ LUC = "countries/Lucca.txt"
 LAN	= "countries/Florence.txt"
 JAI	= "countries/Malta.txt"
 MSS = "countries/Massa.txt"
+PIO = "countries/Piombino.txt"
 
 #Low Countries
 BRB	= "countries/Brabant.txt"

@@ -468,7 +468,7 @@ lombardy_area = { #5
 
 po_valley_area = { #3
 	color = { 205 190 47 }
-	109 4739 107
+	109 4739 107 113 4956
 }
 
 piedmont_area = { #4
@@ -476,11 +476,11 @@ piedmont_area = { #4
 }
 
 tuscany_area = { #5
-	115 116 117 2978 2980 4946
+	115 116 117 2978 2980 4957
 }
 
 liguria_area = { #3
-	101 102 2992
+	101 102 2992 4946
 }
 
 corsica_sardinia_area = { #4
@@ -513,7 +513,7 @@ apulia_area = { #4
 
 emilia_romagna_area = { #5
 	color = { 24 222 66 }
-	105 106 113 114 4730
+	105 106 114 4730 4955
 }
 
 central_italy_area = { #3

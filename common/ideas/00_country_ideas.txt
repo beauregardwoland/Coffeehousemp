@@ -959,7 +959,10 @@ MAN_ideas = {
 	}
 	
 	trigger = {
-		tag = MAN
+		OR = {
+			tag = MAN
+			tag = MOD #Modena
+		}
 	}
 	free = yes		#will be added at load.
 	
@@ -3475,6 +3478,7 @@ TUS_ideas = {
 			tag = TUS
 			tag = LAN #Florence
 			tag = MSS
+			tag = PIO
 		}
 	}
 	free = yes

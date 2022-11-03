@@ -15,6 +15,13 @@ SWE = {
 
 #Massa
 MSS = {
+    color1= { 212 182 202 }
+    color2= { 250 184 7 }
+    color3= { 0 40 104  }
+}
+
+#Piombino
+MSS = {
     color1= { 224 162 19  }
     color2= { 250 184 7 }
     color3= { 0 40 104  }
