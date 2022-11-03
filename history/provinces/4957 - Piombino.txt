@@ -17,7 +17,9 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-
+latent_trade_goods = {
+	coal
+}
 
 1801.2.9 = {
 	owner = FRA
