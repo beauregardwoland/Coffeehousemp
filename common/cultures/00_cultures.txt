@@ -8662,7 +8662,8 @@ great_lakes_group = {
 
 african = {	#Eastern Bantu Groups
 	graphical_culture = africangfx
-	
+	province = { local_has_banners = yes}
+	province = { local_has_carolean = yes }
 	madagasque = {
 		primary = SKA
 		dynasty_names = {
