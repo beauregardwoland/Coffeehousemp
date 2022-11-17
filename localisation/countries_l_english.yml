@@ -1,5 +1,6 @@
 ﻿l_english:
  ADA:0 "Adal"
+ RHI: "Rhenish League"
  ADE:1 "Aden"
  AKK:0 "Aq Qoyunlu"
  ALB:0 "Albania"
@@ -272,6 +273,7 @@
  NAT:0 "Natives"
  PIR:0 "Pirates"
  PIR_ADJ:0 "Piratic"
+ RHI_ADJ: "Rhenish"
  NAT_ADJ:0 "Native"
  ADA_ADJ:0 "Adalan"
  ADE_ADJ:1 "Adeni"
@@ -1399,7 +1401,3 @@
  TOR_ADJ:0 "Tortugan"
  MRK:0 "Marrakesh"
  MRK_ADJ:0 "Marrakesh"
- MSS:0 "Massa"
- MSS_ADJ:0 "Massan"
- PIO:0 "Piombino"
- PIO_ADJ:0 "Piombinan"
