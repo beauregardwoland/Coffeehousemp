@@ -1,0 +1,91 @@
+country_decisions = {
+	
+	Rhenish_formable = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { exists = RHI }
+			NOT = { tag = hab }
+			NOT = { tag = pru }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				tag = WES
+				tag = SWI
+				tag = SWA
+				}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 82			#Westfalen
+				province_id = 80			#Trier
+				province_id = 1876			#Frankfurt
+				province_id = 74			#Baden
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			adm_tech = 15
+			owns_core_province = 82			#Westfalen
+			owns_core_province = 80			#Trier
+			owns_core_province = 1876		#Frankfurt
+			owns_core_province = 74			#Baden
+		}
+		effect = {
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			South_Germany_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RHI
+			}
+			North_Germany_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { area = lower_nubia_area }
+				}
+				add_permanent_claim = RHI
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = RHI
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = RHI_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
