@@ -1,6 +1,6 @@
 country_decisions = {
 	
-	Rhenish_formable = {
+	NGF_formable = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -13,9 +13,9 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = RHI }
+			NOT = { exists = NGF }
+			NOT = { tag = RHI }
 			NOT = { tag = SGF }
-			NOT = { tag = NGF }
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -25,17 +25,18 @@ country_decisions = {
 				}
 			}
 			OR = {
-				tag = WES
-				tag = SWI
-				tag = SWA
+				tag = PRU
+				tag = HAN
+				tag = HSA
+				tag = POM
 				}
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 82			#Westfalen
-				province_id = 80			#Trier
-				province_id = 1876			#Frankfurt
-				province_id = 74			#Baden
+				province_id = 50			#Berlin
+				province_id = 44			#Hamburg
+				province_id = 1758			#Hanover
+				province_id = 62			#Liepzig
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -45,10 +46,10 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			adm_tech = 15
-			owns_core_province = 82			#Westfalen
-			owns_core_province = 80			#Trier
-			owns_core_province = 1876		#Frankfurt
-			owns_core_province = 74			#Baden
+			owns_core_province = 50			#Berlin
+			owns_core_province = 44			#Hamburg
+			owns_core_province = 1758		#Hanover
+			owns_core_province = 62			#Liepzig
 		}
 		effect = {
 			remove_non_electors_emperors_from_empire_effect = yes
@@ -62,25 +63,25 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = RHI
+				add_permanent_claim = NGF
 			}
 			North_Germany_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { area = lower_nubia_area }
 				}
-				add_permanent_claim = RHI
+				add_permanent_claim = NGF
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
-			change_tag = RHI
+			change_tag = NGF
 			if = {
 				limit = {
 					has_custom_ideas = no
-					NOT = { has_idea_group = RHI_ideas }
+					NOT = { has_idea_group = NGF_ideas }
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 		}
