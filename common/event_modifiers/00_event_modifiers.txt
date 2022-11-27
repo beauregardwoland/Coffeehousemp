@@ -1863,35 +1863,51 @@ trade_post_modifier = {
 }
 
 jersey_trade_post_modifier = {
-	province_trade_power_value = 10
 	naval_forcelimit = 4
-	picture = "province_trade_power_value"
+	province_trade_power_value = 10
+	picture = "icon_trade_office"
 }
 
 cambrais_trade_post_modifier = {
-	province_trade_power_value = 10
 	trade_goods_size_modifier = 0.10
-	picture = "province_trade_power_value"
+	province_trade_power_value = 10
+	picture = "icon_trade_office"
 }
 
 boston_trade_post_modifier = {
-	trade_goods_size_modifier = 0.10
 	allowed_num_of_buildings = 1
-	picture = "province_trade_power_value"
+	trade_goods_size_modifier = 0.10
+	picture = "icon_trade_office"
 }
 
 manhattan_trade_post_modifier = {
-	province_trade_power_value = 10
 	local_development_cost = -0.30
+	province_trade_power_value = 10
 	local_defensiveness = 0.50
-	picture = "province_trade_power_value"
+	picture = "icon_trade_office"
 }
 
 bermuda_trade_post_modifier = {
+	local_ship_repair = 0.33
+	province_trade_power_value = 10
+	allowed_marine_fraction = 0.10
+	picture = "icon_trade_office"
+}
+
+mogadishu_trade_post_modifier = {
+	local_culture_conversion_cost = -0.50
 	province_trade_power_value = 10
 	local_ship_repair = 0.33
-	allowed_marine_fraction = 0.10
-	picture = "province_trade_power_value"
+	local_development_cost_modifier = -0.25
+	picture = "icon_trade_office"
+}
+
+tirol_fort = {
+	province_trade_power_value = 10
+	local_garrison_size = 0.25
+	local_defensiveness = 0.10
+	local_manpower_modifier = 0.15
+	picture = "icon_trade_office"
 }
 
 # Important river estuaries
@@ -12556,6 +12572,18 @@ estate_burghers_mountain_expansion_hills = {
 	local_development_cost = -0.125
 }
 
+estate_burghers_desert_expansion_deserts = {
+	local_development_cost = -0.20
+}
+
+estate_burghers_desert_expansion_coastal_deserts = {
+	local_development_cost = -0.15
+}
+
+estate_burghers_desert_expansion_drylands = {
+	local_development_cost = -0.125
+}
+
 estate_nobles_religious_conscription_cathedral = {
 	religion = yes
 	local_manpower_modifier = 0.33
@@ -12628,4 +12656,28 @@ empowered_regency_modifier = {
 	country_admin_power = 1
 	country_diplomatic_power = 1
 	country_military_power = 1
+}
+
+ita_prestige = {
+	prestige_decay = -0.25
+	stability_cost_modifier = -0.25
+}
+
+ita_mogadishu = {
+	colonists = 1
+	global_colonial_growth = 25
+}
+
+ita_holy_land = {
+	global_missionary_strength = 0.02
+	missionaries = 1
+}
+
+take_littoral = {
+	galley_cost = -0.25
+	merchants = 1
+}
+
+ita_multiculturalism = {
+	num_accepted_cultures = 1
 }

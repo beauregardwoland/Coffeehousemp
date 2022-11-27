@@ -30,7 +30,6 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 384			#Medina
 				province_id = 385			#Mecca
 				province_id = 388			#Aden
 				province_id = 390			#Sanaa
@@ -39,6 +38,7 @@ country_decisions = {
 				province_id = 400			#Muscat
 				province_id = 403			#Nizwa
 				province_id = 408			#Basra
+				province_id = 2331			#Jeddah
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -49,7 +49,6 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			adm_tech = 10
-			owns_core_province = 384			#Medina
 			owns_core_province = 385			#Mecca
 			owns_core_province = 388			#Aden
 			owns_core_province = 390			#Sanaa
@@ -58,6 +57,7 @@ country_decisions = {
 			owns_core_province = 400			#Muscat
 			owns_core_province = 403			#Nizwa
 			owns_core_province = 408			#Basra
+			owns_core_province = 2331			#Jeddah
 		}
 		effect = {
 			remove_non_electors_emperors_from_empire_effect = yes
@@ -91,7 +91,16 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			set_country_flag = formed_arabia_flag
+			unlock_estate_privilege = {
+					estate_privilege = estate_burghers_desert_expansion
+				}
 			change_tag = ARB
 		}
 		ai_will_do = {

@@ -210,6 +210,47 @@ GBR_ideas = {
 	}
 }
 
+ARB_ideas = {
+	start = {
+		infantry_power = 0.15
+		merchants  = 1
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = ARB
+	}
+	free = yes		#will be added at load.
+
+	arab_slave_trade = {
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	arabian_cities = {
+		great_project_upgrade_cost = -0.25
+		local_build_cost = -0.15
+	}
+	camel_riders = {
+		cavalry_cost = -0.10
+		cavalry_power = 0.10
+	}
+	islamic_center = {
+		extra_manpower_at_religious_war = yes
+		cb_on_religious_enemies = yes
+	}
+	arabian_trade = {
+		global_trade_power = 0.20
+	}
+	great_sands = {
+		hostile_attrition = 1
+	}
+	arab_advisors = {
+		advisor_pool = 1
+	}
+}
+
 SWE_ideas = {
 	start = {
 		infantry_power = 0.2

@@ -1911,7 +1911,9 @@ centralize_state = {
 	local_state_maintenance_modifier = -0.2
 	picture = "centralize_state"
 }
-
+special_province = {
+	picture = "technologyView_show_buildings"
+}
 # Applied once for each guru teaching
 guru_teaching = {
 	global_missionary_strength = -0.01

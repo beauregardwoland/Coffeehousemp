@@ -4724,6 +4724,8 @@
  desc_manhattan_trade_post_modifier:0 "The geographical position of the Long Island Peninsula provides the city with a strong defensive parimeter."
  bermuda_trade_post_modifier:0 "Bermuda Naval Yard"
  desc_bermuda_trade_post_modifier:0 "Bermuda's position as a center point between the new and old worlds makes it a valuable naval port for colonial powers to stage operations from."
+ mogadishu_trade_post_modifier:0 "Italian Foreign Quarters"
+ mogadishu_trade_post_modifier:0 "Recent Italian colonization of Mogadishu has created a 'Rennaisance City' of sorts. Settlers flock to Mogadishu from across the world, lured in by the potential to start new homesteads in the interior of Africa."
  CTPOS_ALREADY:0 "We already have a Trading Post in $NODE|Y$, located in $NAME|Y$."
  CTPOS_NOT_OUR_PROVINCE:0 "You need to own and control $NAME|Y$ to create a Trading Post in it."
  CONFIRCREATETRADEPOST:0 "Create Trading Post"
