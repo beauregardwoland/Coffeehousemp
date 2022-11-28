@@ -2560,7 +2560,7 @@ BOH_ideas = {
 ITA_ideas = {
 	start = {
 		global_trade_power = 0.20
-		trade_goods_size_modifier = 0.10
+		global_trade_goods_size_modifier = 0.10
 	}
 	
 	bonus = {
