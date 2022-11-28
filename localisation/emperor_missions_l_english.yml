@@ -2559,5 +2559,14 @@
  emp_ita_colonize_ethiopia_desc:0 "If we wish to become a truly global empire, we must look to the southeast of Africa. If we control the trade in the Gulf of Aden, we can push it up through Egypt, and bring exotic goods and spices back to Italy."
  emp_ita_colonize_the_horn_title:0 "Colonize the Horn"
  emp_ita_colonize_the_horn_desc:0 "Colonizing the Horn of Africa will allow us to further control trade from Asia, and will allow us to colonize the interior of the continent"
- 
- 
+ sicily_ambition:0 "Sicilian Ambitions"
+ emp_ita_take_sicily_title:0 "Take Sicily"
+ emp_ita_take_sicily_desc:0 "Sicily is as much a part of Italy as the mainland. We must take the island so that we can exert our influence on the rest of the Mditerranian."
+ ita_med_bonus:0 "Secure our Holdings"
+ emp_ita_take_islands_title:0 "Mare Nostrum"
+ emp_ita_take_islands_desc:0 "If we secure the islands of the Mediterranean, we will be able to more strategically field our fleets. We own these seas... not our enemies."
+ emp_ita_fezzan_title:0 "Push into the Sahara"
+ emp_ita_fezzan_desc:0 "We have civilized the northern coast of Africa, and it is time that we send some brave Italian adventureres deep into the deserts. Who knows, we might find something!"
+ ita_greek_culture:0 "Hellenic Cultural Union"
+ emp_ita_corfu_title:0 "Take Corfu"
+ emp_ita_corfu_desc:0 "Corfu is a strategic island that will allow us to better guard the entrance to the Adriatic. We should take the island so that we may use it as a naval base going forwards."

@@ -1910,6 +1910,11 @@ tirol_fort = {
 	picture = "icon_trade_office"
 }
 
+ita_med_bonus = {
+	local_own_coast_naval_combat_bonus = 1
+	trade_goods_size_modifier = 0.10
+}
+
 # Important river estuaries
 # If you add any be sure to update the has_river_estuary_trigger scripted trigger too.
 river_estuary_modifier = {
@@ -12679,5 +12684,9 @@ take_littoral = {
 }
 
 ita_multiculturalism = {
+	num_accepted_cultures = 1
+}
+
+ita_greek_culture = {
 	num_accepted_cultures = 1
 }

@@ -1798,8 +1798,11 @@ hussars_regiment = {
 }
 
 marine_regiment = {
-    shock_damage_received = 0.1
-    regiment_disembark_speed = 2 
+    shock_damage_received = -0.15
+	discipline = 0.025
+    regiment_disembark_speed = 2
+	land_maintenance_modifier = 0.50	
+	reinforce_cost_modifier = 1.0
 }
 
 banner_regiment = {

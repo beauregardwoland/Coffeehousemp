@@ -48,7 +48,7 @@ emp_ita_development_branch = {
 	
 	emp_ita_develop_the_south = {
 		icon = develop_the_south
-		position = 3
+		position = 2
 		required_missions = { emp_ita_prosperity_for_all }
 		
 		provinces_to_highlight = {
@@ -98,25 +98,257 @@ emp_ita_development_branch = {
 			}
 		}
 	}
-	emp_ita_continue_the_renaissance = {
-		icon = continue_the_renaissance
-		position = 5
+	
+	emp_ita_take_sicily = {
+		icon = mission_italian_condottiere
+		position = 3
 		required_missions = { emp_ita_develop_the_south }
 		
+		provinces_to_highlight = {
+			OR = {
+				area = sicily_area
+				province_id = 1215
+				province_id = 1212
+			
+			NOT = { owned_by = ROOT }
+			NOT = { owned_by = ROOT }
+			}
+		}
 		trigger = {
-			num_of_owned_provinces_with = {
-				value = 5
-				has_building = university
+			sicily_area = {
+				type = all
+				owned_by = ROOT
+			}
+			2982 = {
+				owned_by = ROOT
+			}
+			124 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			126 = {
+				add_permanent_claim = ROOT
+			}
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			baleares_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			125 = {
+				add_trade_modifier = {
+					who = root
+					duration = 7300
+					power = 50
+					key = sicily_ambition
+				}
+			}
+		}
+	}
+	
+	emp_ita_take_islands = {
+		icon = mission_mare_nostrum
+		position = 4
+		required_missions = { emp_ita_take_sicily }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = corsica_sardinia_area
+				area = baleares_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			
+			baleares_area = {
+				type = all
+				owned_by = ROOT
+			}
+			corsica_sardinia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			333 = {
+				AND = {
+					owned_by = ROOT
+				}
+				add_permanent_province_modifier = {
+				name = ita_med_bonus
+				duration = -1
+				}
+			}
+			
+			2986 = {
+				AND = {
+					owned_by = ROOT
+				}
+				add_permanent_province_modifier = {
+				name = ita_med_bonus
+				duration = -1
+				}
+			}
+			
+			118 = {
+				AND = {
+					owned_by = ROOT
+				}
+				add_permanent_province_modifier = {
+				name = ita_med_bonus
+				duration = -1
+				}
+			}
+			
+			124 = {
+				AND = {
+					owned_by = ROOT
+				}
+				add_permanent_province_modifier = {
+				name = ita_med_bonus
+				duration = -1
+				}
+			}
+		}
+	}
+	
+	emp_ita_corfu = {
+		icon = mission_assemble_an_army
+		position = 6
+		required_missions = { }
+		
+		provinces_to_highlight = {
+			province_id = 142
+			NOT = { owned_by = ROOT }
+			
+		}
+		trigger = {
+			142 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+		}
+		effect = {
+			morea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			151 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	emp_ita_reclaim_our_latin_heritage = {
+		icon = la_latinocrazia
+		position = 7
+		required_missions = { emp_ita_corfu }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = morea_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			morea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			aydin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hudavendigar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			germiyan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cukurova_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_accepted_culture = greek
+			add_country_modifier = {
+				name = ita_greek_culture
+				duration = -1
+			}
+		}
+	}
+	
+	emp_ita_anatolian_frontier = {
+		icon = anatolian_frontier
+		position = 8
+		required_missions = { emp_ita_reclaim_our_latin_heritage }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = aydin_area
+				area = hudavendigar_area
+				area = germiyan_area
+				area = cukurova_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			aydin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hudavendigar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			germiyan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cukurova_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = ita_continued_renaissance
-				duration = 7300
+				name = ita_eastern_romans
+				duration = -1
 			}
 		}
 	}
-}
+}	
 
 emp_ita_gallia_branch = {
 	slot = 2
@@ -133,6 +365,24 @@ emp_ita_gallia_branch = {
 	}
 	
 	has_country_shield = yes
+	
+	emp_ita_continue_the_renaissance = {
+		icon = continue_the_renaissance
+		position = 1
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_building = university
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ita_continued_renaissance
+				duration = 7300
+			}
+		}
+	}
 	
 	emp_ita_italia_transalpina = {
 		icon = italia_transalpina
@@ -157,6 +407,7 @@ emp_ita_gallia_branch = {
 			}
 		}
 		effect = {
+			add_mercantilism = 3
 			languedoc_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -607,7 +858,6 @@ emp_ita_war_branch = {
 		provinces_to_highlight = {
 			OR = {
 				area = east_adriatic_coast_area
-				province_id = 4174
 				province_id = 130
 				province_id = 1826
 				province_id = 4738
@@ -620,9 +870,7 @@ emp_ita_war_branch = {
 			east_adriatic_coast_area = {
 				owned_by = ROOT
 			}
-			4174 = {
-				owned_by = ROOT
-			}
+			
 			130 = {
 				owned_by = ROOT
 			}
@@ -965,6 +1213,43 @@ emp_ita_unification_branch = {
 		}
 	}
 	
+	emp_ita_fezzan = {
+		icon = mission_bedouins
+		position = 5
+		required_missions = { emp_ita_tripoly }
+		
+		provinces_to_highlight = {
+			province_id = 2449
+			province_id = 4567
+			province_id = 2448
+			
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			2449 = {
+				owned_by = ROOT
+			}
+			4567 = {
+				owned_by = ROOT
+			}
+			2448 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			AND = {
+				2474 is_empty = yes
+				2475 is_empty = yes
+			}
+			2474 = {
+				create_colony = 900
+			}
+			2475 = {
+				create_colony = 700
+			}
+		}
+	}
+	
 	emp_ita_cross_the_pindus = {
 		icon = cross_the_pindus
 		position = 6
@@ -1016,108 +1301,6 @@ emp_ita_unification_branch = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	emp_ita_reclaim_our_latin_heritage = {
-		icon = la_latinocrazia
-		position = 7
-		required_missions = { emp_ita_cross_the_pindus }
-		
-		provinces_to_highlight = {
-			OR = {
-				area = aegean_archipelago_area
-				area = thrace_area
-				area = morea_area
-			}
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			aegean_archipelago_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			thrace_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			morea_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			151 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			aydin_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			hudavendigar_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			germiyan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			cukurova_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	emp_ita_anatolian_frontier = {
-		icon = anatolian_frontier
-		position = 8
-		required_missions = { emp_ita_reclaim_our_latin_heritage }
-		
-		provinces_to_highlight = {
-			OR = {
-				area = aydin_area
-				area = hudavendigar_area
-				area = germiyan_area
-				area = cukurova_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			aydin_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			hudavendigar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			germiyan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			cukurova_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = ita_eastern_romans
-				duration = -1
 			}
 		}
 	}
@@ -1269,6 +1452,7 @@ emp_ita_overseas_branch = {
 			}
 		}
 	}
+	
 	emp_ita_colonize_ethiopia = {
 		icon = mission_arabian_fort
 		position = 4
@@ -1365,7 +1549,6 @@ emp_ita_overseas_branch = {
 	emp_ita_invade_egypt = {
 		icon = invade_egypt
 		position = 6
-		required_missions = { emp_ita_befriend_ethiopia }
 		
 		provinces_to_highlight = {
 			OR = {
@@ -1399,7 +1582,7 @@ emp_ita_overseas_branch = {
 	
 	emp_ita_terra_santa = {
 		icon = terra_santa
-		position = 8
+		position = 7
 		required_missions = { emp_ita_invade_egypt }
 		
 		provinces_to_highlight = {
