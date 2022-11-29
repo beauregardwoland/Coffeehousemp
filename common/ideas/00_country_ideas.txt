@@ -15391,11 +15391,11 @@ WES_ideas = {
 
 RHI_ideas = {
 	start = {
-		diplomats = 1
-		land_forcelimit_modifier = 0.2
+		development_cost = -0.15
+		build_cost = -0.1
 	}
 	bonus = {
-		discipline = 0.1
+		discipline = 0.05
 	}
 	trigger = {
 		tag = RHI
@@ -15403,28 +15403,111 @@ RHI_ideas = {
 	free = yes
 
 	RHI_jewish_rights = {
-		idea_cost = -0.1
+		infantry_shock = 0.5
+		movement_speed = 0.10
 	}
 	RHI_westphalian_decentralisation  = {
-		state_maintenance_modifier = -0.1
-		development_cost = -0.05
+		caravan_power = 0.15
+		global_own_trade_power	= 0.15
 	}
 	RHI_increased_conscription = {
-		global_manpower_modifier = 0.20
+		global_manpower_modifier = 0.15
+		no_religion_penalty = yes	
 	}
 	RHI_administrative_assimilation_of_rheinlanders = {
-		num_accepted_cultures = 1
-		same_culture_advisor_cost = -0.25
+		advisor_cost = -0.25
+		free_policy = 1
 	}
 	RHI_taxation = {
-		global_tax_modifier = 0.1
+		global_trade_goods_size = 0.3
+		build_time = -0.35
 	}
 	RHI_enlightenment = {
-		tolerance_heretic = 1
-		tolerance_heathen = 1
+		global_unrest = -1.5
 	}
 	RHI_cities_of_the_rhineland = {
-		global_prov_trade_power_modifier = 0.15
+		global_foreign_trade_power = 0.15
+	}
+}
+
+SGF_ideas = {
+	start = {
+		land_morale = 0.10
+		improve_relation_modifier = 0.3
+	}
+	
+	bonus = {
+		heir_chance = 0.50
+	}
+	
+	trigger = {
+		tag = SGF
+	}
+	free = yes
+
+	SGF_imperial_ambitions = {
+		imperial_authority = 0.1
+		diplomatic_annexation_cost = -0.15
+	}
+	SGF_military_border = {
+		global_garrison_growth = 0.15
+		fort_maintenance_modifier = -0.10
+	}
+	SGF_fugger_banks = {
+		inflation_reduction = 0.05
+		interest = -0.5
+	}
+	SGF_habsburg_dominance = {
+		diplomatic_reputation = 2
+	}
+	SGF_edict_of_restitution = {
+		global_missionary_strength = 0.02
+	}
+	SGF_austrian_court = {
+		diplomatic_upkeep = 1
+	}
+	SGF_hofkriegsrat = {
+		reinforce_speed = 0.3
+		discipline = 0.05
+	}
+}
+NGF_ideas = {
+	start = {
+		trade_efficiency = 0.2
+		merchants = 1 
+	}
+	
+	bonus = {
+		trade_steering = 0.2 
+	}
+	
+	trigger = {
+		tag = NGF
+	}
+	free = yes 
+	
+	NGF_foreign_kontors = {
+		global_trade_power = 0.15
+	}
+	NGF_the_handelsmarine = {
+		global_ship_trade_power = 0.25
+		global_ship_cost = -0.05
+	}
+	NGF_reform_queens_army = {
+		discipline = 0.05
+	}
+	NGF_adler_von_lubeck_legacy = {
+		heavy_ship_power = 0.1
+	}
+	NGF_merchants_with_state = {
+		global_trade_goods_size_modifier = 0.1
+		development_cost = -0.05
+	}
+	NGF_spread_the_northern_style = {
+		idea_cost = -0.1
+	}
+	NGF_regularised_contribution = {
+		global_prov_trade_power_modifier = 0.20
 	}
 }
 

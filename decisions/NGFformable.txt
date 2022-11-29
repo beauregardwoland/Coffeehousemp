@@ -1,0 +1,92 @@
+country_decisions = {
+	
+	NGF_formable = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { exists = NGF }
+			NOT = { tag = RHI }
+			NOT = { tag = SGF }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				tag = PRU
+				tag = HAN
+				tag = HSA
+				tag = POM
+				}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 50			#Berlin
+				province_id = 44			#Hamburg
+				province_id = 1758			#Hanover
+				province_id = 62			#Liepzig
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			adm_tech = 15
+			owns_core_province = 50			#Berlin
+			owns_core_province = 44			#Hamburg
+			owns_core_province = 1758		#Hanover
+			owns_core_province = 62			#Liepzig
+		}
+		effect = {
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			South_Germany_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NGF
+			}
+			North_Germany_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { area = lower_nubia_area }
+				}
+				add_permanent_claim = NGF
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			change_tag = NGF
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = NGF_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

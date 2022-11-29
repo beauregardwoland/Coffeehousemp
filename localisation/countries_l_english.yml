@@ -1,6 +1,8 @@
 ﻿l_english:
  ADA:0 "Adal"
  RHI: "Rhenish League"
+ NGF: "North German Confederation"
+ SGF: "South German Confederation"
  ADE:1 "Aden"
  AKK:0 "Aq Qoyunlu"
  ALB:0 "Albania"
@@ -274,6 +276,8 @@
  PIR:0 "Pirates"
  PIR_ADJ:0 "Piratic"
  RHI_ADJ: "Rhenish"
+ SGF_ADJ: "South German"
+ NGF_ADJ: "North German"
  NAT_ADJ:0 "Native"
  ADA_ADJ:0 "Adalan"
  ADE_ADJ:1 "Adeni"
