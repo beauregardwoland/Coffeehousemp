@@ -12690,3 +12690,7 @@ ita_multiculturalism = {
 ita_greek_culture = {
 	num_accepted_cultures = 1
 }
+
+marine_corps = {
+	allowed_marine_fraction = 0.15
+}

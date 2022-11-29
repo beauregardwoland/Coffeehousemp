@@ -3693,7 +3693,7 @@ panama_area = { #5
 }
 
 cuba_area = { #5
-    484 485 4622 4623 4624
+    484 485 4622 4623 4624 4958
 }
 
 east_cuba_area = { #3
@@ -3713,7 +3713,11 @@ greater_antilles_area = { #4
 }
 
 lucayan_area = { #2
-	482 483 4951 4952 4953 4954
+	482 4951 4952 4953 4954
+}
+
+turks_area = { #2
+	483  4959 4960
 }
 
 leeward_islands_area = { #5
