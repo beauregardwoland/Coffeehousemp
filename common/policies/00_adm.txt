@@ -73,7 +73,7 @@ tdr_stab_2 = {
 		factor = 0.8		
 	}
 }
-tdr_stab_1 = {
+tdr_stab_3 = {
 	monarch_power = ADM
 
 	potential = {
