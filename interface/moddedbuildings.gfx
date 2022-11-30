@@ -1,0 +1,5 @@
+priteType = {
+    name = "GFX_basic_bitch_road"
+    texturefile = "gfx//interface//buildings//basicbitchroad.tga"
+    loadType = "INGAME"
+}
