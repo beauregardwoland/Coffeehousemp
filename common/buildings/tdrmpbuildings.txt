@@ -1,0 +1,53 @@
+# cost = x #==> cost in $ to build (subject to other modifiers)
+# time = x #==> number of months to build.
+# previous = x # a building that is the prerequisite of this building
+# modifier = m # a modifier on the province that the building gives
+# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# one_per_country = yes/no # if yes, only one of these can exist in a country
+# manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
+# onmap = yes/no # show as a sprite on the map
+
+# FROM = owner
+# ROOT = province
+
+
+
+#military investments
+artillery_foundry = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 10
+		trade_goods = copper
+		trade_goods = iron
+		trade_goods = coal
+		trade_goods = naval_supplies
+	}
+	modifier = {
+		artillery_cost= -0.05
+		artillery_power= 0.01
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+
+#more civilian based invsmtents
+basic_bitch_road = {
+	cost = 50
+	time = 6
+	
+	modifier = {
+		local_friendly_movement_speed = 0.1
+		local_hostile_movement_speed = 0.1
+		local_development_cost = -0.025
+		province_trade_power_value = 0.5
+		allowed_num_of_buildings = 1
+		
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
