@@ -15,7 +15,7 @@
 }
 
 3 = {
-	governing_capacity = 500
+	governing_capacity = 375
 	global_autonomy = -0.075
 	max_absolutism = 15
 	free_leader_pool = 1
