@@ -3,6 +3,7 @@
 	build_cost= -0.15
 	build_time= -0.20
 	advisor_cost= -0.15
+	development_cost = -0.15
 }
 2 = {
 	diplomats = 1
@@ -10,6 +11,7 @@
 	global_autonomy = -0.025
 	advisor_cost= -0.15
 	build_cost= -0.05
+	development_cost = -0.05
 }
 
 3 = {
