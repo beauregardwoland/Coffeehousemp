@@ -1631,6 +1631,7 @@ urban_ideas = {
 	}
 	urban2 = {
 		center_of_trade_upgrade_cost	 = -0.30
+		development_cost_modifier = -0.05
 	}
 	urban3 = {
 		global_foreign_trade_power = 0.20
