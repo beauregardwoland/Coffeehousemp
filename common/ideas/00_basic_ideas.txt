@@ -1611,7 +1611,7 @@ nationalism_ideas = {
 		hostile_attrition = 1.5
 	}
 	nationalism7 = {
-		manpower_in_true_faith_provinces =  = 0.15
+		manpower_in_true_faith_provinces = 0.15
 	}
 
 	ai_will_do = {
