@@ -1645,7 +1645,7 @@ urban_ideas = {
 		global_prosperity_growth = 0.1
 	}
 	urban7 = {
-		state_maintenance_modifier =  = -0.15
+		state_maintenance_modifier = -0.15
 	}
 
 	ai_will_do = {
@@ -1679,7 +1679,7 @@ rural_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	rural7 = {
-		global_own_trade_power	 =  = 0.15
+		global_own_trade_power = 0.15
 	}
 
 	ai_will_do = {
