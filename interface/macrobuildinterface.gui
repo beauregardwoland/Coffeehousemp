@@ -1279,8 +1279,41 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"	
 		}
-	} 
-
+#next group of buildings
+		iconType = {
+			name = "mil_banner"
+			position = { x = 4 y = 582 }
+			spriteType = "GFX_banner_left_3"
+		}
+		instantTextBoxType={
+			name = "title_mil"
+			position = {x = 44 y = 591 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 200
+			maxHeight = 18
+			text = "military infrastructure"	
+		}
+		iconType ={
+			name ="infra_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 15 y = 488}
+			frame = 7
+		}
+		checkboxType = {
+			name = "artillery_foundry"
+			position = { x = 61 y = 517 }
+			quadTextureSprite = "GFX_road"
+		}		
+		instantTextBoxType={
+			name = "artillery_foundry_cost"
+			position = {x = 61 y = 567 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
 	# List entry for the window with a list of provinces that a specific building can be built in
 	windowType = {
 		name = "building_province_list_entry"

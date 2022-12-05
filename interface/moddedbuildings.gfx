@@ -1,5 +1,10 @@
-priteType = {
+spriteType = {
     name = "GFX_basic_bitch_road"
     texturefile = "gfx//interface//buildings//basicbitchroad.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "artillery_foundry"
+    texturefile = "gfx//interface//buildings//artilleryfoundry.tga"
     loadType = "INGAME"
 }
