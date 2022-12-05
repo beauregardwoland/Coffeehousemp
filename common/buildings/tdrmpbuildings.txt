@@ -18,10 +18,12 @@ artillery_foundry = {
 	time = 18
 	build_trigger = {
 		development = 10
+		OR = {
 		trade_goods = copper
 		trade_goods = iron
 		trade_goods = coal
 		trade_goods = naval_supplies
+		}
 	}
 	modifier = {
 		artillery_cost= -0.05

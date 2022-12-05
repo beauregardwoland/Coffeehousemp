@@ -1267,12 +1267,12 @@ guiTypes = {
 		}
 		checkboxType = {
 			name = "build_basic_bitch_road"
-			position = { x = 61 y = 517 }
+			position = { x = 9 y = 517 }
 			quadTextureSprite = "GFX_road"
 		}		
 		instantTextBoxType={
 			name = "basic_bitch_road_cost"
-			position = {x = 61 y = 567 }
+			position = {x = 9 y = 567 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -1295,19 +1295,19 @@ guiTypes = {
 			text = "military infrastructure"	
 		}
 		iconType ={
-			name ="infra_icon"
+			name ="mil_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 15 y = 488}
-			frame = 7
+			position = { x = 15 y = 585}
+			frame = 4
 		}
 		checkboxType = {
-			name = "artillery_foundry"
-			position = { x = 61 y = 517 }
-			quadTextureSprite = "artillery_foundry"
+			name = "build_artillery_foundry"
+			position = { x = 9 y = 615 }
+			quadTextureSprite = "GFX_artillery_foundry"
 		}		
 		instantTextBoxType={
 			name = "artillery_foundry_cost"
-			position = {x = 61 y = 567 }
+			position = {x = 9 y = 665 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
