@@ -1578,7 +1578,7 @@ multicultural_ideas = {
 		advisor_cost = -0.15
 	}
 	multicultural7 = {
-		manpower_in_accepted_culture_provinces	= 0.25
+		manpower_in_accepted_culture_provinces	= 0.15
 	}
 
 	ai_will_do = {
@@ -1590,29 +1590,28 @@ nationalism_ideas = {
 	category = DIP
 
 	bonus = {
-	diplomatic_reputation  = 2
+		ae_impact  = -0.15
 	}
 	nationalism1 = {
-		trade_efficiency  = 0.1
-		years_of_nationalism = -5
+		manpower_in_own_culture_provinces = 0.15
 	}
 	nationalism2 = {
-		global_unrest = -2
+		stability_cost_modifier	 = -0.30
 	}
 	nationalism3 = {
-		num_accepted_cultures = 3
+		global_own_trade_power = 0.20
 	}
 	nationalism4 = {
-		promote_culture_cost	 = -0.60	 
+		culture_conversion_cost	 = -0.35	 
 	}
 	nationalism5 = {
-		idea_cost = -0.05
+		global_unrest = -2
 	}
 	nationalism6 = {
-		advisor_cost = -0.15
+		hostile_attrition = 1.5
 	}
 	nationalism7 = {
-		extra_manpower_at_religious_war = yes
+		manpower_in_true_faith_provinces =  = 0.15
 	}
 
 	ai_will_do = {
