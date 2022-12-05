@@ -1303,7 +1303,7 @@ guiTypes = {
 		checkboxType = {
 			name = "artillery_foundry"
 			position = { x = 61 y = 517 }
-			quadTextureSprite = "GFX_road"
+			quadTextureSprite = "artillery_foundry"
 		}		
 		instantTextBoxType={
 			name = "artillery_foundry_cost"
@@ -1314,6 +1314,7 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"	
 		}
+	}
 	# List entry for the window with a list of provinces that a specific building can be built in
 	windowType = {
 		name = "building_province_list_entry"
