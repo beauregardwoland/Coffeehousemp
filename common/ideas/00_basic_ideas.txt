@@ -1661,25 +1661,25 @@ rural_ideas = {
 		
 	}
 	rural1 = {
-		 = 0.15
+		governing_capacity_modifier = 0.25
 	}
 	rural2 = {
 		movement_speed	 = 0.20
 	}
 	rural3 = {
-		 = 0.20
+		global_tax_modifier = 0.20
 	}
 	rural4 = {
-			 = -0.35	 
+		global_monthly_devastation	 = -0.20	 
 	}
 	rural5 = {
-		 = -2
+		caravan_power= 0.25
 	}
 	rural6 = {
-		 = 1.5
+		global_manpower_modifier = 0.15
 	}
 	rural7 = {
-		 =  = 0.15
+		global_own_trade_power	 =  = 0.15
 	}
 
 	ai_will_do = {
