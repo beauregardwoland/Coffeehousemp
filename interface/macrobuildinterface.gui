@@ -1280,7 +1280,7 @@ guiTypes = {
 			text = "2000¤"	
 		}
 		checkboxType = {
-			name = "glass_works"
+			name = "build_glass_works"
 			position = { x = 62 y = 517 }
 			quadTextureSprite = "GFX_glass_works"
 		}		
