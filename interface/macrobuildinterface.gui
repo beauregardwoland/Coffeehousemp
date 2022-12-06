@@ -1279,6 +1279,20 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"	
 		}
+		checkboxType = {
+			name = "glass_works"
+			position = { x = 62 y = 517 }
+			quadTextureSprite = "GFX_glass_works"
+		}		
+		instantTextBoxType={
+			name = "glass_works_cost"
+			position = {x = 62 y = 567 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
 #next group of buildings
 		iconType = {
 			name = "mil_banner"

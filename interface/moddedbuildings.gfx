@@ -9,4 +9,9 @@ spriteType = {
     texturefile = "gfx//interface//buildings//artilleryfoundry.tga"
     loadType = "INGAME"
 }
+spriteType = {
+    name = "GFX_glass_works"
+    texturefile = "gfx//interface//buildings//glassworks.tga"
+    loadType = "INGAME"
+}
 }
