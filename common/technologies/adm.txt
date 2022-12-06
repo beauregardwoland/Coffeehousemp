@@ -100,6 +100,7 @@ technology = { #Workshop
 	farm_estate = yes
 	workshop = yes
 	ramparts = yes
+	glass_works = yes
 }
 
 technology = { #Renaissance Thought
