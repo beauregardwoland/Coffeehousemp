@@ -42,7 +42,6 @@ basic_bitch_road = {
 	
 	modifier = {
 		local_friendly_movement_speed = 0.1
-		local_hostile_movement_speed = 0.1
 		local_development_cost = -0.025
 		province_trade_power_value = 0.5
 		allowed_num_of_buildings = 1
