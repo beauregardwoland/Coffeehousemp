@@ -110,7 +110,7 @@ coin_mint = {
 	modifier = {
 		local_gold_depletion_chance_modifier = -0.8
 		trade_goods_size_modifier = -0.1
-		inflation_reduction = -0.025
+		inflation_reduction = 0.025
 		production_efficiency = 0.025
 	}
 	
