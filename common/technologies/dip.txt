@@ -97,6 +97,7 @@ technology = { #Basic Financial Instruments
 	trade_range				=	20
 	
 	coastal_defence = yes
+	coin_mint = yes
 }
 
 technology = { #Shipyards

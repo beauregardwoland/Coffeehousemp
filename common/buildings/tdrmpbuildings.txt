@@ -17,7 +17,7 @@ artillery_foundry = {
 	cost = 200
 	time = 18
 	build_trigger = {
-		development = 10
+		development = 15
 		OR = {
 		trade_goods = copper
 		trade_goods = iron
@@ -54,8 +54,8 @@ basic_bitch_road = {
 	}
 }
 glass_works = {
-	cost = 100
-	time = 6
+	cost = 200
+	time = 18
 	build_trigger = {
 		development = 10
 		OR = {
@@ -78,7 +78,7 @@ glass_works = {
 
 distillery = {
 	cost = 200
-	time = 6
+	time = 18
 	build_trigger = {
 		development = 5
 		OR = {
@@ -93,6 +93,26 @@ distillery = {
 		trade_value_modifier = 0.15
 		local_development_cost = -0.05
 		prestige = 0.1
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+coin_mint = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 5
+		OR = {
+		trade_goods = gold
+		}
+	}
+	modifier = {
+		local_gold_depletion_chance_modifier = -0.8
+		trade_goods_size_modifier = -0.1
+		inflation_reduction = -0.025
+		production_efficiency = 0.025
 	}
 	
 	ai_will_do = {

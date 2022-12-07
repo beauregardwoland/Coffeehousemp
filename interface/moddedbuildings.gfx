@@ -16,7 +16,12 @@ spriteType = {
 }
 spriteType = {
     name = "GFX_distillery"
-    texturefile = "gfx//interface//buildings//glassworks.tga"
+    texturefile = "gfx//interface//buildings//distillery.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_coinmint"
+    texturefile = "gfx//interface//buildings//coinmint.tga"
     loadType = "INGAME"
 }
 }
