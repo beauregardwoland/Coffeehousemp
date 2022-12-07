@@ -1333,8 +1333,8 @@ flotilla_ideas = {
 		sailors_recovery_speed = 0.25
 	}
 	flotilla2 = {
-		galley_power = 0.15
-		light_ship_power = 0.20
+		galley_power = 0.20
+		light_ship_power = 0.35
 	}
 	flotilla3 = {
 		global_sailors_modifier = 0.20
@@ -1359,6 +1359,7 @@ leadership_ideas = {
 
 	bonus = {
 		free_leader_pool  = 2
+		discipline = 0.025
 	}
 	leader1 = {
 		leader_land_fire = 1
@@ -1393,7 +1394,7 @@ frontier_ideas = {
 	category = DIP
 
 	bonus = {
-		dip_advisor_cost  = -0.20
+		advisor_cost = -0.20
 	}
 	trigger = {
 		NOT = {
@@ -1414,6 +1415,7 @@ frontier_ideas = {
 	}
 	frontier5 = {
 		vassal_forcelimit_bonus = 0.75
+		reduced_liberty_desire = -0.1
 	}
 	frontier6 = {
 		diplomatic_reputation = 1
@@ -1456,7 +1458,7 @@ defined_ideas = {
 		manpower_in_culture_group_provinces = 0.1
 	}
 	defined7 = {
-		global_spy_defence = 0.1
+		global_spy_defence = 0.2
 	}
 
 	ai_will_do = {
@@ -1634,7 +1636,7 @@ urban_ideas = {
 	}
 	urban2 = {
 		center_of_trade_upgrade_cost	 = -0.30
-		development_cost_modifier = -0.05
+		development_cost = -0.05
 	}
 	urban3 = {
 		global_foreign_trade_power = 0.20
