@@ -139,7 +139,7 @@ technology = { #The Scythe
 	
 	#The Scythe
 	production_efficiency 	=	0.02
-	
+	distillery = yes
 
 }
 

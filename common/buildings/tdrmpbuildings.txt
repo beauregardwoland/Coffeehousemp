@@ -65,9 +65,34 @@ glass_works = {
 		}
 	}
 	modifier = {
-		trade_goods_size_modifier = 0.1
+		trade_goods_size_modifier = 0.05
+		trade_value_modifier = 0.1
+		local_development_cost = -0.05
+		innovativeness_gain = 0.05
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+
+distillery = {
+	cost = 200
+	time = 6
+	build_trigger = {
+		development = 5
+		OR = {
+		trade_goods = sugar
+		trade_goods = grain
+		trade_goods = wine
+		trade_goods = tea
+		}
+	}
+	modifier = {
+		trade_goods_size_modifier = 0.05
 		trade_value_modifier = 0.15
 		local_development_cost = -0.05
+		prestige = 0.1
 	}
 	
 	ai_will_do = {
