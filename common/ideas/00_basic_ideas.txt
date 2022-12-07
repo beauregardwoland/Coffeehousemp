@@ -1721,12 +1721,13 @@ legalism_ideas = {
 	}
 	legalisml5 = {
 		country_admin_power = 1
+		free_policy = 1
 	}
 	legalism6 = {
-		technology_cost = -0.075
+		technology_cost = -0.1
 	}
 	legalism7 = {
-		core_creation =  = -0.1
+		core_creation = -0.1
 	}
 
 	ai_will_do = {
