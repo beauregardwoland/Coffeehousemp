@@ -1146,6 +1146,7 @@ levy_ideas = {
 	}
 	levy3 = {
 		has_banners = yes
+		amount_of_banners = 0.3
 	}
 	levy4 = {
 		manpower_in_own_culture_provinces = 0.1
