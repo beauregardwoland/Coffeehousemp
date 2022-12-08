@@ -10,7 +10,6 @@
 germanic = {
 	graphical_culture = westerngfx
 	province = { local_has_banners = yes}
-	country = { has_banners = yes}
 	province = { local_has_carolean = yes }
 	male_names = { Gunther Rolf }
 	
