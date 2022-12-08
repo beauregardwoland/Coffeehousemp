@@ -1814,8 +1814,8 @@ marine_regiment = {
 
 banner_regiment = {
 	discipline = -0.10
-	land_maintenance_modifier = -0.5
-	reinforce_speed = -0.5
+	land_maintenance_modifier = -0.6
+	reinforce_speed = 0.5
 	regiment_manpower_usage = -0.75
 }
 
