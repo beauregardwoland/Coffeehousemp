@@ -1146,7 +1146,7 @@ levy_ideas = {
 	}
 	levy3 = {
 		has_banners = yes
-		amount_of_banners = 5
+		amount_of_banners = 6
 	}
 	levy4 = {
 		manpower_in_own_culture_provinces = 0.1
@@ -1233,7 +1233,6 @@ infantry_backbone_ideas = {
 	}
 	infantry6 = {
 		siege_ability= 0.15
-		has_parliament = yes
 	}
 	infantry7 = {
 		infantry_fire = 0.2
