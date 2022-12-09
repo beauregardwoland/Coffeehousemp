@@ -704,7 +704,7 @@ SPA_ideas = {
 	}
 	siglo_de_oro = {
 		prestige = 1
-		all_power_cost = 0.025
+		all_power_cost = -0.025
 	}
 }
 
