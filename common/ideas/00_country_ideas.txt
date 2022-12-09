@@ -1458,6 +1458,7 @@ POR_ideas = {
 	}
 	land_before_faith = {
 		global_colonial_growth = 15
+		land_morale = 0.10
 	}
 	the_bandeirantes = {
 		trade_efficiency = 0.15
