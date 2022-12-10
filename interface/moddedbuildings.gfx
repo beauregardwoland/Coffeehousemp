@@ -21,7 +21,7 @@ spriteType = {
 }
 spriteType = {
     name = "GFX_coinmint"
-    texturefile = "gfx//interface//buildings//coinmint.tga"
+    texturefile = "gfx//interface//buildings//coin_mint.tga"
     loadType = "INGAME"
 }
 }

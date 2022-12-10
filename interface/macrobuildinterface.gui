@@ -1310,7 +1310,7 @@ guiTypes = {
 		checkboxType = {
 			name = "build_coin_mint"
 			position = { x = 167 y = 517 }
-			quadTextureSprite = "GFX_coinmint"
+			quadTextureSprite = "GFX_coin_mint"
 		}		
 		instantTextBoxType={
 			name = "coin_mint_cost"
