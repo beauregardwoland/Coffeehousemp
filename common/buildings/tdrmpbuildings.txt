@@ -34,6 +34,49 @@ artillery_foundry = {
 		factor = 50
 	}
 }
+army_provisions = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 15
+		OR = {
+		trade_goods = livestock
+		trade_goods = grain
+		trade_goods = fish
+		trade_goods = salt
+
+		}
+	}
+	modifier = {
+		global_supply_limit_modifier = 0.05
+		local_production_efficiency = 0.2
+		global_regiment_cost = -0.01
+		land_attrition = -0.025
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+gunpowder_mill = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 15
+		OR = {
+		}
+	}
+	modifier = {
+		fire_damage = 0.025
+		trade_goods_size  = 0.1
+		global_regiment_cost = -0.01
+		yearly_army_professionalism = 0.0035
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
 
 #more civilian based invsmtents
 basic_bitch_road = {
@@ -102,9 +145,10 @@ coin_mint = {
 	cost = 200
 	time = 18
 	build_trigger = {
-		development = 5
+		development = 10
 		OR = {
 		trade_goods = gold
+		trade_goods = copper
 		}
 	}
 	modifier = {

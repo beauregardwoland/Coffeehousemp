@@ -171,7 +171,7 @@ technology = {
 	
 	
 	barracks = yes
-
+	gunpowder_mill = yes
 
 	enable = african_somali_cavalry
 	enable = african_tuareg_cavalry
@@ -235,7 +235,7 @@ technology = {
 	}
 	
 	#Ditch
-	
+	army_provisions = yes
 	enable = south_indian_musketeer	
 	enable = mughal_musketeer		
 	enable = ottoman_janissary	

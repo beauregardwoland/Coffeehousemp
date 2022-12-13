@@ -1356,6 +1356,34 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"	
 		}
+		checkboxType = {
+			name = "build_army_provisions"
+			position = { x = 62 y = 615 }
+			quadTextureSprite = "GFX_army_provisions"
+		}		
+		instantTextBoxType={
+			name = "army_provisions_cost"
+			position = {x = 62 y = 665 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		checkboxType = {
+			name = "build_gunpowder_mill"
+			position = { x = 115 y = 615 }
+			quadTextureSprite = "GFX_gunpowder_mill"
+		}		
+		instantTextBoxType={
+			name = "gunpowder_mill_cost"
+			position = {x = 115 y = 665 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
 	}
 	# List entry for the window with a list of provinces that a specific building can be built in
 	windowType = {

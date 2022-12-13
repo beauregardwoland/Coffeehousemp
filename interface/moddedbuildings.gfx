@@ -24,4 +24,14 @@ spriteType = {
     texturefile = "gfx//interface//buildings//coinmint.tga"
     loadType = "INGAME"
 }
+spriteType = {
+    name = "GFX_army_provisions"
+    texturefile = "gfx//interface//buildings//armyprovisions.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_gunpowder_mill"
+    texturefile = "gfx//interface//buildings//gunpowdermill.tga"
+    loadType = "INGAME"
+}
 }
