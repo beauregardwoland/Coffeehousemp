@@ -15,6 +15,7 @@ germanic = {
 	
 	pommeranian = {
 		primary = POM
+		province = { local_has_banners = yes}
 		male_names = {
 			Boguslaw Barnim Ota Eryk Filip Franciszek Jan Fryderyk Georg Ernest 
 			Ludwik Albrecht Arnt August Bernhard Bodo Carl Emil Fritz Gerhard 
@@ -67,6 +68,7 @@ germanic = {
 	}
 	prussian = {
 		primary = PRU
+		province = { local_has_banners = yes}
 		male_names = {
 			Albrecht Friedrich August Emil Ferdinand Karl Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt 
 			Benjamin Denis Diederick Eckbert Erwin Florian Franz Gebhard Gottfried Hartmann Heinrich Helmut 
@@ -81,6 +83,7 @@ germanic = {
 	}
 	baltic_german = {
 		primary = RIG
+		province = { local_has_banners = yes}
 		male_names = {
 			Albrecht Friedrich August Emil Ferdinand Karl Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt 
 			Benjamin Denis Diederick Eckbert Erwin Florian Franz Gebhard Gottfried Hartmann Heinrich Helmut 
@@ -95,6 +98,7 @@ germanic = {
 	}
 	lower_saxon = {
 		primary = HAN
+		province = { local_has_banners = yes}
 		male_names = {
 			Ernst Adolf Alfred August Christian Eduard Friedrich Georg Karl Philipp Maximilian Octavius Wilhelm 
 			Alexander Alois Anton Bruno Clemens Denis Gerfried Gottfried G�nther Helmut Herbert Ignatz Isidor 
@@ -106,6 +110,7 @@ germanic = {
 	}
 	hannoverian = {
 		primary = WES
+		province = { local_has_banners = yes}
 		male_names = {
 			Ernst Adolf Alfred August Christian Eduard Friedrich Georg Karl Philipp Maximilian Octavius Wilhelm 
 			Alexander Alois Anton Bruno Clemens Denis Gerfried Gottfried G�nther Helmut Herbert Ignatz Isidor 
@@ -117,6 +122,7 @@ germanic = {
 	}
 	hessian = {
 		primary = HES
+		province = { local_has_banners = yes}
 		male_names = {
 			Wilhelm Ludwig Friedrich Hermann Karl Moritz Philipp Heinrich Otto Adolf Christian Georg Leopold 
 			Philipp Adelmar Albrecht Barnabas Denis Egon Erich Gerhard Gottlieb Gregor Hagan Helmut Isaak Isidor 
@@ -129,6 +135,7 @@ germanic = {
 	}
 	saxon = {
 		primary = SAX
+		province = { local_has_banners = yes}
 		male_names = {
 			Friedrich Albrecht Christian Heinrich Rudolf August Ernst Georg Moritz Alexander Anton Hektor 
 			Johann Karl Clemens Wenzel Franz Xaver Joachim Joseph Magnus Maximilian Severinus Wolfgang 
@@ -175,12 +182,15 @@ germanic = {
 	}
 	franconian = {
 		primary = FKN
+		province = { local_has_banners = yes}
 	}
 	swabian = {
 		primary = SWA
+		province = { local_has_banners = yes}
 	}
 	swiss = {
 		primary = SWI
+		province = { local_has_banners = yes}
 		male_names = {
 			Friedrich Otto Heinrich Werner Ferdinand Karl Alfred Benedikt Christoph Dietrich Engelbert 
 			Florian Gerhard Immanuel Johan Leonhard Markus Nikolaus Paul Ruprecht Stefan Thomas Ulrich 
@@ -193,6 +203,7 @@ germanic = {
 	}
 	bavarian = {
 		primary = BAV
+		province = { local_has_banners = yes}
 		male_names = {
 			Albrecht Wilhelm Johann Ernst Maximilian Emanuel Siegmund Ludwig Anton Christoph Ferdinand  
 			Leopold Philipp Theodor Adalbert Alois Johann Clemens August Friedrich Johann Theodor Joseph  
@@ -219,6 +230,7 @@ germanic = {
 	}
 	austrian = {
 		primary = HAB
+		province = { local_has_banners = yes}
 		male_names = {
 			Albrecht Maximilian Friedrich Ladislav Matthias Ernst Ferdinand Wenzel Georg Philipp Joseph 
 			Rudolf Gerhard Wolfgang Leopold Florian
@@ -236,6 +248,7 @@ germanic = {
 	}
 	dutch = {
 		primary = NED
+		province = { local_has_banners = yes}
 		male_names = {
 			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
 			Barnaerd Bernard Bartolomeus Bartolomeus
@@ -287,6 +300,7 @@ germanic = {
 	}
 	flemish = {
 		primary = FLA
+		province = { local_has_banners = yes}
 			dynasty_names = {
 			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
 			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
@@ -322,6 +336,7 @@ germanic = {
 	}
 	frisian = {
 		primary = FRI
+		province = { local_has_banners = yes}
 		male_names = {
 			Anno Bernard Baltasar Campegius Dodo Eggerik Eilhard Eeltsje Enno Edzard Edo
 			Freark Franciscus Gysbert Gerlof Hendrik Jancko Jacobus Joast Jehan Joaris
@@ -462,7 +477,7 @@ scandinavian = { #Nordic
 
 	swedish = {
 		primary = SWE
-		
+		province = { local_has_banners = yes}
 		country = {  }
 		province = { local_has_carolean = yes }
 		
@@ -506,6 +521,7 @@ scandinavian = { #Nordic
 	}
 	danish = {
 		primary = DAN
+		province = { local_has_banners = yes}
 		male_names = {
 			Anders Andrew Anund Asger Balder Benedikt Benedict Bj�rn Beorn Bo Christopher Edvard Edward 
 			Einar Ernest Fredrik Frederick Frej Glum Gorm Gotfred Godfrey Gregers Gregory Grim H�rik 
@@ -543,6 +559,7 @@ scandinavian = { #Nordic
 	}
 	norwegian = {
 		primary = NOR
+		province = { local_has_banners = yes}
 		male_names = {
 				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbj�rn Arngrimr Arni Arne Arnfast 
 				Asbj�rn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Bj�rn Beorn Bo Borkvard 
@@ -587,6 +604,7 @@ scandinavian = { #Nordic
 	}
 	finnish = {
 		primary = FIN
+		province = { local_has_banners = yes}
 		country = {  }
 		province = { local_has_carolean = yes }
 		dynasty_names = {
@@ -619,6 +637,7 @@ scandinavian = { #Nordic
 	}
 	sapmi = {
 		primary = SMI
+		province = { local_has_banners = yes}
 		male_names = {
 			Baeivvet Biejan Bij�s Bilzi D�vgon Dutt� G�ivvas Elmar Hain Haljas Igap�iv Ihalemb Kahar Eeri Heameel Heat�iv 
 			Hoovat�iv Hurmas Hurmet�iv H�imulemb H�valemb H�vameel H�vat�iv T�nn Uku Vootele V�ino V�rvo �igemeel �lo K�llelemb 
@@ -645,6 +664,7 @@ scandinavian = { #Nordic
 	}
 	karelian = {
 		primary = KRL
+		province = { local_has_banners = yes}
 		male_names = {
 			Mohkku Mokci N�hkol N�innas Njulgu Oav�n Orddot R�stos Riibma Ruigi S�rra Speaidna Viggu Kaarel Kaaren Kahus Kaido 
 			Kalev Kalju Kaljuvald Kalle Kaomeel Karuvald Kaugemeel Kaupo Pihl Piho Pikne P�evalemb P�rt Raak Raho Rahuleid Sulev 
@@ -663,6 +683,7 @@ scandinavian = { #Nordic
 	}
 	icelandic = {
 		primary = ICE
+		province = { local_has_banners = yes}
 		male_names = {
 			Andreas Arnaldur Arnmundur Ari Axel Baldur Bjargmundur Bernhard Benedikt Brynjar Carl Cecil Christian Christopher Cyrus Daggeir Daniel Dvalinn Draupnir Dufgus Egill Erlendur Esra Eymundur Eyvindur Fenrir 
 			Finngeir Floki Francis Frosti Geirfinnur Gr�mkell Gunnar Gunnlaugur Gustav Hagar Hafthor Hildimundur Hrafnkell Huginn Hakon Ingar Ingibjartur Ingimundur Ismael Ivar Jani Jesper Johan Jonmundur Jorgen Kalmar 
@@ -683,6 +704,7 @@ scandinavian = { #Nordic
 	}
 	norse = {
 		country = {  }
+		province = { local_has_banners = yes}
 		province = { local_has_carolean = yes }
 		male_names = {
 			A�alsteinn Aghi Agmundr Agnarr �ki �leifr Alfarr Alfvin Algautr Ari Arnfinnr �rni Arn�rr Arn��rr Arnvi�r �sbj�rn �sgeirr �sketill �smundr �svaldr Au�r Baggi B�r�r Birgir Bjarni Bjartr Bj�rn Brandr Br��ir # La Pl�iade
@@ -711,6 +733,7 @@ british	= {
 	province = { local_has_carolean = yes }
 	english = {
 		primary = ENG
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Plantagenet Lancaster York Tudor Dudley Mowbray Beaufort Neville Percy Howard Seymour Holland 
 			Talbot Stanley Courtenay "de la Pole" "de Vere" Stafford Grey Mortimer "le Despenser" "de Camoys"
@@ -739,6 +762,7 @@ british	= {
 	}
 	american = {
 		primary = USA
+		province = { local_has_banners = yes}
 		male_names = {
 			Abraham Aaron Alexander Atticus August Andrew Anthony Angus Allen Asa Alvin Albert Ambrose Arthur
 			Buford Benjamin Benedict Bernard Bartholomew Brigham Braxton Barnabas
@@ -817,6 +841,7 @@ british	= {
 	}
 	welsh = {
 		primary = WLS
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Aberffraw Dinefwr Mathrafal Gwynedd Tudor Kernew "of Cornwall" Glyndwr "Ternyllwg" 
 			#CK2
@@ -883,6 +908,7 @@ british	= {
 	}
 	cornish = {
 		primary = CRN
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Aberffraw Dinefwr Mathrafal Gwynedd Tudor Kernew "of Cornwall" Glyndwr "Ternyllwg" 
 			#CK2
@@ -908,6 +934,7 @@ british	= {
 	}
 	scottish = {
 		primary = SCO
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Stuart Stewart Campbell Lennox Murray Graham Gordon Erskine Leslie
 			Scott Douglas Hamilton Lindsay Ker Hay Sinclair Dunbar Kennedy
@@ -952,6 +979,7 @@ gaelic	= {
 	province = { local_has_carolean = yes }
 	irish = {
 		primary = IRE
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			"O'Donnell" "O'Neill" "O'Connor" "O'Brien" MacLochlainn MacMurrough MacWilliam
 			MacNamara "O'Reilly"  "FitzGerald" Kelly
@@ -1044,6 +1072,7 @@ gaelic	= {
 	}
 	highland_scottish = {
 		primary = HSC
+		province = { local_has_banners = yes}
 
 		male_names = {
 			Aonghas Alasdair Ailbeart Adhamh Ailean Anndra Arailt Artair Aaron Amhlaidh Ailpein
@@ -1106,15 +1135,19 @@ latin = {
 	province = { local_has_carolean = yes }
 	lombard = {
 		primary = MLO
+		province = { local_has_banners = yes}
 	}
 	tuscan = {
 		primary = TUS
+		province = { local_has_banners = yes}
 	}
 	sardinian = {
 		primary = SAR
+		province = { local_has_banners = yes}
 	}
 	romagnan = {
 		primary = FER
+		province = { local_has_banners = yes}
 
 		dynasty_names = {
 			Bevilacqua Boschetti Carandini Castelvetri Tassoni "Pico di Mirandola" Rangoni Monesi "da Fogliano" Bevilacqua "da Correggio" Platoni Biondelli Arrigoni Castiglione Cavriani d'Arco Ceresara Donesmondi
@@ -1122,12 +1155,15 @@ latin = {
 	}
 	ligurian = {
 		primary = GEN
+		province = { local_has_banners = yes}
 	}
 	venetian = {
 		primary = VEN
+		province = { local_has_banners = yes}
 	}
 	dalmatian = {
 		primary = DAL
+		province = { local_has_banners = yes}
 		male_names = {
 			Pongo
 			Alban Arber Ardian Aplis Apludus Aplus Aplius Aelius Andabio Armatus Apurus
@@ -1170,18 +1206,23 @@ latin = {
 	}
 	neapolitan = {
 		primary = NAP
+		province = { local_has_banners = yes}
 	}
 	piedmontese = {
 		primary = SAV
+		province = { local_has_banners = yes}
 	}
 	umbrian = {
 		primary = URB
+		province = { local_has_banners = yes}
 	}
 	sicilian = {
 		primary = SIC
+		province = { local_has_banners = yes}
 	}
 	maltese = {
 		primary = JAI
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"de la Valette" "de Villaret" "L'Isle-Adam" "de Ponte" "de Saint-Jaille" "de la Sengle"
 			"de Monte" "de la Cassi�re" "de Vasconcellos" "de Paule" Cotoner Carafa "de Wignacourt"
@@ -1268,6 +1309,7 @@ iberian	= {
 	province = { local_has_carolean = yes }
 	castillian = {
 		primary = CAS
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"de Trast�mara" "de Guzm�n" "�lvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
 			T�llez-Gir�n "Manrique de Lara" "de �valos" Enr�quez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcal�"
@@ -1298,6 +1340,7 @@ iberian	= {
 	}
 	mexican = {
 		primary = MEX
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"de Trast�mara" "de Guzm�n" "�lvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
 			T�llez-Gir�n "Manrique de Lara" "de �valos" Enr�quez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcal�"
@@ -1328,6 +1371,7 @@ iberian	= {
 	}
 	platinean = {
 		primary = LAP
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"de Trast�mara" "de Guzm�n" "�lvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
 			T�llez-Gir�n "Manrique de Lara" "de �valos" Enr�quez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcal�"
@@ -1358,6 +1402,7 @@ iberian	= {
 	}
 	leonese = {
 		primary = LON
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"de Trast�mara" "de Guzm�n" "�lvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
 			T�llez-Gir�n "Manrique de Lara" "de �valos" Enr�quez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcal�"
@@ -1387,6 +1432,7 @@ iberian	= {
 	}
 	aragonese = {
 		primary = ARA
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"d'Arag�" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
 			#CK2
@@ -1412,6 +1458,7 @@ iberian	= {
 	}
 	catalan = {
 		primary = CAT
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"d'Arag�" "de Borja" "de Luna" "d'Urgell" "Folc de Cardona"
 			#CK2
@@ -1434,6 +1481,7 @@ iberian	= {
 	}
 	galician = {
 		primary = GAL
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Osorio Andrade
 			#CK2
@@ -1455,6 +1503,7 @@ iberian	= {
 	}
 	andalucian = {
 		primary = GRA
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Nasrid Ummayad Zirid
 		}
@@ -1477,6 +1526,7 @@ iberian	= {
 	}
 	portugese = {
 		primary = POR
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"de Aviz" "de Bragan�a" "de Crato" "d'Alburquerque" "de Portugal" "de Lencastre" "de Melo" 
 			"de Moura" "de N�poles" "de Menezes" "de Saldanha" 
@@ -1504,6 +1554,7 @@ iberian	= {
 	}
 	brazilian = {
 		primary = BRZ
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"de Bragan�a" "de Camargo" "de Alburquerque" "de Vassouras" "de Noronha" "de Melo" 
 			"de Moura" "de Medeiros" "de Menezes" "de Saldanha" "de Alencar"
@@ -1541,6 +1592,7 @@ iberian	= {
 	}
 	basque = {
 		primary = NAV
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"de Navarra" "de Beaumont" "de Ler�n" "de Monteagudo" Escors 
 			# CKII
@@ -1573,6 +1625,7 @@ french	= {
 	province = { local_has_carolean = yes }
 	cosmopolitan_french = {
 		primary = FRA
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"de Valois" "de Bourbon" Bonaparte "de la Tour" "d'Anjou" 
 			"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
@@ -1581,30 +1634,39 @@ french	= {
 	}
 	gascon = {
 		primary = GUY
+		province = { local_has_banners = yes}
 	}
 	normand = {
 		primary = NRM
+		province = { local_has_banners = yes}
 	}
 	aquitaine = {
 		primary = TOU
+		province = { local_has_banners = yes}
 	}
 	burgundian = {
 		primary = BUR
+		province = { local_has_banners = yes}
 	}
 	occitain = {
 		primary = PRO
+		province = { local_has_banners = yes}
 	}
 	wallonian = {
 		primary = HAI
+		province = { local_has_banners = yes}
 	}
 	louisianans = {
 		primary = LOU
+		province = { local_has_banners = yes}
 	}
 	quebecois = {
 		primary = QUE
+		province = { local_has_banners = yes}
 	}
 	breton = {
 		primary = BRI
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Rohan Penteur Leon Roazhon Poutrecoet Naoned "Leon" "de Dinan" "de Vitr�" "de Cornouaille" 
 			"de Rohan" "de Porho�t" "of Brittany" "de Ch�teaubriant" "de Nantes" "Leon" "Guennec" "Pensec" 
@@ -1735,6 +1797,7 @@ finno_ugric = { #Ugric
 	
 	uralic = {
 		primary = PRM
+		province = { local_has_banners = yes}
 		male_names = {
 			Mikhail Yermolay Matvey Vasiley Pitirim Gerasim Isaak Iona Volod Gavril Yegor Ivan Mikulay Petyr 
 			Kos'ta �ndrey Stepan �ly�ksey Boris Danil Dmitry Pedot Illya Seg� Sem� Ped�r 
@@ -1744,6 +1807,7 @@ finno_ugric = { #Ugric
 		}
 	}
 	samoyed = {
+		province = { local_has_banners = yes}
 		male_names = {
 			Alik Hasaba Kako Kharuchi Kolik Mandak Nabtiko Nenyts Nga Ng�noh Noumea Num Nyalku Panay 
 			Salinder Samatu Sarak Sirtya Somatu Syudbya Tatva Tolik Vesei Wayngachi X�ryuchi Yadne 
@@ -1760,6 +1824,7 @@ finno_ugric = { #Ugric
 	
 	
 	ostyaki = {
+		province = { local_has_banners = yes}
 		male_names = {
 			�ggi �iges�rri �ilu �mmot �ra �rrajuoksa �sllat �oavv� Ahkemiella Algebaeivi Baeivi Aare Agul Ahas Aho Ahti Ahvo 
 			Alar Alo Alur Aopelg Aot�iv Arp Arvet Arvo Atko Aul Aulemb Kaur Kiur Kiurupelg Koit Kosk Kudres Susi Sutemeel Meigo 
@@ -1780,6 +1845,7 @@ finno_ugric = { #Ugric
 		}
 	}
 	ingrian = {
+		province = { local_has_banners = yes}
 		male_names = {
 			Kahru Kahrulemb G�ktu Henes J�rre Jeansa Juvven John L�gon L�vrrohas Leamm� Mellet Mihka Igalemb Ihameel Ihar 
 			Ihat�iv Ihavald Illimar Ilmalemb Ilmar Ilvelemb Jaolemb Kaalep L�ttelemb Manivald Mart Maru Mati Mats Meelis Mehis 
@@ -1814,6 +1880,7 @@ south_slavic = {
 	province = { local_has_carolean = yes }
 	croatian = {
 		primary = CRO
+		province = { local_has_banners = yes}
 		male_names = {
 			Kresimir Stjepan Almos Dimitrije Zvonimir Trpimir Goislav Slavic Svetoslav Miroslav Mutimir 
 			Ladislav Karlo Andrej Luj Pero Vladislav Vjenceslav Aleksandar Dragutin Fauszty Franjo Gavrilo Ivan 
@@ -1845,6 +1912,7 @@ south_slavic = {
 	}
 	serbian = {
 		primary = SER
+		province = { local_has_banners = yes}
 		male_names = {
 			Stefan Lazar Djuradj Milosh Djordje Alexa Grgur Petrija Todor Aleksandar Mihailo Milan 
 			Bratislav Darko Dragan Dubravko Dusan Filip Goran Ivan Josif Konstantin Luka Marko Mateja Miroslav 
@@ -1875,6 +1943,7 @@ south_slavic = {
 	}
 	slovene = {
 		primary = CLI
+		province = { local_has_banners = yes}
 		male_names = {
 			Andrej Albreht Alojzij Anton Adam Avgust Boris Blaz	Davorin	Etbin Filip Franc Friderik
 			Gregorij Henrik Ivan Igor Ignacij Janez Janko Jernej Jozef Karel Konrad	Lovro Luka Ludvik
@@ -1892,6 +1961,7 @@ south_slavic = {
 	}
 	bosnian = {
 		primary = BOS
+		province = { local_has_banners = yes}
 		male_names = {
 			Andrija Aljen Boric Bogisa Bogut Batalo Brailo Brajko Batic Beljak Budelja Celk Dabisa
 			Dragonja Danis Dragisa Drazen Franjo Grgur Hran Hrvoje Hval Ivanis Juraj Kulin Krsmir
@@ -1911,6 +1981,7 @@ south_slavic = {
 	}
 	bulgarian = {
 		primary = BUL
+		province = { local_has_banners = yes}
 		male_names = {
 			Iwan Asen Koloman Petar Todor Michael Aleksandar Iwan Kalojan Georgi Konstantin Stepan Stracimir 
 			Simeon Andon Andrei Angel Atanas Bogdan Bogomil Branimir Damyan Dimitar Emil Gavril Hristo Iordan 
@@ -1936,6 +2007,7 @@ south_slavic = {
 	}
 	albanian = {
 		primary = ALB
+		province = { local_has_banners = yes}
 		male_names = {
 			Gjergj Lek� Gjon Kostandin Lul�zim Pal Tanush Aleksand�r Karolus Filippo Adnan Agim Bashkim Besnik 
 			Dardan Dhurim Drit�ro Elidon Erjon Fatmir Flamur Florin Hekuran Ilir Ismail Klodian Luigj Milaim 
@@ -1960,6 +2032,7 @@ west_slavic = {
 
 	czech = {
 		primary = BOH
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Jankovsk� z Vla�imi" Chotek Lichnowsky Lobkowicz Nostitz Kutscha 
 			"Kounic" "V�tkovec" "Zerot�n" "Czern�n" "von Harrach" Kinsky Rosenberg
@@ -1978,6 +2051,7 @@ west_slavic = {
 	polish = {
 		graphical_culture = easterngfx
 		primary = POL
+		province = { local_has_banners = yes}
 		male_names = {
 			August Wladyslaw Stanislaw Kazimierz Aleksander Henryk Albert Kazimierz Michal Stefan 
 			August Aleksander Karol Kazimierz Krzysztof Fryderyk Olbracht Jan Karol Patryk
@@ -2023,6 +2097,7 @@ west_slavic = {
 	
 	schlesian = {
 		primary = SIL
+		province = { local_has_banners = yes}
 		male_names = {
 			Fryderyk Jan Henryk Ludwik Jan Krystian Jerzy Jerzy Rudolf Jerzy Wilhelm Joachim Fryderyk Krystian 
 			Jan Jerzy Jerzy Ernest August Ernest Krystian Ludwik Rudolf Wladislaw Albert Aleksander Andel 
@@ -2037,6 +2112,7 @@ west_slavic = {
 	
 	sorbian = {
 		primary = SOR
+		province = { local_has_banners = yes}
 		male_names = {
 			Awgust Alojs Abraham Albin Bogumil Bjedrich Bjarnat Cyril Derwan Fryco Frido Filip
 			Handrij Jan Jurij Jakub Jozef Joachim Korla Kito Kristalub Krescan Michal Mikolaj Mato Mercin
@@ -2095,6 +2171,7 @@ carpathian = {
 	province = { local_has_carolean = yes }
 	slovak = {
 		primary = SLO
+		province = { local_has_banners = yes}
 		male_names = {
 			Matej Jan Lukas Stefan Pavol Peter Juraj Jozef Marek Daniel Moric Samuel Martin Ondrej Anton Karol
 			Hugol�n Tomas Ludov�t Viliam Mikulas Ignac Jaroslav Jaromir Miroslav Drahoslav Svatopluk Mojmir
@@ -2112,6 +2189,7 @@ carpathian = {
 	}
 	transylvanian = {
 		primary = TRA
+		province = { local_has_banners = yes}
 		male_names = {
 			Ul�szl� L�szl� Lajos Albert J�nos M�ty�s Zsigmond Andr�s K�roly Istv�n B�la Anaszt�z Barnab�s 
 			Boldizs�r D�vid D�m�t�r Edv�rd Ern� Ferenc G�bor Gy�rgy Izs�k Jen� J�zsef K�lm�n K�zm�r L�rinc 
@@ -2176,6 +2254,7 @@ carpathian = {
 	}
 	romanian = {
 		primary = WAL
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Basarab" "Danesti" "Draculesti"
 			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza 
@@ -2211,6 +2290,7 @@ carpathian = {
 	}
 	hungarian = {
 		primary = HUN
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			B�thory Hunyadi Szapolyai R�k�czy Bocskai Bethlen Alm�sy Andr�ssy Batthy�ny Cs�ky Dessewffy
 			Erdody Eszterh�zy Festetics Hajd� K�rolyi Kun Magyary Per�nyi R�nai Sz�chenyi Szepessy 
@@ -2258,6 +2338,7 @@ east_slavic = {
 	province = { local_has_carolean = yes }
 	russian = { #Muscovite - Vladimir-Suzdal dialects
 		primary = MOS
+		province = { local_has_banners = yes}
 		male_names = {
 			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
 			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
@@ -2298,6 +2379,7 @@ east_slavic = {
 	}
 	novgorodian = { #Novgorodian and most North Russian dialects.
 		primary = NOV
+		province = { local_has_banners = yes}
 		male_names = {
 			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
 			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
@@ -2338,6 +2420,7 @@ east_slavic = {
 	}
 	ryazanian = { #Southern Russian Dialects
 		primary = RYA
+		province = { local_has_banners = yes}
 		male_names = {
 			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
 			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
@@ -2378,6 +2461,7 @@ east_slavic = {
 	}
 	byelorussian = {
 		primary = PLT
+		province = { local_has_banners = yes}
 		male_names = {
 			Andrei Lubko Olgierd Bryachislav Vasiliy Svyatoslav Vladimir Izyaslav Vseslav Boris Aleksandr Adrian 
 			Afanasiy Daniil Dmitriy Dorofey Faddey Feodosiy Feofil Foma Fyodor Gavriil Grigoriy Igor Ivan 
@@ -2390,6 +2474,7 @@ east_slavic = {
 	}
 	ruthenian = {
 		primary = KIE
+		province = { local_has_banners = yes}
 		male_names = {
 			Ivan Dmitriy Yuriy Andrei Semen Boris Fyodor Oleg Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy 
 			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy 
@@ -2436,6 +2521,7 @@ baltic	= {
 	
 	estonian = {
 		primary = EST
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Bielke Horn Tott Fleming Paijkull Bonde Wrede Soop
 			Mannerheim Furuhjelm Aminoff Armfelt Carpelan Rehbinder Schulman
@@ -2482,6 +2568,7 @@ baltic	= {
 	}
 	lithuanian = {
 		primary = LIT
+		province = { local_has_banners = yes}
 		male_names = {
 			Zygimantas Kazimieras Aleksandras Jonas Albertas Zygimantas Augustas Vytautas Jogaila Vladislovas 
 			Algirdas Stanislovas Svitrigaila Mindaugas Albertas Andrius Antanas Aras Arturas Azuolas 
@@ -2505,6 +2592,7 @@ baltic	= {
 	}
 	latvian = {
 		primary = LTG
+		province = { local_has_banners = yes}
 		male_names = {
 			Aishno Ako Ankad Baise Balodis Bikshe Borut Bulei Butovit Cirulis Dangeruthe Darbeslave 
 			Davins Demas Dobre Dovyat Dzintis Dausprungas Imanta
@@ -2557,6 +2645,7 @@ byzantine = {
 	province = { local_has_carolean = yes }
 	greek = {
 		primary = GRE
+		province = { local_has_banners = yes}
 		male_names = {
 			Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
 			Andreas Andrew Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios 
@@ -2675,6 +2764,7 @@ byzantine = {
 	}
 	pontic_greek = {
 		primary = TRE
+		province = { local_has_banners = yes}
 		male_names = {
 			Adrianos Adrian Akakios Alexandros Alexander Alexios Alexis Anastasios Anastasius Anatolios 
 			Andreas Andrew Andronikos Andronicus Anthemios Anthimos Antiochos Antonios Antonius Apollonios 
@@ -2792,6 +2882,7 @@ byzantine = {
 	}
 	goths = {
 		primary = FEO
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			"of Gothia"
 		}
@@ -2837,6 +2928,7 @@ caucasian = {
 	province = { local_has_carolean = yes }
 	georgian = {
 		primary = GEO
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Bagrationi Mukhrani
 			# CKII
@@ -2871,6 +2963,7 @@ caucasian = {
 	}
 	circassian = {
 		primary = CIR
+		province = { local_has_banners = yes}
 		male_names = {
 			Petrezok Verzacht Belzebuk Parsabok Smbat Stepanos Stephen Tachat Taniel Daniel Tatoul Tigran Tornik 
 			Tornik Tovmas Thomas Thoros Theodore Trdat Vache Vachagan Vagharshak Vahag Vahan Vahram Vakhtank Varazdat 			
@@ -2895,6 +2988,7 @@ caucasian = {
 	}
 	dagestani = {
 		primary = GAZ
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Shamkhal Kumukh
 		}
@@ -2909,6 +3003,7 @@ caucasian = {
 	}
 	armenian = {
 		primary = ARM
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Bagratuni Rubenid Pahlavuni
 			Tumanishvili Abamelik Amatuni "Argutinsky-Dolgorukov" Bebutov "Hasan-Jalalyan" Khojaminasishvili
@@ -2951,6 +3046,7 @@ turko_semitic = { #Levantine
 	province = { local_has_carolean = yes }
 	turkish = {
 		primary = TUR
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Osmanoglu" "Karamanoglu" "Menteseoglu" "Ramazanoglu" "Saruhanoglu"
 			"Dulkadiroglu" "Candaroglu" "Germiyanoglu" "Aydinoglu" "Eretnaoglu"
@@ -2986,6 +3082,7 @@ turko_semitic = { #Levantine
 	}
 	al_misr_arabic = { #Egyptian Arab
 		primary = MAM
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Burji" "Alawiyya" "Bahri"
 			Katkhuda Abaza Qasimiyya Qitas al-Qazdughli Yakubid Hassanid
@@ -3004,6 +3101,7 @@ turko_semitic = { #Levantine
 	}
 	al_suryah_arabic = { #Syrian Arab
 		primary = SYR
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Mirdasid" "Maanid" "al-Shihab"  Yakubid Hassanid
 			Katkhuda Abaza Qasimiyya Qitas al-Qazdughli 
@@ -3023,6 +3121,7 @@ turko_semitic = { #Levantine
 	}
 	al_iraqiya_arabic = { #Mashriqi Arab
 		primary = IRQ
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Saadun" "Jalili" "Hasanid" "Sabah" Javid
 			"Yaruba" "al-Said" "Usfurid" "Jarwanid" "Hashim"
@@ -3040,6 +3139,7 @@ turko_semitic = { #Levantine
 	}
 	gulf_arabic = {
 		primary = ALH
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Saud" "Rasulid" "Tahiride" "Jabrid" "al-Qasimi"
 			"Nabhani" "Yaruba" "al-Said" "Usfurid" "Jarwanid" "Hashim"
@@ -3065,6 +3165,7 @@ turko_semitic = { #Levantine
 	}
 	bedouin_arabic = { #Bedouin Arab
 		primary = NAJ
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Saud" "Rasulid" "Tahiride" "Jabrid" "al-Qasimi"
 			"Nabhani" "Yaruba" "al-Said" "Usfurid" "Jarwanid" "Hashim"
@@ -3090,6 +3191,7 @@ turko_semitic = { #Levantine
 	}
 	mahri_culture = { #South Arabs
 		primary = MHR
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Banu Afrar" "Al-Mahra" Qahtan Jibbali "Al-Hakli" "Al-Shahri" "Al-Barami" "Al-Mashaiki" "Al-Bat'hari"
 		}
@@ -3114,6 +3216,7 @@ turko_semitic = { #Levantine
 	}
 	hejazi_culture = {
 		primary = HED
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Khayratid "Al Abu Risha" Hawashim Husaynid Makramid Suleymanid "al-Mughaydi" Hasanid "Banu Mughayd" "Rufayda"
 		}
@@ -3138,6 +3241,7 @@ turko_semitic = { #Levantine
 	}
 	omani_culture = {
 		primary = OMA
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Tahiride" "Jabrid" "al-Qasimi"
 			"Nabhani" "Yaruba" "Usfurid" "Jarwanid" "Hashim"
@@ -3163,6 +3267,7 @@ turko_semitic = { #Levantine
 	}
 	yemeni_culture = {
 		primary = ADE
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Rasulid" "Tahiride" "Jabrid" "al-Qasimi"
 			"Nabhani" "Yaruba" "Usfurid" "Jarwanid"
@@ -3216,6 +3321,7 @@ maghrebi = {
 	province = { local_has_carolean = yes }
 	moroccan = {
 		primary = MOR
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Marinid" "Saadi" "al-Shabani" "Alaouite" Wattassid "al-Dila'i" "al-Tadsi" "al-Ilighi" 
 		}
@@ -3239,6 +3345,7 @@ maghrebi = {
 	}
 	tunisian = {
 		primary = TUN
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Hafsid" "Karamanli" "Muradid" "Husainid" "Banu Muhammad"
 		}
@@ -3260,6 +3367,7 @@ maghrebi = {
 	}
 	algerian = {
 		primary = ALG
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Beni Djellab" "Ouled Nail" "Ouled Sidi Cheikh" "Banu Rashid" "Banu Kinanah" Shammar "Ait Djennad"
 			"Ait Iraten" "Ait Idjer"
@@ -3282,6 +3390,7 @@ maghrebi = {
 	}
 	berber = {
 		primary = TLC
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"al-Ilighi" "al-Tadsi" "Zayyanid" Maatka Wattasid Atfayyish "Beni Isguen" "al-Afdali" "Mzabi"
 			Tabghurin "al-Malshuti"
@@ -3313,6 +3422,7 @@ iranian	= {
 	province = { local_has_carolean = yes }
 	persian = {
 		primary = PER
+		province = { local_has_banners = yes}
 		male_names = { 
 			Abbas Abolhassan Afshar Afshar Ahmad Ahmad Akbar Akbar Allahyar Amin Anushirvan Anushirvan 
 			Aram Ardahan Ardahan Ardavan Ardavan Ardeshir Ardeshir Assad Aurang Ayeshah Babak Babak Bahman 
@@ -3345,6 +3455,7 @@ iranian	= {
 	}
 	luri = {
 		primary = LRI
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Khorshidi Bakhtiari Jangardi "Banu Hussayn" Charlang Haftlang
 			Dorikan Babadi Baharvand Dinarini Meyvand
@@ -3398,6 +3509,7 @@ iranian	= {
 	}
 	azerbaijani = {
 		primary = ARL
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Qara Qoyunlu" "Aq Qoyunlu" "Safavid" "Shirvanshah" Javanshir Chupanid Ziyadoghlu Chalabi
 			Talysh "Haji Chalabi"
@@ -3413,6 +3525,7 @@ iranian	= {
 	}
 	khorasani = {
 		primary = KHO
+		province = { local_has_banners = yes}
 		male_names = {
 			Ab� Sa'�d B�bur Bad� al-Zam�n Husayn B�yqar� Abu al-Qasim Mahm�d Sh�h Rukh Ulugh Beg 'Abbas 'Abd 
 			'Abd al-Rahman 'Al� 'Abdall�h Anwar Bakr Fahd Faruq Fouad Hakim Harun Hisham Husayn Isma'il Jafar 
@@ -3490,6 +3603,7 @@ iranian	= {
 	}
 	afghani= {
 		primary = AFG
+		province = { local_has_banners = yes}
 		male_names = {
 			Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman 
 			Behrad Behram Bahram Behrouz Bext�yar Bakhtiar Bozorg Cehandar Jahandar Cehangir Jahangir
@@ -3546,6 +3660,7 @@ iranian	= {
 	}
 	kurdish = {
 		primary = ARD
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Hazaraspid "Soran" "Justanid" Bozorg Ardalan Bukhti Ferozkohi Feyli Gewirk Rekani
 			Hadhabani  "Ali Sherwan" Herki Jalilavand
@@ -3599,6 +3714,7 @@ iranian	= {
 	}
 	mazandarani = {
 		primary = TAB
+		province = { local_has_banners = yes}
 		male_names = {
 			Bisutun "Adud ud-Dawlah" Kayumarth "Bakir Almaluf" "Kai-Ka'us" Jahangir Aziz "Sa'ad ud-Dawlah" Bahman
 		}
@@ -3622,6 +3738,7 @@ altaic = {
 	province = { local_has_carolean = yes }
 	mongol = {
 		primary = KHA
+		province = { local_has_banners = yes}
 		male_names = {
 			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligt� Dayan 
 			Delbeg Ejei Elbeg Engke G�y�k G�n Gulichi Irinchibal Jorightu Kublai K�ke Ligdan Mark�rgis M�ngke 
@@ -3643,6 +3760,7 @@ altaic = {
 	}
 	chahar = { # now korchin
 		primary = KRC
+		province = { local_has_banners = yes}
 		male_names = {
 			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligt� Dayan 
 			Delbeg Ejei Elbeg Engke G�y�k G�n Gulichi Irinchibal Jorightu Kublai K�ke Ligdan Mark�rgis M�ngke 
@@ -3656,6 +3774,7 @@ altaic = {
 	}
 	khalkha = {
 		primary = KLK
+		province = { local_has_banners = yes}
 		male_names = {
 			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligt� Dayan 
 			Delbeg Ejei Elbeg Engke G�y�k G�n Gulichi Irinchibal Jorightu Kublai K�ke Ligdan Mark�rgis M�ngke 
@@ -3669,6 +3788,7 @@ altaic = {
 	}
 	oirats = {
 		primary = ZUN
+		province = { local_has_banners = yes}
 		male_names = {
 			Batula Toghan Galdan Amursana Erdeni Choghtu Dawa Esen G�shi Lha-bzang Khara Khula Kho Sengge Tseten 
 			Tsewang Kundelung Lobzang Sutai Tsobasa Ubasi Quduqa Toghto Altai B�ki Bayan Dayan Hami Molon Oori 
@@ -3680,6 +3800,7 @@ altaic = {
 	}
 	uzbehk = {
 		primary = SHY
+		province = { local_has_banners = yes}
 		male_names = {
 			Abdul-Aziz Abdul-Karim Abdul-Mumin Abdul-Rahim Abdulla Abu Said Abu'l-Feiz Abu'l-Ghazi Abu'l-Khayr 
 			Abu'l-Mansur Agatay Alim Anusha Arab Muhammad Avanesh Bahadur Bakht Baqi Muhammad Budjuga Bureke 
@@ -3695,6 +3816,7 @@ altaic = {
 	}
 	turkmeni = {
 		primary = KHI
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Arabshahid" "Qungrat" "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
 			"Bora Tolui" Qadancher Batulun Batutai Bokejin Arighqan Burilgiteni
@@ -3715,6 +3837,7 @@ altaic = {
 	}
 	uyghur = {
 		primary = KAS
+		province = { local_has_banners = yes}
 		male_names = {
 			Abdul-Karim Abdul-Latif Abdul-Rash�d Abdullah Ahmad Alghu Ali Baraq Bayan Quli Buqa Tem�r Buzan 
 			Changshi Danishmendji Dost Muhammad Dughlat Duwa Duwa Tem�r Eljigidey Esen Buqa Ilbars Ilyas Ismail 
@@ -3731,6 +3854,7 @@ altaic = {
 	}
 	khazak = {
 		primary = KZH
+		province = { local_has_banners = yes}
 		male_names = {
 			Abilghazi Abilmambet Abulay Abulkhayr Ahmat Ayshwak Arunghazi Barak Batir Bokey Bulat Burunduq 
 			Erali Esim Ghubaydulla Haqnazar Jangir Janibek Jantore Jarmuhambet Jolbaris Kenesari Kerey Mamash 
@@ -3761,6 +3885,7 @@ altaic = {
 	}
 	kirgiz = {
 		primary = CHG
+		province = { local_has_banners = yes}
 		male_names = {
 			Abdul-Karim Abdul-Latif Abdul-Rash�d Abdullah Ahmad Alghu Ali Baraq Bayan Quli Buqa Tem�r Buzan 
 			Changshi Danishmendji Dost Muhammad Dughlat Duwa Duwa Tem�r Eljigidey Esen Buqa Ilbars Ilyas Ismail 
@@ -3854,6 +3979,7 @@ central_american = {
 
 	aztek = {
 		primary = AZT
+		province = { local_has_banners = yes}
 		male_names = {
 			Moctezuma Auitzotl Axayacatl Cuauhtemoc Cuitlahuac Huitzilihuitl Itzcoatl Ohimalpopoca Tizoc 
 			Motelchiuh Tehuetstiquitzin Tlacotzin Xochiquentzin Acamapichtli Chimalpopoca Tenoch Acacitli 
@@ -3867,6 +3993,7 @@ central_american = {
 	}
 	totonac = {
 		primary = TOT
+		province = { local_has_banners = yes}
 		male_names = {
 			Moctezuma Auitzotl Axayacatl Cuauhtemoc Cuitlahuac Huitzilihuitl Itzcoatl Ohimalpopoca Tizoc 
 			Motelchiuh Tehuetstiquitzin Tlacotzin Xochiquentzin Acamapichtli Chimalpopoca Tenoch Acacitli 
@@ -5675,6 +5802,7 @@ east_asian = {	# Chinese Group
 	province = { local_has_carolean = yes }
 	vietnamese_new = {
 		#primary = DAI
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"L�" "Tran" "Mac" "Nguyen" "Trinh" "Vu" "Nguyen Phuc" "Nguyen Quang"
 		}
@@ -5691,6 +5819,7 @@ east_asian = {	# Chinese Group
 	
 	korean_new = {
 		#primary = KOR
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Yi Wang Kim Pak Shin Song Chae Gang Jeong Jang Yun Han Hong Yu Ki Choi Ga Gye Go Na Noh Woo Do Du Ban Ma Min Mun
 			Seo Son Sim An Yang O Jeon Cho Jin Ha Hong Heo Kwak Lim Won Kwon Hwang Bae Seok Bang Dae Gyeong Nam Sung Baek
@@ -5721,6 +5850,7 @@ east_asian = {	# Chinese Group
 	}
 	tibetan_new = {
 		#primary = UTS
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Se Rmu Ldong Stong Dbra Dru Nyang Sbas Gnon Chespong Thonmi Mgar Bri Mong Zhang Mchims Bal Lang Cogro Bro Dbas 
 			Shudpu Gnyags Mgus Mjang Snang Sgro Rma Snyiba Khu Khun Mkar Rlangs Rinspungs Zhingshag Phjongsrgjas Nganlam Sba Lig 
@@ -5783,6 +5913,7 @@ east_asian = {	# Chinese Group
 	}
 	chihan = {	#Zhili
 		primary = YAN
+		province = { local_has_banners = yes}
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -5810,6 +5941,7 @@ east_asian = {	# Chinese Group
 	}
 	cantonese = {
 		primary = YUE
+		province = { local_has_banners = yes}
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -5837,6 +5969,7 @@ east_asian = {	# Chinese Group
 	}
 	jin = {
 		primary = JIN
+		province = { local_has_banners = yes}
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -5864,6 +5997,7 @@ east_asian = {	# Chinese Group
 	}
 	wu = {
 		primary = WUU
+		province = { local_has_banners = yes}
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -5891,6 +6025,7 @@ east_asian = {	# Chinese Group
 	}
 	chimin = {
 		primary = MIN
+		province = { local_has_banners = yes}
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -5918,6 +6053,7 @@ east_asian = {	# Chinese Group
 	}
 	hakka = {
 		primary = HUA
+		province = { local_has_banners = yes}
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -5945,6 +6081,7 @@ east_asian = {	# Chinese Group
 	}
 	gan = {
 		primary = NNG
+		province = { local_has_banners = yes}
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -5972,6 +6109,7 @@ east_asian = {	# Chinese Group
 	}
 	xiang = {
 		primary = CHC
+		province = { local_has_banners = yes}
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -5999,6 +6137,7 @@ east_asian = {	# Chinese Group
 	}
 	sichuanese = {
 		primary = SHU
+		province = { local_has_banners = yes}
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6026,6 +6165,7 @@ east_asian = {	# Chinese Group
 	}
 	jianghuai = {
 		primary = MNG
+		province = { local_has_banners = yes}
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6053,6 +6193,7 @@ east_asian = {	# Chinese Group
 	}
 	xibei = {
 		primary = CSH
+		province = { local_has_banners = yes}
 		male_names = {
 			Qizhen Qiyu Jianjun Youcheng Houzhao Houcong Zaihou Yijun Changluo Youjian Yousong Yujian Youlang Chenggong 
 			Kehshuan Biao Shuang Gang Su Zhen Fu Zi Qi Tan Chun Bai Gui Zhi Quan Pian Hui Song Mo Ying Jing Dang Nan 
@@ -6074,6 +6215,7 @@ east_asian = {	# Chinese Group
 	}
 	hubei = {
 		primary = CXI
+		province = { local_has_banners = yes}
 		male_names = {
 			Qizhen Qiyu Jianjun Youcheng Houzhao Houcong Zaihou Yijun Changluo Youjian Yousong Yujian Youlang Chenggong 
 			Kehshuan Biao Shuang Gang Su Zhen Fu Zi Qi Tan Chun Bai Gui Zhi Quan Pian Hui Song Mo Ying Jing Dang Nan 
@@ -6095,6 +6237,7 @@ east_asian = {	# Chinese Group
 	}
 	zhongyuan = {
 		primary = LNG
+		province = { local_has_banners = yes}
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6122,6 +6265,7 @@ east_asian = {	# Chinese Group
 	}
 	shandong_culture = {
 		primary = QIC
+		province = { local_has_banners = yes}
 		male_names = {
 			Zhanji Zhanjun Zhanyong Zhanyin Zhanshan Zhangang Zhan'ao Zhankai Zhanyan Jianrui Jianlin Jianti Jianchun 
 			Jianze Jianjun Jianzhi Jianpei Jianji Youji Youtang Youwan Youlun Youbing Youyun Youheng You'kai Houzhao 
@@ -6162,6 +6306,7 @@ korean_g = {
 	province = { local_has_carolean = yes }
 	korean = {
 		primary = KOR
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Yi Wang Kim Pak Shin Song Chae Gang Jeong Jang Yun Han Hong Yu Ki Choi Ga Gye Go Na Noh Woo Do Du Ban Ma Min Mun
 			Seo Son Sim An Yang O Jeon Cho Jin Ha Hong Heo Kwak Lim Won Kwon Hwang Bae Seok Bang Dae Gyeong Nam Sung Baek
@@ -6198,6 +6343,7 @@ japanese_g = {
 	province = { local_has_carolean = yes }
 	togoku = { #Togoku / Eastern Japanese
 		primary = JAP
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
 			Kuni Nashimoto Takeda Yamashina
@@ -6224,6 +6370,7 @@ japanese_g = {
 	}
 	japanese = { #Saigoku / Western Japanese
 		primary = MRI
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
 			Kuni Nashimoto Takeda Yamashina
@@ -6250,6 +6397,7 @@ japanese_g = {
 	}
 	kyushuan = { #Kyushu culture
 		primary = OTM
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Yamato Arisugawa Asaka Fushimi "Kan'in" Katsura Kaya Kitashirakawa 
 			Kuni Nashimoto Takeda Yamashina
@@ -6281,6 +6429,7 @@ tibetan_group = {
 	graphical_culture = asiangfx
 	tibetan = {
 		primary = UTS
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Se Rmu Ldong Stong Dbra Dru Nyang Sbas Gnon Chespong Thonmi Mgar Bri Mong Zhang Mchims Bal Lang Cogro Bro Dbas 
 			Shudpu Gnyags Mgus Mjang Snang Sgro Rma Snyiba Khu Khun Mkar Rlangs Rinspungs Zhingshag Phjongsrgjas Nganlam Sba Lig 
@@ -6299,6 +6448,7 @@ tibetan_group = {
 	}
 	yi = {
 		primary = CYI
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"An" "She" "Liu" "Longzan" "Feng" "Pu"
 		}
@@ -6314,6 +6464,7 @@ tibetan_group = {
 	}
 	bai = {
 		primary = CDL
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Duan" "Gao" "Meng"
 		}
@@ -6329,6 +6480,7 @@ tibetan_group = {
 	}
 	miao = {
 		primary = CMI
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			"Fang" "Hang" "Hue" "Khang" "Kong" "Soung" "Kue" "Lo" "Lor" "Li" "Moua" "Pha" "Tang" "Thao" "Chang" "Cheng" 
 			"Chu" "Vang" "Vue" "Xiong" "Yang"
@@ -6351,6 +6503,7 @@ malay = {
 	second_graphical_culture = asiangfx
 	malayan = {
 		primary = MLC
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Melaka Johor Perak Kedah Pattani Pahang Kelantan Selangor Terengganu
 		}
@@ -6367,6 +6520,7 @@ malay = {
 	}
 	sumatran = {
 		primary = PLB
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Siak Aceh Pasai Pagarruyung Palembang Jambi
 		}
@@ -6383,6 +6537,7 @@ malay = {
 	}
 	acehnese = {
 		primary = ATJ
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Siak Aceh Pasai Pagarruyung Palembang Jambi
 		}
@@ -6399,6 +6554,7 @@ malay = {
 	}
 	javanese = {
 		primary = MAJ
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Banten Demak Surabaya Cirebon Samprangan
 		}
@@ -6417,6 +6573,7 @@ malay = {
 	}
 	sundanese = {
 		primary = MAJ
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Banten Demak Surabaya Cirebon Samprangan
 		}
@@ -6435,6 +6592,7 @@ malay = {
 	}
 	filipino = {
 		primary = SUL
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Sulu Maguindanao Tondo Lanao Butuan Palawan Panay
 		}
@@ -6452,6 +6610,7 @@ malay = {
 	}
 	bornean = {
 		primary = BEI
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Burnei Kutai Sibu Kuching
 		}
@@ -6466,6 +6625,7 @@ malay = {
 		}
 	} 
 	madagascan = {
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Palopo Makassar Manado Poso Palu
 		}
@@ -6484,6 +6644,7 @@ malay = {
 	}
 	sulawesi = {
 		primary = MKS
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Palopo Makassar Manado Poso Palu
 		}
@@ -6503,6 +6664,7 @@ malay = {
 	}
 	moluccan = {
 		primary = TER
+		province = { local_has_banners = yes}
 		male_names = {
 			"Komala Pulu" "Marhum" "Zainal Abidin" "Bayanullah" "Hidayatullah" "Abu Hayat" "Tabariji" "Khairun Jamil" 
 			"Babullah Datu Shah" "Said Barakat Shah" "Muzaffar Shah" "Hamzah" "Manilha" "Mandar Shah" "Sibori" "Said Fathullah"
@@ -6515,6 +6677,7 @@ malay = {
 	}
 	nusa_tenggara = {
 		primary = BLI
+		province = { local_has_banners = yes}
 		dynasty_names = {
 			Banten Demak Surabaya Cirebon Samprangan
 		}
@@ -6533,6 +6696,7 @@ malay = {
 	}
 	cham = {
 		primary = CHA
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Vijaya Kauthara Panduranga Indrapura
 		}
@@ -6557,6 +6721,7 @@ thai_group = {
 
 	central_thai = {
 		primary = AYU
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Ayutthaya Sukhothai Thonburi Phitsanulok "Phra Bang" Ratchaburi Phetchaburi "U Thong" "Nakhon Pathom" 
 			Phimai "Sri Thep" "Nakhon Sawan" Lavapura "Chiang Mai" "Chiang Rai" "Chet Ton" Lampang Lamphun
@@ -6576,6 +6741,7 @@ thai_group = {
 	}
 	northern_thai = {
 		primary = LNA
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			"Chiang Mai" "Chiang Rai" "Chet Ton" Lampang Lamphun
 		}
@@ -6590,6 +6756,7 @@ thai_group = {
 	}
 	lao = {
 		primary = LUA
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			"Luang Prabang" "Champassak" Vientiane Phuan Nan
 		}
@@ -6608,6 +6775,7 @@ thai_group = {
 	}
 	shan = {
 		primary = SST
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Bamaw Kale Ava Kengtung Yawnghwe "Mong Pawn" "Mong Mit" "Mong Kawng" Hsipaw Hsenwi "Mong Pai"
 		}
@@ -6624,6 +6792,7 @@ thai_group = {
 	}
 	zhuang = {
 		primary = CGS
+		province = { local_has_banners = yes}
 		dynasty_names = { 
 			Bamaw Kale Ava Kengtung Yawnghwe "Mong Pawn" "Mong Mit" "Mong Kawng" Hsipaw Hsenwi "Mong Pai"
 		}

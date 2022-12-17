@@ -48,6 +48,50 @@ country_decisions = {
 		}
 	}
 	
+	establish_mobilization = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			NOT = { has_country_modifier = establish_mobilization }
+		}
+		allow = {
+			adm_tech = 18
+			army_professionalism = 0.50
+		}
+		effect = {
+			custom_tooltip = establishing_mobilization
+			add_mil_power = -300
+			add_adm_power = -150
+			add_country_modifier = {
+				name = "establish_mobilization"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mobilize = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			NOT = { has_country_modifier = mobilization }
+		}
+		allow = {
+			has_country_modifier = enabled_mobilization
+			mil_tech = 18
+		}
+		effect = {
+			custom_tooltip = mobilizing
+			add_mil_power = -100
+			add_country_modifier = {
+				name = "mobilization"
+				duration = 120
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	state_firearm_regiments = {
 		potential = {
 			has_dlc = "Cradle of Civilization"

@@ -1,0 +1,164 @@
+# cost = x #==> cost in $ to build (subject to other modifiers)
+# time = x #==> number of months to build.
+# previous = x # a building that is the prerequisite of this building
+# modifier = m # a modifier on the province that the building gives
+# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# one_per_country = yes/no # if yes, only one of these can exist in a country
+# manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
+# onmap = yes/no # show as a sprite on the map
+
+# FROM = owner
+# ROOT = province
+
+
+
+#military investments
+artillery_foundry = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 15
+		OR = {
+		trade_goods = copper
+		trade_goods = iron
+		trade_goods = coal
+		trade_goods = naval_supplies
+		}
+	}
+	modifier = {
+		artillery_cost= -0.05
+		artillery_power= 0.01
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+army_provisions = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 15
+		OR = {
+		trade_goods = livestock
+		trade_goods = grain
+		trade_goods = fish
+		trade_goods = salt
+
+		}
+	}
+	modifier = {
+		global_supply_limit_modifier = 0.05
+		local_production_efficiency = 0.2
+		global_regiment_cost = -0.01
+		land_attrition = -0.025
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+gunpowder_mill = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 15
+		OR = {
+		}
+	}
+	modifier = {
+		fire_damage = 0.025
+		trade_goods_size  = 0.1
+		global_regiment_cost = -0.01
+		yearly_army_professionalism = 0.0035
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+
+#more civilian based invsmtents
+basic_bitch_road = {
+	cost = 50
+	time = 6
+	
+	modifier = {
+		local_friendly_movement_speed = 0.1
+		local_development_cost = -0.025
+		province_trade_power_value = 0.5
+		allowed_num_of_buildings = 1
+		
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+glass_works = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 10
+		OR = {
+		trade_goods = glass
+		trade_goods = coal
+		trade_goods = dyes
+		}
+	}
+	modifier = {
+		trade_goods_size_modifier = 0.05
+		trade_value_modifier = 0.1
+		local_development_cost = -0.05
+		innovativeness_gain = 0.05
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+
+distillery = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 5
+		OR = {
+		trade_goods = sugar
+		trade_goods = grain
+		trade_goods = wine
+		trade_goods = tea
+		}
+	}
+	modifier = {
+		trade_goods_size_modifier = 0.05
+		trade_value_modifier = 0.15
+		local_development_cost = -0.05
+		prestige = 0.1
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+coin_mint = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 10
+		OR = {
+		trade_goods = gold
+		trade_goods = copper
+		}
+	}
+	modifier = {
+		local_gold_depletion_chance_modifier = -0.8
+		trade_goods_size_modifier = -0.1
+		inflation_reduction = 0.025
+		production_efficiency = 0.025
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
