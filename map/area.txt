@@ -393,7 +393,7 @@ aragon_area = { #4
 }
 
 catalonia_area = { #5
-	197 212 213 2987 2988
+	197 212 213 2987 2988 4962
 }
 
 valencia_area = { #5
@@ -476,11 +476,15 @@ piedmont_area = { #4
 }
 
 tuscany_area = { #5
-	115 116 117 2978 2980 4957
+	116 2978 2980 4946
+}
+
+lower_tuscany_area = {
+	117 115 4957
 }
 
 liguria_area = { #3
-	101 102 2992 4946
+	101 102 2992 4961
 }
 
 corsica_sardinia_area = { #4

@@ -13,6 +13,12 @@ SWE = {
     color3= { 0 40 104  }
 }
 
+#Andorra
+ADR = {
+	color1= { 236 213 13 }
+	color2= { 255 0 0 }
+	color3= { 195 155 192 }
+}
 #Massa
 MSS = {
     color1= { 212 182 202 }
@@ -20,6 +26,12 @@ MSS = {
     color3= { 0 40 104  }
 }
 
+#Finale
+MOF = {
+	color1= { 233  18  47 }
+	color2= { 220 227 20 }
+	color3= { 0 0 0 }
+}
 #Piombino
 MSS = {
     color1= { 224 162 19  }

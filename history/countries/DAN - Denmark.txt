@@ -6,6 +6,14 @@ technology_group = western
 historical_friend = NOR
 capital = 4942 #Copenhagen
 
+1444.11.11 = {
+add_country_modifier = {
+			name = early_colonization
+			duration = 29251
+			hidden = no
+		}
+}
+		
 change_estate_land_share = {
 	estate = estate_nobles
 	share = 8

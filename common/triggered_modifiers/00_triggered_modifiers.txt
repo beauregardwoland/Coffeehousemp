@@ -960,9 +960,3 @@ judaism_yom_kippur_aspect_defensive_war_modifier = {
 	manpower_recovery_speed = 0.20
 	church_power_modifier = 0.25
 }
-
-##Italy Missions
-
-ita_prestige = {
-	prestige = 0.5
-}

@@ -12694,3 +12694,8 @@ ita_greek_culture = {
 marine_corps = {
 	allowed_marine_fraction = 0.15
 }
+
+early_colonization = {
+	global_colonial_growth = -20
+	colonist_placement_chance = -0.15
+}

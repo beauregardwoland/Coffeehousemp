@@ -69,6 +69,7 @@ italy_region = {
 		lombardy_area
 		piedmont_area
 		tuscany_area
+		lower_tuscany_area
 		liguria_area
 		corsica_sardinia_area
 		sicily_area

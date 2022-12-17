@@ -1116,6 +1116,7 @@ MFA_ideas = {
 	
 	trigger = {
 		tag = MFA
+		tag = MOF
 	}
 	free = yes		#will be added at load.
 	
