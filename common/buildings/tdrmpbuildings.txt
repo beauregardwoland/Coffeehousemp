@@ -50,7 +50,7 @@ army_provisions = {
 	modifier = {
 		global_supply_limit_modifier = 0.05
 		local_production_efficiency = 0.2
-		global_regiment_cost = -0.01
+		global_regiment_cost = -0.0075
 		land_attrition = -0.025
 	}
 	
@@ -67,10 +67,10 @@ gunpowder_mill = {
 		}
 	}
 	modifier = {
-		fire_damage = 0.025
-		trade_goods_size  = 0.1
-		global_regiment_cost = -0.01
-		yearly_army_professionalism = 0.0035
+		fire_damage = 0.015
+		trade_goods_size  = 0.15
+		global_regiment_cost = -0.003
+		yearly_army_professionalism = 0.0015
 	}
 	
 	ai_will_do = {
