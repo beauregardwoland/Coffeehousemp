@@ -162,3 +162,26 @@ coin_mint = {
 		factor = 50
 	}
 }
+luxury_goods = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 20
+		OR = {
+		trade_goods = cloth
+		trade_goods = gems
+		trade_goods = silk
+		}
+	}
+	modifier = {
+		trade_goods_size = 0.25
+		trade_goods_size_modifier = 0.5
+		all_estate_loyalty_equilibrium = 0.05
+		global_unrest = -0.5
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+
