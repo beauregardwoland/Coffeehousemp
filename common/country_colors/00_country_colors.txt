@@ -13,11 +13,24 @@ SWE = {
     color3= { 0 40 104  }
 }
 
+#Val d' Aran
+VDA = {
+	color1= { 118  23  67 }
+	color2= { 255 255 255 }
+	color3= { 118  23  24 }
+}
 #Andorra
 ADR = {
 	color1= { 236 213 13 }
 	color2= { 255 0 0 }
 	color3= { 195 155 192 }
+}
+
+#Pallars
+PLR = {
+	color1= { 212 117 22 }
+	color2= { 178 142 107 }
+	color3= { 0 0 0 }
 }
 #Massa
 MSS = {

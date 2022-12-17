@@ -210,6 +210,8 @@ VAL = "countries/Valencia.txt"
 ASU = "countries/Asturias.txt"
 MJO = "countries/Majorca.txt"
 ADR = "countries/Andorra.txt"
+PLR = "countries/Pallars.txt"
+VDA = "countries/ValdAran.txt"
 
 #Italy
 AQU	= "countries/Aquileia.txt"

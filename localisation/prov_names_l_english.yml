@@ -3653,6 +3653,8 @@
  PROV4960:0 "Crooked Island"
  PROV4961:0 "Finale"
  PROV4962:0 "Andorra"
+ PROV4963:0 "Pallars"
+ PROV4964:0 "Val d' Aran"
  test_province_name:0 "Test Province Name"
  other_province_name:0 "Other Province Name"
  rand_prov_straits_of:0 "Straits of $prov$"

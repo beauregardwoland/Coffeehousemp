@@ -393,7 +393,11 @@ aragon_area = { #4
 }
 
 catalonia_area = { #5
-	197 212 213 2987 2988 4962
+	197 212 213 2987 2988
+}
+
+pyrenees_mtn_area = {
+	4962 4963 4964
 }
 
 valencia_area = { #5

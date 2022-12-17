@@ -10,7 +10,7 @@ add_army_professionalism = 0.05
 
 1444.11.11 = {
 	monarch = {
-		name = "Arnau Roger de Pallars"
+		name = "Arnau Roger de"
 		dynasty = "Pallars"
 		adm = 1
 		dip = 3

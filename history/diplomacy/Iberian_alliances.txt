@@ -50,6 +50,13 @@ union = {
 	end_date = 1458.6.27
 }
 
+# Aragon and Val d' Aran
+vassal = {
+	first = ARA
+	second = VDA
+	start_date = 1442.3.3
+	end_date = 1458.6.27
+}
 # Aragon and Austria (League of Venice)
 alliance = {
 	first = ARA
