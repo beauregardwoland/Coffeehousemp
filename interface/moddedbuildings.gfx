@@ -1,0 +1,37 @@
+spriteTypes ={
+spriteType = {
+    name = "GFX_basic_bitch_road"
+    texturefile = "gfx//interface//buildings//basicbitchroad.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_artillery_foundry"
+    texturefile = "gfx//interface//buildings//artilleryfoundry.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_glass_works"
+    texturefile = "gfx//interface//buildings//glassworks.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_distillery"
+    texturefile = "gfx//interface//buildings//distillery.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_coin_mint"
+    texturefile = "gfx//interface//buildings//coinmint.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_army_provisions"
+    texturefile = "gfx//interface//buildings//armyprovisions.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_gunpowder_mill"
+    texturefile = "gfx//interface//buildings//gunpowdermill.tga"
+    loadType = "INGAME"
+}
+}

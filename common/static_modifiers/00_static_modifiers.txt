@@ -271,7 +271,7 @@ development = {
 	naval_forcelimit = 0.1			# special case, affected by autonomy & set to 0 by code if not port
 	local_sailors = 60			# special case, affected by autonomy & set to 0 by code if not port
 	province_trade_power_value = 0.2
-	local_amount_of_banners = 0.066
+	local_amount_of_banners = 0.125
 	local_amount_of_cawa = 0.125
 	local_amount_of_carolean = 0.1
 	local_amount_of_hussars = 0.01
@@ -1024,9 +1024,9 @@ recovery_motivation = {
 
 militarized_society = {
 
-	discipline = 0.10
-	manpower_recovery_speed = 0.20
-	land_maintenance_modifier = -0.20
+	discipline = 0.05
+	manpower_recovery_speed = 0.30
+	land_maintenance_modifier = -0.35
 
 }
 
@@ -1138,7 +1138,7 @@ curia_controller = {
 }
 
 bought_indulgence = {
-	papal_influence = 1
+	papal_influence = 3
 }
 
 religious_unity = {
@@ -1222,7 +1222,7 @@ liberty_desire = {
 is_great_power = {						#Only works with Rights of Man DLC enabled
 	prestige_decay = -0.01
 	embracement_cost = -0.1
-	max_absolutism = 5
+	max_absolutism = 10
 }
 
 in_golden_era = {
@@ -1235,21 +1235,26 @@ in_golden_era = {
 }
 
 absolutism = {
-	administrative_efficiency = 0.3
-	discipline = 0.05
+	administrative_efficiency = 0.4
+	discipline = 0.10
 	core_decay_on_your_own = -0.5
+	global_manpower_modifier = 0.15
+	advisor_cost = -0.10
+	trade_goods_size_modifier = 0.05
 }
 
 low_army_professionalism = {
 	mercenary_cost = -0.15
 	mercenary_manpower = 0.15
+	land_maintenance_modifier = -0.10
 }
 
 high_army_professionalism = {
-	fire_damage = 0.1
-	shock_damage = 0.1
-	siege_ability = 0.2
-	drill_decay_modifier = -0.5
+	fire_damage = 0.25
+	shock_damage = 0.25
+	siege_ability = 0.35
+	drill_decay_modifier = -0.65
+	land_maintenance_modifier = 0.20
 }
 
 streltsy_modifier = {
@@ -1444,7 +1449,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.01
+	yearly_army_professionalism = 0.03
 }
 
 ##################################################################################################
@@ -1809,8 +1814,8 @@ marine_regiment = {
 
 banner_regiment = {
 	discipline = -0.10
-	land_maintenance_modifier = -0.5
-	reinforce_speed = -0.5
+	land_maintenance_modifier = -0.6
+	reinforce_speed = 0.5
 	regiment_manpower_usage = -0.75
 }
 
@@ -1888,7 +1893,7 @@ at_peace_revolutionary = { # Applied if at peace while reactionaries are borderi
 }
 
 expanded_infrastructure = {
-	allowed_num_of_buildings = 1
+	allowed_num_of_buildings = 2
 	allowed_num_of_manufactories = 1
 	regiment_recruit_speed = -0.15
 	ship_recruit_speed = -0.15
@@ -1905,7 +1910,7 @@ expanded_infrastructure = {
 	local_build_time = -0.05
 	province_trade_power_modifier = 0.05
 	trade_goods_size_modifier = 0.05
-	local_governing_cost_increase = 15
+	local_governing_cost_increase = 10
 	local_governing_cost = 0.1
 	local_great_project_upgrade_cost = -0.05
 }
