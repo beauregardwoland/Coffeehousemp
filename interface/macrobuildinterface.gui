@@ -1351,12 +1351,12 @@ guiTypes = {
 		}
 		checkboxType = {
 			name = "build_theatre_district"
-			position = { x = 271 y = 517 }
+			position = { x = 323 y = 517 }
 			quadTextureSprite = "GFX_theatre_district"
 		}		
 		instantTextBoxType={
 			name = "theatre_district_cost"
-			position = {x = 271 y = 567 }
+			position = {x = 323 y = 567 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
