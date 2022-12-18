@@ -62,14 +62,13 @@ gunpowder_mill = {
 	cost = 200
 	time = 18
 	build_trigger = {
-		development = 15
+		development = 20
 		OR = {
 		}
 	}
 	modifier = {
 		fire_damage = 0.015
 		trade_goods_size  = 0.15
-		global_regiment_cost = -0.003
 		yearly_army_professionalism = 0.0015
 	}
 	
@@ -104,6 +103,7 @@ glass_works = {
 		trade_goods = glass
 		trade_goods = coal
 		trade_goods = dyes
+		trade_goods = chinaware
 		}
 	}
 	modifier = {
@@ -171,13 +171,52 @@ luxury_goods = {
 		trade_goods = cloth
 		trade_goods = gems
 		trade_goods = silk
+		trade_goods = chinaware
 		}
 	}
 	modifier = {
 		trade_goods_size = 0.25
 		trade_goods_size_modifier = 0.5
 		all_estate_loyalty_equilibrium = 0.05
+		global_unrest = -0.25
+		local_development_cost = -0.025
+
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+printing_office = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 15
+		OR = {
+		trade_goods = paper
+		}
+	}
+	modifier = {
+		local_institution_spread = 0.1
+		global_institution_spread = 0.075
+		embracement_cost = -0.075
+		local_development_cost = -0.05
+	}
+	
+	ai_will_do = {
+		factor = 50
+	}
+}
+theatre_district = {
+	cost = 200
+	time = 18
+	build_trigger = {
+		development = 15
+	}
+	modifier = {
+		prestige_decay = -0.0025
 		global_unrest = -0.5
+		local_development_cost = -0.05
 	}
 	
 	ai_will_do = {

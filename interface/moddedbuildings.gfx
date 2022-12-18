@@ -34,4 +34,19 @@ spriteType = {
     texturefile = "gfx//interface//buildings//gunpowdermill.tga"
     loadType = "INGAME"
 }
+spriteType = {
+    name = "GFX_luxury_goods"
+    texturefile = "gfx//interface//buildings//luxurygoods.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_printing_office"
+    texturefile = "gfx//interface//buildings//printingoffice.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_theatre_district"
+    texturefile = "gfx//interface//buildings//theatredistrict.tga"
+    loadType = "INGAME"
+}
 }
