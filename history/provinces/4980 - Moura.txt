@@ -1,0 +1,18 @@
+# 4980 Moura
+
+owner = POR
+controller = POR
+capital = "Moura"
+is_city = yes
+culture = portugese
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 3
+trade_goods = wine
+base_manpower = 2
+add_core = POR
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

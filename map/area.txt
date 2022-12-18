@@ -392,8 +392,11 @@ north_brabant_area = { #3
 # Iberia					 		   #
 ########################################
 
+codorno_area = {
+	4977 4557 4978 2755
+}
 aragon_area = { #4
-	211 214 2990 4557
+	211 214 2990 4985
 }
 
 catalonia_area = { #5
@@ -413,16 +416,16 @@ lower_andalucia_area = { #5
 }
 
 upper_andalucia_area = { #4
-	222 223 226 4546
+	222 223 226 4546 221
 }
 
 castille_area = { #5
 	color = { 58 58 207 }
-	215 217 2755 4551 4789
+	215 217 4551 4789
 }
 
 toledo_area = { #5
-	219 221 2751 2754 4547
+	219 2751 2754 4547
 }
 
 asturias_area = { #4
@@ -438,7 +441,7 @@ baleares_area = {
 }
 
 basque_country = { #3
-	209 210 2989
+	209 210 2989 4975
 }
 
 leon_area = { #3
@@ -447,15 +450,19 @@ leon_area = { #3
 }
 
 extremadura_area = {
-	4788 218 1747
+	4788 218 1747 4976 4979
 }
 
 beieras_area = { #4
-	231 232 228 1851 4556
+	231 232 4556 4981
 }
 
 alentejo_area = { #5
-	227 229 230 4150 4787
+	229 230 4150 4980 4982
+}
+
+lisboa_area = {
+	227 4787 1851 228
 }
 
 macaronesia_area = { #3
@@ -1069,7 +1076,11 @@ macedonia_area = { #5 (Macedonia)
 }
 
 morea_area = { #4 Central Greece & Crete
-	145 146 163 1773 4701 4944
+	145 146 1773 4701 4983
+}
+
+crete_area = {
+	4944 163
 }
 
 northern_greece_area = { #3 #Northern Greece
@@ -1193,7 +1204,7 @@ erzurum_area = { #3	Erzurum and Trebizond
 }
 
 hudavendigar_area = { #3
-	316 317 2296
+	316 317 2296 4984
 }
 
 germiyan_area = { #4

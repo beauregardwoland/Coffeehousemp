@@ -190,7 +190,8 @@ iberia_region = {
 		baleares_area
 		extremadura_area
 		pyrenees_mtn_area
-	}
+		codorno_area
+		lisboa_area
 }
 
 
@@ -282,6 +283,7 @@ balkan_region = {
 		albania_area
 		silistria_area
 		slavonia_area
+		crete_area
 	}
 }
 
