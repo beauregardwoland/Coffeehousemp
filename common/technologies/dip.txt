@@ -159,6 +159,7 @@ technology = { #Carracks & Caravel
 	enable = carrack
 	enable = caravel
 	may_study_technology = yes
+	theatre_district = yes
 	
 }
 
@@ -237,7 +238,7 @@ technology = { #The Galleass
 	
 	tradecompany = yes
 	num_accepted_cultures = 1
-
+	luxury_goods = yes
 	
 	enable = galleass
 }

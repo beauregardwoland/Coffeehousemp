@@ -1321,6 +1321,48 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"	
 		}
+		checkboxType = {
+			name = "build_luxury_goods"
+			position = { x = 219 y = 517 }
+			quadTextureSprite = "GFX_luxury_goods"
+		}		
+		instantTextBoxType={
+			name = "luxury_goods_cost"
+			position = {x = 219 y = 567 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		checkboxType = {
+			name = "build_printing_office"
+			position = { x = 271 y = 517 }
+			quadTextureSprite = "GFX_printing_office"
+		}		
+		instantTextBoxType={
+			name = "printing_office_cost"
+			position = {x = 271 y = 567 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		checkboxType = {
+			name = "build_theatre_district"
+			position = { x = 271 y = 517 }
+			quadTextureSprite = "GFX_theatre_district"
+		}		
+		instantTextBoxType={
+			name = "theatre_district_cost"
+			position = {x = 271 y = 567 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
 #next group of buildings
 		iconType = {
 			name = "mil_banner"
