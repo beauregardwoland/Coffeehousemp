@@ -1257,7 +1257,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 200
 			maxHeight = 18
-			text = "civilian infrastructure"	
+			text = "Civilian Infrastructure"	
 		}
 		iconType ={
 			name ="infra_icon"
@@ -1334,7 +1334,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 200
 			maxHeight = 18
-			text = "military infrastructure"	
+			text = "Military Infrastructure"	
 		}
 		iconType ={
 			name ="mil_icon"

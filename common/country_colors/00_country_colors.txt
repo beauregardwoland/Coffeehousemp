@@ -13,6 +13,20 @@ SWE = {
     color3= { 0 40 104  }
 }
 
+#Escartons
+ESC = {
+	color1= { 111  160  119 }
+	color2= { 0 0 0 }
+	color3= { 255 255 255 }
+}
+
+#Albret
+ABR = {
+	color1= { 199  44  207 }
+	color2= { 255 255 255 }
+	color3= { 44 51 207 }
+}
+
 #Val d' Aran
 VDA = {
 	color1= { 118  23  67 }

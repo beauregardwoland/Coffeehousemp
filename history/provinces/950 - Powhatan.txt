@@ -1,7 +1,5 @@
 #950 - Chesapeake
 
-religion = totemism
-capital = "Chesapeake"
 trade_goods = unknown
 hre = no
 base_tax = 5
@@ -17,7 +15,6 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
-tribal_owner = POW
 
 1584.1.1 = { discovered_by = ENG } # Walter Raleigh
 1607.4.26 = {

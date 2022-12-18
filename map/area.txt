@@ -301,11 +301,15 @@ poitou_area = { #4
 }
 
 guyenne_area = { #4
-	194 198 4112 174
+	194 198 4112 4971
+}
+
+bordeaux_area = {
+	174 4966 4968
 }
 
 pyrenees_area = { #4
-	175 173 176 4694
+	175 173 176 4694 4967
 }
 
 languedoc_area = { #5
@@ -318,7 +322,7 @@ bourgogne_area = { #3
 }
 
 west_burgundy_area = { #3
-	191 1877 4392
+	191 1877 4392 4973
 }
 
 massif_central_area = { #3
@@ -327,7 +331,7 @@ massif_central_area = { #3
 }
 
 savoy_dauphine_area = { #3 Savoy and Dauphiné, Upper Burgundy 
-	203 204 205 4719
+	203 204 205 4719 4969
 }
 
 lorraine_area = { #4
@@ -339,20 +343,20 @@ picardy_area = { #4
 }
 
 ile_de_france_area = { #4
-	182 183 185 4388
+	182 183 185 4388 4970
 }
 
 champagne_area = { #3
-	181 186 4390
+	181 186 4390 4974
 }
 
 loire_area = { #5
 	color = { 231 143 5 }
-	177 178 4389
+	177 178 4389 4972
 }
 
 orleans_area = {
-	184 179 4776
+	184 179 4776 4965
 }
 
 ########################################
