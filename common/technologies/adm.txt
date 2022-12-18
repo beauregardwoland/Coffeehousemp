@@ -125,6 +125,7 @@ technology = { #Courthouse
 
 	courthouse = yes
 	governing_capacity = 100
+	printing_office = yes
 
 }
 
