@@ -1265,20 +1265,7 @@ guiTypes = {
 			position = { x = 15 y = 488}
 			frame = 7
 		}
-		checkboxType = {
-			name = "build_basic_bitch_road"
-			position = { x = 9 y = 517 }
-			quadTextureSprite = "GFX_road"
-		}		
-		instantTextBoxType={
-			name = "basic_bitch_road_cost"
-			position = {x = 9 y = 567 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
+		
 		checkboxType = {
 			name = "build_glass_works"
 			position = { x = 62 y = 517 }
@@ -1425,8 +1412,42 @@ guiTypes = {
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
+		} 
+#last line roads
+		iconType = {
+			name = "road_banner"
+			position = { x = 4 y = 679 }
+			spriteType = "GFX_banner_left_3"
 		}
-	}
+		instantTextBoxType={
+			name = "title_mil"
+			position = {x = 44 y = 688 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 200
+			maxHeight = 18
+			text = "Road systems"	
+		}
+		iconType ={
+			name ="road_icon"
+			spriteType = "GFX_macro_buildings_category_strip"
+			position = { x = 15 y = 682}
+			frame = 9
+		}
+		checkboxType = {
+			name = "build_basic_bitch_road"
+			position = { x = 9 y = 712 }
+			quadTextureSprite = "GFX_road"
+		}		
+		instantTextBoxType={
+			name = "basic_bitch_road_cost"
+			position = {x = 9 y = 762 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
 	# List entry for the window with a list of provinces that a specific building can be built in
 	windowType = {
 		name = "building_province_list_entry"
