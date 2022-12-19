@@ -1260,7 +1260,7 @@ guiTypes = {
 			text = "Civilian Infrastructure"	
 		}
 		iconType ={
-			name ="infra_icon"
+			name = "infra_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
 			position = { x = 15 y = 488}
 			frame = 7
@@ -1350,7 +1350,7 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"	
 		}
-#next group of buildings
+		#next group of buildings
 		iconType = {
 			name = "mil_banner"
 			position = { x = 4 y = 582 }
@@ -1366,7 +1366,7 @@ guiTypes = {
 			text = "Military Infrastructure"	
 		}
 		iconType ={
-			name ="mil_icon"
+			name = "mil_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
 			position = { x = 15 y = 585}
 			frame = 4
@@ -1413,31 +1413,32 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"	
 		} 
-#last line roads
+
+		#last line roads
 		iconType = {
-			name = "road_banner"
+			name = "roads_banner"
 			position = { x = 4 y = 679 }
 			spriteType = "GFX_banner_left_3"
 		}
 		instantTextBoxType={
-			name = "title_mil"
+			name = "title_roads"
 			position = {x = 44 y = 688 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 200
 			maxHeight = 18
-			text = "Road systems"	
+			text = "Road Systems"	
 		}
 		iconType ={
-			name ="road_icon"
+			name = "roads_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
 			position = { x = 15 y = 682}
-			frame = 9
+			frame = 1
 		}
 		checkboxType = {
 			name = "build_basic_bitch_road"
 			position = { x = 9 y = 712 }
-			quadTextureSprite = "GFX_road"
+			quadTextureSprite = "GFX_basic_bitch_road"
 		}		
 		instantTextBoxType={
 			name = "basic_bitch_road_cost"
@@ -1448,13 +1449,16 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"	
 		}
-	# List entry for the window with a list of provinces that a specific building can be built in
-	windowType = {
+	}
+	
+
+		# List entry for the window with a list of provinces that a specific building can be built in
+		windowType = {
 		name = "building_province_list_entry"
 		position = { x = 150 y = 0 }
 		size = { x = 412 y = 26 }
 		fullscreen = no
-
+			
 		guiButtonType = {
 			name = "province_button"
 			position = { x = 14 y = 0 }
