@@ -384,7 +384,7 @@ tdr_reform_1 = {
         }
     }
 
-	monthly_reform_progress_modifier = 0.20
+	monthly_reform_progress_modifier = 0.10
 	monthly_reform_progress = 0.25
 	ai_will_do = {
 		factor = 0.8		
@@ -424,7 +424,7 @@ tdr_reform_2 = {
     }
 
 	monthly_reform_progress_modifier = 0.20
-	monthly_reform_progress = 0.25
+	monthly_reform_progress = 0.30
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -462,8 +462,8 @@ tdr_reform_3 = {
         }
     }
 
-	monthly_reform_progress_modifier = 0.20
-	monthly_reform_progress = 0.25
+	monthly_reform_progress_modifier = 0.35
+	monthly_reform_progress = 0.40
 	
 	ai_will_do = {
 		factor = 0.8		
