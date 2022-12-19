@@ -1244,7 +1244,7 @@ guiTypes = {
 			spriteType = "GFX_unitpanel_button_large_glow"
 			alwaystransparent = yes
 		}
-#this is the start of adding the modded buildings tdr
+		#this is the start of adding the modded buildings tdr
 		iconType = {
 			name = "infra_banner"
 			position = { x = 4 y = 485 }
@@ -1452,13 +1452,13 @@ guiTypes = {
 	}
 	
 
-		# List entry for the window with a list of provinces that a specific building can be built in
-		windowType = {
+	# List entry for the window with a list of provinces that a specific building can be built in
+	windowType = {
 		name = "building_province_list_entry"
 		position = { x = 150 y = 0 }
 		size = { x = 412 y = 26 }
 		fullscreen = no
-			
+		
 		guiButtonType = {
 			name = "province_button"
 			position = { x = 14 y = 0 }
