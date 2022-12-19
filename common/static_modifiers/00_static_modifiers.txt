@@ -1449,7 +1449,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.03
+	yearly_army_professionalism = 0.02
 }
 
 ##################################################################################################
