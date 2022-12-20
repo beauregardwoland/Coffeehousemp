@@ -1089,8 +1089,8 @@ tdr_stabilize_inflation_1 = {
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_deficiet_spending_2
-            has_active_policy = tdr_deficiet_spending_3
+            has_active_policy = tdr_stabilize_inflation_2
+            has_active_policy = tdr_stabilize_inflation_3
             }
         }
     }
@@ -1103,7 +1103,7 @@ tdr_stabilize_inflation_1 = {
 	}
 }
 
-tdr_deficiet_spending_2 = {
+tdr_stabilize_inflation_2 = {
 	monarch_power = ADM
 
 	potential = {
@@ -1129,8 +1129,8 @@ tdr_deficiet_spending_2 = {
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_deficiet_spending_1
-            has_active_policy = tdr_deficiet_spending_3
+            has_active_policy = tdr_stabilize_inflation_1
+            has_active_policy = tdr_stabilize_inflation_3
             }
         }
     }
@@ -1142,7 +1142,7 @@ tdr_deficiet_spending_2 = {
 		factor = 0.8		
 	}
 }
-tdr_deficiet_spending_3 = {
+tdr_stabilize_inflation_3 = {
 	monarch_power = ADM
 
 	potential = {
@@ -1168,8 +1168,8 @@ tdr_deficiet_spending_3 = {
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_deficiet_spending_2
-            has_active_policy = tdr_deficiet_spending_1
+            has_active_policy = tdr_stabilize_inflation_2
+            has_active_policy = tdr_stabilize_inflation_1
             }
         }
     }
