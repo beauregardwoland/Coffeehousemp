@@ -279,7 +279,7 @@ development = {
 }
 
 development_scaled = {
-	local_development_cost = 0.03
+	local_development_cost = 0.05
 }
 
 capital_city = {
@@ -445,7 +445,7 @@ devastation = {
 }
 
 prosperity = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	trade_goods_size_modifier = 0.25
 	local_autonomy = -0.05
 }
@@ -553,7 +553,7 @@ scorched_earth = {
 ##########################################################################
 
 base_values = {
-	max_absolutism = 65
+	max_absolutism = 70
 	merchants = 2							#Start with 2 merchants
 	diplomats = 2							#Start with 2 diplomats..
 	missionaries = 1						#1 missionary

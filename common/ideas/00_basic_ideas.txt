@@ -1235,8 +1235,8 @@ infantry_backbone_ideas = {
 		siege_ability= 0.15
 	}
 	infantry7 = {
-		infantry_fire = 0.2
-		infantry_shock = 0.1
+		infantry_fire = 0.25
+		infantry_shock = 0.15
 	}
 
 	ai_will_do = {
@@ -1273,8 +1273,8 @@ cavalry_backbone_ideas = {
 		yearly_army_professionalism = 0.005
 	}
 	cavalry7 = {
-		cavalry_fire = 0.1
-		cavalry_shock = 0.2
+		cavalry_fire = 0.15
+		cavalry_shock = 0.25
 	}
 
 	ai_will_do = {
@@ -1730,6 +1730,46 @@ legalism_ideas = {
 	}
 	legalism7 = {
 		core_creation = -0.1
+	}
+
+	ai_will_do = {
+		factor = 1.0
+	}
+}
+
+equipment_ideas = {
+	category = ADM
+
+	bonus = {
+		global_regiment_cost = -0.10
+	}
+	equipment1 = {
+		land_attrition = -0.10
+		reinforce_cost_modifier = -0.20
+	}
+	equipment2 = {
+		infantry_power =  0.05
+		cavalry_shock = 0.1
+		cavalry_fire = 0.05
+	}
+	equipment3 = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	equipment4 = {
+		cavalry_power = 0.05
+		artillery_fire = 0.1
+		artillery_shock = 0.1
+	}
+	equipment5 = {
+		mil_tech_cost_modifier = -0.05
+	}
+	equipment6 = {
+		global_regiment_recruit_speed = -0.15
+	}
+	equipment7 = {
+		artillery_power = 0.05
+		infantry_fire = 0.1
+		infantry_shock = 0.05
 	}
 
 	ai_will_do = {
