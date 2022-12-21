@@ -391,8 +391,8 @@ tdr_protectionism_1 = {
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_trade_liberlization_2
-            has_active_policy = tdr_trade_liberlization_3
+            has_active_policy = tdr_protectionism_2
+            has_active_policy = tdr_protectionism_3
             }
         }
     }
@@ -406,7 +406,7 @@ tdr_protectionism_1 = {
 	}
 }
 
-tdr_trade_liberlization_2 = {
+tdr_protectionism_2 = {
 	monarch_power = DIP
 
 	potential = {
@@ -433,8 +433,8 @@ tdr_trade_liberlization_2 = {
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_trade_liberlization_1
-            has_active_policy = tdr_trade_liberlization_3
+            has_active_policy = tdr_protectionism_1
+            has_active_policy = tdr_protectionism_3
             }
         }
     }
@@ -447,7 +447,7 @@ tdr_trade_liberlization_2 = {
 		factor = 0.8		
 	}
 }
-tdr_trade_liberlization_3 = {
+tdr_protectionism_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -474,8 +474,8 @@ tdr_trade_liberlization_3 = {
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_trade_liberlization_2
-            has_active_policy = tdr_trade_liberlization_1
+            has_active_policy = tdr_protectionism_2
+            has_active_policy = tdr_protectionism_1
             }
         }
     }
