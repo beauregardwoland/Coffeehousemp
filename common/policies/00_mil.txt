@@ -1265,7 +1265,7 @@ tdr_amphibous_operations_2 = {
         calc_true_if = {
             amount = 1
             has_active_policy = tdr_amphibous_operations_1
-            has_active_policy = tdr_peacetime_maintance_3
+            has_active_policy = tdr_amphibous_operations_3
             }
         }
     }
@@ -1304,8 +1304,8 @@ tdr_amphibous_operations_3 = {
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_peacetime_maintance_2
-            has_active_policy = tdr_peacetime_maintance_1
+            has_active_policy = tdr_amphibous_operations_2
+            has_active_policy = tdr_amphibous_operations_1
             }
         }
     }
@@ -1345,8 +1345,8 @@ tdr_swift_recruitment_1 = {
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_amphibous_operations_2
-            has_active_policy = tdr_amphibous_operations_3
+            has_active_policy = tdr_swift_recruitment_2
+            has_active_policy = tdr_swift_recruitment_3
             }
         }
     }
@@ -1385,8 +1385,8 @@ tdr_swift_recruitment_2 = {
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_amphibous_operations_1
-            has_active_policy = tdr_peacetime_maintance_3
+            has_active_policy = tdr_swift_recruitment_1
+            has_active_policy = tdr_swift_recruitment_3
             }
         }
     }
@@ -1425,8 +1425,8 @@ tdr_swift_recruitment_3 = {
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_peacetime_maintance_2
-            has_active_policy = tdr_peacetime_maintance_1
+            has_active_policy = tdr_swift_recruitment_2
+            has_active_policy = tdr_swift_recruitment_1
             }
         }
     }
