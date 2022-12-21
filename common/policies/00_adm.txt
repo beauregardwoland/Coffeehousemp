@@ -19,6 +19,7 @@ tdr_stab_1 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 1
 		}
 		NOT = {
@@ -59,6 +60,7 @@ tdr_stab_2 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 2
 		}
 		NOT = {
@@ -98,6 +100,7 @@ tdr_stab_3 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 3
 		}
 		NOT = {
@@ -137,6 +140,7 @@ tdr_taxation_1 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 1
 		}
 		NOT = {
@@ -177,6 +181,7 @@ tdr_taxation_2 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 2
 		}
 		NOT = {
@@ -216,6 +221,7 @@ tdr_taxation_3 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 3
 		}
 		NOT = {
@@ -255,6 +261,7 @@ tdr_cultivation_1 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 1
 		}
 		NOT = {
@@ -295,6 +302,7 @@ tdr_cultivation_2 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 2
 		}
 		NOT = {
@@ -334,6 +342,7 @@ tdr_cultivation_3 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 3
 		}
 		NOT = {
@@ -373,6 +382,7 @@ tdr_reform_1 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 1
 		}
 		NOT = {
@@ -412,6 +422,7 @@ tdr_reform_2 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 2
 		}
 		NOT = {
@@ -451,6 +462,7 @@ tdr_reform_3 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 3
 		}
 		NOT = {
@@ -490,6 +502,7 @@ tdr_cutting_corners_1 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 1
 		}
 		NOT = {
@@ -530,6 +543,7 @@ tdr_cutting_corners_2 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 2
 		}
 		NOT = {
@@ -569,6 +583,7 @@ tdr_cutting_corners_3 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 3
 		}
 		NOT = {
@@ -608,6 +623,7 @@ tdr_hasty_masures_1 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 1
 		}
 		NOT = {
@@ -648,6 +664,7 @@ tdr_hasty_masures_2 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 2
 		}
 		NOT = {
@@ -687,6 +704,7 @@ tdr_hasty_masures_3 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 3
 		}
 		NOT = {
@@ -727,6 +745,7 @@ tdr_strict_quotas_1 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 1
 		}
 		NOT = {
@@ -767,6 +786,7 @@ tdr_strict_quotas_2 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 2
 		}
 		NOT = {
@@ -806,6 +826,7 @@ tdr_strict_quotas_3 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 3
 		}
 		NOT = {
@@ -846,6 +867,7 @@ tdr_encourage_specialization_1 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 1
 		}
 		NOT = {
@@ -886,6 +908,7 @@ tdr_encourage_specialization_2 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 2
 		}
 		NOT = {
@@ -925,6 +948,7 @@ tdr_encourage_specialization_3 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 3
 		}
 		NOT = {
@@ -965,6 +989,7 @@ tdr_deficiet_spending_1 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 1
 		}
 		NOT = {
@@ -1005,6 +1030,7 @@ tdr_deficiet_spending_2 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 2
 		}
 		NOT = {
@@ -1044,6 +1070,7 @@ tdr_deficiet_spending_3 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 3
 		}
 		NOT = {
@@ -1084,6 +1111,7 @@ tdr_stabilize_inflation_1 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 1
 		}
 		NOT = {
@@ -1124,6 +1152,7 @@ tdr_stabilize_inflation_2 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 2
 		}
 		NOT = {
@@ -1163,6 +1192,7 @@ tdr_stabilize_inflation_3 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 3
 		}
 		NOT = {
@@ -1203,6 +1233,7 @@ tdr_employing_clergy_1 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 1
 		}
 		NOT = {
@@ -1247,6 +1278,7 @@ tdr_employing_clergy_2 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 2
 		}
 		NOT = {
@@ -1290,6 +1322,7 @@ tdr_employing_clergy_3 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 3
 		}
 		NOT = {
@@ -1334,6 +1367,7 @@ tdr_colonial_encouragement_1 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 1
 		}
 		NOT = {
@@ -1374,6 +1408,7 @@ tdr_colonial_encouragement_2 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 2
 		}
 		NOT = {
@@ -1414,6 +1449,7 @@ tdr_colonial_encouragement_3 = {
 		full_idea_group = expansion_ideas
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
+		full_idea_group = economic_ideas
 		amount = 3
 		}
 		NOT = {
