@@ -52,13 +52,30 @@ country_decisions = {
 			owns_core_province = 62			#Liepzig
 		}
 		effect = {
-			remove_non_electors_emperors_from_empire_effect = yes
+			if =  {
+				limit = {
+					is_revolutionary = no
+					NOT = { government = republic }
+				}
+				change_government_to_monarchy = yes
+				
+				add_government_reform = north_german_reform_monarchy
+			}
+			else_if = {
+				limit = {
+					government = republic
+					is_revolutionary = no
+				}
+				add_government_reform = north_german_reform_republic
+			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					has_reform = states_general_reform
 				}
-				set_government_rank = 2
+				remove_government_reform = states_general_reform
 			}
+
+			
 			South_Germany_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -89,4 +106,5 @@ country_decisions = {
 			factor = 0
 		}
 	}
+}
 }

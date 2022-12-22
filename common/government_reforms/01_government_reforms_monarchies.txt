@@ -15,6 +15,39 @@ monarchy_mechanic = {
 
 #Feudalism vs Autocracy:
 
+
+north_german_reform_monarchy = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = NGF
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = north_german_reform_monarchy
+			}
+		}
+	}
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = prussian_monarchy_legacy
+
+	modifiers = {
+		monthly_militarized_society = 0.05
+		max_absolutism = 20
+		governing_capacity_modifier = -0.10
+		trade_efficiency = 0.10
+		merchants = 1
+	}
+
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		militarised_society = yes
+	}
+}
+
+
 feudalism_reform = {
 	icon = "castle"
 	allow_normal_conversion = yes
@@ -233,6 +266,7 @@ shogunate = {
 		diplomats = 1
 		envoy_travel_time = -0.25
 		max_absolutism = 5
+		idea_cost = -1
 	}
 
 	custom_attributes = {
@@ -262,6 +296,7 @@ daimyo = {
 	modifiers = {
 		land_morale = 0.1
 		infantry_power = 0.1
+		idea_cost = -1
 	}
 	custom_attributes = {
 		locked_government_type = yes
@@ -302,6 +337,7 @@ indep_daimyo = {
 	modifiers = {
 		land_morale = 0.1
 		infantry_power = 0.1
+		idea_cost = -1
 	}
 	custom_attributes = {
 		locked_government_type = yes
