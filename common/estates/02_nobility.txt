@@ -353,6 +353,8 @@ estate_nobles = {
 			OR = {
 				has_reform = prussian_republic_reform
 				has_reform = prussian_monarchy
+				has_reform = north_german_reform_republic
+			    has_reform = north_german_reform_monarchy
 				tag = GER
 			}
 		}

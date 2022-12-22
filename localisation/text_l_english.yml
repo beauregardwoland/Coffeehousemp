@@ -8173,3 +8173,7 @@
  HAS_MORE_MANDATE_THAN_TRIBUTARY_HAS_DEV:0 "Have Mandate of at least of §Y0.4 of [From.GetName]'s§! Total Development"
  conversion_variable:0 "[Root.num_converted_religion.GetValue]"
  conversion_variable_zero:0 "0"
+ north_german_reform_monarchy:0 "North German Monarchy"
+ north_german_reform_monarchy_desc:0 "North germany home to the Hansaetic League as well as some of the fiercest Marches and Magraves in the Empire a new state dominating this area must integrate these skilled merchants and Junkers lest we lose them or face their revolt"
+ north_german_reform_republic:0 "North German Republic"
+ north_german_reform_republic_desc:0 "North germany home to the Hansaetic League as well as some of the fiercest Marches and Magraves in the Empire a new state dominating this area must integrate these skilled merchants and Junkers lest we lose them or face their revolt"
