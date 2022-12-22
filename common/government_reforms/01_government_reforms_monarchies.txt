@@ -266,7 +266,8 @@ shogunate = {
 		diplomats = 1
 		envoy_travel_time = -0.25
 		max_absolutism = 5
-		idea_cost = -1
+		idea_cost = -2
+		infantry_power = 0.10
 	}
 
 	custom_attributes = {
@@ -296,7 +297,7 @@ daimyo = {
 	modifiers = {
 		land_morale = 0.1
 		infantry_power = 0.1
-		idea_cost = -1
+		idea_cost = -2
 	}
 	custom_attributes = {
 		locked_government_type = yes
@@ -337,7 +338,7 @@ indep_daimyo = {
 	modifiers = {
 		land_morale = 0.1
 		infantry_power = 0.1
-		idea_cost = -1
+		idea_cost = -2
 	}
 	custom_attributes = {
 		locked_government_type = yes
