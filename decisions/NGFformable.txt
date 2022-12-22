@@ -52,6 +52,7 @@ country_decisions = {
 			owns_core_province = 62			#Liepzig
 		}
 		effect = {
+			change_tag = NGF
 			if =  {
 				limit = {
 					is_revolutionary = no
@@ -76,13 +77,13 @@ country_decisions = {
 			}
 
 			
-			South_Germany_region = {
+			south_germany_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = NGF
 			}
-			North_Germany_region = {
+			north_germany_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { area = lower_nubia_area }
@@ -94,7 +95,6 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			change_tag = NGF
 			if = {
 				limit = {
 					has_custom_ideas = no
