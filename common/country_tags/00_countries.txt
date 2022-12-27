@@ -70,6 +70,8 @@ FLY = "countries/Faly.txt"
 MCM = "countries/MacCarthy.txt" #Kingdom of Desmond
 KOI = "countries/Mann.txt"
 LOI = "countries/TheIsles.txt"
+BRF = "countries/Breifne.txt"
+RSS = "countries/Ross.txt"
 
 #Colonies
 BRZ	= "countries/Brazil.txt"

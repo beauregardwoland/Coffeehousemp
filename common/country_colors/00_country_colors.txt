@@ -13,6 +13,20 @@ SWE = {
     color3= { 0 40 104  }
 }
 
+#Ross
+RSS = {
+	color1= { 207  33  21 }
+	color2= { 255 255 255 }
+	color3= { 207  33  21 }
+}
+
+#Breifne
+BRF = {
+	color1= { 191  158  25 }
+	color2= { 166 138 106 }
+	color3= { 0 0 0 }
+}
+
 #Escartons
 ESC = {
 	color1= { 111  160  119 }

@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = irish
+add_accepted_culture = english
+religion = catholic
+capital = 4988	# Meath
+
+1435.10.28 = {
+	monarch = {
+		name = "Dougin"
+		dynasty = "O' Melaghlin"
+		birth_date = 1417.2.12
+		adm = 2
+		dip = 6
+		mil = 5
+	}
+	queen = {
+        country_of_origin = ENG
+        name = "Margarette"
+        dynasty = "Lancaster"
+        birth_date = 1421.11.25
+        female = yes
+        adm = 6
+        dip = 3
+        mil = 4
+    }
+}

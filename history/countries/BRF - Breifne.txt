@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = irish
+religion = catholic
+capital = 4989	# Enniskillen
+
+1435.10.28 = {
+	monarch = {
+		name = "Eoghan na Feosaige"
+		dynasty = "O'Reilly"
+		birth_date = 1418.2.18
+		adm = 2
+		dip = 2
+		mil = 6
+	}
+}
