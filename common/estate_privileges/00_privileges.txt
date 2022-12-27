@@ -7593,6 +7593,8 @@ estate_nobles_junker_primacy = {
 		OR = {
 			has_reform = prussian_monarchy
 			has_reform = prussian_republic_reform
+			has_reform = north_german_reform_republic
+			has_reform = north_german_reform_monarchy
 		}
 	}
 	penalties = {
