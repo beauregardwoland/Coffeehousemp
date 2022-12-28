@@ -8,6 +8,7 @@ technology_group = western
 capital = 183 # Paris
 national_focus = DIP
 historical_rival = HAB
+historical_friend = ADR 
 
 1444.11.11 = {
 add_country_modifier = {

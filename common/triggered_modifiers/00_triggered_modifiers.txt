@@ -11,7 +11,10 @@ andorra_france = {
 	}
 	
 	trigger = {
-			guaranteed_by = FRA
+			OR = {
+				guaranteed_by = FRA
+				alliance_with = FRA
+			}
 	}
 	
 	global_prosperity_growth = 0.25
@@ -28,7 +31,10 @@ france_andorra = {
 	}
 	
 	trigger = {
-		has_guarunteed = ADR
+		OR = {
+			has_guarunteed = ADR
+			alliance_with = ADR
+		}
 	}
 	
 	dip_advisor_cost = -0.075
