@@ -52,8 +52,6 @@ country_decisions = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
 			NOT = { has_country_modifier = establish_mobilization }
-			mil_tech = 17
-			army_professionalism = 0.40
 		}
 		allow = {
 			adm_tech = 18
@@ -76,7 +74,6 @@ country_decisions = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
 			NOT = { has_country_modifier = mobilization }
-			has_country_modifier = enabled_mobilization
 		}
 		allow = {
 			has_country_modifier = enabled_mobilization

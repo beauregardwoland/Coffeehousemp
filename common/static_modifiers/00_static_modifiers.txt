@@ -279,7 +279,7 @@ development = {
 }
 
 development_scaled = {
-	local_development_cost = 0.05
+	local_development_cost = 0.03
 }
 
 capital_city = {
@@ -445,7 +445,7 @@ devastation = {
 }
 
 prosperity = {
-	local_development_cost = -0.05
+	local_development_cost = -0.1
 	trade_goods_size_modifier = 0.25
 	local_autonomy = -0.05
 }
@@ -553,7 +553,7 @@ scorched_earth = {
 ##########################################################################
 
 base_values = {
-	max_absolutism = 70
+	max_absolutism = 65
 	merchants = 2							#Start with 2 merchants
 	diplomats = 2							#Start with 2 diplomats..
 	missionaries = 1						#1 missionary
@@ -576,7 +576,7 @@ base_values = {
 	devotion = -0.5
 	meritocracy = -2
 	governing_capacity = 200
-	num_accepted_cultures = 1
+	num_accepted_cultures = 2
 	monthly_splendor = 1
 	artillery_levels_available_vs_fort = 5
 	cav_to_inf_ratio = 0.5
@@ -1449,7 +1449,7 @@ dishonoured_alliance =  {
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
-	yearly_army_professionalism = 0.02
+	yearly_army_professionalism = 0.03
 }
 
 ##################################################################################################
