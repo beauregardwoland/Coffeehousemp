@@ -71,9 +71,7 @@ technology = { #Temples
 	}
 
 	# Temple
-	temple = yes
-	allowed_idea_groups = 6
-	
+	temple = yes	
 }
 
 technology = { #National Ideas
