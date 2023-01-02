@@ -192,9 +192,8 @@ iberia_region = {
 		pyrenees_mtn_area
 		codorno_area
 		lisboa_area
+	}
 }
-
-
 
 british_isles_region = {
 	areas = {

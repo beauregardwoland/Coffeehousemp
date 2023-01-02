@@ -32,7 +32,7 @@ france_andorra = {
 	
 	trigger = {
 		OR = {
-			has_guarunteed = ADR
+			has_guaranteed = ADR
 			alliance_with = ADR
 		}
 	}

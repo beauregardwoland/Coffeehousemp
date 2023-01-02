@@ -21,3 +21,11 @@ add_army_professionalism = 0.05
 
 historical_friend = ARA
 historical_friend = FRA
+
+1444.11.11 = {
+add_country_modifier = {
+		name = andorran_sovereignty
+		duration = -1
+		hidden = no
+	}
+}
