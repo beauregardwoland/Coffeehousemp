@@ -3,6 +3,61 @@
 #
 # Effects are fully scriptable here.
 
+#Andorra France
+
+andorra_france = {
+	potential = {
+		tag = ADR
+	}
+	
+	trigger = {
+			OR = {
+				guaranteed_by = FRA
+				alliance_with = FRA
+			}
+	}
+	
+	global_prosperity_growth = 0.25
+	land_morale = 0.10
+	global_trade_power = 0.15
+	global_trade_goods_size_modifier = 0.10
+}
+
+#France Andorra
+
+france_andorra = {
+	potential = {
+		tag = FRA
+	}
+	
+	trigger = {
+		OR = {
+			has_guaranteed = ADR
+			alliance_with = ADR
+		}
+	}
+	
+	dip_advisor_cost = -0.075
+	papal_influence = 0.25
+	curia_powers_cost = -0.10
+}
+
+#Great Power Relations Slots
+
+great_power_relations_slot = {
+	potential = {
+		is_great_power = yes
+	}
+	
+	trigger = {
+		is_great_power = yes
+	}
+	
+	diplomats = 1
+	diplomatic_upkeep = 2
+}
+
+
 ###########################################
 # Discovery of the East Indian trade route.
 ###########################################

@@ -12706,3 +12706,14 @@ early_colonization = {
 	global_colonial_growth = -20
 	colonist_placement_chance = -0.15
 }
+
+andorran_sovereignty = {
+	diplomatic_reputation = 1
+	envoy_travel_time = -0.15
+}
+
+fra_breaks_dual_monarchy = {
+	diplomatic_reputation = -1
+	curia_powers_cost = 0.25
+	improve_relation_modifier = -0.10
+}

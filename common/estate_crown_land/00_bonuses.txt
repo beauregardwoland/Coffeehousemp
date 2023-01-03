@@ -57,7 +57,7 @@ bonus = {
     range_to = 15.0
     modifier = {
         max_absolutism = -15
-        global_autonomy = 0.4
+        global_autonomy = 0.3
         liberty_desire_from_subject_development = 0.5
         global_tax_modifier = -0.15
 		global_manpower_modifier = -0.10
@@ -73,7 +73,7 @@ bonus = {
     range_to = 20.0
     modifier = {
         max_absolutism = -15
-        global_autonomy = 0.3
+        global_autonomy = 0.15
         liberty_desire_from_subject_development = 0.5
         global_tax_modifier = -0.10
 		global_manpower_modifier = -0.05
@@ -90,34 +90,47 @@ bonus = {
     modifier = {
         max_absolutism = -10
         liberty_desire_from_subject_development = 0.25
-        global_tax_modifier = -0.1
+        global_tax_modifier = -0.05
+		manpower_recovery_speed = -0.05
     }
 }
 
-# No effect from 30 to 50
 
 bonus = {
     key = crown_land_level_6
-    range_from = 50.0
-    range_to = 60.0
+    range_from = 30.0
+    range_to = 50.0
     modifier = {
         max_absolutism = 5
         reform_progress_growth = 0.2
+		global_tax_modifier = 0.10
     }
 }
 
 bonus = {
     key = crown_land_level_7
-    range_from = 60.0
-    range_to = 70.0
+    range_from = 50.0
+    range_to = 60.0
     modifier = {
-        max_absolutism = 10
-        reform_progress_growth = 0.4
+        max_absolutism = 5
+        reform_progress_growth = 0.2
+		global_tax_modifier = 0.15
     }
 }
 
 bonus = {
     key = crown_land_level_8
+    range_from = 60.0
+    range_to = 70.0
+    modifier = {
+        max_absolutism = 10
+        reform_progress_growth = 0.4
+		global_tax_modifier = 0.20
+    }
+}
+
+bonus = {
+    key = crown_land_level_9
     range_from = 70.0
     range_to = 80.0
     modifier = {
@@ -125,18 +138,21 @@ bonus = {
         yearly_absolutism = 1
         reform_progress_growth = 0.6
         global_autonomy = -0.01
+		global_tax_modifier = 0.25
     }
 }
 
 bonus = {
-    key = crown_land_level_9
+    key = crown_land_level_10
     range_from = 80.0
     range_to = 100.0
     modifier = {
-        max_absolutism = 15
+        max_absolutism = 20
         yearly_absolutism = 1
         reform_progress_growth = 0.8
-        global_autonomy = -0.02
+        global_autonomy = -0.05
+		global_tax_modifier = 0.25
+		manpower_recovery_speed = 0.05
     }
 }
 

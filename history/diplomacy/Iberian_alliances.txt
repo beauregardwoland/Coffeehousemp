@@ -30,7 +30,7 @@ union = {
 	end_date = 1506.9.25
 }
 
-#Aragon and France Guaruntee on Navarra
+#Aragon and France Guaruntee on Andorra
 guarantee = {
 	first = ARA
 	second = ADR
@@ -38,7 +38,7 @@ guarantee = {
 }
 
 guarantee = {
-	first = FOI
+	first = FRA
 	second = ADR
 	start_date = 1444.11.11
 }
