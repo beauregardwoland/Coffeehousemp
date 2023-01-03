@@ -69,7 +69,7 @@ technology = { #Temples
 	expects_institution = {
 		feudalism = 0.5
 	}
-
+	allowed_idea_groups = 1
 	# Temple
 	temple = yes	
 }
@@ -82,7 +82,7 @@ technology = { #National Ideas
 		renaissance = 0.15
 	}
 
-	allowed_idea_groups = 1
+	allowed_idea_groups = 2
 	production_efficiency	 =	0.02
 	basic_bitch_road = yes
 }
@@ -111,7 +111,7 @@ technology = { #Renaissance Thought
 	}
 	
 	#Noble Republic
-	allowed_idea_groups = 2	
+	allowed_idea_groups = 3	
 }
 
 technology = { #Courthouse
@@ -152,7 +152,7 @@ technology = { #Modern Theocracy
 		new_world_i = 0.3
 	}
 	
-	allowed_idea_groups = 3
+	allowed_idea_groups = 4
 	theocratic_government = yes
 	the_cooler_road = yes
 }
@@ -213,7 +213,7 @@ technology = { #Scientific Experimentation
 	}
 	
 	plantations = yes
-	allowed_idea_groups	= 4
+	allowed_idea_groups	= 5
 }
 
 technology = { #Military Administration
@@ -276,7 +276,7 @@ technology = { #National Sovereignty
 		global_trade = 0.3
 	}
 	
-	allowed_idea_groups	= 5
+	allowed_idea_groups	= 6
 }
 
 technology = { #Cathedral
@@ -339,7 +339,7 @@ technology = { #The Constitution
 		manufactories = 0.3
 	}
 	
-	allowed_idea_groups = 6
+	allowed_idea_groups = 7
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
 
@@ -374,7 +374,7 @@ technology = { #Bonds and Tontines
 		manufactories = 0.5
 		enlightenment = 0.15
 	}
-	
+	allowed_idea_groups = 8
 	counting_house = yes  
 	governing_capacity = 250
 }
@@ -410,7 +410,7 @@ technology = { #Separation of Powers
 		enlightenment = 0.5
 	}
 	
-	allowed_idea_groups 	= 	7
+	allowed_idea_groups 	= 	9
 }
 
 technology = { #Modern Bureaucracy
@@ -463,7 +463,7 @@ technology = { #Rights of Man
 		industrialization = 0.5
 	}
 
-	allowed_idea_groups = 8
+	allowed_idea_groups = 10
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
 }

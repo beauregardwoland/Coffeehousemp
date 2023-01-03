@@ -240,10 +240,11 @@ provincial_tax_income = {
 	local_build_cost= -0.0175
 	local_development_cost = -0.015
 	local_build_time = -0.02
+	tax_income = 1
 }
 
 provincial_production_size = {
-	trade_goods_size = 0.2
+	trade_goods_size = 0.175
 	ship_recruit_speed = -0.01
 	local_sailors = 50
 }
@@ -296,7 +297,7 @@ patriarch_state = {
 # Multiplied in provinces of same religion.
 patriarch_authority_local = {
 	local_unrest = -3
-	local_manpower_modifier = 0.33
+	local_manpower_modifier = 0.25
 }
 
 #for the country
@@ -308,7 +309,7 @@ patriarch_authority_global = {
 pasha_state = {
 	local_state_maintenance_modifier = -0.5
 	local_unrest = -2
-	local_build_cost = 0.2
+	local_build_cost = -0.05
 	local_regiment_cost = 0.2
 }
 

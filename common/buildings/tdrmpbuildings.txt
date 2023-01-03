@@ -144,7 +144,7 @@ officer_acedemy = {
 		army_tradition = 0.15
 		drill_gain_modifier = 0.05
 		morale_damage_received = -0.01
-		tax_income = -30
+		global_tax_income = -30
 	}
 	
 	ai_will_do = {
