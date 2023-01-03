@@ -154,6 +154,7 @@ technology = { #Modern Theocracy
 	
 	allowed_idea_groups = 3
 	theocratic_government = yes
+	the_cooler_road = yes
 }
 
 technology = { #Textile Manufactory
@@ -183,6 +184,7 @@ technology = { #Early Modern Administration
 	administrative_republic	= yes
 	governing_capacity = 100
 	state_house = yes
+	urban_development_center = yes
 }
 
 technology = { #Improved Drainage
@@ -197,6 +199,7 @@ technology = { #Improved Drainage
 	
 	#Improved Drainage
 	production_efficiency 	=	0.02
+	the_cooler_road_dos = yes
 }
 
 technology = { #Scientific Experimentation
@@ -255,6 +258,7 @@ technology = { #University
 	}
 	
 	university = yes	
+	officer_acedemy = yes
 	governing_capacity = 250
 	
 	administrative_efficiency = 0.1
@@ -320,6 +324,7 @@ technology = { #Land Clearance
 	#Land Clearance
 	production_efficiency 	=	0.02
 	furnace = yes
+	the_road_before_railroads = yes
 }
 
 technology = { #The Constitution
@@ -389,6 +394,7 @@ technology = { #Improved Production
 	
 	#Improved Farm Animals
 	production_efficiency 	=	0.02
+	experimental_railroads = yes
 }
 
 technology = { #Separation of Powers

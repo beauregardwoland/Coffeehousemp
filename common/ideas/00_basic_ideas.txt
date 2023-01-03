@@ -1114,13 +1114,14 @@ grand_warfare_ideas = {
 		reserves_organisation	 = 0.35
 	}
 	grandwarfare5 = {
-		artillery_power	 = 0.05
+		siege_ability = 0.15
 	}
 	grandwarfare6 = {
 		global_regiment_cost = -0.10
 	}
 	grandwarfare7 = {
 		artillery_shock = 0.5	
+		artillery_power = 0.05
 	}
 
 	ai_will_do = {
