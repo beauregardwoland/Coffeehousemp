@@ -1267,6 +1267,21 @@ guiTypes = {
 		}
 		
 		checkboxType = {
+			name = "build_urban_development_center"
+			position = { x = 9 y = 517 }
+			quadTextureSprite = "GFX_urban_development_center"
+		}		
+		instantTextBoxType={
+			name = "urban_development_center_cost"
+			position = {x = 9 y = 567 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
+		checkboxType = {
 			name = "build_glass_works"
 			position = { x = 62 y = 517 }
 			quadTextureSprite = "GFX_glass_works"
@@ -1350,15 +1365,58 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"	
 		}
+		checkboxType = {
+			name = "build_hunting_trails"
+			position = { x = 9 y = 587 }
+			quadTextureSprite = "GFX_hunting_trails"
+		}		
+		instantTextBoxType={
+			name = "hunting_trails_cost"
+			position = {x = 9 y = 637 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		checkboxType = {
+			name = "build_exotic_spice_depot"
+			position = { x = 62 y = 587 }
+			quadTextureSprite = "GFX_exotic_spice_depot"
+		}		
+		instantTextBoxType={
+			name = "exotic_spice_depot_cost"
+			position = {x = 62 y = 637 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		checkboxType = {
+			name = "build_colonial_trade_center"
+			position = { x = 115 y = 587 }
+			quadTextureSprite = "GFX_colonial_trade_center"
+		}		
+		instantTextBoxType={
+			name = "colonial_trade_center_cost"
+			position = {x = 115 y = 637 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+
 		#next group of buildings
 		iconType = {
 			name = "mil_banner"
-			position = { x = 4 y = 582 }
+			position = { x = 4 y = 653 }
 			spriteType = "GFX_banner_left_3"
 		}
 		instantTextBoxType={
 			name = "title_mil"
-			position = {x = 44 y = 591 }
+			position = {x = 44 y = 662 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 200
@@ -1368,17 +1426,59 @@ guiTypes = {
 		iconType ={
 			name = "mil_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 15 y = 585}
+			position = { x = 15 y = 656}
 			frame = 4
 		}
 		checkboxType = {
 			name = "build_artillery_foundry"
-			position = { x = 9 y = 615 }
+			position = { x = 9 y = 686 }
 			quadTextureSprite = "GFX_artillery_foundry"
 		}		
 		instantTextBoxType={
 			name = "artillery_foundry_cost"
-			position = {x = 9 y = 665 }
+			position = {x = 9 y = 736 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		checkboxType = {
+			name = "build_firearms_workshop"
+			position = { x = 62 y = 686 }
+			quadTextureSprite = "GFX_firearms_workshop"
+		}		
+		instantTextBoxType={
+			name = "firearms_workshop_cost"
+			position = {x = 62 y = 736 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		checkboxType = {
+			name = "build_horse_breeding_grounds"
+			position = { x = 115 y = 686 }
+			quadTextureSprite = "GFX_horse_breeding_grounds"
+		}		
+		instantTextBoxType={
+			name = "horse_breeding_grounds_cost"
+			position = {x = 115 y = 736 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		} 
+		checkboxType = {
+			name = "build_gunpowder_mill"
+			position = { x = 168 y = 686 }
+			quadTextureSprite = "GFX_gunpowder_mill"
+		}		
+		instantTextBoxType={
+			name = "gunpowder_mill_cost"
+			position = {x = 168 y = 736 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -1387,12 +1487,12 @@ guiTypes = {
 		}
 		checkboxType = {
 			name = "build_army_provisions"
-			position = { x = 62 y = 615 }
+			position = { x = 221 y = 686 }
 			quadTextureSprite = "GFX_army_provisions"
 		}		
 		instantTextBoxType={
 			name = "army_provisions_cost"
-			position = {x = 62 y = 665 }
+			position = {x = 221 y = 736 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
@@ -1400,29 +1500,29 @@ guiTypes = {
 			text = "2000¤"	
 		}
 		checkboxType = {
-			name = "build_gunpowder_mill"
-			position = { x = 115 y = 615 }
-			quadTextureSprite = "GFX_gunpowder_mill"
+			name = "build_officer_acedemy"
+			position = { x = 274 y = 686 }
+			quadTextureSprite = "GFX_officer_acedemy"
 		}		
 		instantTextBoxType={
-			name = "gunpowder_mill_cost"
-			position = {x = 115 y = 665 }
+			name = "officer_acedemy_cost"
+			position = {x = 274 y = 736 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
-		} 
+		}
 
 		#last line roads
 		iconType = {
 			name = "roads_banner"
-			position = { x = 4 y = 679 }
+			position = { x = 4 y = 750 }
 			spriteType = "GFX_banner_left_3"
 		}
 		instantTextBoxType={
 			name = "title_roads"
-			position = {x = 44 y = 688 }
+			position = {x = 44 y = 759 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 200
@@ -1432,25 +1532,101 @@ guiTypes = {
 		iconType ={
 			name = "roads_icon"
 			spriteType = "GFX_macro_buildings_category_strip"
-			position = { x = 15 y = 682}
+			position = { x = 15 y = 753}
 			frame = 1
 		}
 		checkboxType = {
 			name = "build_basic_bitch_road"
-			position = { x = 9 y = 712 }
+			position = { x = 9 y = 783 }
 			quadTextureSprite = "GFX_basic_bitch_road"
 		}		
 		instantTextBoxType={
 			name = "basic_bitch_road_cost"
-			position = {x = 9 y = 762 }
+			position = {x = 9 y = 833 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
 			maxWidth = 128
 			maxHeight = 18
 			text = "2000¤"	
 		}
+		checkboxType = {
+			name = "build_the_cooler_road"
+			position = { x = 61 y = 783 }
+			quadTextureSprite = "GFX_the_cooler_road"
+		}		
+		instantTextBoxType={
+			name = "the_cooler_road_cost"
+			position = {x = 61 y = 833 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		iconType = {
+			name = "basic_bitch_road_to_the_cooler_road_arrow"
+			position = { x = 53 y = 789 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		checkboxType = {
+			name = "build_the_cooler_road_dos"
+			position = { x = 113 y = 783 }
+			quadTextureSprite = "GFX_the_cooler_road_dos"
+		}		
+		instantTextBoxType={
+			name = "the_cooler_road_dos_cost"
+			position = {x = 113 y = 833 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		iconType = {
+			name = "the_cooler_road_to_the_cooler_road_dos_arrow"
+			position = { x = 105 y = 789 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		checkboxType = {
+			name = "build_the_road_before_railroads"
+			position = { x = 165 y = 783 }
+			quadTextureSprite = "GFX_the_road_before_railroads"
+		}		
+		instantTextBoxType={
+			name = "the_road_before_railroads_cost"
+			position = {x = 165 y = 833 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		iconType = {
+			name = "the_cooler_road_dos_to_the_road_before_railroads_arrow"
+			position = { x = 157 y = 789 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+		checkboxType = {
+			name = "build_experimental_railroads"
+			position = { x = 217 y = 783 }
+			quadTextureSprite = "GFX_experimental_railroads"
+		}		
+		instantTextBoxType={
+			name = "experimental_railroads_cost"
+			position = {x = 217 y = 833 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		iconType = {
+			name = "the_road_before_railroads_to_experimental_railroads_arrow"
+			position = { x = 209 y = 789 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
+
 	}
-	
 
 	# List entry for the window with a list of provinces that a specific building can be built in
 	windowType = {

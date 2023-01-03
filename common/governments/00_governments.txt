@@ -65,6 +65,8 @@ monarchy = {
 
 				#moddedreforms
 				north_german_reform_monarchy
+				south_german_reform_monarchy
+				rhenish_league_monarchy
 			}
 		}
 		hereditary_vs_nobility = {
@@ -272,6 +274,8 @@ monarchy = {
 		dutch_republic
 		force_reelection_reform
 		north_german_reform_republic
+		south_german_reform_republic
+		rhenish_league_republic
 	}
 
 	#States General works with few others
@@ -287,6 +291,10 @@ monarchy = {
 		kalmar_union
 		celestial_empire
 		north_german_reform_monarchy
+		north_german_reform_republic
+		rhenish_league_monarchy
+		rhenish_league_republic
+		rhenish_league_theocracy
 	}
 
 	#Flavor
@@ -382,6 +390,8 @@ republic = {
 
 				#modded reforms
 				north_german_reform_republic
+				south_german_reform_republic
+				rhenish_league_republic
 			}
 		}
 		republican_virtues = {
@@ -754,6 +764,9 @@ theocracy = {
 				militarized_crusader_order_reform
 				merchant_theocracy_reform
 				reformer_state_reform
+				##modded
+				rhenish_league_theocracy
+
 			}
 		}
 		internal_vs_external_mission = {

@@ -60,6 +60,67 @@ north_german_reform_republic = {
 	has_term_election = no
 }
 
+south_german_reform_republic = {
+	icon = "crown"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = SGF
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = south_german_reform_monarchy
+			}
+		}
+	}
+	factions = {
+		SGF_princes
+		SGF_clergy
+		SGF_free_cities
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = oligarchic_republic
+
+	modifiers = {
+		max_absolutism = 20
+
+		
+	}
+
+	
+}
+
+rhenish_league_republic = {
+	icon = "free_city"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = RHI
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = south_german_reform_monarchy
+			}
+		}
+	}
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = oligarchic_republic
+
+	modifiers = {
+		all_estate_loyalty_equilibrium = 0.05
+		global_unrest = -2
+		defensiveness = 0.15
+		development_cost = -0.05
+	}
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+	
+}
 
 oligarchy_reform = {
 	icon = "people_walking"

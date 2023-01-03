@@ -23,6 +23,39 @@ theocracy_mechanic = {
 }
 
 #Leadership
+
+rhenish_league_theocracy = {
+	icon = "free_city"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = RHI
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = south_german_reform_monarchy
+			}
+		}
+	}
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	legacy_equivalent = monastic_order_government
+
+	modifiers = {
+		all_estate_loyalty_equilibrium = 0.05
+		global_unrest = -2
+		defensiveness = 0.15
+		development_cost = -0.05
+	}
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			russian_mechanic
+		}
+	}
+	
+}
+
 leading_clergy_reform = {
 	potential = {
 		NOT = { tag = PAP }

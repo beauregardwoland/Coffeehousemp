@@ -51,20 +51,13 @@ country_decisions = {
 			owns_core_province = 74			#Baden
 		}
 		effect = {
-			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
-			South_Germany_region = {
+			south_Germany_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = RHI
 			}
-			North_Germany_region = {
+			north_Germany_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { area = lower_nubia_area }
@@ -77,6 +70,34 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = RHI
+			if =  {
+				limit = {
+					is_revolutionary = no
+					government = monarchy 
+				}				
+				add_government_reform = rhenish_league_monarchy
+			}
+			else_if = {
+				limit = {
+					government = republic
+					is_revolutionary = no
+				}
+				add_government_reform = rhenish_league_republic
+			}
+			else_if = {
+				limit = {
+					is_revolutionary = no
+					government = theocracy 
+				}				
+				add_government_reform = rhenish_league_theocracy
+
+			}
+			if = {
+				limit = {
+					has_reform = states_general_reform
+				}
+				remove_government_reform = states_general_reform
+			}
 			if = {
 				limit = {
 					has_custom_ideas = no
@@ -88,4 +109,5 @@ country_decisions = {
 			factor = 0
 		}
 	}
+}
 }

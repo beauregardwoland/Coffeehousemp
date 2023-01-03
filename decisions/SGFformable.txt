@@ -51,13 +51,6 @@ country_decisions = {
 			owns_core_province = 110			#Trient
 		}
 		effect = {
-			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
 			South_Germany_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -77,6 +70,22 @@ country_decisions = {
 			}
 			add_prestige = 25
 			change_tag = SGF
+			if =  {
+				limit = {
+					is_revolutionary = no
+					NOT = { government = republic }
+				}
+				change_government_to_monarchy = yes
+				
+				add_government_reform = south_german_reform_monarchy
+			}
+			else_if = {
+				limit = {
+					government = republic
+					is_revolutionary = no
+				}
+				add_government_reform = south_german_reform_republic
+			}
 			if = {
 				limit = {
 					has_custom_ideas = no

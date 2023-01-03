@@ -189,7 +189,7 @@ technology = { #Wharf
 	}
 	
 	range					= 	100
-
+	colonial_trade_center = yes
 	wharf = yes
 
 }
@@ -223,7 +223,8 @@ technology = { #Chartered Companies
 	
 	trade_efficiency 		= 	0.02
 	enable = brig
-
+	hunting_trails = yes
+	exotic_spice_depot = yes
 }
 
 technology = { #The Galleass

@@ -5,13 +5,53 @@ spriteType = {
     loadType = "INGAME"
 }
 spriteType = {
+    name = "GFX_the_cooler_road"
+    texturefile = "gfx//interface//buildings//thecoolerroad.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_the_cooler_road_dos"
+    texturefile = "gfx//interface//buildings//thecoolerroaddos.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_the_road_before_railroads"
+    texturefile = "gfx//interface//buildings//theroadbeforerailroads.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_experimental_railroads"
+    texturefile = "gfx//interface//buildings//experimentalrailroads.tga"
+    loadType = "INGAME"
+}
+spriteType = {
     name = "GFX_artillery_foundry"
     texturefile = "gfx//interface//buildings//artilleryfoundry.tga"
     loadType = "INGAME"
 }
 spriteType = {
+    name = "GFX_firearms_workshop"
+    texturefile = "gfx//interface//buildings//firearmsworkshop.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_horse_breeding_grounds"
+    texturefile = "gfx//interface//buildings//horsebreedinggrounds.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_officer_acedemy"
+    texturefile = "gfx//interface//buildings//officeracedemy.tga"
+    loadType = "INGAME"
+}
+spriteType = {
     name = "GFX_glass_works"
     texturefile = "gfx//interface//buildings//glassworks.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_urban_development_center"
+    texturefile = "gfx//interface//buildings//urbandevelopmentcenter.tga"
     loadType = "INGAME"
 }
 spriteType = {
@@ -47,6 +87,21 @@ spriteType = {
 spriteType = {
     name = "GFX_theatre_district"
     texturefile = "gfx//interface//buildings//theatredistrict.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_hunting_trails"
+    texturefile = "gfx//interface//buildings//huntingtrails.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_exotic_spice_depot"
+    texturefile = "gfx//interface//buildings//exoticspicedepot.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_colonial_trade_center"
+    texturefile = "gfx//interface//buildings//colonialtradecenter.tga"
     loadType = "INGAME"
 }
 }
