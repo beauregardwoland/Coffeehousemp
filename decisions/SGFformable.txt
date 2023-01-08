@@ -51,16 +51,15 @@ country_decisions = {
 			owns_core_province = 110			#Trient
 		}
 		effect = {
-			South_Germany_region = {
+			south_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = SGF
 			}
-			North_Germany_region = {
+			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
-					NOT = { area = lower_nubia_area }
 				}
 				add_permanent_claim = SGF
 			}
@@ -93,8 +92,10 @@ country_decisions = {
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 		}
-		ai_will_do = {
-			factor = 0
-		}
+	}	
+	ai_will_do = {
+		factor = 0
 	}
+	
+}
 }

@@ -51,18 +51,20 @@ country_decisions = {
 	establish_mobilization = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
-			NOT = { has_country_modifier = establish_mobilization }
+			NOT = { has_country_modifier = enabled_mobilization }
+			adm_tech = 18
+
 		}
 		allow = {
 			adm_tech = 18
 			army_professionalism = 0.50
 		}
 		effect = {
-			custom_tooltip = establishing_mobilization
+			custom_tooltip = enabled_mobilization
 			add_mil_power = -300
 			add_adm_power = -150
 			add_country_modifier = {
-				name = "establish_mobilization"
+				name = "enabled_mobilization"
 				duration = -1
 			}
 		}
@@ -74,6 +76,7 @@ country_decisions = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
 			NOT = { has_country_modifier = mobilization }
+			mil_tech = 18
 		}
 		allow = {
 			has_country_modifier = enabled_mobilization
@@ -172,4 +175,170 @@ country_decisions = {
 		}
 	}
 	
+
+	expand_levies = {
+		potential = {
+			OR = {
+				NOT = { has_country_modifier = expand_levies }
+				NOT = { has_country_modifier = expand_levies_second }
+				NOT = { has_country_modifier = expand_levies_third }
+				NOT = { has_country_modifier = expand_levies_fourth }
+			}
+			has_idea_group = levy_ideas
+			army_size = 100
+		}
+		allow = {
+			full_idea_group = levy_ideas
+			army_size = 140
+		}
+		effect = {
+			add_country_modifier = {
+				name = "expand_levies"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	expand_levies_secon = {
+		potential = {
+			OR = {
+				NOT = { has_country_modifier = expand_levies_second }
+				NOT = { has_country_modifier = expand_levies_third }
+				NOT = { has_country_modifier = expand_levies_fourth }
+			}
+			has_idea_group = levy_ideas
+			army_size = 220
+		}
+		allow = {
+			full_idea_group = levy_ideas
+			army_size = 300
+		}
+		effect = {
+			add_country_modifier = {
+				name = "expand_levies_second"
+				duration = -1
+			}
+			upgrade_levies1 = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	expand_levies_thir = {
+		potential = {
+			OR = {
+				NOT = { has_country_modifier = expand_levies_third }
+				NOT = { has_country_modifier = expand_levies_fourth }
+			}			
+			has_idea_group = levy_ideas
+			army_size = 400
+		}
+		allow = {
+			full_idea_group = levy_ideas
+			army_size = 480
+		}
+		effect = {
+			add_country_modifier = {
+				name = "expand_levies_third"
+				duration = -1
+			}
+			upgrade_levies2 = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	expand_levies_fourt = {
+		potential = {
+			NOT = { has_country_modifier = expand_levies_fourth }
+			has_idea_group = levy_ideas
+			army_size = 500
+		}
+		allow = {
+			full_idea_group = levy_ideas
+			army_size = 600
+		}
+		effect = {
+			add_country_modifier = {
+				name = "expand_levies_fourth"
+				duration = -1
+			}
+			upgrade_levies3 = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	modernize_the_levies = {
+		potential = {
+			NOT = { has_country_modifier = modernize_levies}
+			has_idea_group = levy_ideas
+			mil_tech = 16
+
+		}
+		allow = {
+			full_idea_group = levy_ideas
+			army_professionalism = 0.30
+			mil_tech = 18
+		}
+		effect = {
+			add_country_modifier = {
+				name = "modernize_levies"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	expanding_the_gaurd = {
+		potential = {
+			NOT = { has_country_modifier = elite_gaurds}
+			has_idea_group = profesionalism_ideas
+			mil_tech = 18
+			army_professionalism = 0.65
+		}
+		allow = {
+			full_idea_group = profesionalism_ideas
+			army_professionalism = 0.80
+			mil_tech = 19
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+			add_country_modifier = {
+				name = "elite_gaurds"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_gaurd = {
+		potential = {
+			NOT = { has_country_modifier = gaurds}
+			has_idea_group = profesionalism_ideas
+			mil_tech = 11
+			army_professionalism = 0.35
+		}
+		allow = {
+			full_idea_group = profesionalism_ideas
+			army_professionalism = 0.50
+			mil_tech = 19
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+			add_country_modifier = {
+				name = "gaurds"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

@@ -1,0 +1,16 @@
+###spain mission things 
+update_tercio_reforms1 = {
+	remove_country_modifier = el_gran_capitan_reforms
+}
+update_tercio_reforms2 = {
+	remove_country_modifier = tercio_deployment
+}
+upgrade_levies1 = {
+	remove_country_modifier = expand_levies
+}
+upgrade_levies2 = {
+	remove_country_modifier = expand_levies_second
+}
+upgrade_levies3 = {
+	remove_country_modifier = expand_levies_third
+}

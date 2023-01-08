@@ -48,7 +48,7 @@
  building_officer_acedemy:0"Officer Academy"
  building_officer_acedemy_desc:0"Good officers are a necessity for a competant fighting force as such having an acedemy specially built for our officers so that they may have experience with our tactics and their profesion is a useful investment. \n\nThis building requires that a province have at least §Y20 development§!.\n "
 ########ideas
-irregularwarfare_ideas:0 "§B***§!Irregular Warfare Ideas§B***§!"
+irregularwarfare_ideas:0 "§B****§!Irregular Warfare Ideas§B****§!"
 irregular1:0"Quick to the Front"
 irregular1_desc:0"Getting soldiers to fill in the ranks quickly is paramount in order to tip the odds more into our favor."
 irregular2:0"Constant Ambushes"
@@ -64,7 +64,7 @@ irregular6_desc:0"To convice our soldiers to mobilize and join the ranks of the 
 irregular7:0"Feigned Retreats"
 irregular7_desc:0"our battles and wars will have multiple engagements in order to conserve our forces and ensure theres are always on the ropes and edge."
 
-grand_warfare_ideas:0"§B***§!Grand Warfare Ideas§B***§!"
+grand_warfare_ideas:0"§B****§!Grand Warfare Ideas§B****§!"
 grandwarfare1:0"Fill the Flanks"
 grandwarfare1_desc:0"When meeting our enemy head on in a battle to give them room to maneuver around our main formation is a mistake and cant be allowed to happen so easily."
 grandwarfare2:0"The Baggage Roads"
@@ -79,3 +79,104 @@ grandwarfare6:0"The Right Connections"
 grandwarfare6_desc:0"Recruiting a army is made much easier fi the recruiter has the right connections we must ensurre that our comanders have these connections."
 grandwarfare7:0"A Thunderous Rain of Steel"
 grandwarfare7_desc:0"In a battle it might suit the overall objective better to let the enemy take initiative first when they do they will meet a fearsome barrage from our batteries."
+
+levy_ideas:0"§Y****§!Levy Ideas§Y****§!"
+levy1:0"Demobilization"
+levy1_desc:0"we only call the bulk of our troops when we need them giving our coffers an eaiser burden."
+levy2:0"From Field to Field"
+levy2_desc:0"There is always more and more able bodied men going to go work in the fields giving us more and more me for the battlefield."
+levy3:0"The Bannermen"
+levy3_desc:0"§Ybonus' are invisible unless unlocked! §!We must maintain a system of levies that allows for a quick recruitment of men into the army the discipline and rigour of the men is questionable but will fill the lines and be inexpensive fine enough.§R Unlocks decisions to expand and modernize the levies later on! §!"
+levy4:0"Noble tithes"
+levy4_desc:0"Our nobles owe us as their suzerian many different ties one that has been less argued over is their providement of men to our armies we must push this slightly more."
+levy5:0"Statewide Integration"
+levy5_desc:0"There are some vassals, entities, and institutions whithin our state that still hold onto their own gaurd and reserves for their state pooled under the state these can be used better."
+levy6:0"Homebound Mercenaries"
+levy6_desc:0"There are some mercanaries that are headquartered within our country as having given them the rights to do so the expectation to offer better contracs and deals is obvious to both parties."
+levy7:0"Provisions against Routeing"
+levy7_desc:0"The biggest danger with out type of army is that our inexperienced men will route more easily the prospect is disasterous if allowed to happen we must take measures against it."
+
+profesionalism_ideas:0"§Y****§!Profesionalism Ideas§Y****§!"
+profesionalism1:0"Salieried Officers"
+profesionalism1_desc:0"Our officers work year round and make a career out of leading our troops."
+profesionalism2:0"Glistening Armor Unflinching Resolve."
+profesionalism2_desc:0"even against the most bombastic barrage our soldiers continue the charge as shot glance past and around them."
+profesionalism3:0"Permanent Garrisions"
+profesionalism3_desc:0"We must ensure our garrisons are always manned and training so no attack catches us by suprise."
+profesionalism4:0"Field Marshalls"
+profesionalism4_desc:0"There must be a formal organization and chain of command organized in abscence of our suzerian leader a unified command will bring swift end to conflicts."
+profesionalism5:0"Wargames"
+profesionalism5_desc:0"Very few things can train, drill, and predict the tactics our soldiers will need on the battlefield as well as wargames can organizeing them often should be a priority."
+profesionalism6:0"Just Like the Simulations"
+profesionalism6_desc:0"Our soldiers have been charged at, yelled at, and clubbed mutliple times over the only new component is the battlefield."
+profesionalism7:0"The Elite"
+profesionalism7_desc:0"During our drills there have been those who have gone beyond the expectations, we must put these men into a team together so our foes may be run down efficiently.§R Unlocks decisions to improve the gaurds with profesionalism and tech! §!"
+
+infantry_backbone_ideas:0"§R****§!Infantry Primacy§R****§!"
+infantry1:0"More Money for the Infantry"
+infantry1:0"The infatry have become more numerous and the basis for our operations so the neglect for cavalry will provide more spending for the infantry."
+
+
+
+cavalry_backbone_ideas:0"§R****§!Cavalry Primacy§R****§!"
+
+##misions and their modifiers
+el_gran_capitan_title:0"El Gran Capitán's Reforms"
+el_gran_capitan_desc:0"The dominance of french heavy cavalry and swiss pikemen has finally met its match a general our soldiers are calling El Gran Capitán has made a formation of infatry taking advantage of new developments in firearms and using pikemen and arquebusiers to cover each others weakness' and compliment their strengths."
+
+el_gran_capitan_reforms:0"Coronelias Reform"
+desc_el_gran_capitan_reforms:0"An effective combination and deployment of swordsmen pikeman and arquebusiers."
+
+reorganized_tercios_title:0"Development of Tercios"
+reorganized_tercios_desc:0"The Captian's initial reforms have proven a great success although the swordsemn have been gradually removd form the formation by him and have pikemen and arquebusiers in sleeves and a main body have taken over.§R Replaces previous modifier from mission! §!"
+
+tercio_deployment:0"Masters of Pike and Shot"
+desc_tercio_deployment:0"Pikemen on their own are vunerable to gunmen, and gunmen on their own are vulnerable to cavarly together they help compensate for their weakness'."
+
+challenges_to_tercios_title:0"The Challeges to the Tercio"
+challenges_to_tercios_desc:0"The image of the Tercios invincibility as a military formation has been shacken, having run into different linear challengers we must adapt the organization and administration of the tercio to the developments on the battlefield.§R Replaces previous modifier from mission! §!"
+
+tercio_adaption:0"Tercio Adapting"
+desc_tercio_adaption:0"The Tercio isnt quite as it was though as an organization it can be remade and adapted."
+tercio_legacy:0"Tercio Legacy"
+desc_tercio_legacy:0"His Excellency seems to forget he is facing a Spanish Regiment."
+
+gc_por_rieno_title:0"Centralize the Empire"
+gc_por_rieno_desc:0"Our empire is grand and spans worldwide yet we still relagate governing the colonies that give us our power to corrupt and incompetent goverors in this age it cannot stand, it must be rectified."
+gc_por_unido_title:0"Rieno Unido"
+gc_por_unido_desc:0"Despite our best efforts the empire still isnt comepletly united we must crackdown on the former colonies autonomy and centralize the kings power and the realms hold over the continent."
+
+por_rieno_unido:0"Rieno Unido"
+desc_por_rieno_unido:0"The realm is united."
+
+a_more_linear_pike_and_shot_title:0"Linear Pike and Shot Warfare"
+a_more_linear_pike_and_shot_desc:0"       "
+
+ned_linear_pike_shot:0"Linear Pike and Shot "
+desc_ned_linear_pike_shot:0""
+
+######decisions
+establish_mobilization_title:0"Establish Mobilization Systems"
+establish_mobilization_desc:0"The state has come a long way the old system of levies and mercenaries are bing more supplanted by the raising of an army from the peasantry."
+mobilize_title:0"Mobilize"
+mobilize_desc:0"Mold the metal Fan the flames the wolves are at the door."
+
+expand_levies_title:0"Expansion of Levies 1"
+expand_levies_desc:0"Our army expands the levy system must expand to catch up."
+expand_levies_secon_title:0"Expansion of Levies 2"
+expand_levies_secon_desc:0"Our army expands the levy system must expand to catch up.§R Replaces previous modifier from decision! §!"
+expand_levies_thir_title:0"Expansion of Levies 3"
+expand_levies_thir_desc:0"Our army expands the levy system must expand to catch up.§R Replaces previous modifier from decision! §!"
+expand_levies_fourt_title:0"Expansion of Levies 4"
+expand_levies_fourt_title:0"Our army expands the levy system must expand to catch up.§R Replaces previous modifier from decision! §!"
+
+modernize_the_levies_title:0"Modernize The Levies"
+modernize_the_levies_desc:0"The time of levies has changed armies can be summoned less quickly but better trained and motivated although still less effiecent than a standing one."
+
+
+
+
+expanding_the_gaurd_title:0"The Elite Gaurds"
+expanding_the_gaurd_desc:0"Times have changed and we must standardize and advance the elite into more profesional gaurds."
+the_gaurd_title:0"The Gaurd"
+the_gaurd_desc:0"Our elite regiments must be ordered into more sophistacated divisions."

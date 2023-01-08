@@ -240,7 +240,7 @@ provincial_tax_income = {
 	local_build_cost= -0.0175
 	local_development_cost = -0.015
 	local_build_time = -0.02
-	tax_income = 1
+	tax_income = 0.5
 }
 
 provincial_production_size = {
@@ -1822,7 +1822,7 @@ banner_regiment = {
 }
 
 streltsy_regiment = {
-    fire_damage = 0.1
+    fire_damage = 0.15
 }
 
 cossacks_regiment = {

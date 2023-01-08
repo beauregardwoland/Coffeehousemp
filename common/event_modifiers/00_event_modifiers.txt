@@ -12717,3 +12717,31 @@ fra_breaks_dual_monarchy = {
 	curia_powers_cost = 0.25
 	improve_relation_modifier = -0.10
 }
+expand_levies = {
+	amount_of_banners = 6
+}
+expand_levies_second = {
+	amount_of_banners = 12
+}
+expand_levies_third = {
+	amount_of_banners = 21
+}
+expand_levies_fourth = {
+	amount_of_banners = 28
+}
+modernize_levies = {
+	discipline = 0.05
+	land_morale = 0.10
+	reinforce_speed = -0.30
+    is_banner_modifier = yes
+}
+elite_gaurds = {
+	discipline = 0.075
+	fire_damage_received = -0.10
+	is_carolean_modifier = yes
+}
+gaurds = {
+	discipline = 0.025
+	fire_damage_received = -0.05
+	is_carolean_modifier = yes
+}

@@ -77,16 +77,15 @@ country_decisions = {
 			}
 
 			
-			south_germany_region = {
+			south_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = NGF
 			}
-			north_germany_region = {
+			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
-					NOT = { area = lower_nubia_area }
 				}
 				add_permanent_claim = NGF
 			}
@@ -102,9 +101,10 @@ country_decisions = {
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 		}
-		ai_will_do = {
-			factor = 0
-		}
+	}	
+	ai_will_do = {
+		factor = 0
 	}
+	
 }
 }

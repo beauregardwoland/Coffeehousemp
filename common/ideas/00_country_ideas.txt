@@ -686,7 +686,7 @@ SPA_ideas = {
 	inter_caetera = {
 		idea_claim_colonies = yes
 		colonists = 1
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.05
 	}
 	gold_fleet = {
 		naval_forcelimit_modifier = 0.25
@@ -753,7 +753,7 @@ NED_ideas = {
 	}
 	
 	bonus = {
-		trade_efficiency = 0.15
+		trade_efficiency = 0.20
 	}
 
 	trigger = {
@@ -785,7 +785,8 @@ NED_ideas = {
 		siege_ability = 0.10
 	}
 	platoon_fire = {
-		fire_damage = 0.1
+		fire_damage = 0.05
+		discipline = 0.05
 	}
 }
 
@@ -15423,11 +15424,11 @@ RHI_ideas = {
 		no_religion_penalty = yes	
 	}
 	RHI_administrative_assimilation_of_rheinlanders = {
-		advisor_cost = -0.25
+		advisor_cost = -0.15
 		free_policy = 1
 	}
 	RHI_taxation = {
-		global_trade_goods_size = 0.3
+		global_trade_goods_size = 0.35
 		build_time = -0.35
 	}
 	RHI_enlightenment = {
