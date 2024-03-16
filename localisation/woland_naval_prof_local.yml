@@ -10,8 +10,6 @@
  desc_no_galley_slaves:0""
  nav_wargames:0"Naval Wargames"
  desc_nav_wargames:0"Is equivalent to Yearly Naval Professionalism gain:§R +1.0%§!"
- #desc_
- #:0""
 
  ####events
  naval_professionalism_1:0"What to do with Drunken Sailors"
