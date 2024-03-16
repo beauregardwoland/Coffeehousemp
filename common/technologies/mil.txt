@@ -2,8 +2,10 @@ monarch_power = MIL
 
 # applied when a country is ahead of time in this technology
 # no bonus for MIL currently
-# ahead_of_time = {
-# }
+ahead_of_time = {
+	monthly_russian_modernization = 0.05
+	siege_ability = 0.10
+}
 
 # Pre-era techs
 technology = {
@@ -173,6 +175,7 @@ technology = {
 	barracks = yes
 	gunpowder_mill = yes
 
+
 	enable = african_somali_cavalry
 	enable = african_tuareg_cavalry
 	enable = slavic_stradioti	
@@ -279,7 +282,7 @@ technology = {
 	enable = north_american_rifle_cavalry
 	enable = central_american_rifle_cavalry
 	enable = south_american_rifle_cavalry	
-	enable = qizilbash_cavalry	
+	enable = qizilbash_cavalry_unit	
 	enable = east_mongolian_steppe	
 	enable = indian_elephant	
 	enable = steppe_riders
@@ -450,6 +453,7 @@ technology = {
 	combat_width = 1
 	
 	enable = chambered_demi_cannon
+	enable = demi_culverin
 }
 
 technology = {
@@ -484,6 +488,7 @@ technology = {
 	
 	#Carbine
 	maneuver_value 		= 	0.25
+horse_breeding_grounds_upgrade = yes
 
 		
 	enable = swedish_gallop	
@@ -493,6 +498,7 @@ technology = {
 	enable = mamluk_musket_charge 
 	enable = afsharid_reformed	
 	enable = leather_cannon	
+	enable = chambered_cannon	
 	enable = steppe_mounted_raiders
 	enable = ha_xoloti
 	enable = aboriginal_swarm_cav
@@ -553,8 +559,9 @@ technology = {
 	#Killing Grounds
 	
 	infantry_fire		= 	0.5
-		
-	enable = swivel_cannon		
+	firearms_workshop_upgrade = yes
+	enable = swivel_cannon
+	enable = howitzer
 
 	combat_width = 2
 }
@@ -598,12 +605,13 @@ technology = {
 	combat_width = 2
 	
 	conscription_center = yes
-
+artillery_foundry_upgrade = yes
 	
 	enable = polish_winged_hussar	
 	enable = muscovite_cossack	
 
-	enable = coehorn_mortar		
+	enable = horse_artillery_unit
+	enable = coehorn_mortar
 }
 
 technology = {
@@ -690,7 +698,8 @@ technology = {
 	artillery_shock 	=	0.1
 	artillery_fire		=	2.0
 	
-	enable = royal_mortar	
+	enable = royal_mortar
+	enable = licorne
 }
 
 technology = {
@@ -815,7 +824,8 @@ technology = {
 	
 	#Defense in Depth
 		
-	enable = flying_battery  
+	enable = flying_battery
+	enable = grand_battery
 }
 
 technology = {

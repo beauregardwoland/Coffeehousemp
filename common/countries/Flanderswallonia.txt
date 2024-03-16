@@ -1,0 +1,131 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 97  209  251 }
+revolutionary_colors = { 1 8 5 }
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	administrative_ideas
+	maritime_ideas
+	innovativeness_ideas
+	offensive_ideas
+	exploration_ideas
+	economic_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	french_bluecoat
+	french_dragoon
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Filips #1" = 15
+	"Jan #0" = 15
+	"Boudewijn #9" = 5
+	"Arnolf #3" = 5
+	"Lodewijk #3" = 5
+	"Robrecht #3" = 5
+	"Willem #2" = 5
+	"Diederik #1" = 5	
+	"Gwijde #1" = 5	
+	"Karel #1" = 5
+	"Antoon #0" = 5
+	"Abraham #0" = 0
+	"Alexander #0" = 0
+	"Alfons #0" = 0
+	"Andries #0" = 0
+	"Balthasar #0" = 0
+	"Bartholomeus #0" = 0
+	"Christoffel #0" = 0
+	"Constantijn #0" = 0
+	"Cornelis #0" = 0
+	"Daniël #0" = 0
+	"David #0" = 0
+	"Ernst #0" = 0
+	"Erwin #0" = 0
+	"Ewoud #0" = 0
+	"Floris #0" = 0
+	"Gabriel #0" = 0
+	"Godfried #0" = 0
+	"Hans #0" = 0
+	"Jacob #0" = 0
+	"Kasper #0" = 0
+	"Ludger #0" = 0
+	"Luuk #0" = 0
+	"Marinus #0" = 0
+	"Pieter #0" = 0
+	"Renate #0" = 0
+	"Rodolf #0" = 0
+	"Roeland #0" = 0
+	"Valentijn #0" = 0
+	
+	"Margareta #3" = -15
+	"Maria #0" = -5
+	"Jeanne #0" = -1
+	"Matilda #0" = -1
+	"Beatrix #0" = -1
+	"Yolande #2" = -1
+}
+
+leader_names = {
+	Dampierre Deconinck
+	Goethals
+	Nevers
+	Penen
+	"Van Bellegem" "Van Gulik"
+	"Van Herstal" "Van Leeuwergem"
+	"Van Lichtervelde" "Van Nieuwland"
+	"Van Oudenaarde" "Van Petershem"
+	"Van Raveschoot" "Van Renesse"
+	"Van Pallandt"
+	"Van Raephorst" "Van Rechteren" Reijersen "Van Renesse" "Van Riebeeck" "De Rijk" "Van Rossum"
+	Schouten Schenk Spiegel Steltman Stuyvesant "Van Swieten"
+	Tasman "Van Troyen"
+	Vliechop "Van Voorst"
+	"Van Utenhove"
+	"Van Walbeeck" "Van Wassenaer" "Van der Werff" "Van Wesembeke" "Van Wingle" "Van Wijngaarden" "De Winter"
+}
+
+ship_names = {
+	Antwerpen
+	"Boudewijn I" Brugge
+	"De Vlaamse leeuw"
+	Gent Guldensporenslag "Gwijde van Dampierre" 
+	Hasselt
+	"Jacob van Artevelde"
+	"Karel de Goede" "Kerel van Vlaanderen"
+	Leuven
+	"Manneken Pis" Mechelen
+	"Pieter de Coninck"
+	Schelde
+	"Tijl Uilenspiegel"
+	Vlaanderen
+	Galei Gelderland Geloof Gideon Glindhorst Goes Gouda Gouderak Haarlem Haarlemmerhout Hardenbroek Harderwijk Havik Hector Heemstede Hersteller
+	Het Loo Hilverbeek Hilversum Hollandia Hoop Jaarsveld Jonas Jozua Jupiter Kalandsoog Kameel Kampen Kampveere Kennemerland Koevorden Komeet Kooge Landman Landskroon
+	Leeuwarden Leeuwenhorst Liefde Loosdregt Luipaard Lynx Maan Maarseveen Maas Margarethe Mars Matenes Medusa Meermin Mercuur Middelbare Middelburg Morgenstar
+	Moriaanshoofd Naerden Neptunus Noorderkwartier Olifant Omlandia Oostergo Oosterwijk Oranjeboom Oudshoorn Overijssel Overwinnaer Pacificatie Parel Pelikaan Pijl
+	Post Prins Raaf Ramhorst Reebok Reigersberg Rijnland Rosenkranz Salamander Schieland Schonauwen Souterwoude Spiegel Spion Starrenburg Stavoren Susanna Tholen
+	Tijdverdrijf Tijger Triton Tromp Unie Utrecht Valk Veere Velsen Vlaming Vlissingen Voorzichtigheid Vrede Vrijheid Waag Waakzamheid Walcheren Wassenaer Westergo
+	Westfriesland Weststellingwerft Windhond Wolf Wolfswinkel Wreker Zeelandia Zeepaard Zephier Zierikzee Zon Zuiderhuis Zuileveld Zutphen Zwaan Zwaluw Zwanenburg
+	Zwieten
+}
+
+army_names = {
+	"Staatse Leger"	"Leger van $PROVINCE$"  }
+
+fleet_names = { "Staatse Vloot" "Noordzeevloot" "Vloot van $PROVINCE$" 
+	 }

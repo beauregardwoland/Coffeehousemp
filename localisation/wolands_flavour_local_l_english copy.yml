@@ -1,0 +1,220 @@
+﻿l_english:
+ hab1_mission_1_title:0 "Secure Electors"
+ hab1_mission_1_desc:0 "Ever since Rudolph, Count of Habsburg, was crowned Holy Roman Emperor and maneuvered his family into the Duchy of Austria, it has been the goal of all its Dukes to become Emperor. We must do what we can to ensure that the Empire has the stability it needs, an Austrian Emperor."
+
+ hab1_mission_2_title:0 "Control Bohemia"
+ hab1_mission_2_desc:0 "The fate of the Kingdom of Bohemia has long been of interest to the Dukes of Austria. We must take a more active hand in this and bring the Kingdom more firmly into our orbit."
+
+ hab1_mission_3_title:0 "Recover Silesia"
+ hab1_mission_3_desc:0 "The province of Silesia is a legitimate part of the Habsburg inheritance, but has been lost. We must recover it for the sake of the majesty of the Habsburg dynasty."
+
+ hab1_mission_4_title:0 "Conquer Galicia"
+ hab1_mission_4_desc:0 "Once Polish Galicia formed a valuable buffer for us against other neighbors. The time has come however to secure these wealthy provinces for ourselves, lest we risk them falling in the hands of our rivals."
+
+ hab1_mission_5_title:0 "King of Poland"
+ hab1_mission_5_desc:0 "Our north-eastern frontier will never be truly safe until we can count the whole of Poland as subject to the Austrian [Root.GetStateForm]."
+
+ hab2_mission_1_title:0 "Imperial Ascendency"
+ hab2_mission_1_desc:0 "There are those among the Princes who would have ambitions to challenge us and seize control of the Empire for themselves. A show of diplomatic and military strength will be necessary to quell these ambitions and ensure that the predominance of our power is undisputed."
+
+ hab2_mission_2_title:0 "The Imperial Border "
+ hab2_mission_2_desc:0 "Some territories of the Empire have lapsed from our rule and are governed by those who do not recognize the Emperor's authority. This situation must be rectified."
+
+ hab2_mission_3_title:0 "A Holy Empire"
+ hab2_mission_3_desc:0 "Tensions between member states have been aggravated by religious differences. We must restore religious unity if we are to regain the moral authority we claim as the "Holy" Roman Empire."
+
+ hab2_mission_4_title:0 "A Roman Empire"
+ hab2_mission_4_desc:0 "The Holy Roman Empire will never be totally free from ridicule until its borders do indeed include the city of Rome."
+
+ hab2_mission_5_title:0 "A.E.I.O.U"
+ hab2_mission_5_desc:0 "It is Austria's destiny to rule the world and it is [Root.GetName]'s destiny to rule Austria. As the guardians of the Habsburg heritage we should take our place as the the rightful rulers of Austria."
+
+ league_war_1_title:0 "Evangelical Union"
+ league_war_1_desc:0 ""
+
+ league_war_2_title:0 "Truimph in the League War"
+ league_war_2_desc:0 ""
+
+ south_germany_5_title:0 "Gessler's Revenge"
+ south_germany_5_desc:0 "We have attempted to annex the Swiss before but were thwarted on every occasion - by a simple farmer with a bow and arrow, in one case. We must overcome the generations of humiliation we have suffered and bring these rebellious farmers under our rule."
+
+ aus_ned2_title:0 "Holdings in india"
+ aus_ned2_desc:0 "Our colonial empire will not be complete until it includes substantial holdings in India and the East Indies."
+
+ bs_china_colonial_title:0 "The Riches of China"
+ bs_china_colonial_desc:0 "Merchants tell of a land of fabulous riches in the far east. We must send our warships and negotiators to ensure that this wealth flows into our pockets."
+
+ hab_italy_1_title:0 "Royal Hungary"
+ hab_italy_1_desc:0 "The Kingdom of Hungary is threatened by dangerous enemies on all sides. We must step in and protect the Hungarian people directly, unifying their lands under one ruler."
+
+ hab_italy_2_title:0 "Secure Croatia"
+ hab_italy_2_desc:0 "Let us create a military frontier in the old kingdom of Croatia. This way we can fend off anyone who would encroach on the Christian lands of South East Europe."
+
+ hab_italy_3_title:0 "Defeat the Despots"
+ hab_italy_3_desc:0 "The fiercely independent Serbians and Bosnians occupy a position of strategic importance at our gateway to Greece. We must flex our muscles and bring them into our empire."
+
+ hab_italy_4_title:0 "Danubian Principalities"
+ hab_italy_4_desc:0 "Bulgaria has fallen under Ottoman rule. We must reverse their gains and push them back towards the Bosphorus, building up our empire in the Balkans in the process."
+
+ hab_italy_5_title:0 "City of the World's Desire"
+ hab_italy_5_desc:0 "Christianity will never be safe from the infidel until we have expelled the Ottoman menace from Europe."
+
+ league_war_3_title:0 "Waldenstien Problem"
+ league_war_3_desc:0 ""
+
+ aus_ned_title:0 "Austrian Netherlands"
+ aus_ned_desc:0 "With the Netherlands secured, we are well-placed to turn our ambitions towards establishing a colonial empire to equal those of our competitors in Europe."
+
+ aus_ned3_title:0 " The Ostend Company"
+ aus_ned3_desc:0 "Other European powers have become fabulously rich via their trading companies in the colonies. Now that we control the Netherlands, we should seek to get in on the act."
+
+ bs_colonial_australia_title:0 "Settle Austrialasia"
+ bs_colonial_australia_desc:0 "The lands at the far south-east of the known world have been given a name curiously similar to that of our own nation. It is clear that they were meant to be ours."
+
+ hab4_mission_1_title:0 "The Hereditary Lands"
+ hab4_mission_1_desc:0 ""
+
+ hab4_mission_2_title:0 "Austria Prospers"
+ hab4_mission_2_desc:0 "From the vineyards of the north to the mines and forges of the south, all of Austria shall prosper as our nation increases in strength."
+
+ hab4_mission_3_title:0 "Styria and Carinthia"
+ hab4_mission_3_desc:0 ""
+
+ hab4_mission_4_title:0 "Adriatic Fleets"
+ hab4_mission_4_desc:0 ""
+
+ hab4_mission_5_title:0 "Centers of Administration"
+ hab4_mission_5_desc:0 "We must ensure that our provincial capitals reflect our position as the pillar of strength upon which the Holy Roman Empire is based."
+
+ hab4_mission_6_title:0 " The Viennese Waltz"
+ hab4_mission_6_desc:0 "Our capital of [Root.Capital.GetCapitalName] must flourish and become a city of music and high culture, worthy of a ruler of our standing and a true capital of the Holy Roman Empire."
+
+ hab5_mission_1_title:0 "Control the Eastern Passes"
+ hab5_mission_1_desc:0 "The rich lands of Northern Italy have long been defying Imperial decrees. These cities must not be tolerated so close to the Austrian heartlands."
+
+ hab5_mission_2_title:0 "Control Venetien"
+ hab5_mission_2_desc:0 ""
+
+ hab5_mission_3_title:0 "Duchy of Milan"
+ hab5_mission_3_desc:0 "The [MLO.GovernmentName] of Milan is a troublesome but important part of the Empire. We should make sure that its riches cannot be used against us by bringing it under our closer control."
+
+ hab5_mission_4_title:0 "Claims in Toscana"
+ hab5_mission_4_desc:0 ""
+
+ hab5_mission_5_title:0 "Habsburg Naples"
+ hab5_mission_5_desc:0 "By adding the Kingdom of Naples to our collection of titles, we can solidify our control of Italy and move one step closer towards bringing the entire peninsula under our rule."
+
+ hab5_mission_6_title:0 "Geographic Construct"
+ hab5_mission_6_desc:0 ""
+
+ south_germany_1_title:0 "Deal with the Bishoprics"
+ south_germany_1_desc:0 "There are a number of weak, autonomous bishoprics on our borders. If we wish to strengthen Austria, these would be easy targets for expansion."
+
+ south_germany_2_title:0 "Duchy of Bavaria"
+ south_germany_2_desc:0 "The Bavarians have long been a troublesome presence on our north-western border. Their wealthy duchy has the potential to be a great thorn in our side. We should secure our borders - and our preeminence - by claiming it for ourselves."
+
+ south_germany_3_title:0 "Connect Further Austria"
+ south_germany_3_desc:0 "Our territories in Further Austria are cut off from Austria Proper. We should join them up with the rest of our lands."
+
+ south_germany_4_title:0 "Control of Swabia"
+ south_germany_4_desc:0 "Our holdings in Further Austria include a variety of estates and territories scattered across Swabia. We should consolidate these by subduing the surrounding cities and princes, bringing them under our rule and establishing a bulwark of our power in the west."
+
+ south_germany_6_title:0 "Reclaim Burgundy"
+ south_germany_6_desc:0 "The Burgundian territories have lapsed from the Holy Roman Empire. We must ensure that they are brought under our authority again, one way or another."
+
+ ostsiedlung_1_title:0 "Habsburg Unity"
+ ostsiedlung_1_desc:0 ""
+
+ ostsiedlung_2_title:0 "Bella Gerant Alii,"
+ ostsiedlung_2_desc:0 ""
+
+ ostsiedlung_3_title:0 "Tu Felix Austria Nube"
+ ostsiedlung_3_desc:0 ""
+
+ ostsiedlung_4_title:0 "Danubian Migrations"
+ ostsiedlung_4_desc:0 ""
+
+ ostsiedlung_5_title:0 "The Military Frontiers"
+ ostsiedlung_5_desc:0 ""
+
+ ostsiedlung_6_title:0 "Schwaz Silver Mine"
+ ostsiedlung_6_desc:0 ""
+
+ ostsiedlung_7_title:0 "Austrian Ducats"
+ ostsiedlung_7_desc:0 ""
+
+ ostsiedlung_8_title:0 "Bohemian Crystal"
+ ostsiedlung_8_desc:0 ""
+
+ ostsiedlung_9_title:0 "Czech Industry"
+ ostsiedlung_9_desc:0 ""
+
+ emp_ven_writing_on_wall_title:0"The writing on the wall"
+ emp_ven_writing_on_wall_desc:0""
+ emp_ven_to_india_title:0"Towards the Indies"
+ emp_ven_to_india_desc:0""
+ emp_ven_east_africa_title:0"East African expeditions"
+ emp_ven_east_africa_desc:0""
+ emp_ven_cape_title:0"Control all Routes to asia"
+ emp_ven_cape_desc:0""
+
+ rhi_encroach_saxons_title:0 "Encroach on the Saxons"
+ rhi_encroach_saxons_desc:0 ""
+ rhi_hansa_btfo_title:0 "Hansaetic Dominance"
+ rhi_hansa_btfo_desc:0 ""
+ rhi_rhenish_fleet_title:0 "The Rhenish Squadron"
+ rhi_rhenish_fleet_desc:0 ""
+ rhi_colonial_ambition_title:0 "The Signs of a Great Power"
+ rhi_colonial_ambition_desc:0 ""
+ rhine_mercs_title:0 "Local landsknechts"
+ rhine_mercs_desc:0 ""
+ better_mercs_title:0 "Hessian Reputation"
+ better_mercs_desc:0 ""
+ rhi_whole_rhine_title:0 "North Sea Estuary"
+ rhi_whole_rhine_desc:0 ""
+ rhi_global_rhine_title:0 "Global Exports"
+ rhi_global_rhine_desc:0 ""
+ rhi_rhine_watch_title:0 "Watch on the Rhine "
+ rhi_rhine_watch_desc:0 ""
+ rhi_prospering_title:0 "Respected Sovereignty"
+ rhi_prospering_desc:0 ""
+ rhi_french_btfo_title:0 "End Frankish Incursions"
+ rhi_french_btfo_desc:0 ""
+ rhi_consolidate_rhine_title:0 "Consolidation on the Rhine"
+ rhi_consolidate_rhine_desc:0 ""
+ rhi_growing_cities_title:0 "Growth along the Rhine"
+ rhi_growing_cities_desc:0 ""
+ rhi_big_cities_title:0 "Prosperous Metropolises"
+ rhi_big_cities_desc:0 ""
+ rhi_coal_early_title:0 "Embers of Industry"
+ rhi_coal_early_desc:0 ""
+ rhi_industrialize_title:0 "Industrial Wildfire"
+ rhi_industrialize_desc:0 ""
+ rhi_better_steel_title:0 "Advanced Metallurgy"
+ rhi_better_steel_desc:0 ""
+ rhi_germany_united_title:0 "Forging Germany"
+ rhi_germany_united_desc:0 ""
+ rhi_claim_swiss_title:0 "Securing the Lower Circle"
+ rhi_claim_swiss_desc:0 ""
+ rhi_swabia_tyrol_title:0 "Fraconian and Swabian Spheres"
+ rhi_swabia_tyrol_desc:0 ""
+ rhi_gold_designs_title:0 "Control of Silver Minting "
+ rhi_gold_designs_desc:0 ""
+ rhi_backhand_habsburgs_title:0 "Backhanding the Habsburgs "
+ rhi_backhand_habsburgs_desc:0 ""
+ rhi_czech_experts_title:0 "Czech Experts"
+ rhi_czech_experts_desc:0 ""
+ hre_reform_title:0 "Modernize the Empire"
+ hre_reform_desc:0 ""
+ rhi_religous_title:0 "Building Religous Tolerance "
+ rhi_religous_desc:0 ""
+ rhi_religous_freedom_title:0 "Calm in the Storm "
+ rhi_religous_freedom_desc:0 ""
+ rhi_religous_refugees_title:0 "Peace of Westphalia"
+ rhi_religous_refugees_desc:0 ""
+ rhi_religion_change_title:0 "Fervor and Faith"
+ rhi_religion_change_desc:0 ""
+ hre_emperor_title:0 "Old Seat of Power"
+ hre_emperor_desc:0 ""
+ new_seat_of_power_title:0 "New Seat of Power?"
+ new_seat_of_power_desc:0 ""

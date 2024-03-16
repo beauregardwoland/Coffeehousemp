@@ -50,7 +50,7 @@ return_manpower_modifier = {
 	}
 
 	may_return_manpower_on_disband = yes
-	discipline = 0.05
+	military_tactics = 0.15
 }
 
 general_cost_modifier = {
@@ -80,6 +80,6 @@ reserves_organisation_modifier = {
 
 	general_cost = -0.5
 	drill_gain_modifier = 1
-	military_tactics = 0.15
+	discipline = 0.025
 	drill_decay_modifier = -0.20
 }

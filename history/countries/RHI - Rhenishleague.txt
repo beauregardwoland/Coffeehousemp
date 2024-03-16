@@ -1,5 +1,0 @@
-government = republic
-primary_culture = hessian
-religion = protestant
-technology_group = western
-capital = 81	# Kassel

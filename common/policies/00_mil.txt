@@ -1,8 +1,26 @@
-tdr_conscript_miners_1 = {
+conscript_miners_1 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -19,15 +37,17 @@ tdr_conscript_miners_1 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_conscript_miners_2
-            has_active_policy = tdr_conscript_miners_3
+            has_active_policy = conscript_miners_2
+            has_active_policy = conscript_miners_3
             }
         }
+		mil_tech = 9
     }
 
 	siege_ability = 0.10
@@ -38,11 +58,29 @@ tdr_conscript_miners_1 = {
 	}
 }
 
-tdr_conscript_miners_2 = {
+conscript_miners_2 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -59,13 +97,14 @@ tdr_conscript_miners_2 = {
 			full_idea_group = cavalry_backbone_ideas
 			full_idea_group = leadership_ideas
 			full_idea_group = equipment_ideas
+			full_idea_group = mercenary_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_conscript_miners_1
-            has_active_policy = tdr_conscript_miners_3
+            has_active_policy = conscript_miners_1
+            has_active_policy = conscript_miners_3
             }
         }
     }
@@ -77,7 +116,7 @@ tdr_conscript_miners_2 = {
 		factor = 0.8		
 	}
 }
-tdr_conscript_miners_3 = {
+conscript_miners_3 = {
 	monarch_power = MIL
 
 	potential = {
@@ -98,13 +137,14 @@ tdr_conscript_miners_3 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_conscript_miners_2
-            has_active_policy = tdr_conscript_miners_1
+            has_active_policy = conscript_miners_2
+            has_active_policy = conscript_miners_1
             }
         }
     }
@@ -117,11 +157,29 @@ tdr_conscript_miners_3 = {
 	}
 }
 
-tdr_resevred_drill_1 = {
+resevred_drill_1 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -138,18 +196,20 @@ tdr_resevred_drill_1 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_resevred_drill_2
-            has_active_policy = tdr_resevred_drill_3
+            has_active_policy = resevred_drill_2
+            has_active_policy = resevred_drill_3
             }
         }
+		mil_tech = 9
     }
 
-	yearly_army_professionalism = 0.0075
+	yearly_army_professionalism = 0.005
 	global_manpower_modifier = -0.10
 
 	ai_will_do = {
@@ -157,11 +217,29 @@ tdr_resevred_drill_1 = {
 	}
 }
 
-tdr_resevred_drill_2 = {
+resevred_drill_2 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -178,13 +256,14 @@ tdr_resevred_drill_2 = {
 			full_idea_group = cavalry_backbone_ideas
 			full_idea_group = leadership_ideas
 			full_idea_group = equipment_ideas
+			full_idea_group = mercenary_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_resevred_drill_1
-            has_active_policy = tdr_resevred_drill_3
+            has_active_policy = resevred_drill_1
+            has_active_policy = resevred_drill_3
             }
         }
     }
@@ -197,7 +276,7 @@ tdr_resevred_drill_2 = {
 		factor = 0.8		
 	}
 }
-tdr_resevred_drill_3 = {
+resevred_drill_3 = {
 	monarch_power = MIL
 
 	potential = {
@@ -218,13 +297,14 @@ tdr_resevred_drill_3 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_resevred_drill_2
-            has_active_policy = tdr_resevred_drill_1
+            has_active_policy = resevred_drill_2
+            has_active_policy = resevred_drill_1
             }
         }
     }
@@ -237,11 +317,29 @@ tdr_resevred_drill_3 = {
 	}
 }
 
-tdr_pressed_conscription_1 = {
+pressed_conscription_1 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -258,15 +356,17 @@ tdr_pressed_conscription_1 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_pressed_conscription_2
-            has_active_policy = tdr_pressed_conscription_3
+            has_active_policy = pressed_conscription_2
+            has_active_policy = pressed_conscription_3
             }
         }
+		mil_tech = 9
     }
 
 	yearly_army_professionalism = -0.005
@@ -277,11 +377,29 @@ tdr_pressed_conscription_1 = {
 	}
 }
 
-tdr_pressed_conscription_2 = {
+pressed_conscription_2 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -298,18 +416,19 @@ tdr_pressed_conscription_2 = {
 			full_idea_group = cavalry_backbone_ideas
 			full_idea_group = leadership_ideas
 			full_idea_group = equipment_ideas
+			full_idea_group = mercenary_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_pressed_conscription_1
-            has_active_policy = tdr_pressed_conscription_3
+            has_active_policy = pressed_conscription_1
+            has_active_policy = pressed_conscription_3
             }
         }
     }
 
-	yearly_army_professionalism = -0.01
+	yearly_army_professionalism = -0.06
 	global_manpower_modifier = 0.15
 
 	
@@ -317,7 +436,7 @@ tdr_pressed_conscription_2 = {
 		factor = 0.8		
 	}
 }
-tdr_pressed_conscription_3 = {
+pressed_conscription_3 = {
 	monarch_power = MIL
 
 	potential = {
@@ -338,30 +457,49 @@ tdr_pressed_conscription_3 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_pressed_conscription_2
-            has_active_policy = tdr_pressed_conscription_1
+            has_active_policy = pressed_conscription_2
+            has_active_policy = pressed_conscription_1
             }
         }
     }
 
-	yearly_army_professionalism = -0.02
-	global_manpower_modifier = 0.35
+	yearly_army_professionalism = -0.01
+	global_manpower_modifier = 0.30
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
 
-tdr_full_stomachs_clean_sheats_1 = {
+full_stomachs_clean_sheats_1 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -378,15 +516,17 @@ tdr_full_stomachs_clean_sheats_1 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_full_stomachs_clean_sheats_2
-            has_active_policy = tdr_full_stomachs_clean_sheats_3
+            has_active_policy = full_stomachs_clean_sheats_2
+            has_active_policy = full_stomachs_clean_sheats_3
             }
         }
+		mil_tech = 9
     }
 
 	land_attrition = -0.1
@@ -397,11 +537,29 @@ tdr_full_stomachs_clean_sheats_1 = {
 	}
 }
 
-tdr_full_stomachs_clean_sheats_2 = {
+full_stomachs_clean_sheats_2 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -418,13 +576,14 @@ tdr_full_stomachs_clean_sheats_2 = {
 			full_idea_group = cavalry_backbone_ideas
 			full_idea_group = leadership_ideas
 			full_idea_group = equipment_ideas
+			full_idea_group = mercenary_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_full_stomachs_clean_sheats_1
-            has_active_policy = tdr_full_stomachs_clean_sheats_3
+            has_active_policy = full_stomachs_clean_sheats_1
+            has_active_policy = full_stomachs_clean_sheats_3
             }
         }
     }
@@ -436,7 +595,7 @@ tdr_full_stomachs_clean_sheats_2 = {
 		factor = 0.8		
 	}
 }
-tdr_full_stomachs_clean_sheats_3 = {
+full_stomachs_clean_sheats_3 = {
 	monarch_power = MIL
 
 	potential = {
@@ -457,30 +616,49 @@ tdr_full_stomachs_clean_sheats_3 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_full_stomachs_clean_sheats_2
-            has_active_policy = tdr_full_stomachs_clean_sheats_1
+            has_active_policy = full_stomachs_clean_sheats_2
+            has_active_policy = full_stomachs_clean_sheats_1
             }
         }
     }
 
-	land_attrition = -0.35
-	land_maintenance_modifier = 0.15
+	land_attrition = -0.30
+	land_maintenance_modifier = 0.20
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
 
-tdr_long_marches_1 = {
+long_marches_1 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -497,15 +675,17 @@ tdr_long_marches_1 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_long_marches_2
-            has_active_policy = tdr_long_marches_3
+            has_active_policy = long_marches_2
+            has_active_policy = long_marches_3
             }
         }
+		mil_tech = 9
     }
 
 	movement_speed = 0.10
@@ -516,11 +696,29 @@ tdr_long_marches_1 = {
 	}
 }
 
-tdr_long_marches_2 = {
+long_marches_2 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -537,26 +735,26 @@ tdr_long_marches_2 = {
 			full_idea_group = cavalry_backbone_ideas
 			full_idea_group = leadership_ideas
 			full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_long_marches_1
-            has_active_policy = tdr_long_marches_3
+            has_active_policy = long_marches_1
+            has_active_policy = long_marches_3
             }
         }
     }
 
 	movement_speed = 0.20
 	regiment_disembark_speed = 0.30
-	force_march_free = yes
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-tdr_long_marches_3 = {
+long_marches_3 = {
 	monarch_power = MIL
 
 	potential = {
@@ -577,13 +775,14 @@ tdr_long_marches_3 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_long_marches_2
-            has_active_policy = tdr_long_marches_1
+            has_active_policy = long_marches_2
+            has_active_policy = long_marches_1
             }
         }
     }
@@ -597,11 +796,29 @@ tdr_long_marches_3 = {
 	}
 }
 
-tdr_infantry_arms_procurement_1 = {
+infantry_arms_procurement_1 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -618,15 +835,17 @@ tdr_infantry_arms_procurement_1 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_infantry_arms_procurement_2
-            has_active_policy = tdr_infantry_arms_procurement_3
+            has_active_policy = infantry_arms_procurement_2
+            has_active_policy = infantry_arms_procurement_3
             }
         }
+		mil_tech = 9 
     }
 
 	infantry_power = 0.05
@@ -637,11 +856,29 @@ tdr_infantry_arms_procurement_1 = {
 	}
 }
 
-tdr_infantry_arms_procurement_2 = {
+infantry_arms_procurement_2 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -658,13 +895,14 @@ tdr_infantry_arms_procurement_2 = {
 			full_idea_group = cavalry_backbone_ideas
 			full_idea_group = leadership_ideas
 			full_idea_group = equipment_ideas
+			full_idea_group = mercenary_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_infantry_arms_procurement_1
-            has_active_policy = tdr_infantry_arms_procurement_3
+            has_active_policy = infantry_arms_procurement_1
+            has_active_policy = infantry_arms_procurement_3
             }
         }
     }
@@ -676,7 +914,7 @@ tdr_infantry_arms_procurement_2 = {
 		factor = 0.8		
 	}
 }
-tdr_infantry_arms_procurement_3 = {
+infantry_arms_procurement_3 = {
 	monarch_power = MIL
 
 	potential = {
@@ -697,13 +935,14 @@ tdr_infantry_arms_procurement_3 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_infantry_arms_procurement_2
-            has_active_policy = tdr_infantry_arms_procurement_1
+            has_active_policy = infantry_arms_procurement_2
+            has_active_policy = infantry_arms_procurement_1
             }
         }
     }
@@ -716,11 +955,29 @@ tdr_infantry_arms_procurement_3 = {
 	}
 }
 
-tdr_cavalry_arms_procurement_1 = {
+cavalry_arms_procurement_1 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -737,15 +994,17 @@ tdr_cavalry_arms_procurement_1 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_cavalry_arms_procurement_2
-            has_active_policy = tdr_cavalry_arms_procurement_3
+            has_active_policy = cavalry_arms_procurement_2
+            has_active_policy = cavalry_arms_procurement_3
             }
         }
+		mil_tech = 9 
     }
 
 	cavalry_power = 0.05
@@ -756,11 +1015,29 @@ tdr_cavalry_arms_procurement_1 = {
 	}
 }
 
-tdr_cavalry_arms_procurement_2 = {
+cavalry_arms_procurement_2 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -777,13 +1054,14 @@ tdr_cavalry_arms_procurement_2 = {
 			full_idea_group = cavalry_backbone_ideas
 			full_idea_group = leadership_ideas
 			full_idea_group = equipment_ideas
+			full_idea_group = mercenary_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_cavalry_arms_procurement_1
-            has_active_policy = tdr_cavalry_arms_procurement_3
+            has_active_policy = cavalry_arms_procurement_1
+            has_active_policy = cavalry_arms_procurement_3
             }
         }
     }
@@ -795,7 +1073,7 @@ tdr_cavalry_arms_procurement_2 = {
 		factor = 0.8		
 	}
 }
-tdr_cavalry_arms_procurement_3 = {
+cavalry_arms_procurement_3 = {
 	monarch_power = MIL
 
 	potential = {
@@ -816,13 +1094,14 @@ tdr_cavalry_arms_procurement_3 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_cavalry_arms_procurement_2
-            has_active_policy = tdr_cavalry_arms_procurement_1
+            has_active_policy = cavalry_arms_procurement_2
+            has_active_policy = cavalry_arms_procurement_1
             }
         }
     }
@@ -835,11 +1114,29 @@ tdr_cavalry_arms_procurement_3 = {
 	}
 }
 
-tdr_storm_assualts_1 = {
+storm_assualts_1 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -856,31 +1153,50 @@ tdr_storm_assualts_1 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_storm_assualts_2
-            has_active_policy = tdr_storm_assualts_3
+            has_active_policy = storm_assualts_2
+            has_active_policy = storm_assualts_3
             }
         }
+		mil_tech = 9
     }
 
-	shock_damage = 0.10
-	fire_damage_received = -0.05
-	morale_damage = 0.05 
+	assault_fort_ability = 0.10
+	morale_damage = 0.075
 
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
 
-tdr_storm_assualts_2 = {
+storm_assualts_2 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -897,148 +1213,26 @@ tdr_storm_assualts_2 = {
 			full_idea_group = cavalry_backbone_ideas
 			full_idea_group = leadership_ideas
 			full_idea_group = equipment_ideas
+			full_idea_group = mercenary_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_storm_assualts_1
-            has_active_policy = tdr_storm_assualts_3
+            has_active_policy = storm_assualts_1
+            has_active_policy = storm_assualts_3
             }
         }
     }
 
-	shock_damage = 0.20
-	fire_damage_received = -0.10
-	morale_damage = 0.10 
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-tdr_storm_assualts_3 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 12
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = tdr_storm_assualts_2
-            has_active_policy = tdr_storm_assualts_1
-            }
-        }
-    }
-
-	shock_damage = 0.30
-	fire_damage_received = -0.15
+	assault_fort_ability = 0.20
 	morale_damage = 0.15
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-
-tdr_defensive_batteries_1 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 3
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = tdr_defensive_batteries_2
-            has_active_policy = tdr_defensive_batteries_3
-            }
-        }
-    }
-
-	shock_damage_received  = -0.05
-	fire_damage = 0.10
-	artillery_power = 0.025
-
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-
-tdr_defensive_batteries_2 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 7
-	}
-	
-	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = tdr_defensive_batteries_1
-            has_active_policy = tdr_defensive_batteries_3
-            }
-        }
-    }
-
-	shock_damage_received  = -0.10
-	fire_damage = 0.175
-	artillery_power = 0.05 
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-tdr_defensive_batteries_3 = {
+storm_assualts_3 = {
 	monarch_power = MIL
 
 	potential = {
@@ -1059,31 +1253,49 @@ tdr_defensive_batteries_3 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_defensive_batteries_2
-            has_active_policy = tdr_defensive_batteries_1
+            has_active_policy = storm_assualts_2
+            has_active_policy = storm_assualts_1
             }
         }
     }
 
-	shock_damage_received  = -0.15
-	fire_damage = 0.25
-	artillery_power = 0.10
+	assault_fort_ability = 0.30
+	morale_damage = 0.20
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
 
-tdr_peacetime_maintance_1 = {
+defensive_batteries_1 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -1100,15 +1312,179 @@ tdr_peacetime_maintance_1 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_peacetime_maintance_2
-            has_active_policy = tdr_peacetime_maintance_3
+            has_active_policy = defensive_batteries_2
+            has_active_policy = defensive_batteries_3
             }
         }
+		mil_tech = 9
+    }
+
+	shock_damage_received  = -0.05
+	artillery_power = 0.025
+	movement_speed = -0.10
+
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+
+defensive_batteries_2 = {
+	monarch_power = MIL
+
+	potential = {
+		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = offensive_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = quality_ideas
+			full_idea_group = quantity_ideas
+			full_idea_group = irregularwarfare_ideas
+			full_idea_group = grand_warfare_ideas
+			full_idea_group = levy_ideas
+			full_idea_group = profesionalism_ideas
+			full_idea_group = infantry_backbone_ideas
+			full_idea_group = cavalry_backbone_ideas
+			full_idea_group = leadership_ideas
+			full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
+		amount = 2
+		}
+		NOT = {
+        calc_true_if = {
+            amount = 1
+            has_active_policy = defensive_batteries_1
+            has_active_policy = defensive_batteries_3
+            }
+        }
+    }
+
+	shock_damage_received  = -0.075
+	artillery_power = 0.075
+	movement_speed = -0.15 
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+defensive_batteries_3 = {
+	monarch_power = MIL
+
+	potential = {
+		adm_tech = 12
+	}
+	
+	allow = {
+		calc_true_if = {
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = irregularwarfare_ideas
+		full_idea_group = grand_warfare_ideas
+		full_idea_group = levy_ideas
+		full_idea_group = profesionalism_ideas
+		full_idea_group = infantry_backbone_ideas
+		full_idea_group = cavalry_backbone_ideas
+		full_idea_group = leadership_ideas
+		full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
+		amount = 3
+		}
+		NOT = {
+        calc_true_if = {
+            amount = 1
+            has_active_policy = defensive_batteries_2
+            has_active_policy = defensive_batteries_1
+            }
+        }
+    }
+
+	shock_damage_received  = -0.10
+	artillery_power = 0.15
+	movement_speed = -0.20
+	
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+
+peacetime_maintance_1 = {
+	monarch_power = MIL
+
+	potential = {
+		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = irregularwarfare_ideas
+		full_idea_group = grand_warfare_ideas
+		full_idea_group = levy_ideas
+		full_idea_group = profesionalism_ideas
+		full_idea_group = infantry_backbone_ideas
+		full_idea_group = cavalry_backbone_ideas
+		full_idea_group = leadership_ideas
+		full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
+		amount = 1
+		}
+		NOT = {
+        calc_true_if = {
+            amount = 1
+            has_active_policy = peacetime_maintance_2
+            has_active_policy = peacetime_maintance_3
+            }
+        }
+		mil_tech = 9
     }
 
 	land_maintenance_modifier = -0.05
@@ -1119,11 +1495,29 @@ tdr_peacetime_maintance_1 = {
 	}
 }
 
-tdr_peacetime_maintance_2 = {
+peacetime_maintance_2 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -1140,13 +1534,14 @@ tdr_peacetime_maintance_2 = {
 			full_idea_group = cavalry_backbone_ideas
 			full_idea_group = leadership_ideas
 			full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_peacetime_maintance_1
-            has_active_policy = tdr_peacetime_maintance_3
+            has_active_policy = peacetime_maintance_1
+            has_active_policy = peacetime_maintance_3
             }
         }
     }
@@ -1158,7 +1553,7 @@ tdr_peacetime_maintance_2 = {
 		factor = 0.8		
 	}
 }
-tdr_peacetime_maintance_3 = {
+peacetime_maintance_3 = {
 	monarch_power = MIL
 
 	potential = {
@@ -1179,13 +1574,14 @@ tdr_peacetime_maintance_3 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_peacetime_maintance_2
-            has_active_policy = tdr_peacetime_maintance_1
+            has_active_policy = peacetime_maintance_2
+            has_active_policy = peacetime_maintance_1
             }
         }
     }
@@ -1198,11 +1594,29 @@ tdr_peacetime_maintance_3 = {
 	}
 }
 
-tdr_amphibous_operations_1 = {
+amphibous_operations_1 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -1219,15 +1633,17 @@ tdr_amphibous_operations_1 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_amphibous_operations_2
-            has_active_policy = tdr_amphibous_operations_3
+            has_active_policy = amphibous_operations_2
+            has_active_policy = amphibous_operations_3
             }
         }
+		mil_tech = 9
     }
 
 	allowed_marine_fraction = 0.15
@@ -1238,11 +1654,29 @@ tdr_amphibous_operations_1 = {
 	}
 }
 
-tdr_amphibous_operations_2 = {
+amphibous_operations_2 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -1259,13 +1693,14 @@ tdr_amphibous_operations_2 = {
 			full_idea_group = cavalry_backbone_ideas
 			full_idea_group = leadership_ideas
 			full_idea_group = equipment_ideas
+			full_idea_group = mercenary_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_amphibous_operations_1
-            has_active_policy = tdr_amphibous_operations_3
+            has_active_policy = amphibous_operations_1
+            has_active_policy = amphibous_operations_3
             }
         }
     }
@@ -1278,7 +1713,7 @@ tdr_amphibous_operations_2 = {
 		factor = 0.8		
 	}
 }
-tdr_amphibous_operations_3 = {
+amphibous_operations_3 = {
 	monarch_power = MIL
 
 	potential = {
@@ -1299,13 +1734,14 @@ tdr_amphibous_operations_3 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_amphibous_operations_2
-            has_active_policy = tdr_amphibous_operations_1
+            has_active_policy = amphibous_operations_2
+            has_active_policy = amphibous_operations_1
             }
         }
     }
@@ -1319,11 +1755,29 @@ tdr_amphibous_operations_3 = {
 	}
 }
 
-tdr_swift_recruitment_1 = {
+swift_recruitment_1 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -1340,15 +1794,17 @@ tdr_swift_recruitment_1 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+full_idea_group = mercenary_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_swift_recruitment_2
-            has_active_policy = tdr_swift_recruitment_3
+            has_active_policy = swift_recruitment_2
+            has_active_policy = swift_recruitment_3
             }
         }
+		mil_tech = 9
     }
 
 	reinforce_speed = 0.15
@@ -1359,11 +1815,29 @@ tdr_swift_recruitment_1 = {
 	}
 }
 
-tdr_swift_recruitment_2 = {
+swift_recruitment_2 = {
 	monarch_power = MIL
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -1380,13 +1854,14 @@ tdr_swift_recruitment_2 = {
 			full_idea_group = cavalry_backbone_ideas
 			full_idea_group = leadership_ideas
 			full_idea_group = equipment_ideas
+			full_idea_group = mercenary_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_swift_recruitment_1
-            has_active_policy = tdr_swift_recruitment_3
+            has_active_policy = swift_recruitment_1
+            has_active_policy = swift_recruitment_3
             }
         }
     }
@@ -1399,7 +1874,7 @@ tdr_swift_recruitment_2 = {
 		factor = 0.8		
 	}
 }
-tdr_swift_recruitment_3 = {
+swift_recruitment_3 = {
 	monarch_power = MIL
 
 	potential = {
@@ -1420,19 +1895,20 @@ tdr_swift_recruitment_3 = {
 		full_idea_group = cavalry_backbone_ideas
 		full_idea_group = leadership_ideas
 		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_swift_recruitment_2
-            has_active_policy = tdr_swift_recruitment_1
+            has_active_policy = swift_recruitment_2
+            has_active_policy = swift_recruitment_1
             }
         }
     }
 
-	reinforce_speed = 0.45
-	global_regiment_recruit_speed = -0.45
+	reinforce_speed = 0.40
+	global_regiment_recruit_speed = -0.40
 	reinforce_cost_modifier = -0.20
 	
 	ai_will_do = {
@@ -1440,3 +1916,336 @@ tdr_swift_recruitment_3 = {
 	}
 }
 
+
+
+
+
+
+onto_the_melee_1 = {
+	monarch_power = MIL
+
+	potential = {
+		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = irregularwarfare_ideas
+		full_idea_group = grand_warfare_ideas
+		full_idea_group = levy_ideas
+		full_idea_group = profesionalism_ideas
+		full_idea_group = infantry_backbone_ideas
+		full_idea_group = cavalry_backbone_ideas
+		full_idea_group = leadership_ideas
+		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
+		
+		amount = 1
+		}
+		NOT = {
+        calc_true_if = {
+            amount = 1
+            has_active_policy = onto_the_melee_2
+            has_active_policy = onto_the_melee_3
+            }
+        }
+		NOT = { has_active_policy = fire_damage_1  }
+		mil_tech = 9
+    }
+
+	shock_damage = 0.10
+	fire_damage_received = -0.05
+	fire_damage = -0.025
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+
+onto_the_melee_2 = {
+	monarch_power = MIL
+
+	potential = {
+		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = offensive_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = quality_ideas
+			full_idea_group = quantity_ideas
+			full_idea_group = irregularwarfare_ideas
+			full_idea_group = grand_warfare_ideas
+			full_idea_group = levy_ideas
+			full_idea_group = profesionalism_ideas
+			full_idea_group = infantry_backbone_ideas
+			full_idea_group = cavalry_backbone_ideas
+			full_idea_group = leadership_ideas
+			full_idea_group = equipment_ideas
+			full_idea_group = mercenary_ideas
+		amount = 2
+		}
+		NOT = {
+        calc_true_if = {
+            amount = 1
+            has_active_policy = onto_the_melee_1
+            has_active_policy = onto_the_melee_3
+            }
+        }
+		NOT = { has_active_policy = fire_damage_2  }
+    }
+
+	shock_damage = 0.20
+	fire_damage_received = -0.10 
+	fire_damage = -0.05
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+onto_the_melee_3 = {
+	monarch_power = MIL
+
+	potential = {
+		adm_tech = 12
+	}
+	
+	allow = {
+		calc_true_if = {
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = irregularwarfare_ideas
+		full_idea_group = grand_warfare_ideas
+		full_idea_group = levy_ideas
+		full_idea_group = profesionalism_ideas
+		full_idea_group = infantry_backbone_ideas
+		full_idea_group = cavalry_backbone_ideas
+		full_idea_group = leadership_ideas
+		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
+		amount = 3
+		}
+		NOT = {
+        calc_true_if = {
+            amount = 1
+            has_active_policy = onto_the_melee_2
+            has_active_policy = onto_the_melee_1
+            }
+        }
+		NOT = { has_active_policy = fire_damage_3  }
+    }
+
+	shock_damage = 0.30
+	fire_damage_received = -0.15
+	fire_damage = -0.075
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+
+
+
+
+fire_damage_1 = {
+	monarch_power = MIL
+
+	potential = {
+		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 2
+				}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = irregularwarfare_ideas
+		full_idea_group = grand_warfare_ideas
+		full_idea_group = levy_ideas
+		full_idea_group = profesionalism_ideas
+		full_idea_group = infantry_backbone_ideas
+		full_idea_group = cavalry_backbone_ideas
+		full_idea_group = leadership_ideas
+		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
+		
+		amount = 1
+		}
+		NOT = {
+        calc_true_if = {
+            amount = 1
+            has_active_policy = fire_damage_2
+            has_active_policy = fire_damage_3
+            }
+        }
+		NOT = { has_active_policy = onto_the_melee_1  }
+		mil_tech = 9
+    }
+
+	fire_damage = 0.10
+	morale_damage_received  = -0.05
+	shock_damage = -0.025
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+
+fire_damage_2 = {
+	monarch_power = MIL
+
+	potential = {
+		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+				}
+		}
+	}
+	
+	allow = {
+		calc_true_if = {
+			full_idea_group = offensive_ideas
+			full_idea_group = defensive_ideas
+			full_idea_group = quality_ideas
+			full_idea_group = quantity_ideas
+			full_idea_group = irregularwarfare_ideas
+			full_idea_group = grand_warfare_ideas
+			full_idea_group = levy_ideas
+			full_idea_group = profesionalism_ideas
+			full_idea_group = infantry_backbone_ideas
+			full_idea_group = cavalry_backbone_ideas
+			full_idea_group = leadership_ideas
+			full_idea_group = equipment_ideas
+			full_idea_group = mercenary_ideas
+		amount = 2
+		}
+		NOT = {
+        calc_true_if = {
+            amount = 1
+            has_active_policy = fire_damage_1
+            has_active_policy = fire_damage_3
+            }
+        }
+		NOT = { has_active_policy = onto_the_melee_2  }
+    }
+
+	fire_damage = 0.15
+	morale_damage_received = -0.075 
+	shock_damage = -0.05
+	ai_will_do = {
+		factor = 0.8		
+	}
+}
+fire_damage_3 = {
+	monarch_power = MIL
+
+	potential = {
+		adm_tech = 12
+	}
+	
+	allow = {
+		calc_true_if = {
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = irregularwarfare_ideas
+		full_idea_group = grand_warfare_ideas
+		full_idea_group = levy_ideas
+		full_idea_group = profesionalism_ideas
+		full_idea_group = infantry_backbone_ideas
+		full_idea_group = cavalry_backbone_ideas
+		full_idea_group = leadership_ideas
+		full_idea_group = equipment_ideas
+		full_idea_group = mercenary_ideas
+		amount = 3
+		}
+		NOT = {
+        calc_true_if = {
+            amount = 1
+            has_active_policy = fire_damage_2
+            has_active_policy = fire_damage_1
+            }
+        }
+		NOT = { has_active_policy = onto_the_melee_3  }
+    }
+
+	fire_damage = 0.25
+	morale_damage_received = -0.10
+	shock_damage = -0.075
+	ai_will_do = {
+		factor = 0.8		
+	}
+}

@@ -1,5 +1,0 @@
-government = monarchy
-primary_culture = austrian
-religion = catholic
-technology_group = western
-capital = 81	# Kassel

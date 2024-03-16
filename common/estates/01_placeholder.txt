@@ -1,0 +1,41 @@
+estate_placeholder = {
+	icon = 2
+	trigger = {
+		always = no
+	}
+	country_modifier_happy = {
+	}
+	country_modifier_neutral = {
+	}	
+	country_modifier_angry = {
+	}
+
+	land_ownership_modifier = {
+	}
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			NOT = { religion_group = owner }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { religion = owner }
+		}
+		modifier = {
+			factor = 0.67
+			NOT = { is_state_core = owner }
+		}
+		modifier = {
+			factor = 1.2
+			base_tax = 10
+		}
+	}
+	base_influence = 0
+	color = { 200 200 255 }
+	privileges = {
+	}
+	agendas = {
+	}
+	influence_from_dev_modifier = 1.0
+}

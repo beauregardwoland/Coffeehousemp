@@ -4,21 +4,26 @@
 	build_time= -0.20
 	advisor_cost= -0.15
 	development_cost = -0.15
+	great_project_upgrade_cost = -0.25
+	
 }
 2 = {
 	diplomats = 1
-	governing_capacity = 250
+	governing_capacity = 300
 	global_autonomy = -0.025
 	advisor_cost= -0.15
 	build_cost= -0.05
 	development_cost = -0.05
+	great_project_upgrade_cost = -0.25
+	
 }
 
 3 = {
-	governing_capacity = 375
+	governing_capacity = 400
 	global_autonomy = -0.075
-	max_absolutism = 15
+	max_absolutism = 20
 	free_leader_pool = 1
 	diplomats = 1
-
+	great_project_upgrade_cost = -0.25
+	
 }

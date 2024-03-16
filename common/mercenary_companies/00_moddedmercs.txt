@@ -1,0 +1,123 @@
+merc_gendarme = {
+    regiments_per_development = 0.04
+	cost_modifier = 0.70
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+    home_province = 183 # Paris
+	cavalry_weight = 0.8
+	sprites = {westerngfx_sprite_pack}
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		capital_scope = {
+		or = {
+			region = france_region
+			region = south_german_region
+			region = italy_region
+			region = low_countries_region
+		}
+		NOT = {
+			is_year = 1530
+		}
+	}
+	}
+	modifier = { 
+		cavalry_shock = 0.4
+		cav_to_inf_ratio = 1
+		discipline = 0.075
+	}
+}
+
+merc_landsknecht = {
+    regiments_per_development = 0.04
+	cost_modifier = 0.80
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+	sprites = { westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		capital_scope = {
+		or = {
+			region = france_region
+			region = south_german_region
+			region = italy_region
+			region = low_countries_region
+			region = north_german_region
+			region = poland_region
+			region = iberia_region
+			region = scandinavia_region
+		}
+		NOT = {
+			is_year = 1600
+		}
+	}
+	}
+	modifier = { 
+		discipline = 0.075
+		infantry_shock = 0.3
+	}
+}
+
+
+merc_tidemansbrigade = {
+    regiments_per_development = 0.0025
+	cost_modifier = 1.1
+	mercenary_desc_key = tideman
+	sprites = {westerngfx_sprite_pack}
+    trigger = {
+		total_development = 300
+		is_allowed_to_recruit_mercenaries = yes
+	}
+	
+	modifier = { 
+		discipline = 0.15
+		infantry_shock = 0.6
+		regiment_disembark_speed = 0.75
+	}
+}
+
+merc_tatar_bands = {
+    regiments_per_development = 0.04
+	cost_modifier = 0.30
+	cavalry_weight = 0.85
+	sprites = {dlc048_tim_sprite_pack muslimgfx_sprite_pack}
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		religion_group = muslim 
+	}
+	modifier = { 
+		loot_amount = 0.60
+		movement_speed = 0.40
+		siege_ability = 0.15
+		discipline = -0.10
+		cav_to_inf_ratio = 0.15
+	}
+}
+merc_peasant_crusaders = {
+	regiments_per_development = 0.04
+	cost_modifier = 0.25
+	sprites = { dlc116_DIT_sprite_pack_western westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		has_country_modifier = papal_sanction_for_holy_war
+	}
+	modifier = { 
+		land_morale = 0.10
+		movement_speed = 0.20
+		discipline = -0.05
+	}
+
+
+}
+merc_elite_crusaders = {
+	regiments_per_development = 0.025
+	cost_modifier = 0.25
+	cavalry_weight = 0.30
+	sprites = { dlc040_kni_sprite_pack westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		has_country_modifier = papal_sanction_for_holy_war
+	}
+	modifier = { 
+		discipline = 0.05
+		morale_damage = 0.10
+		morale_damage_received = -0.10
+	}
+}

@@ -1,8 +1,8 @@
-#Country Name: Please see filename.
+#SGF
 
 graphical_culture = westerngfx
 
-color = { 78  130  153 }
+color = { 142  203  208 }
 
 revolutionary_colors = { 0  14  0 }
 
@@ -129,7 +129,7 @@ leader_names = {
 }
 
 army_names = {
-	"Armee von $PROVINCE$" "K.u.K Armee" "Kaiserliche Armee" "Armee von Bayern
+	"Armee von $PROVINCE$" "Kuck Armee" "Kaiserliche Armee" "Armee von Bayern"
 }
 
 ship_names = {

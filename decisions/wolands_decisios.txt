@@ -1,0 +1,38 @@
+country_decisions = {
+
+	humanist_debates = {
+		color = { 195 160 20 }
+		potential = {
+			has_estate_privilege = estate_hummanist_bonus
+		}
+		allow = {
+			NOT = {
+				has_country_modifier = debate_aftermath
+			}
+		}
+		effect = {
+			add_years_of_income = -0.1
+			country_event_with_option_insight = {
+				id = beaus_event_mobilization.32
+				option_1 = "
+					custom_tooltip = hummanst_debates_option1
+				"
+				option_2 = "
+					custom_tooltip = hummanst_debates_option2
+				"
+				option_3 = "
+					custom_tooltip = hummanst_debates_option3
+				"
+				option_4 = "
+					custom_tooltip = hummanst_debates_option4
+				"
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			# England, France, Barbary Coast
+		}
+	}
+
+
+}

@@ -1525,10 +1525,10 @@ emp_ita_overseas_branch = {
 				type = all
 				owned_by = ROOT
 			}
-			majarteen_area {
-				type = all
-				owned_by = ROOT
-			}
+			#majarteen_area {
+			#	type = all
+			#	owned_by = ROOT
+			#}
 		}
 		
 		effect = {

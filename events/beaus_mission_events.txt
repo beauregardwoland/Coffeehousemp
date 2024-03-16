@@ -1,0 +1,245 @@
+namespace = beaus_rhine
+country_event = {
+	id = beaus_rhine.1000
+	title = "beaus_rhine_option_1"
+	desc = "beaus_rhine_option_1_desc"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_rhine_optiona"
+		add_permanent_claim_province = { province = 99 }
+		add_permanent_claim_province = { province = 98 }
+		add_permanent_claim_province = { province = 4383 }
+	}
+	option = {
+		name = "beaus_rhine_optionb"
+		add_country_modifier = {
+			name = good_kava_mod
+			duration = 730
+		}
+	}
+
+}
+country_event = {
+	id = beaus_rhine.1100
+	title = "beaus_rhine_option_2"
+	desc = "beaus_rhine_option_2_desc"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_rhine_option2a"
+		add_innovativeness_big_effect = yes
+		add_country_modifier = {
+			name = rhi_smart_iron
+			duration = -1
+		}
+	}
+
+}
+
+country_event = {
+	id = beaus_rhine.1140
+	title = "beaus_rhine_option_3"
+	desc = "beaus_rhine_option_3_desc"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_rhine_option3a"
+		1878 = {
+			move_capital_effect = yes
+			add_base_manpower = 2
+			add_base_production = 2
+			add_base_tax = 2
+		} 
+	}
+	option = {
+		name = "beaus_rhine_option3b"
+		
+		1878 = {
+			add_base_manpower = 1
+			add_base_production = 1
+			add_base_tax = 1
+		} 
+		add_prestige = 20
+	}
+
+}
+
+country_event = {
+	id = beaus_rhine.1150
+	title = "beaus_rhine_option_4"
+	desc = "beaus_rhine_option_4_desc"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_rhine_option4a"
+		1876 = {
+			add_base_manpower = 1
+			add_base_production = 1
+			add_base_tax = 1
+		} 
+		add_prestige = 20
+	}
+	option = {
+		name = "beaus_rhine_option4b"
+		1876 = {
+			move_capital_effect = yes
+			add_base_manpower = 2
+			add_base_production = 2
+			add_base_tax = 2
+		} 
+	}
+	option = {
+		name = "beaus_rhine_option4c"
+		highlight = yes
+		trigger = {
+			capital = 1878
+			NOT ={ is_year = 1600 }
+		}
+		override_country_name = RH2
+		change_country_color = { color = {160 160 160 } }
+	}
+}
+country_event = {
+	id = beaus_rhine.1160
+	title = "beaus_rhine_option_5"
+	desc = "beaus_rhine_option_5_desc"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_rhine_option5a"
+		add_country_modifier = {
+			name = rhi_devout
+			duration = -1
+		}
+	}
+	option = {
+		name = "beaus_rhine_option5b"
+		trigger = {
+			any_owned_province = {
+				religion = catholic
+			}
+			NOT = { religion = catholic }
+		}
+		change_religion = catholic
+	}
+	option = {
+		name = "beaus_rhine_option5c"
+		trigger = {
+			any_owned_province = {
+				religion = reformed
+			}
+			NOT = { religion = reformed }
+		}
+		change_religion = reformed
+		
+	}
+	option = {
+		name = "beaus_rhine_option5d"
+		trigger = {
+			any_owned_province = {
+				religion = protestant
+			}
+			NOT = { religion = protestant }
+		}
+		change_religion = protestant
+		
+	}
+	option = {
+		name = "beaus_rhine_option5e"
+		trigger = {
+			any_owned_province = {
+				religion = orthodox
+			}
+			NOT = { religion = orthodox }
+		}
+		change_religion = orthodox
+		
+	}
+	option = {
+		name = "beaus_rhine_option5f"
+		trigger = {
+			any_owned_province = {
+				religion = jewish
+			}
+			NOT = { religion = jewish }
+		}
+		change_religion = jewish
+		
+	}
+}
+
+#netherlands
+country_event = {
+	id = beaus_rhine.6
+	title = "beaus_rhine_option_6"
+	desc = "beaus_rhine_option_6_desc"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_rhine_option6a"
+		trigger = {
+			has_country_flag = dutch_specific
+		}
+		override_country_name = NT1
+		change_country_color = {
+			color = { 253  205  13 }
+		}
+		clr_country_flag = dutch_specific
+	}
+	option = {
+		name = "beaus_rhine_option6b"
+		trigger = {
+			has_country_flag = flemish_specific
+		}
+		override_country_name = NT2
+		change_country_color = {
+			color = { 97  209  251 }
+		}
+		clr_country_flag = flemish_specific
+	}
+	option = {
+		name = "beaus_rhine_option6c"
+		trigger = {
+			has_country_flag = walloon_specific
+		}
+		override_country_name = NT3
+		change_country_color = {
+			color = { 148  30  70 }
+		}
+		clr_country_flag = walloon_specific
+	}
+	option = {
+		name = "beaus_rhine_option6d"
+		trigger = {
+			has_country_flag = frisian_specific
+		}
+		override_country_name = NT4
+		change_country_color = {
+			color = { 220  60  20 }
+		}
+		clr_country_flag = frisian_specific
+	}
+	option = {
+		name = "beaus_rhine_option6e"
+		add_prestige = 10
+		hidden_effect = {
+			clr_country_flag = frisian_specific
+			clr_country_flag = walloon_specific
+			clr_country_flag = flemish_specific
+			clr_country_flag = dutch_specific
+		}
+	}
+}

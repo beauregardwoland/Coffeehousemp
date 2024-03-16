@@ -1,0 +1,72 @@
+﻿l_english:
+ ###modifiers
+ naval_rum:0"Bolstered "Spirits""
+ desc_naval_rum:0""
+ blocade_bad:0"Piratical blockades"
+ desc_blocade_bad:0"Is equivalent to Yearly Naval Professionalism loss:§R -0.6%§! "
+ retired_captians:0"Retiring captains"
+ desc_retired_captians:0""
+ no_galley_slaves:0"Freeing Galley slaves"
+ desc_no_galley_slaves:0""
+ nav_wargames:0"Naval Wargames"
+ desc_nav_wargames:0"Is equivalent to Yearly Naval Professionalism gain:§R +1.0%§!"
+ #desc_
+ #:0""
+
+ ####events
+ naval_professionalism_1:0"What to do with Drunken Sailors"
+ naval_professionalism_1_desc:0"It seems despite our most prudent and thorough policies there is a ring and culture of mass drunkedness within our navy. It seems thankfully localised to a few fleets and ports but is still widespread in small margins elsewhere. Already multiple senior officers and admirals have drafted thorough docks of pay, unceremonious sacks and keelhauls to bring back order though some have suggested to not be so hasty and that regulated morale could be improved for some time."
+ naval_professionalism_1_optiona:0"This is a navy not a party barge."
+ naval_professionalism_1_optionb:0"Anything in moderaton is fine."
+
+ naval_professionalism_2:0"Arguments betwen the Army and Navy"
+ naval_professionalism_2_desc:0"Competition for resources, mutual undermining and character differences seem to have finally flaired themselves up in a heated argument between a senior admiral and general in an unrelated meeting. Unfourtantly many other present have taken a side following their cliques all seemingly waiting for the [Root.Monarch.GetTitle] to take the decisive side."
+ naval_professionalism_2_optiona:0""I believe our Field Marshall makes a fair point.""
+ naval_professionalism_2_optionb:0""I concur with the good sir from the Admiralty.""
+
+ naval_professionalism_3:0"Surplus in Millitary Spending"
+ naval_professionalism_3_desc:0"Some generous roundings and doubtful estimates have given birth to a large unallocated fund within the millitary budget. The Army and the Navy are scrambling to find arguments and papers that show the money should go to either of them though our treasurers have made good points that the money can be spent elsewhere."
+ naval_professionalism_3_optiona:0"Grant the money to the Army."
+ naval_professionalism_3_optionb:0"Grant the money to the Navy."
+ naval_professionalism_3_optionc:0"The money is better spent eslewhere in the budget."
+
+ naval_professionalism_4:0"Ruinous Blockades"
+ naval_professionalism_4_desc:0"Our recent efforts to blockade and strangle our enemy have given rise to greater and greater intrusion into enemy ports. These raids at first against habrours and ships have increasingly grown piratical with word going out of the devastation and ruthlessness of our sailors our admirals dont want to be associated with such barbarism."
+ naval_professionalism_4_optiona:0"Tis war"
+ naval_professionalism_4_optionb:0"Stop this savage display"
+
+ naval_professionalism_5:0"Prestigous Navy"
+ naval_professionalism_5_desc:0"The efforts of quite a few officers and adirals has recently blossomed into an imppresive display out of our ports."
+ naval_professionalism_5_optiona:0"This is what separates the [Root.GetAdjective] navy from all others."
+
+ naval_professionalism_6:0"Dirge of Meritocracy"
+ naval_professionalism_6_desc:0"A report has been given that many officer positions in the admiralty and other higher ups are being appointed not based on talent. In fact the report stages that friends and family are often given priority or in some cases the positions are auctioned are bribed off. Action has been suggested though investigation has already been taken into effect to root out the worst cases."
+ naval_professionalism_6_optiona:0"Let it fester some"
+ naval_professionalism_6_optionb:0"Raise the bid ourselves to promote talent"
+
+ naval_professionalism_7:0"Retiring Naval Captains"
+ naval_professionalism_7_desc:0"A group of older admrals nearing the end of their service has recently petitioned that in this time of peace they be allowed to retire to commercial practices. With the support of quite a few entrepreneurial burghers in need of veteran captains and crew they could bolster our merchnats finely.Though their contracts do state that their service is also in the bureacracy of the admiralty."
+ naval_professionalism_7_optiona:0"Let them retire"
+ naval_professionalism_7_optionb:0"Direct them to record manuals"
+
+ naval_professionalism_8:0"Pirate going Clean"
+ naval_professionalism_8_desc:0"A new story has gone around our capital of the recent arrival of a feared pirate captain. Subverting everyones expectations the rumor says he plans to apeal for amnesty to [Root.Monarch.GetTitle] [Root.Monarch.GetName] in exchange for his services. Aready most advisors are advirse to such a scoundral being giving such position and forgiveness though some have said he can prove useful."
+ naval_professionalism_8_optiona:0"Welcome back to HM's Navy"
+ naval_professionalism_8_optionb:0"Hang the pirate we arent that desparate"
+
+ naval_professionalism_9:0"New Drill Manuals"
+ naval_professionalism_9_desc:0"Our admirals have recently presented a slough of crticisms of our naval manuals chief among their complaints are them being dated and often times counter to established an new laws. A team has begun to attempt reforms and new drafts of the manuals but have demanded more resources in order to bring the newest and best materials for our officers."
+ naval_professionalism_9_optiona:0"Pay for the new instructions"
+ naval_professionalism_9_optionb:0"The old ones do just fine"
+
+ naval_professionalism_10:0"The use of Galley Slaves"
+ naval_professionalism_10_desc:0"The use of galley slaves and criminals within the navy has been put into question after a recent fiasco where insubordiation and mutiny where threatened and carried out along a few ships. Though somewhat inconsiquentional hummanists and reformers have taken this as fuel for their aruments regarding all manners of abolishing or limiting the system."
+ naval_professionalism_10_optiona:0"This incident could've been disastrous"
+ naval_professionalism_10_optionb:0"It proves nothing and we need the rowers"
+
+ naval_professionalism_11:0"Naval Manuevers"
+ naval_professionalism_11_desc:0"Recently within the admirality enthusiasm for a new set of war games manuevers and tours has caught traction. Many different plans have been drafted and unfourtantly all of them call upon siginificant funding and resources over a less than ideally long period. Though costly our admirals insist upon the measures and after recent negotiations they havent presented their final draft that they wont abandon."
+ naval_professionalism_11_optiona:0"Fund the exercises"
+ naval_professionalism_11_optionb:0"They are to expensive for now"
+ #_desc
+ #:0""

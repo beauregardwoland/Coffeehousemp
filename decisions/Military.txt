@@ -25,76 +25,6 @@ country_decisions = {
 		}
 	}
 	
-	establish_marine_corps = {
-		potential = {
-			has_dlc = "Cradle of Civilization"
-			NOT = { has_country_modifier = marine_corps }
-		}
-		allow = {
-			mil_tech = 12
-			army_professionalism = 0.20
-			AND = { any_owned_province = { has_port = yes } }
-		}
-		effect = {
-			custom_tooltip = explain_marine_corps_tt
-			add_mil_power = -150
-			add_country_modifier = {
-				name = "marine_corps"
-				duration = -1
-			}
-		}
-		ai_will_do = {
-			factor = 100 #Plays it safer with cash
-		}
-	}
-	
-	establish_mobilization = {
-		potential = {
-			has_dlc = "Cradle of Civilization"
-			NOT = { has_country_modifier = enabled_mobilization }
-			adm_tech = 18
-
-		}
-		allow = {
-			adm_tech = 18
-			army_professionalism = 0.50
-		}
-		effect = {
-			custom_tooltip = enabled_mobilization
-			add_mil_power = -300
-			add_adm_power = -150
-			add_country_modifier = {
-				name = "enabled_mobilization"
-				duration = -1
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	mobilize = {
-		potential = {
-			has_dlc = "Cradle of Civilization"
-			NOT = { has_country_modifier = mobilization }
-			mil_tech = 18
-		}
-		allow = {
-			has_country_modifier = enabled_mobilization
-			mil_tech = 18
-		}
-		effect = {
-			custom_tooltip = mobilizing
-			add_mil_power = -100
-			add_country_modifier = {
-				name = "mobilization"
-				duration = 120
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	state_firearm_regiments = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
@@ -174,98 +104,308 @@ country_decisions = {
 			factor = 0 #Plays it safer with cash
 		}
 	}
+		
+	kor_righteous_army = {
+		potential = {
+			has_government_attribute = has_righteous_army
+		}
+		allow = {
+			is_at_war = yes
+			OR = {
+				num_of_owned_provinces_with = {
+					culture = ROOT
+					NOT = { controlled_by = ROOT }
+					value = 10
+				}
+				is_in_war = {
+					defenders = ROOT
+				}
+			}
+			NOT = { has_country_modifier = the_righteous_army }
+			if = {
+				limit = { government = monarchy }
+				legitimacy = 80
+			}
+		}
+		effect = {
+			add_legitimacy = -10
+			add_war_exhaustion = -2
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+			add_country_modifier = { 
+				name = "the_righteous_army" 
+				duration = -1
+				desc = the_righteous_army_tt
+			}
+			custom_tooltip = kor_righteous_army_ct
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
 	
+	por_raise_the_ordenancas = {
+		potential = {
+			has_government_attribute = can_raise_manpower_from_home_region
+		}
+		allow = {
+			is_at_war = yes
+			custom_trigger_tooltip = {
+				tooltip = decision_once_every_ten_years
+				OR = {
+					NOT = { has_country_flag = raised_the_ordenancas }
+					had_country_flag = {
+						flag = raised_the_ordenancas
+						days = 3650
+					}
+				}
+			}
+			OR = {
+				is_in_war = {
+					defender_leader = ROOT
+				}
+				mil_power_cost = 50
+			}
+		}
+		effect = {
+			clr_country_flag = raised_the_ordenancas
+			set_country_flag = raised_the_ordenancas
+			if = {
+				limit = {
+					is_in_war = {
+						defender_leader = ROOT
+					}
+				}
+				custom_tooltip = por_raise_the_ordenancas_bt
+			}
+			else = {
+				mil_power_cost = 50
+			}
+			hidden_effect = {
+				capital_scope = {
+					save_event_target_as = capital_province
+					region = {
+						limit = {
+							owned_by = ROOT
+							NOT = {
+								province_distance = {
+									who = event_target:capital_province
+									distance = 50
+								}
+							}
+						}
+						set_province_flag = ordencas_province_flag
+					}
+				}
+				add_years_of_owned_provinces_manpower = {
+					years = 1
+					trigger = {
+						has_province_flag = ordencas_province_flag
+					}
+				}
+				add_years_of_owned_provinces_sailors = {
+					years = 1
+					trigger = {
+						has_province_flag = ordencas_province_flag
+					}
+				}
+				every_owned_province = {
+					limit = { has_province_flag = ordencas_province_flag }
+					clr_province_flag = ordencas_province_flag
+				}
+			}
+			custom_tooltip = por_raise_the_ordenancas_at
+			add_war_exhaustion = -2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	gra_rally_the_volunteers = {
+		potential = {
+			has_government_attribute = can_rally_volunteers_from_allies
+		}
+		allow = {
+			is_at_war = yes
+			custom_trigger_tooltip = {
+				tooltip = decision_once_every_ten_years
+				OR = {
+					NOT = { has_country_flag = rallied_the_volunteers }
+					had_country_flag = {
+						flag = rallied_the_volunteers
+						days = 3650
+					}
+				}
+			}
+			OR = {
+				is_in_war = {
+					defender_leader = ROOT
+				}
+				mil_power_cost = 50
+			}
+			OR = {
+				any_ally = { religion = ROOT }
+				any_subject_country = { religion = ROOT }
+			}
+		}
+		effect = {
+			clr_country_flag = rallied_the_volunteers
+			set_country_flag = rallied_the_volunteers
+			if = {
+				limit = {
+					is_in_war = {
+						defender_leader = ROOT
+					}
+				}
+				custom_tooltip = por_raise_the_ordenancas_bt
+			}
+			else = {
+				mil_power_cost = 50
+			}
+			custom_tooltip = por_raise_the_ordenancas_ct
+			hidden_effect = {
+				if = {
+					limit = {
+						calc_true_if = {
+							all_known_country = {
+								OR = {
+									alliance_with = ROOT
+									is_subject_of = ROOT
+								}
+								religion = ROOT
+							}
+							all_ally = {
+								religion = ROOT
+							}
+							amount = 5
+						}
+					}
+					add_country_modifier = {
+						name = rallied_volunteers_level_5
+						duration = 3650
+					}
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							all_known_country = {
+								OR = {
+									alliance_with = ROOT
+									is_subject_of = ROOT
+								}
+								religion = ROOT
+							}
+							all_ally = {
+								religion = ROOT
+							}
+							amount = 4
+						}
+					}
+					add_country_modifier = {
+						name = rallied_volunteers_level_4
+						duration = 3650
+					}
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							all_known_country = {
+								OR = {
+									alliance_with = ROOT
+									is_subject_of = ROOT
+								}
+								religion = ROOT
+							}
+							all_ally = {
+								religion = ROOT
+							}
+							amount = 3
+						}
+					}
+					add_country_modifier = {
+						name = rallied_volunteers_level_3
+						duration = 3650
+					}
+				}
+				else_if = {
+					limit = {
+						calc_true_if = {
+							all_known_country = {
+								OR = {
+									alliance_with = ROOT
+									is_subject_of = ROOT
+								}
+								religion = ROOT
+							}
+							all_ally = {
+								religion = ROOT
+							}
+							amount = 2
+						}
+					}
+					add_country_modifier = {
+						name = rallied_volunteers_level_2
+						duration = 3650
+					}
+				}
+				else = {
+					add_country_modifier = {
+						name = rallied_volunteers_level_1
+						duration = 3650
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	establish_marine_corps = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			NOT = { has_country_modifier = marine_corps }
+		}
+		allow = {
+			mil_tech = 12
+			army_professionalism = 0.20
+			AND = { any_owned_province = { has_port = yes } }
+		}
+		effect = {
+			custom_tooltip = explain_marine_corps_tt
+			add_mil_power = -150
+			add_country_modifier = {
+				name = "marine_corps"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 100 #Plays it safer with cash
+		}
+	}
+	establish_mobilization = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			NOT = { has_country_modifier = enabled_mobilization }
+			adm_tech = 18
 
-	expand_levies = {
-		potential = {
-			OR = {
-				NOT = { has_country_modifier = expand_levies }
-				NOT = { has_country_modifier = expand_levies_second }
-				NOT = { has_country_modifier = expand_levies_third }
-				NOT = { has_country_modifier = expand_levies_fourth }
-			}
-			has_idea_group = levy_ideas
-			army_size = 100
 		}
 		allow = {
-			full_idea_group = levy_ideas
-			army_size = 140
+			adm_tech = 18
+			army_professionalism = 0.50
+			mil_power = 300
+			adm_power = 150
 		}
 		effect = {
+			custom_tooltip = enabled_mobilization
+			add_mil_power = -300
+			add_adm_power = -150
 			add_country_modifier = {
-				name = "expand_levies"
+				name = "enabled_mobilization"
 				duration = -1
 			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	expand_levies_secon = {
-		potential = {
-			OR = {
-				NOT = { has_country_modifier = expand_levies_second }
-				NOT = { has_country_modifier = expand_levies_third }
-				NOT = { has_country_modifier = expand_levies_fourth }
-			}
-			has_idea_group = levy_ideas
-			army_size = 220
-		}
-		allow = {
-			full_idea_group = levy_ideas
-			army_size = 300
-		}
-		effect = {
-			add_country_modifier = {
-				name = "expand_levies_second"
-				duration = -1
-			}
-			upgrade_levies1 = yes
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	expand_levies_thir = {
-		potential = {
-			OR = {
-				NOT = { has_country_modifier = expand_levies_third }
-				NOT = { has_country_modifier = expand_levies_fourth }
-			}			
-			has_idea_group = levy_ideas
-			army_size = 400
-		}
-		allow = {
-			full_idea_group = levy_ideas
-			army_size = 480
-		}
-		effect = {
-			add_country_modifier = {
-				name = "expand_levies_third"
-				duration = -1
-			}
-			upgrade_levies2 = yes
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	expand_levies_fourt = {
-		potential = {
-			NOT = { has_country_modifier = expand_levies_fourth }
-			has_idea_group = levy_ideas
-			army_size = 500
-		}
-		allow = {
-			full_idea_group = levy_ideas
-			army_size = 600
-		}
-		effect = {
-			add_country_modifier = {
-				name = "expand_levies_fourth"
-				duration = -1
-			}
-			upgrade_levies3 = yes
+			regenerate_government_mechanics = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -273,19 +413,72 @@ country_decisions = {
 	}
 	modernize_the_levies = {
 		potential = {
+		
 			NOT = { has_country_modifier = modernize_levies}
+			NOT = { has_country_modifier = conscripts_levy }
+			
 			has_idea_group = levy_ideas
-			mil_tech = 16
+			mil_tech = 15
 
 		}
 		allow = {
 			full_idea_group = levy_ideas
 			army_professionalism = 0.30
-			mil_tech = 18
+			mil_tech = 16
 		}
 		effect = {
 			add_country_modifier = {
 				name = "modernize_levies"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	conscripts_levy_decision = {
+		potential = {
+			NOT = { has_country_modifier = conscripts_levy}
+			has_idea_group = levy_ideas
+			mil_tech = 19
+
+		}
+		allow = {
+			full_idea_group = levy_ideas
+			army_professionalism = 0.45
+			mil_tech = 20
+		}
+		effect = {
+			add_country_modifier = {
+				name = "conscripts_levy"
+				duration = -1
+			}
+			upgrade_levy = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	the_gaurd = {
+		potential = {
+			
+			NOT = { has_country_modifier = gaurds }
+			NOT = { has_country_modifier = elite_gaurds }
+				
+			has_idea_group = profesionalism_ideas
+			mil_tech = 11
+			army_professionalism = 0.35
+		}
+		allow = {
+			full_idea_group = profesionalism_ideas
+			army_professionalism = 0.50
+			mil_tech = 11
+			mil_power = 100
+		}
+		effect = {
+			add_mil_power = -100
+			add_country_modifier = {
+				name = "gaurds"
 				duration = -1
 			}
 		}
@@ -312,33 +505,213 @@ country_decisions = {
 				name = "elite_gaurds"
 				duration = -1
 			}
+			upgrade_gaurds1 = yes
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
-	the_gaurd = {
+	internal_migration = {
 		potential = {
-			NOT = { has_country_modifier = gaurds}
-			has_idea_group = profesionalism_ideas
-			mil_tech = 11
-			army_professionalism = 0.35
+			num_of_colonists = 2
+			is_year = 1630
 		}
 		allow = {
-			full_idea_group = profesionalism_ideas
-			army_professionalism = 0.50
-			mil_tech = 19
-			mil_power = 100
+			num_of_colonists = 2
+			NOT = { has_country_modifier = internal_migrat  }
+			is_year = 1650
 		}
 		effect = {
-			add_mil_power = -100
+			add_adm_power = -50
 			add_country_modifier = {
-				name = "gaurds"
+				name = "internal_migrat"
+				duration = 1830
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	internal_mig = {
+		potential = {
+			tag = RHI
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			add_government_power = {
+				mechanic_type = rhine_mechanic
+				power_type = rhine_adm_power
+				value = 100
+			}
+			add_government_power = {
+				mechanic_type = rhine_mechanic
+				power_type = rhine_dip_power
+				value = 100
+			}
+			add_government_power = {
+				mechanic_type = rhine_mechanic
+				power_type = rhine_mil_power
+				value = 100
+			}
+			set_country_flag = beautest
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	better_generals = {
+		potential = {
+			has_idea_group = leadership_ideas
+			NOT = { has_country_flag = chosen_leadership_final }
+			
+		}
+		allow = {
+			full_idea_group = leadership_ideas
+		}
+		effect = {
+			country_event = {  id = beaus_event_mobilization.890  }
+			set_country_flag = chosen_leadership_final
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	manchu_mongol_steppe_cavalry = {
+		potential = {
+			num_of_banners = 1
+			NOT = { has_estate = estate_cossacks }
+
+		}
+		allow = {
+			NOT = { has_country_modifier = mongolic_steppe_cavalry }
+			NOT = { has_country_modifier = cossack_steppe_cavalry }
+		}
+		effect = {
+			add_country_modifier = {
+				name = mongolic_steppe_cavalry
 				duration = -1
 			}
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	close_suez = {
+		potential = {
+			owns = 4316
+			owns = 2315
+			NOT = { has_country_flag = suez_closed }
+		}
+		allow = {
+			adm_tech = 15
+			adm_power = 150
+			mil_power = 150
+			controls = 4316
+			controls = 2315
+			4316 = {
+				has_great_project = {
+					type = suez_canal
+				}
+			}
+		}
+		effect = {
+			destroy_great_project = {
+				type = suez_canal
+			}
+			set_country_flag = suez_closed
+			add_adm_power = -150
+			add_mil_power = -150
+			4316 = {
+				add_province_modifier = {
+					name = suez_built
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	open_suez = {
+		potential = {
+			owns = 4316
+			owns = 2315
+			 has_country_flag = suez_closed 
+		}
+		allow = {
+			adm_tech = 15
+			adm_power = 150
+			dip_power  = 150
+		}
+		effect = {
+			4316 = {
+				add_great_project_tier = {
+					type = suez_canal
+					tier = 3
+				}
+				add_canal = suez_canal
+			}
+			clr_country_flag = suez_closed
+			add_adm_power = -150
+			add_dip_power = -150
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	less_lag = {
+		potential = {
+			Not = { has_global_flag = lag_reducer }
+			ai = no
+		}
+		allow = {
+			
+		}
+		effect = {
+			north_america_superregion = {
+				cede_province = ---
+			}
+			south_america_superregion = {
+				cede_province = ---
+			}
+			oceania_superregion = {
+				cede_province = ---
+			}
+			east_siberia_region = {
+				cede_province = ---
+			}
+			rio_grande_region = {
+				cede_province = ---
+			}
+			california_region = {
+				cede_province = ---
+			}
+			la_plata_region = {
+				cede_province = ---
+			}
+			set_global_flag = lag_reducer
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	debug_bullshit = {
+		potential = {
+			ai = no
+			has_country_flag = i_fucked_up
+		}
+		allow = {
+			
+		}
+		effect = {
+			swap_non_generic_missions = yes
+			clr_country_flag  = i_fucked_up
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }

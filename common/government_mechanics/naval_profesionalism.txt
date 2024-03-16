@@ -1,0 +1,66 @@
+naval_prof_mechanic = {  #largely copied from parilmentary conflicts 
+	available = {
+		always = yes
+	}
+
+	powers = {
+		naval_prof = {
+			gui = mob_mechanice_backround #mob_mechanice_backround is invisible
+			max = 100
+			reset_on_new_ruler = no
+			base_monthly_growth = 0
+			is_good = yes
+			scaled_modifier = {
+				modifier = {
+					naval_morale = 0.20
+					blockade_efficiency = 1
+					global_naval_barrage_cost = -0.75
+					global_ship_recruit_speed = -0.30
+					global_naval_engagement_modifier = 0.10
+					estate_placeholder_loyalty_modifier = 100
+				}			
+			}
+			range_modifier = {
+				start_value = 20
+				end_value = 100
+				modifier = { 
+					disengagement_chance = 0.15
+					number_of_cannons_modifier = 0.05
+				}
+			}
+			range_modifier = {
+				start_value = 40
+				end_value = 100
+				modifier = { 
+					navy_tradition = 1
+					movement_speed_in_fleet_modifier = 1
+				}
+			}
+			range_modifier = {
+				start_value = 60
+				end_value = 100
+				modifier = { 
+					recover_navy_morale_speed = 0.20
+					global_ship_repair = 0.20
+				}
+			}
+			range_modifier = {
+				start_value = 80
+				end_value = 100
+				modifier = { 
+					siege_blockade_progress = 2
+				}
+			}
+			range_modifier = {
+				start_value = 100
+				end_value = 100
+				modifier = { 
+					max_flagships = 1
+				}
+			}
+			on_min_reached = {
+				nav_no_prof = yes
+			}
+		}
+	}
+}

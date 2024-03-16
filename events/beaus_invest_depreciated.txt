@@ -1,0 +1,1064 @@
+namespace = woland_province_invest
+country_event = {
+	id = woland_province_invest.4
+	title = "woland_province_invest_1"
+	desc = "woland_province_invest_1_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	option = {
+		name = "woland_province_invest_option_a"
+		country_event = {
+			id = woland_province_invest.5
+		}
+	}
+	option = {
+		name = "woland_province_invest_option_b"
+		country_event = {
+			id = woland_province_invest.12
+		}
+	}
+	option = {
+		name = "woland_province_invest_option_c"
+		country_event = {
+			id = woland_province_invest.21
+		}
+	}
+	option = {
+		name = "woland_province_invest_option_d"
+		country_event = {
+			id = woland_province_invest.90
+		}
+	}
+}
+country_event = {
+	id = woland_province_invest.5
+	title = "woland_province_invest_2"
+	desc = "woland_province_invest_2_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	option = {
+		name = "woland_province_invest_2_option_a"
+		country_event = {
+			id = woland_province_invest.6
+		}
+	}
+	option = {
+		name = "woland_province_invest_2_option_b"
+		country_event = {
+			id = woland_province_invest.8
+		}
+
+	}
+	option = {
+		name = "woland_province_invest_2_option_c"
+		country_event = {
+			id = woland_province_invest.9
+		}
+
+	}
+	option = {
+		name = "woland_province_invest_2_option_d"
+		country_event = {
+			id = woland_province_invest.4
+		}
+	}
+}
+country_event = {
+	id = woland_province_invest.6
+	title = "woland_province_invest_3"
+	desc = "woland_province_invest_3_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	option = {
+		name = "woland_province_invest_3_option_a"
+		country_event = { id = woland_province_invest.7 days = 120 }
+		add_years_of_income = -0.035
+		add_mil_power = -10
+	}
+	option = {
+		name = "woland_province_invest_3_option_b"
+		country_event = { id = woland_province_invest.7 days = 60 }
+		add_years_of_income = -0.075
+		add_mil_power = -15
+	}
+	option = {
+		name = "woland_province_invest_3_option_c"
+		country_event = { id = woland_province_invest.7 days = 20 }
+		add_years_of_income = -0.05
+		add_mil_power = -20
+		random_owned_province = {
+			limit = {
+				not = {
+					has_province_flag = invest_set
+				}
+				or = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+			add_province_modifier = {
+				name = beaus_invest_defense_cost
+				duration = 70
+			}
+		}
+	}
+	option = {
+		name = "woland_province_invest_3_option_d"
+		country_event = {
+			id = woland_province_invest.5
+		}
+	}
+}
+country_event = {
+	id = woland_province_invest.7
+	title = "woland_province_invest_4"
+	desc = "woland_province_invest_4_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	option = {
+		name = "woland_province_invest_4_option_a"
+		event_target:invest_set_save = {
+			add_province_modifier = {
+				name = beaus_invest_defense
+				duration = 450
+			}
+		}
+		clr_country_flag = in_province_selector
+	}
+}
+country_event = {
+	id = woland_province_invest.8
+	title = "woland_province_invest_5"
+	desc = "woland_province_invest_5_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	option = {
+		name= "woland_province_invest_5_option_a"
+		add_years_of_income = -0.035
+		add_mil_power = -20
+		add_adm_power = -20
+		event_target:invest_save1 = {
+			add_province_modifier = {
+				name = beaus_invest_recruitmen
+				duration = 90
+			}
+		}
+		event_target:invest_save2 = {
+			add_province_modifier = {
+				name = beaus_invest_recruitmen
+				duration = 90
+			}
+		}
+		event_target:invest_save3 = {
+			add_province_modifier = {
+				name = beaus_invest_recruitmen
+				duration = 90
+			}
+		}
+		event_target:invest_save4 = {
+			add_province_modifier = {
+				name = beaus_invest_recruitmen
+				duration = 90
+			}
+		}
+		event_target:invest_save5 = {
+			add_province_modifier = {
+				name = beaus_invest_recruitmen
+				duration = 90
+			}
+		}
+		event_target:invest_save6 = {
+			add_province_modifier = {
+				name = beaus_invest_recruitmen
+				duration = 90
+			}
+		}
+		clr_country_flag = in_province_selector
+	}
+	option = {
+		name= "woland_province_invest_5_option_b"
+		add_years_of_income = -0.07
+		add_mil_power = -20
+		add_adm_power = -20
+		event_target:invest_save1 = {
+			add_province_modifier = {
+				name = beaus_invest_recruitmen2
+				duration = 900
+			}
+		}
+		event_target:invest_save2 = {
+			add_province_modifier = {
+				name = beaus_invest_recruitmen2
+				duration = 900
+			}
+		}
+		event_target:invest_save3 = {
+			add_province_modifier = {
+				name = beaus_invest_recruitmen2
+				duration = 900
+			}
+		}
+		event_target:invest_save4 = {
+			add_province_modifier = {
+				name = beaus_invest_recruitmen2
+				duration = 900
+			}
+		}
+		event_target:invest_save5 = {
+			add_province_modifier = {
+				name = beaus_invest_recruitmen2
+				duration = 900
+			}
+		}
+		event_target:invest_save6 = {
+			add_province_modifier = {
+				name = beaus_invest_recruitmen2
+				duration = 900
+			}
+		}
+		clr_country_flag = in_province_selector
+	}
+	option = {
+		name= "woland_province_invest_5_option_c"
+		country_event = {
+			id = woland_province_invest.5
+		}
+	}
+}
+country_event = {
+	id = woland_province_invest.9
+	title = "woland_province_invest_6"
+	desc = "woland_province_invest_6_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	option = {
+		name = "woland_province_invest_6_option.a"
+		event_target:invest_set_save = {
+			add_province_modifier = {
+				name = beaus_invest_stage_set_attrition
+				duration = 730
+			}
+			add_province_modifier = {
+				name = beaus_invest_stage_set_cost
+				duration = 547
+			}
+		}
+		add_mil_power = -25
+		add_adm_power = -25
+		add_years_of_income = -0.05
+	}
+	option = {
+		name = "woland_province_invest_6_option.b"
+		country_event = { id = woland_province_invest.10 days = 30 }
+		add_mil_power = -50
+		add_adm_power = -20
+		add_years_of_income = -0.075
+		tooltip = {
+			add_province_modifier = { 
+				name = beaus_invest_stage_set_defense
+				duration = 30
+			}
+			add_province_modifier = {
+				name = beaus_invest_stage_set_cost
+				duration = 365
+			
+			}
+		}
+	}
+	option = {
+		name = "woland_province_invest_6_option.c"
+		country_event = { id = woland_province_invest.11 days = 30 }
+		add_mil_power = -50
+		add_adm_power = -20
+		add_years_of_income = -0.075
+		tooltip = {
+			add_province_modifier = {
+				name = beaus_invest_stage_set_attack
+				duration = 30
+			}
+			add_province_modifier = {
+				name = beaus_invest_stage_set_cost
+				duration = 365
+			}
+		}
+	}
+	option = {
+		name = "woland_province_invest_6_option.d"
+		country_event = {
+			id = woland_province_invest.5
+		}
+	}
+}
+country_event = {
+	id = woland_province_invest.10
+	title = "woland_province_invest_7"
+	desc = "woland_province_invest_7_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	option = {
+		name = "woland_province_invest_7_option"
+		event_target:invest_set_save = {
+			add_province_modifier = {
+				name = beaus_invest_stage_set_defense
+				duration = 30
+			}
+			add_province_modifier = {
+				name = beaus_invest_stage_set_cost
+				duration = 365
+			
+			}
+		}
+		clr_country_flag = in_province_selector
+	}
+	
+}
+country_event = {
+	id = woland_province_invest.11
+	title = "woland_province_invest_8"
+	desc = "woland_province_invest_8_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	option = {
+		name = "woland_province_invest_8_option"
+		event_target:invest_set_save = {
+			add_province_modifier = {
+				name = beaus_invest_stage_set_attack
+				duration = 30
+			}
+			add_province_modifier = {
+				name = beaus_invest_stage_set_cost
+				duration = 365
+			}
+		}
+		clr_country_flag = in_province_selector
+	}
+	
+}
+country_event = {
+	id = woland_province_invest.12
+	title = "woland_province_invest_9"
+	desc = "woland_province_invest_9_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	option = {
+		name = "woland_province_invest_9_option.a"
+		country_event = {
+			id = woland_province_invest.13
+		}
+	}
+	option = {
+		name = "woland_province_invest_9_option.b"
+		country_event = {
+			id = woland_province_invest.17
+		}
+	}
+	option = {
+		name = "woland_province_invest_9_option.c"
+		event_target:invest_set_save = {
+			add_province_modifier = {
+				name = beaus_invest_banking_family
+				duration = 900
+			}
+		}
+		add_dip_power = -30
+		add_years_of_income = -0.05
+	}
+	option = {
+		name = "woland_province_invest_9_option.d"
+		country_event = {
+			id = woland_province_invest.20
+		}
+
+	}
+	option = {
+		name = "woland_province_invest_9_option.e"
+		country_event = {
+			id = woland_province_invest.4
+		}
+
+	}
+}
+country_event = {
+	id = woland_province_invest.13
+	title = "woland_province_invest_10"
+	desc = "woland_province_invest_10_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	option = {
+		name = "woland_province_invest_10_option.a"
+		country_event = {
+			id = woland_province_invest.14
+		}
+	}
+	option = {
+		name = "woland_province_invest_10_option.b"
+		country_event = {
+			id = woland_province_invest.15
+		}
+	}
+	option = {
+		name = "woland_province_invest_10_option.c"
+		country_event = {
+			id = woland_province_invest.12
+		}
+	}
+}
+country_event = {
+	id = woland_province_invest.14
+	title = "woland_province_invest_11"
+	desc = "woland_province_invest_11_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	
+	option = {
+		name = "woland_province_invest_11_option.a"
+		event_target:invest_save1 = {
+			add_province_modifier = {
+				name = beaus_invest_quota_small
+				duration = 900
+			}
+		}
+		event_target:invest_save2 = {
+			add_province_modifier = {
+				name = beaus_invest_quota_small
+				duration = 900
+			}
+		}
+		event_target:invest_save3 = {
+			add_province_modifier = {
+				name = beaus_invest_quota_small
+				duration = 900
+			}
+		}
+		event_target:invest_save4 = {
+			add_province_modifier = {
+				name = beaus_invest_quota_small
+				duration = 900
+			}
+		}
+		event_target:invest_save5 = {
+			add_province_modifier = {
+				name = beaus_invest_quota_small
+				duration = 900
+			}
+		}
+		event_target:invest_save6 = {
+			add_province_modifier = {
+				name = beaus_invest_quota_small
+				duration = 900
+			}
+		}
+		clr_country_flag = in_province_selector	
+	}
+	option = {
+		name = "woland_province_invest_11_option.b"
+		event_target:invest_save1 = {
+			add_province_modifier = {
+				name = beaus_invest_quotas_big
+				duration = 900
+			}
+		}
+		event_target:invest_save2 = {
+			add_province_modifier = {
+				name = beaus_invest_quotas_big
+				duration = 900
+			}
+		}
+		event_target:invest_save3 = {
+			add_province_modifier = {
+				name = beaus_invest_quotas_big
+				duration = 900
+			}
+		}
+		event_target:invest_save4 = {
+			add_province_modifier = {
+				name = beaus_invest_quotas_big
+				duration = 900
+			}
+		}
+		event_target:invest_save5 = {
+			add_province_modifier = {
+				name = beaus_invest_quotas_big
+				duration = 900
+			}
+		}
+		event_target:invest_save6 = {
+			add_province_modifier = {
+				name = beaus_invest_quotas_big
+				duration = 900
+			}
+		}	
+		clr_country_flag = in_province_selector
+	}
+	option = {
+		name = "woland_province_invest_11_option.c"
+		country_event = {
+			id = woland_province_invest.13
+		}
+	}
+	
+}
+country_event = {
+	id = woland_province_invest.15
+	title = "woland_province_invest_12"
+	desc = "woland_province_invest_12_desc"
+	picture = LIBERUM_VETO_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "woland_province_invest_12_opinion.a"
+		event_target:invest_save1 = {
+			add_province_modifier = {
+				name = beaus_invest_tax_small
+				duration = 900
+			}
+		}
+		event_target:invest_save2 = {
+			add_province_modifier = {
+				name = beaus_invest_tax_small
+				duration = 900
+			}
+		}
+		event_target:invest_save3 = {
+			add_province_modifier = {
+				name = beaus_invest_tax_small
+				duration = 900
+			}
+		}
+		event_target:invest_save4 = {
+			add_province_modifier = {
+				name = beaus_invest_tax_small
+				duration = 900
+			}
+		}
+		event_target:invest_save5 = {
+			add_province_modifier = {
+				name = beaus_invest_tax_small
+				duration = 900
+			}
+		}
+		event_target:invest_save6 = {
+			add_province_modifier = {
+				name = beaus_invest_tax_small
+				duration = 900
+			}
+		}	
+		clr_country_flag = in_province_selector
+	}
+	option = {
+		name = "woland_province_invest_12_opinion.b"
+		event_target:invest_save1 = {
+			add_province_modifier = {
+				name = beaus_invest_tax_big
+				duration = 900
+			}
+		}
+		event_target:invest_save2 = {
+			add_province_modifier = {
+				name = beaus_invest_tax_big
+				duration = 900
+			}
+		}
+		event_target:invest_save3 = {
+			add_province_modifier = {
+				name = beaus_invest_tax_big
+				duration = 900
+			}
+		}
+		event_target:invest_save4 = {
+			add_province_modifier = {
+				name = beaus_invest_tax_big
+				duration = 900
+			}
+		}
+		event_target:invest_save5 = {
+			add_province_modifier = {
+				name = beaus_invest_tax_big
+				duration = 900
+			}
+		}
+		event_target:invest_save6 = {
+			add_province_modifier = {
+				name = beaus_invest_tax_big
+				duration = 900
+			}
+		}	
+		clr_country_flag = in_province_selector
+	}
+	option = {
+		name = "woland_province_invest_12_option.c"
+		country_event = {
+			id = woland_province_invest.13
+		}
+	}
+}
+
+
+
+country_event = {
+	id = woland_province_invest.17
+	title = "woland_province_invest_14"
+	desc = "woland_province_invest_14_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	
+	option = {
+		name = "woland_province_invest_14_option.a"
+		event_target:invest_set_save = {
+			add_province_modifier = {
+				name = beaus_invest_burghers_charter
+				duration = 900
+			}
+		}
+		add_dip_power = -15
+		clr_country_flag = in_province_selector
+	}
+	option = {
+		name = "woland_province_invest_14_option.b"
+		event_target:invest_set_save = {
+			add_province_modifier = {
+				name = beaus_invest_expel_burghers
+				duration = 900
+			}
+		}
+		add_dip_power = -15
+		clr_country_flag = in_province_selector
+	}
+	option = {
+		name = "woland_province_invest_14_option.c"
+		country_event = {
+			id = woland_province_invest.12
+		}	
+	}
+}
+country_event = {
+	id = woland_province_invest.18
+	title = "woland_province_invest_15"
+	desc = "woland_province_invest_15_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	
+	option = {
+		name = "woland_province_invest_15_option.a"
+		country_event = {
+			id = woland_province_invest.19
+		}
+
+	}
+	option = {
+		name = "woland_province_invest_15_option.b"
+		add_years_of_income = -0.15
+		event_target:invest_set_save = {
+			add_province_modifier = {
+				name = beaus_invest_settlers
+				duration = 900
+			}
+		}
+		clr_country_flag = in_province_selector
+	}
+	option = {
+		name = "woland_province_invest_15_option.c"
+		country_event = {
+			id = woland_province_invest.21
+		}
+	}
+}
+country_event = {
+	id = woland_province_invest.19
+	title = "woland_province_invest_16"
+	desc = "woland_province_invest_16_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	
+	option = {
+		name = "woland_province_invest_16_option.a"
+		add_years_of_income = -0.30
+		event_target:invest_set_save = {
+			add_province_modifier = {
+				name = beaus_invest_sustained_growth_investments
+				duration = 900
+			}
+		}
+		clr_country_flag = in_province_selector
+	}
+	option = {
+		name = "woland_province_invest_16_option.b"
+		add_years_of_income = -0.85
+		event_target:invest_set_save = {
+			add_base_manpower = 2
+			add_base_production = 2
+			add_base_tax = 2
+			add_province_modifier = {
+				name = beaus_invest_angry
+				duration = 365
+			}
+		}
+		trigger = {
+			NOT = {
+				has_country_modifier = beaus_fast_dev_cooldown
+			}
+		}
+		add_country_modifier = {
+			name = beaus_fast_dev_cooldown
+			duration = 730
+		}
+		clr_country_flag = in_province_selector
+	}
+	option = {
+		name = "woland_province_invest_16_option.c"
+		country_event = {
+			id = woland_province_invest.18
+		}
+	}
+}
+country_event = {
+	id = woland_province_invest.20
+	title = "woland_province_invest_17"
+	desc = "woland_province_invest_17_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	
+	option = {
+		name = "woland_province_invest_17_option.a"
+		add_dip_power = -20
+		add_mil_power = -10
+		event_target:invest_save1 = {
+			add_province_modifier = {
+				name = beaus_invest_bolster_workforce_small
+				duration = 900
+			}
+		}
+		event_target:invest_save2 = {
+			add_province_modifier = {
+				name = beaus_invest_bolster_workforce_small
+				duration = 900
+			}
+		}
+		event_target:invest_save3 = {
+			add_province_modifier = {
+				name = beaus_invest_bolster_workforce_small
+				duration = 900
+			}
+		}
+		event_target:invest_save4 = {
+			add_province_modifier = {
+				name = beaus_invest_bolster_workforce_small
+				duration = 900
+			}
+		}
+		event_target:invest_save5 = {
+			add_province_modifier = {
+				name = beaus_invest_bolster_workforce_small
+				duration = 900
+			}
+		}
+		event_target:invest_save6 = {
+			add_province_modifier = {
+				name = beaus_invest_bolster_workforce_small
+				duration = 900
+			}
+		}
+		clr_country_flag = in_province_selector	
+	}
+	option = {
+		name = "woland_province_invest_17_option.b"
+		add_dip_power = -30
+		add_mil_power = -15
+		event_target:invest_save1 = {
+			add_province_modifier = {
+				name = beaus_invest_bolster_workforce_big
+				duration = 900
+			}
+		}
+		event_target:invest_save2 = {
+			add_province_modifier = {
+				name = beaus_invest_bolster_workforce_big
+				duration = 900
+			}
+		}
+		event_target:invest_save3 = {
+			add_province_modifier = {
+				name = beaus_invest_bolster_workforce_big
+				duration = 900
+			}
+		}
+		event_target:invest_save4 = {
+			add_province_modifier = {
+				name = beaus_invest_bolster_workforce_big
+				duration = 900
+			}
+		}
+		event_target:invest_save5 = {
+			add_province_modifier = {
+				name = beaus_invest_bolster_workforce_big
+				duration = 900
+			}
+		}
+		event_target:invest_save6 = {
+			add_province_modifier = {
+				name = beaus_invest_bolster_workforce_big
+				duration = 900
+			}
+		}
+		clr_country_flag = in_province_selector	
+	}
+	option = {
+		name = "woland_province_invest_17_option.c"
+		country_event = {
+			id = woland_province_invest.12
+		}
+	}
+}
+country_event = {
+	id = woland_province_invest.21
+	title = "woland_province_invest_18"
+	desc = "woland_province_invest_18_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	
+	option = {
+		name = "woland_province_invest_18_option.a"
+		country_event = {
+			id = woland_province_invest.18
+		}
+	}
+	option = {
+		name = "woland_province_invest_18_option.b"
+		country_event = {
+			id = woland_province_invest.22
+		}
+	}
+	option = {
+		name = "woland_province_invest_18_option.c"
+		country_event = {
+			id = woland_province_invest.4
+		}
+	}
+}
+
+country_event = {
+	id = woland_province_invest.22
+	title = "woland_province_invest_19"
+	desc = "woland_province_invest_19_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	
+	option = {
+		name = "woland_province_invest_19_option.a"
+		add_adm_power = -30
+		event_target:invest_save1 = {
+			add_province_modifier = {
+				name = beaus_invest_construction_small
+				duration = 900
+			}
+		}
+		event_target:invest_save2 = {
+			add_province_modifier = {
+				name = beaus_invest_construction_small
+				duration = 900
+			}
+		}
+		event_target:invest_save3 = {
+			add_province_modifier = {
+				name = beaus_invest_construction_small
+				duration = 900
+			}
+		}
+		event_target:invest_save4 = {
+			add_province_modifier = {
+				name = beaus_invest_construction_small
+				duration = 900
+			}
+		}
+		event_target:invest_save5 = {
+			add_province_modifier = {
+				name = beaus_invest_construction_small
+				duration = 900
+			}
+		}
+		event_target:invest_save6 = {
+			add_province_modifier = {
+				name = beaus_invest_construction_small
+				duration = 900
+			}
+		}
+		clr_country_flag = in_province_selector
+	}
+	option = {
+		name = "woland_province_invest_19_option.b"
+		add_adm_power = -30
+		event_target:invest_set_save = {
+			add_country_modifier = {
+				name = beaus_invest_construction_big
+				duration = 900
+			}
+		}
+		clr_country_flag = in_province_selector
+	}
+	option = {
+		name = "woland_province_invest_19_option.c"
+		country_event = {
+			id = woland_province_invest.21
+		}
+	}
+}
+
+
+country_event = {
+	id = woland_province_invest.90
+	title = "woland_province_invest"
+	desc = "woland_province_invest_desc"
+	picture = LIBERUM_VETO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = woland_province_invest_option_a
+		trigger = { 
+			any_owned_province = {
+				has_province_flag  = invest_1
+			}
+		}
+		goto = invest_save1
+		event_target:invest_save1 = {
+			set_province_flag = invest_set
+			save_event_target_as = invest_set_save
+			clr_province_flag = invest_1
+		}
+		country_event = {
+			id = woland_province_invest.4
+		}
+	}
+
+	option = {
+		name = woland_province_invest_option_b
+		trigger = { 
+			any_owned_province = {
+				has_province_flag  = invest_2
+			}
+		}
+		goto = invest_save2
+		event_target:invest_save2 = {
+			set_province_flag = invest_set
+			save_event_target_as = invest_set_save
+			clr_province_flag = invest_2
+		}
+		country_event = {
+			id = woland_province_invest.4
+		}
+	}
+
+	option = {
+		name = woland_province_invest_option_c
+		trigger = { 
+			any_owned_province = {
+				has_province_flag  = invest_3
+			}
+		}
+		goto = invest_save3
+		event_target:invest_save3 = {
+			set_province_flag = invest_set
+			save_event_target_as = invest_set_save
+			clr_province_flag = invest_3
+		}
+		country_event = {
+			id = woland_province_invest.4
+		}
+	}
+
+	option = {
+		name = woland_province_invest_option_d
+		trigger = { 
+			any_owned_province = {
+				has_province_flag  = invest_4
+			}
+		}
+		goto = invest_save4
+		event_target:invest_save4 = {
+			set_province_flag = invest_set
+			save_event_target_as = invest_set_save
+			clr_province_flag = invest_4
+		}
+		country_event = {
+			id = woland_province_invest.4
+		}
+	}
+
+	option = {
+		name = woland_province_invest_option_e
+		trigger = { 
+			any_owned_province = {
+				has_province_flag  = invest_5
+			}
+		}
+		goto = invest_save5
+		event_target:invest_save5 = {
+			set_province_flag = invest_set
+			save_event_target_as = invest_set_save
+			clr_province_flag = invest_5
+		}
+		country_event = {
+			id = woland_province_invest.4
+		}
+	}
+
+	option = {
+		name = woland_province_invest_option_f
+		trigger = { 
+			any_owned_province = {
+				has_province_flag  = invest_6
+			}
+		}
+		goto = invest_save6
+		event_target:invest_save6 = {
+			set_province_flag = invest_set
+			save_event_target_as = invest_set_save
+			clr_province_flag = invest_6
+		}
+		country_event = {
+			id = woland_province_invest.4
+		}
+	}
+	option = {
+		name = "woland_province_invest_option_g"
+		clr_country_flag = in_province_selector
+		event_target:invest_save1 = {
+			clr_province_flag = invest_1
+		}
+		event_target:invest_save2 = {
+			clr_province_flag = invest_2
+		}
+		event_target:invest_save3 = {
+			clr_province_flag = invest_3
+		}
+		event_target:invest_save4 = {
+			clr_province_flag = invest_4
+		}
+		event_target:invest_save5 = {
+			clr_province_flag = invest_5
+		}
+		event_target:invest_save6 = {
+			clr_province_flag = invest_6
+		}
+	}
+}

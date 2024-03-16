@@ -29,6 +29,8 @@ country_decisions = {
 				tag = HAN
 				tag = HSA
 				tag = POM
+				tag = SAX
+				tag = FKN
 				}
 		}
 		provinces_to_highlight = {
@@ -36,7 +38,11 @@ country_decisions = {
 				province_id = 50			#Berlin
 				province_id = 44			#Hamburg
 				province_id = 1758			#Hanover
-				province_id = 62			#Liepzig
+				province_id = 4743			#wiemar to overlap with sgf
+				province_id = 13			#schlesvig
+				province_id = 2995			#stolp
+				province_id = 1874			#bremen
+				province_id = 69			#dortmund
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -49,10 +55,16 @@ country_decisions = {
 			owns_core_province = 50			#Berlin
 			owns_core_province = 44			#Hamburg
 			owns_core_province = 1758		#Hanover
-			owns_core_province = 62			#Liepzig
+			owns_core_province = 4743			#wiemar to overlap with sgf
+			owns_core_province = 13			#schlesvig
+			owns_core_province = 2995			#stolp
+			owns_core_province = 1874			#bremen
+			owns_core_province = 69			#dortmund
 		}
 		effect = {
 			change_tag = NGF
+			#set_country_flag = enable_second_mil_level_flag
+			set_country_flag = enable_third_mil_level_flag
 			if =  {
 				limit = {
 					is_revolutionary = no
@@ -100,11 +112,11 @@ country_decisions = {
 					NOT = { has_idea_group = NGF_ideas }
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
+			}	
+			
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}	
-	ai_will_do = {
-		factor = 0
-	}
-	
-}
 }

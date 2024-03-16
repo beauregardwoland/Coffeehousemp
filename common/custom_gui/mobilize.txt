@@ -1,0 +1,323 @@
+custom_button = {
+    name = mobilize_buttin
+    potential = {
+		#has_country_modifier = enabled_mobilization
+	}
+	trigger = {
+		has_country_modifier = enabled_mobilization
+		custom_trigger_tooltip = {
+			tooltip = mobing_event_lock
+			NOT = { has_country_flag = mobing_question }
+		}
+		NOT = { has_country_modifier = demobilization }
+		NOT = { has_country_modifier = demobilization_bad }
+	}
+	effect = {
+		if = {
+			limit = { 
+				or = {
+					has_country_modifier = "mobilization_lite"
+					has_country_modifier = "mobilization_scraping"
+					has_country_modifier = "mobilization"
+				}
+			}
+			country_event = {
+				id = beaus_event_mobilization.2
+			}
+			set_country_flag = mobing_question
+		}
+		else = {
+			country_event = {
+				id = beaus_event_mobilization.1
+			}
+			add_years_of_income = -0.70
+			set_country_flag = mobing_question
+		}
+		
+	}
+	tooltip = province_sel
+}
+custom_text_box = {
+    name = mobilize_description
+    potential = {
+		has_country_modifier = enabled_mobilization
+		Not = { has_country_modifier = "mobilization_lite" }
+		Not = { has_country_modifier = "mobilization_scraping" }
+		Not = { has_country_modifier = "mobilization" }
+	}
+	tooltip = mobilize_description_event
+}
+
+custom_text_box = {
+    name = demobilize_description
+    potential = {
+		has_country_modifier = enabled_mobilization
+		or = {
+			has_country_modifier = "mobilization_lite" 
+			has_country_modifier = "mobilization_scraping" 
+			has_country_modifier = "mobilization" 
+		}
+		Not = { has_country_modifier = demobilization }
+	}
+	tooltip = mobilize_description_event
+}
+custom_text_box = {
+    name = mobing_locked
+    potential = {
+		NOT = { has_country_modifier = enabled_mobilization }
+	}
+	tooltip = mobilize_description_event
+}
+########################################################################################
+#################/mobilization bar very lengthy much pain/##############################
+########################################################################################
+custom_icon = {
+	name = mobilization_bar_frame
+	potential = {
+		ai = no
+		has_country_modifier = enabled_mobilization
+	}
+	#tooltip = mobing_bar_tooltip
+}
+custom_icon = {
+	name = mobilization_bar	#why pdx why must i make a clause for every fucking thing
+	potential = {
+		has_country_modifier = enabled_mobilization
+		has_country_modifier = mobilization_lite
+		NOT = { has_country_modifier = mobilization }
+	}
+	tooltip = mobing_bar_tooltip
+	frame = {
+		number = 100
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = 100
+			}
+		}
+	}
+	frame = {
+		number = 90
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = 90
+			}
+		}
+	}
+	frame = {
+		number = 80
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = 80
+			}
+		}
+	}
+	frame = {
+		number = 70
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = 70
+			}
+		}
+	}
+	frame = {
+		number = 60
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = 60
+			}
+		}
+	}
+	frame = {
+		number = 50
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = 50
+			}
+		}
+	}
+	frame = {
+		number = 40
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = 40
+			}
+		}
+	}
+	frame = {
+		number = 30
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = 30
+			}
+		}
+	}
+	frame = {
+		number = 20
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = 20
+			}
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = 10
+			}
+		}
+	}
+	frame = {
+		number = 0
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = 0
+			}
+		}
+	}
+}
+####################mobing for to long ##########################3
+custom_icon = {
+	name = mobilization_bar_bad	#why pdx why must i make a clause for every fucking thing
+	potential = {
+		has_country_modifier = enabled_mobilization
+		or = {
+			has_country_modifier = mobilization
+			has_country_modifier = mobilization_scraping
+		}
+		
+	}
+	tooltip = mobing_bar_tooltip_bad
+	frame = {
+		number = 0
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = 0
+			}
+		}
+	}
+	frame = {
+		number = 10
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = -10
+			}
+		}
+	}
+	frame = {
+		number = 20
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = -20
+			}
+		}
+	}
+	frame = {
+		number = 30
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = -30
+			}
+		}
+	}
+	frame = {
+		number = 40
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = -40
+			}
+		}
+	}
+	frame = {
+		number = 50
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = -50
+			}
+		}
+	}
+	frame = {
+		number = 60
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = -60
+			}
+		}
+	}
+	frame = {
+		number = 70
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = -70
+			}
+		}
+	}
+	frame = {
+		number = 80
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = -80
+			}
+		}
+	}
+	frame = {
+		number = 90
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = -90
+			}
+		}
+	}
+	frame = {
+		number = 100
+		trigger = {
+			has_government_power = { 
+				mechanic_type = mobilization_mechanic
+				power_type = mobilization_power
+				value = -100
+			}
+		}
+	}
+}

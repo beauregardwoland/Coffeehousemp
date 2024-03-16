@@ -1,0 +1,17 @@
+spriteTypes = {
+	#########modded additions
+	 
+	spriteType = {
+		name = "GFX_great_project_hormuz_naval"	
+		texturefile = "gfx//interface//great_projects//great_project_el_escorial.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_tidemans_folly"	
+		texturefile = "gfx//interface//great_projects//great_project_fuerte_del_morro.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_scicilian_gold_mine"	
+		texturefile = "gfx//interface//great_projects//great_project_falun_copper_mine.dds"
+	}
+}

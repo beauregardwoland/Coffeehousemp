@@ -1,0 +1,135 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 220  60  20 }
+revolutionary_colors = { 1 5 13 }
+
+historical_idea_groups = {
+	innovativeness_ideas
+	religious_ideas
+	spy_ideas
+	diplomatic_ideas
+	offensive_ideas
+	defensive_ideas
+	trade_ideas
+	economic_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	prussian_uhlan
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Enno #0" = 40
+	"Edzard #0" = 40
+	"Ulrich #0" = 40
+	"Christian #0" = 20
+	"Ocko #1" = 20
+	"Keno #1" = 20
+	"Rudolf #0" = 10
+	"George #0" = 10
+	"Charles #0" = 10
+	"Albert #0" = 10
+	"Everhard #0" = 10
+	"Adalbert #0" = 0
+	"Albrecht #0" = 0
+	"Burkhard #0" = 0
+	"Johann #0" = 0
+	"Moritz #0" = 0
+	"Dietrich #0" = 0
+	"Gerhard #0" = 0
+	"Wilhelm #0" = 0
+	"Eckbert #0" = 0
+	"Erwin #0" = 0
+	"Gödeke #0" = 0
+	"Gottschalk #0" = 0
+	"Joseph #0" = 0
+	"Julius #0" = 0
+	"Kuno #0" = 0
+	"Reinhard #0" = 0
+	"Siegfried #0" = 0
+	"Thomas #0" = 0
+	"Hendrik #0" = 0
+	"Johan Ernst #0" = 0
+	"Maurits #0" = 0
+	"Koenraad #0" = 0
+	"Eilert #0" = 0
+	"Enhard #0" = 0
+	"Fokke #0" = 0
+	"Friso #0" = 0
+	"Gerulf #0" = 0
+	"Klaes #0" = 0
+	"Klaus #0" = 0
+	"Liudgod #0" = 0
+	"Lubbert #0" = 0
+	"Menfrid #0" = 0
+	"Reginhard #0" = 0
+	"Siemen #0" = 0
+	"Sjoerd #0" = 0
+	"Thiadulf #0" = 0
+	"Wenzel #0" = 0
+	"Wiebe #0" = 0
+	"Wilbrand #0" = 0
+	"Wilfried #0" = 0
+	"Willem #0" = 0
+	
+	"Theda #0" = -10
+	"Anne #0" = -5
+	"Waltrud #0" = -1
+	"Johanna #0" = -1
+}
+
+leader_names = { 
+	tom Brok Abdema Aildesna Cirksena Tjarksena
+	Onneken Knyphausen Manninga Ukena Allena
+	Wiemken Beninga Störtebeker Michels Wichmann
+	Wigbold
+	"Van der Aa" "Van Assendelft" 
+	"Van Bronkhorst" Batenburg Bentinck Brandt "Van Brederode" Brouwer
+	Coehoorn Coen Crijnssen "Van Culemborg"
+	Daendels "Van Diemen" "Van der Does" "Van Duivenvoorde"
+	"Van Egmont" Evertzen
+	"Van Galen" "De Grouwe"
+	"Van Haren" "Van Heemskerck" "De Houtman" "Van Huchtenbroek"
+	"Van Ilpendam"
+}
+	
+ship_names = {
+	Elsfleth Hude Hatten Wardenburg Edewecht
+	Zwischenahn Weifelstede Rastede
+	Likedeelers Victualia
+	"Prinses Roijael Maria" "Provincie Utrecht" "Provincie van Holland" "Raadhuis van Haarlem" "Roode Leeuw" "Salomons Oordeel" "Schager Roos"
+	"Sint Andries" "Sint Jacob" "Sint Laurens" "Sint Maria" "Sint Matheeus" "Sint Pieter" "Stad en Lande" "Stad Gouda" "Stad Haarlem" "Stad Utrecht" "Ter Goes"
+	"Ter Veere" "Verenigde Provinciën" "Vergulden Draeck" "Vliegende Vis" "Vogel Phesant" "Vogel Struis" "Wakende Boei" "Wakende Kraan" "Wapen van Edam"
+	"Wapen van Haarlem" "Wapen van Holland" "Wapen van Leijden" "Wapen van Nassau" "Wapen van Utrecht" "Wapen van Zeeland" "Willem van Nieuhoff" "Witte Lam"
+	"Zwarte Arend" "Zwarte Bul" Aemilia Agatha Ajax Akerboom Alida Alkmaar Alliantie Alphen Amalia Amazoon Amphitrite Amsterdam Arend Argo Arnhem Assendelft Banier
+	Barbestein Batavia Batavier Beekvliet Beemster Beemsterlust Beliona Beschermer Boekenrode Boetzelaar Bommel Braave Brakel Breda Brederode Brielle Broederschap
+	Brutus Buis Bul Burgvliet Caleb Callantsoog Castricum Catharina Cerberus Convertine Curacao Dalem Damiaten Dankbaarheid Delfland Delft Deutekom Deventer Diepenheim
+	Dieren Doesburg Doggersbank Dolfijn Dolfijn Dordrecht Draak Drakestein Drente Drielst Duinveld Duivenvoorde Echo Edam Eendracht Eenhoorn Elswoud Engel Erfprins
+	Fortuin Friesland Galei Gelderland Geloof Gideon Glindhorst Goes Gouda Gouderak Haarlem Haarlemmerhout Hardenbroek Harderwijk Havik Hector Heemstede Hersteller
+	Het Loo Hilverbeek Hilversum Hollandia Hoop Jaarsveld Jonas Jozua Jupiter Kalandsoog Kameel Kampen Kampveere Kennemerland Koevorden Komeet Kooge Landman Landskroon
+	Leeuwarden Leeuwenhorst Liefde Loosdregt Luipaard Lynx Maan Maarseveen Maas Margarethe Mars Matenes Medusa Meermin Mercuur Middelbare Middelburg Morgenstar
+	Moriaanshoofd Naerden Neptunus Noorderkwartier Olifant Omlandia Oostergo Oosterwijk
+}
+
+army_names = {
+	"Staatse Leger" "Prinselijk Leger" "Leger van $PROVINCE$"
+}
+fleet_names = {
+	"Staatse Vloot" "Oostzeevloot" "Oost-Indiëvloot"  "Middellandse Zeevloot"  "Vloot van $PROVINCE$" 
+}

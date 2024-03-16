@@ -1,0 +1,11 @@
+guitypes = {
+    # GUI for Sudebnik/Oprichina/Streltsy
+	windowType = { # Copied and adjusted from government_interaction_type
+	name = "mob_mechanice_backround"
+	size = { x = 2 y = 2 }
+	moveable = 0
+
+	# Frame
+
+}
+}

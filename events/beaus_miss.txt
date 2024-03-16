@@ -1,0 +1,639 @@
+namespace = beaus_missions
+country_event = {
+	id = beaus_missions.1
+	title = "beaus_missions_option_1"
+	desc = "beaus_missions_option_1_desc"
+	picture = COURT_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_missions_optiona"
+		add_treasury = 350
+		add_country_modifier = {
+			name = eepy_habs
+			duration = 5475
+		}
+		custom_tooltip = hab_eepy_hitorical
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = historical_hab
+	}
+	option = {
+		name = "beaus_missions_optionb"
+		trigger = {
+			HUN = {
+				exists = yes
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				add_aggressive_expansion = {
+					who = ROOT
+					value = 20
+					apply_calc = no
+				}
+			}
+			add_manpower = 7.5
+		}
+		create_union = HUN
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 10
+		}
+		add_treasury = -100
+		custom_tooltip = hab_aggresive
+		set_estate_privilege = hungarian_coop
+		HUN = {
+			country_event = {
+				id = beaus_missions.2
+			}
+		}
+	}
+}
+country_event = {
+	id = beaus_missions.2
+	title = "beaus_missions_option_2"
+	desc = "beaus_missions_option_2_desc"
+	picture = COURT_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_missions2_optiona"
+		add_treasury = 200
+		declare_war_with_cb = {
+			casus_belli = cb_independence_war
+			who = HAB
+		}
+	}
+}
+country_event = {
+	id = beaus_missions.3
+	title = "beaus_missions_option_3"
+	desc = "beaus_missions_option_3_desc"
+	picture = REVOLT_HUNGARIAN_eventPicture
+	
+	fire_only_once = yes
+	trigger = {
+		tag = HAB
+		is_year = 1465
+		has_country_flag = historical_hab
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+
+	option = {		
+		name = "beaus_missions_options_3"
+		if = {
+			limit = {
+				exists = HUN
+				valid_for_personal_unions_trigger = yes
+				HUN = {
+					valid_for_personal_unions_trigger = yes
+				}
+			}
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 300
+				target = HUN
+			}
+		}
+		else = {
+			transdanubia_area = {
+				add_core = HAB
+			}
+			slovakia_area = {
+				add_core = HAB
+			}
+			alfold_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			transylvania_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_transylvania_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = beaus_missions.4
+	title = "beaus_missions_option_4"
+	desc = "beaus_missions_option_4_desc"
+	picture = WALLENSTEIN_eventPicture
+	is_triggered_only = yes
+
+	option = {		
+		name = "beaus_missions_options_4a"
+		change_estate_land_share = {
+			estate = all
+			share = 5
+		}
+		add_years_of_income = 0.5
+		add_yearly_manpower = 1
+		hidden_effect = {
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 0
+						has_country_flag = wal_sold_title
+					}
+					country_event = { 
+						id = beaus_missions.4
+						days = 182
+						random = 365
+					}
+				}
+				50 = {
+					country_event = { 
+						id = beaus_missions.5
+						days = 182
+						random = 365
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { has_country_flag = wal_sold_title } }
+				set_country_flag = wal_sold_title
+			}
+		}
+	}
+}
+
+country_event = {
+	id = beaus_missions.5
+	title = "beaus_missions_option_5"
+	desc = "beaus_missions_option_5_desc"
+	picture = WALLENSTEIN_eventPicture
+	is_triggered_only = yes
+	option = {		
+		name = "beaus_missions_options_5a"
+		add_legitimacy = -20
+		custom_tooltip = wal_ambi
+		random_list = {
+			50 = {
+				country_event = { 
+					id = beaus_missions.6
+					days = 182
+					random = 365
+				}
+			}
+			50 = {
+				country_event = { 
+					id = beaus_missions.7
+					days = 182
+					random = 365
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = beaus_missions.6
+	title = "beaus_missions_option_6"
+	desc = "beaus_missions_option_6_desc"
+	picture = WALLENSTEIN_eventPicture
+	is_triggered_only = yes
+	option = {		
+		name = "beaus_missions_options_6a"
+		add_country_modifier = {
+			name = hab_imperial_fleet
+			duration = 3650
+		}
+		add_war_exhaustion = -2
+		every_country = {
+			limit = {
+				capital_scope = {
+					region = north_german_region
+				}
+				any_province = {
+					has_port = yes
+				}
+			}
+			add_opinion = {
+				who = root
+				modifier = fra_drew_war_to_the_empire_modifier
+			}
+		}
+		custom_tooltip = wall_embold 
+	}
+	option = {		
+		name = "beaus_missions_options_6b"
+		random_list = {
+			30 = {
+				if = {
+					limit = { Not = { has_country_flag = second_wal_army } }
+					country_event = { 
+						id = beaus_missions.7
+						days = 182
+						random = 365
+					}
+				}
+				else = {
+					country_event = { 
+						id = beaus_missions.9
+						days = 182
+						random = 365
+					}
+				}
+			}
+			60 = {
+				add_war_exhaustion = 2
+				if = {
+					limit = { Not = { has_country_flag = second_wal_army } }
+					country_event = { 
+						id = beaus_missions.7
+						days = 182
+						random = 365
+					}
+				}
+				else = {
+					country_event = { 
+						id = beaus_missions.9
+						days = 182
+						random = 365
+					}
+				}
+			}
+			10 = {
+				hidden_effect = {
+					set_country_flag = wal_revolt
+					country_event = { 
+						id = beaus_missions.8
+						days = 182
+						random = 365
+					}
+				}
+				custom_tooltip = wal_wil_revolt
+			}
+		}
+	}
+}
+
+country_event = {
+	id = beaus_missions.7
+	title = "beaus_missions_option_7"
+	desc = "beaus_missions_option_7_desc"
+	picture = WALLENSTEIN_eventPicture
+	is_triggered_only = yes
+	option = {		
+		name = "beaus_missions_options_7a"
+		add_war_exhaustion = -2
+		add_yearly_manpower = 1.5
+		create_unit_forcelimit_percentage = {
+			type = infantry
+			force_limit_percentage = 0.15
+		}
+		create_unit_forcelimit_percentage = {
+			type = cavalry
+			force_limit_percentage = 0.05
+		}
+		create_unit_forcelimit_percentage = {
+			type = artillery
+			force_limit_percentage = 0.03
+		}
+		add_yearly_manpower = 1
+		change_estate_land_share = {
+			estate = all
+			share = 7.5
+		}
+		custom_tooltip = wall_embold
+		hidden_effect = {
+			set_country_flag = second_wal_army
+		}
+	}
+	option = {		
+		name = "beaus_missions_options_7b"
+		random_list = {
+			30 = {
+				if = {
+					limit = { Not = { has_country_flag = second_wal_army } }
+					country_event = { 
+						id = beaus_missions.6
+						days = 182
+						random = 365
+					}
+				}
+				else = {
+					country_event = { 
+						id = beaus_missions.9
+						days = 182
+						random = 365
+					}
+				}
+			}
+			60 = {
+				add_war_exhaustion = 2
+				if = {
+					limit = { Not = { has_country_flag = second_wal_army } }
+					country_event = { 
+						id = beaus_missions.7
+						days = 182
+						random = 365
+					}
+				}
+				else = {
+					country_event = { 
+						id = beaus_missions.9
+						days = 182
+						random = 365
+					}
+				}
+			}
+			10 = {
+				hidden_effect = {
+					set_country_flag = wal_revolt
+					country_event = { 
+						id = beaus_missions.8
+						days = 182
+						random = 365
+					}
+				}
+				custom_tooltip = wal_wil_revolt
+			}
+		}
+	}
+}
+
+country_event = {
+	id = beaus_missions.8
+	title = "beaus_missions_option_8"
+	desc = "beaus_missions_option_8_desc"
+	picture = WALLENSTEIN_eventPicture
+	is_triggered_only = yes
+	option = {		
+		name = "beaus_missions_options_8a"  #mixed historical assanination before it goes to far 
+		trigger = {
+			or = {
+				AND = {
+					NOT = { has_country_flag = second_wal_army }
+					has_country_modifier = hab_imperial_fleet 
+				}
+				AND = {
+					NOT = { has_country_modifier = hab_imperial_fleet }
+					has_country_flag = second_wal_army 
+				}
+			}
+			has_country_flag = kill_wal
+		}
+		kill_leader = {
+			type = "Albrecht von Wallenstein"
+		}
+		add_country_modifier = {
+			name = wallen_legacy
+			duration = -1
+		}
+		hidden_effect = {
+			clr_country_flag = wal_sold_title
+			clr_country_flag = wal_revolt
+			clr_country_flag = second_wal_army
+			clr_country_flag = kill_wal
+			clr_country_flag = hab_wallenstien
+		}
+	}
+	option = {		
+		name = "beaus_missions_options_8b" #full concede to him hes integrated to nobility as a noveau rich and established hate him and that you helped him
+		trigger = {
+			has_country_flag = second_wal_army 
+			has_country_modifier = hab_imperial_fleet
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		add_imperial_influence = -10
+		add_country_modifier = {
+			name = wallen_legacy
+			duration = -1
+		}
+		add_country_modifier = {
+			name = noveau_rich
+			duration = 9125
+		}
+		hidden_effect = {
+			clr_country_flag = wal_sold_title
+			clr_country_flag = wal_revolt
+			clr_country_flag = second_wal_army
+			clr_country_flag = kill_wal
+			clr_country_flag = hab_wallenstien
+		}
+	}
+	option = {		
+		name = "beaus_missions_options_8c" #denied him a lot and he revolts
+		trigger = {
+			or = {
+				has_country_flag = wal_revolt
+				AND = {
+					NOT = { has_country_flag = second_wal_army }
+					NOT = { has_country_modifier = hab_imperial_fleet }
+				}
+			}
+		}
+		hidden_effect = {
+			kill_leader = {
+				type = "Albrecht von Wallenstein"
+			}
+			clr_country_flag = wal_sold_title
+			clr_country_flag = wal_revolt
+			clr_country_flag = second_wal_army
+			clr_country_flag = kill_wal
+			clr_country_flag = hab_wallenstien
+		}
+		MVA = {
+			declare_war_with_cb = {
+				casus_belli = cb_independence_war
+				who = Root
+			}
+			add_country_modifier = {
+				name = Wallenstien_revolt
+				duration = 3650
+			}
+			create_unit_forcelimit_percentage = {
+				type = infantry
+				force_limit_percentage = 0.60
+			}
+			create_unit_forcelimit_percentage = {
+				type = cavalry
+				force_limit_percentage = 0.15
+			}
+			create_unit_forcelimit_percentage = {
+				type = artillery
+				force_limit_percentage = 0.25
+			}
+			add_manpower = 60
+		}
+		add_country_modifier = {
+			name = wallenstien_reh
+			duration = -1
+		}
+	}
+	option = {		
+		name = "beaus_missions_options_8d" #he defects  
+		trigger = {
+			or = {
+				AND = {
+					NOT = { has_country_flag = second_wal_army }
+					has_country_modifier = hab_imperial_fleet
+					Not = { has_country_flag = kill_wal }
+				}
+				AND = {
+					NOT = { has_country_modifier = hab_imperial_fleet }
+					has_country_flag = second_wal_army 
+					Not = { has_country_flag = kill_wal }
+				}
+				AND = {
+					NOT = { has_country_flag = second_wal_army }
+					NOT = { has_country_modifier = hab_imperial_fleet }
+					has_country_flag = kill_wal
+				}
+			}
+		}
+		hidden_effect = {
+			kill_leader = {
+				type = "Albrecht von Wallenstein"
+			}
+			clr_country_flag = wal_sold_title
+			clr_country_flag = wal_revolt
+			clr_country_flag = second_wal_army
+			clr_country_flag = kill_wal
+			clr_country_flag = hab_wallenstien
+		}
+		random_known_country = {
+			limit = {
+				or ={
+					AND = {
+						is_league_enemy = ROOT
+						war_with = ROOT
+					}
+					is_rival = root
+				}
+			}
+			country_event = {
+				id = tyw_events.18
+				days = 7
+				tooltip = "tyw_events.17.a.tt"
+			}
+		}
+		add_country_modifier = {
+			name = wallenstien_reh
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = beaus_missions.9
+	title = "beaus_missions_option_9"
+	desc = "beaus_missions_option_9_desc"
+	picture = WALLENSTEIN_eventPicture
+	is_triggered_only = yes
+	option = {		
+		name = "beaus_missions_options_9a"   #allow his conspiracy 
+		add_war_exhaustion = 2
+		
+	}
+	option = {		
+		name = "beaus_missions_options_9b" #order his assasination
+		set_country_flag = kill_wal
+		add_prestige = -20
+	}
+}
+country_event = {
+	id = beaus_missions.11
+	title = "beaus_missions_option_11"
+	desc = "beaus_missions_option_11_desc"
+	picture = muslimgfx_FORT_eventPicture
+	is_triggered_only = yes
+	option = {		
+		name = "beaus_missions_options_11a" #reduce mil penalties for crownlands
+		set_country_flag = hab_mil_crownland
+		custom_tooltip = hab_crownland_upgrade1	
+	}
+	option = {		
+		name = "beaus_missions_options_11b" #make them develop more and have better income for overlord
+		set_country_flag = hab_eco_crownland
+		custom_tooltip = hab_crownland_upgrade2
+	}
+	option = {		
+		name = "beaus_missions_options_11c" #reduce overlord penalties
+		set_country_flag = hab_pen_crownland
+		custom_tooltip = hab_crownland_upgrade3
+	}
+}
+
+#venice
+country_event = {
+	id = beaus_missions.10
+	title = "beaus_missions_option_10"
+	desc = "beaus_missions_option_10_desc"
+	picture = muslimgfx_FORT_eventPicture
+	is_triggered_only = yes
+	option = {		
+		name = "beaus_missions_options_10a"   #builds suez 
+		4316 = {
+			add_great_project_tier = {
+				type = suez_canal
+				tier = 1
+			}
+		}		
+	}
+}
+
+country_event = {
+	id = beaus_missions.12
+	title = "beaus_missions_option_12"
+	desc = "beaus_missions_option_12_desc"
+	picture = LAND_MILITARY_eventPicture
+	is_triggered_only = yes
+	option = {		
+		name = "beaus_missions_options_12a" #austrian commanders
+		add_country_modifier = {
+			name = hab_austrian_mil
+			duration = -1
+		}
+	}
+	option = {		
+		name = "beaus_missions_options_12b" #hungarian
+		add_country_modifier = {
+			name = hab_hungarian_mil
+			duration = -1
+		}
+	}
+	option = {		
+		name = "beaus_missions_options_12c" #bohemian
+		add_country_modifier = {
+			name = hab_bohemian_mil
+			duration = -1
+		}
+	}
+	option = {		
+		name = "beaus_missions_options_12d" #croat
+		add_country_modifier = {
+			name = hab_croat_mil
+			duration = -1
+		}
+	}
+}

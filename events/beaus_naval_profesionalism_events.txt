@@ -1,0 +1,353 @@
+namespace = naval_professionalism
+country_event = {  ##mid
+	id = naval_professionalism.1
+	title = "naval_professionalism_1"
+	desc = "naval_professionalism_1_desc"
+	picture = TRADEGOODS_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "naval_professionalism_1_optiona"
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = 5
+		}
+		add_yearly_sailors = -1
+	}
+	option = {
+		name = "naval_professionalism_1_optionb"
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = -5
+		}
+		add_country_modifier = {
+			name = naval_rum
+			duration = 3650
+		}
+	}
+}
+country_event = { ##mid
+	id = naval_professionalism.2
+	title = "naval_professionalism_2"
+	desc = "naval_professionalism_2_desc"
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	trigger = {
+		is_at_war = yes
+		any_country = {
+			war_with = ROOT
+			any_owned_province = {
+				is_blockaded_by = ROOT
+			}
+		}
+		has_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = 2
+		}
+		army_professionalism = 0.025
+	}
+
+	option = {
+		name = "naval_professionalism_2_optiona"
+		add_army_professionalism = 0.05
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = -2.5
+		}
+	}
+	option = {
+		name = "naval_professionalism_2_optionb"
+		add_army_professionalism = -0.025
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = 5
+		}
+	}
+}
+country_event = { ##good
+	id = naval_professionalism.3
+	title = "naval_professionalism_3"
+	desc = "naval_professionalism_3_desc"
+	picture = ECONOMY_eventPicture
+	trigger = {
+		is_at_war = no
+	}
+	option = {
+		name = "naval_professionalism_3_optiona"
+		if = {
+			limit = { army_professionalism = 1 }
+			add_army_tradition = 10 
+		}
+		else = {
+			add_army_professionalism = 0.05
+		}
+	}
+	option = {
+		name = "naval_professionalism_3_optionb"
+		if = {
+			limit = { 
+				has_government_power = {
+					mechanic_type = naval_prof_mechanic
+					power_type = naval_prof
+					value = 100
+				}
+			}
+			add_navy_tradition = 10 
+		}
+		else = {
+			add_government_power = {
+				mechanic_type = naval_prof_mechanic
+				power_type = naval_prof
+				value = 5
+			}
+		}
+	}
+	option = {
+		name = "naval_professionalism_3_optionc"
+		add_years_of_income = 0.5
+	}
+}
+country_event = { ##bad
+	id = naval_professionalism.4
+	title = "naval_professionalism_4"
+	desc = "naval_professionalism_4_desc"
+	picture = PORT_BLOCKADED_eventPicture
+	
+	trigger = {
+		is_at_war = yes
+		any_country = {
+			war_with = ROOT
+			any_owned_province = {
+				is_blockaded_by = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = "naval_professionalism_4_optiona"
+		add_country_modifier = {
+			name = blocade_bad
+			duration = 3650
+		}
+	}
+	option = {
+		name = "naval_professionalism_4_optionb"
+		add_dip_power = -50
+		add_prestige = -10
+	}
+}
+
+country_event = { ###good
+	id = naval_professionalism.5
+	title = "naval_professionalism_5"
+	desc = "naval_professionalism_5_desc"
+	picture = maghrebi_NAVAL_MILITARY_eventPicture
+	trigger = {
+		is_at_war = yes
+		NOT = {
+			has_government_power = {
+				mechanic_type = naval_prof_mechanic
+				power_type = naval_prof
+				value = 100
+			}
+		}
+	}
+	option = {
+		name = "naval_professionalism_5_optiona"
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = 2.5
+		}
+	}
+}
+
+country_event = { ###mid
+	id = naval_professionalism.6
+	title = "naval_professionalism_6"
+	desc = "naval_professionalism_6_desc"
+	picture = CORRUPTION_eventPicture
+	
+	trigger = {
+		has_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = 5
+		}
+	}
+
+	option = {
+		name = "naval_professionalism_6_optiona"
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = -5
+		}
+	}
+	option = {
+		name = "naval_professionalism_6_optionb"
+		add_corruption = 0.25
+	}
+}
+
+country_event = {  ##mid/good
+	id = naval_professionalism.7
+	title = "naval_professionalism_7"
+	desc = "naval_professionalism_7_desc"
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	trigger = {
+		has_estate = estate_burghers
+		is_at_war = no
+	}
+	option = {
+		name = "naval_professionalism_7_optiona"
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 15
+		}
+		add_country_modifier = {
+			name = retired_captians
+			duration = 3650
+		}
+	}
+	option = {
+		name = "naval_professionalism_7_optionb"
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+	}
+}
+
+country_event = { ###good
+	id = naval_professionalism.8
+	title = "naval_professionalism_8"
+	desc = "naval_professionalism_8_desc"
+	picture = PIRATE_CAPTAINS_eventPicture
+	trigger = {
+		has_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = 5
+		}
+	}
+	option = {
+		name = "naval_professionalism_8_optiona"
+		create_admiral = {
+			tradition = 90
+		}
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = -5
+		}
+	}
+	option = {
+		name = "naval_professionalism_8_optionb"
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = 5
+		}
+	}
+}
+country_event = { ##bad
+	id = naval_professionalism.9
+	title = "naval_professionalism_9"
+	desc = "naval_professionalism_9_desc"
+	picture = PRINTING_PRESS_eventPicture
+	trigger = {
+		has_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = 5
+		}
+		has_institution = printing_press
+	}
+
+	option = {
+		name = "naval_professionalism_9_optiona"
+		add_years_of_income = -0.33
+	}
+	option = {
+		name = "naval_professionalism_9_optionb"
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = -5
+		}
+	}
+}
+
+country_event = { ##bad
+	id = naval_professionalism.10
+	title = "naval_professionalism_10"
+	desc = "naval_professionalism_10_desc"
+	picture = PIRATES_CAPTURED_eventPicture
+	
+	trigger = {
+		has_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = 10
+		}
+	}
+
+	option = {
+		name = "naval_professionalism_10_optiona"
+		add_country_modifier = {
+			name = no_galley_slaves
+			duration = 3650
+		}
+	}
+	option = {
+		name = "naval_professionalism_10_optionb"
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = -10
+		}
+	}
+}
+
+country_event = { ##mixed
+	id = naval_professionalism.11
+	title = "naval_professionalism_11"
+	desc = "naval_professionalism_11_desc"
+	picture = NAVAL_MILITARY_eventPicture
+	
+	trigger = {
+		is_at_war = no
+		NOT = {
+			has_government_power = {
+				mechanic_type = naval_prof_mechanic
+				power_type = naval_prof
+				value = 100
+			}
+		}
+	}
+
+	option = {
+		name = "naval_professionalism_11_optiona"
+		add_country_modifier = {
+			name = nav_wargames
+			duration = 3650
+		}
+		add_years_of_income = -1
+	}
+	option = {
+		name = "naval_professionalism_11_optionb"
+		add_prestige = -10
+	}
+}

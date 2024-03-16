@@ -28,6 +28,8 @@ country_decisions = {
 				tag = HAB
 				tag = BAV
 				tag = SWI
+				tag = SWA
+				tag = FKN
 				}
 		}
 		provinces_to_highlight = {
@@ -36,6 +38,10 @@ country_decisions = {
 				province_id = 134			#Wien
 				province_id = 2957			#Regensburg
 				province_id = 110			#Trient
+				province_id = 165			#bern
+				province_id = 1872			#ulm
+				province_id = 67			#nuremburg
+				province_id = 4743			#wiemar
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -45,10 +51,14 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			adm_tech = 15
-			owns_core_province = 65			#Munich
+			owns_core_province = 65				#Munich
 			owns_core_province = 134			#Wien
-			owns_core_province = 2957		#Regensburg
+			owns_core_province = 2957			#Regensburg
 			owns_core_province = 110			#Trient
+			owns_core_province = 165			#bern
+			owns_core_province = 1872			#ulm
+			owns_core_province = 67				#nuremburg
+			owns_core_province = 4743			#wiemar
 		}
 		effect = {
 			south_german_region = {

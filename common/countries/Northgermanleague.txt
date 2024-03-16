@@ -1,8 +1,8 @@
-#Prussia
+#NGF
 
 graphical_culture = westerngfx
 
-color = { 59  22  26 }
+color = { 160  43  34 }
 
 revolutionary_colors = { 1  0  4 }
 

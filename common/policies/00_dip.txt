@@ -1,8 +1,27 @@
-tdr_the_line_between_vassal_and_domain_1 = {
+the_line_between_vassal_and_domain_1 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -12,23 +31,26 @@ tdr_the_line_between_vassal_and_domain_1 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+                        full_idea_group = court_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_the_line_between_vassal_and_domain_2
-            has_active_policy = tdr_the_line_between_vassal_and_domain_3
+            has_active_policy = the_line_between_vassal_and_domain_2
+            has_active_policy = the_line_between_vassal_and_domain_3
             }
         }
+		dip_tech = 9
     }
 
 	diplomatic_annexation_cost = -0.15
@@ -39,11 +61,31 @@ tdr_the_line_between_vassal_and_domain_1 = {
 	}
 }
 
-tdr_the_line_between_vassal_and_domain_2 = {
+the_line_between_vassal_and_domain_2 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+                        full_idea_group = court_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -53,21 +95,23 @@ tdr_the_line_between_vassal_and_domain_2 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+                        full_idea_group = court_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_the_line_between_vassal_and_domain_1
-            has_active_policy = tdr_the_line_between_vassal_and_domain_3
+            has_active_policy = the_line_between_vassal_and_domain_1
+            has_active_policy = the_line_between_vassal_and_domain_3
             }
         }
     }
@@ -79,7 +123,7 @@ tdr_the_line_between_vassal_and_domain_2 = {
 		factor = 0.8		
 	}
 }
-tdr_the_line_between_vassal_and_domain_3 = {
+the_line_between_vassal_and_domain_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -93,21 +137,22 @@ tdr_the_line_between_vassal_and_domain_3 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_the_line_between_vassal_and_domain_2
-            has_active_policy = tdr_the_line_between_vassal_and_domain_1
+            has_active_policy = the_line_between_vassal_and_domain_2
+            has_active_policy = the_line_between_vassal_and_domain_1
             }
         }
     }
@@ -120,11 +165,30 @@ tdr_the_line_between_vassal_and_domain_3 = {
 	}
 }
 
-tdr_merchant_sponsoring_1 = {
+merchant_sponsoring_1 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -134,23 +198,25 @@ tdr_merchant_sponsoring_1 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_merchant_sponsoring_2
-            has_active_policy = tdr_merchant_sponsoring_3
+            has_active_policy = merchant_sponsoring_2
+            has_active_policy = merchant_sponsoring_3
             }
         }
+		dip_tech = 9
     }
 
 	placed_merchant_power = 2
@@ -161,11 +227,30 @@ tdr_merchant_sponsoring_1 = {
 	}
 }
 
-tdr_merchant_sponsoring_2 = {
+merchant_sponsoring_2 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -175,21 +260,22 @@ tdr_merchant_sponsoring_2 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_merchant_sponsoring_1
-            has_active_policy = tdr_merchant_sponsoring_3
+            has_active_policy = merchant_sponsoring_1
+            has_active_policy = merchant_sponsoring_3
             }
         }
     }
@@ -201,7 +287,7 @@ tdr_merchant_sponsoring_2 = {
 		factor = 0.8		
 	}
 }
-tdr_merchant_sponsoring_3 = {
+merchant_sponsoring_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -215,21 +301,22 @@ tdr_merchant_sponsoring_3 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_merchant_sponsoring_2
-            has_active_policy = tdr_merchant_sponsoring_1
+            has_active_policy = merchant_sponsoring_2
+            has_active_policy = merchant_sponsoring_1
             }
         }
     }
@@ -242,11 +329,30 @@ tdr_merchant_sponsoring_3 = {
 	}
 }
 
-tdr_trade_liberlization_1 = {
+trade_liberlization_1 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -256,23 +362,25 @@ tdr_trade_liberlization_1 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_trade_liberlization_2
-            has_active_policy = tdr_trade_liberlization_3
+            has_active_policy = trade_liberlization_2
+            has_active_policy = trade_liberlization_3
             }
         }
+		dip_tech = 9
     }
 
 	trade_efficiency = 0.10
@@ -283,11 +391,30 @@ tdr_trade_liberlization_1 = {
 	}
 }
 
-tdr_trade_liberlization_2 = {
+trade_liberlization_2 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -297,21 +424,22 @@ tdr_trade_liberlization_2 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_trade_liberlization_1
-            has_active_policy = tdr_trade_liberlization_3
+            has_active_policy = trade_liberlization_1
+            has_active_policy = trade_liberlization_3
             }
         }
     }
@@ -323,7 +451,7 @@ tdr_trade_liberlization_2 = {
 		factor = 0.8		
 	}
 }
-tdr_trade_liberlization_3 = {
+trade_liberlization_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -337,21 +465,22 @@ tdr_trade_liberlization_3 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_trade_liberlization_2
-            has_active_policy = tdr_trade_liberlization_1
+            has_active_policy = trade_liberlization_2
+            has_active_policy = trade_liberlization_1
             }
         }
     }
@@ -364,11 +493,30 @@ tdr_trade_liberlization_3 = {
 	}
 }
 
-tdr_protectionism_1 = {
+protectionism_1 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -378,39 +526,60 @@ tdr_protectionism_1 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_protectionism_2
-            has_active_policy = tdr_protectionism_3
+            has_active_policy = protectionism_2
+            has_active_policy = protectionism_3
             }
         }
+		dip_tech = 9
     }
 
 	embargo_efficiency = 0.15
 	production_efficiency = 0.10
-	trade_efficiency = -0.05
+	trade_efficiency = -0.075
 
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
 
-tdr_protectionism_2 = {
+protectionism_2 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -420,34 +589,35 @@ tdr_protectionism_2 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_protectionism_1
-            has_active_policy = tdr_protectionism_3
+            has_active_policy = protectionism_1
+            has_active_policy = protectionism_3
             }
         }
     }
 
 	embargo_efficiency = 0.30
 	production_efficiency = 0.20
-	trade_efficiency = -0.10
+	trade_efficiency = -0.15
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-tdr_protectionism_3 = {
+protectionism_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -461,21 +631,22 @@ tdr_protectionism_3 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_protectionism_2
-            has_active_policy = tdr_protectionism_1
+            has_active_policy = protectionism_2
+            has_active_policy = protectionism_1
             }
         }
     }
@@ -489,11 +660,30 @@ tdr_protectionism_3 = {
 	}
 }
 
-tdr_fleet_in_being_1 = {
+fleet_in_being_1 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -503,23 +693,25 @@ tdr_fleet_in_being_1 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_fleet_in_being_2
-            has_active_policy = tdr_fleet_in_being_3
+            has_active_policy = fleet_in_being_2
+            has_active_policy = fleet_in_being_3
             }
         }
+		dip_tech = 9
     }
 
 	naval_maintenance_modifier = -0.1
@@ -530,11 +722,30 @@ tdr_fleet_in_being_1 = {
 	}
 }
 
-tdr_fleet_in_being_2 = {
+fleet_in_being_2 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -544,21 +755,22 @@ tdr_fleet_in_being_2 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_fleet_in_being_1
-            has_active_policy = tdr_fleet_in_being_3
+            has_active_policy = fleet_in_being_1
+            has_active_policy = fleet_in_being_3
             }
         }
     }
@@ -570,7 +782,7 @@ tdr_fleet_in_being_2 = {
 		factor = 0.8		
 	}
 }
-tdr_fleet_in_being_3 = {
+fleet_in_being_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -584,21 +796,22 @@ tdr_fleet_in_being_3 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_fleet_in_being_2
-            has_active_policy = tdr_fleet_in_being_1
+            has_active_policy = fleet_in_being_2
+            has_active_policy = fleet_in_being_1
             }
         }
     }
@@ -612,11 +825,30 @@ tdr_fleet_in_being_3 = {
 	}
 }
 
-tdr_merchant_fleet_1 = {
+merchant_fleet_1 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -626,23 +858,25 @@ tdr_merchant_fleet_1 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_merchant_fleet_2
-            has_active_policy = tdr_merchant_fleet_3
+            has_active_policy = merchant_fleet_2
+            has_active_policy = merchant_fleet_3
             }
         }
+		dip_tech = 9
     }
 
 	caravan_power = 0.2
@@ -653,11 +887,30 @@ tdr_merchant_fleet_1 = {
 	}
 }
 
-tdr_merchant_fleet_2 = {
+merchant_fleet_2 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -667,21 +920,22 @@ tdr_merchant_fleet_2 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_merchant_fleet_1
-            has_active_policy = tdr_merchant_fleet_3
+            has_active_policy = merchant_fleet_1
+            has_active_policy = merchant_fleet_3
             }
         }
     }
@@ -694,7 +948,7 @@ tdr_merchant_fleet_2 = {
 		factor = 0.8		
 	}
 }
-tdr_merchant_fleet_3 = {
+merchant_fleet_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -708,21 +962,22 @@ tdr_merchant_fleet_3 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_merchant_fleet_2
-            has_active_policy = tdr_merchant_fleet_1
+            has_active_policy = merchant_fleet_2
+            has_active_policy = merchant_fleet_1
             }
         }
     }
@@ -736,11 +991,30 @@ tdr_merchant_fleet_3 = {
 	}
 }
 
-tdr_ocean_going_ships_1 = {
+ocean_going_ships_1 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -750,23 +1024,25 @@ tdr_ocean_going_ships_1 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_ocean_going_ships_2
-            has_active_policy = tdr_ocean_going_ships_3
+            has_active_policy = ocean_going_ships_2
+            has_active_policy = ocean_going_ships_3
             }
         }
+		dip_tech = 9
     }
 
 	heavy_ship_power = 0.05
@@ -777,11 +1053,30 @@ tdr_ocean_going_ships_1 = {
 	}
 }
 
-tdr_ocean_going_ships_2 = {
+ocean_going_ships_2 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -791,34 +1086,35 @@ tdr_ocean_going_ships_2 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_ocean_going_ships_1
-            has_active_policy = tdr_ocean_going_ships_3
+            has_active_policy = ocean_going_ships_1
+            has_active_policy = ocean_going_ships_3
             }
         }
     }
 
 	heavy_ship_power = 0.10
-	global_trade_power = 0.20
+	global_trade_power = 0.15
 	naval_forcelimit_modifier = 0.10
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-tdr_ocean_going_ships_3 = {
+ocean_going_ships_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -832,39 +1128,59 @@ tdr_ocean_going_ships_3 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_ocean_going_ships_2
-            has_active_policy = tdr_ocean_going_ships_1
+            has_active_policy = ocean_going_ships_2
+            has_active_policy = ocean_going_ships_1
             }
         }
     }
 
 	heavy_ship_power = 0.15
-	global_trade_power = 0.30
-	naval_forcelimit_modifier = 0.20
+	global_trade_power = 0.25
+	naval_forcelimit_modifier = 0.15
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
 
-tdr_coastal_ships_1 = {
+coastal_ships_1 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -874,23 +1190,25 @@ tdr_coastal_ships_1 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_coastal_ships_2
-            has_active_policy = tdr_coastal_ships_3
+            has_active_policy = coastal_ships_2
+            has_active_policy = coastal_ships_3
             }
         }
+		dip_tech = 9
     }
 
 	galley_power = 0.10
@@ -901,11 +1219,30 @@ tdr_coastal_ships_1 = {
 	}
 }
 
-tdr_coastal_ships_2 = {
+coastal_ships_2 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -915,21 +1252,22 @@ tdr_coastal_ships_2 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_coastal_ships_1
-            has_active_policy = tdr_coastal_ships_3
+            has_active_policy = coastal_ships_1
+            has_active_policy = coastal_ships_3
             }
         }
     }
@@ -942,7 +1280,7 @@ tdr_coastal_ships_2 = {
 		factor = 0.8		
 	}
 }
-tdr_coastal_ships_3 = {
+coastal_ships_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -956,21 +1294,22 @@ tdr_coastal_ships_3 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_coastal_ships_2
-            has_active_policy = tdr_coastal_ships_1
+            has_active_policy = coastal_ships_2
+            has_active_policy = coastal_ships_1
             }
         }
     }
@@ -984,11 +1323,30 @@ tdr_coastal_ships_3 = {
 	}
 }
 
-tdr_employing_pirates_1 = {
+employing_pirates_1 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -998,38 +1356,60 @@ tdr_employing_pirates_1 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_employing_pirates_2
-            has_active_policy = tdr_employing_pirates_3
+            has_active_policy = employing_pirates_2
+            has_active_policy = employing_pirates_3
             }
         }
+		dip_tech = 9
     }
 
 	privateer_efficiency = 0.15
 	naval_morale = 0.10
+	diplomatic_reputation = -1
 
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
 
-tdr_employing_pirates_2 = {
+employing_pirates_2 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -1039,35 +1419,35 @@ tdr_employing_pirates_2 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_employing_pirates_1
-            has_active_policy = tdr_employing_pirates_3
+            has_active_policy = employing_pirates_1
+            has_active_policy = employing_pirates_3
             }
         }
     }
 
 	privateer_efficiency = 0.25
 	naval_morale = 0.15
-	sailors_recovery_speed = 0.10
-
+	diplomatic_reputation = -1.5
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-tdr_employing_pirates_3 = {
+employing_pirates_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -1081,21 +1461,22 @@ tdr_employing_pirates_3 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_employing_pirates_2
-            has_active_policy = tdr_employing_pirates_1
+            has_active_policy = employing_pirates_2
+            has_active_policy = employing_pirates_1
             }
         }
     }
@@ -1103,18 +1484,36 @@ tdr_employing_pirates_3 = {
 	privateer_efficiency = 0.35
 	naval_morale = 0.20
 	may_perform_slave_raid = yes
-	sailors_recovery_speed = 0.20
-
+	diplomatic_reputation = -2.5
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
 
-tdr_foriegn_scholars_1 = {
+foriegn_scholars_1 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -1124,26 +1523,28 @@ tdr_foriegn_scholars_1 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_foriegn_scholars_2
-            has_active_policy = tdr_foriegn_scholars_3
+            has_active_policy = foriegn_scholars_2
+            has_active_policy = foriegn_scholars_3
             }
         }
+		dip_tech = 9
     }
 
-	advisor_cost = -0.10
+	advisor_cost = -0.075
 	promote_culture_cost = -0.15
 
 	ai_will_do = {
@@ -1151,11 +1552,30 @@ tdr_foriegn_scholars_1 = {
 	}
 }
 
-tdr_foriegn_scholars_2 = {
+foriegn_scholars_2 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -1165,26 +1585,27 @@ tdr_foriegn_scholars_2 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_foriegn_scholars_1
-            has_active_policy = tdr_foriegn_scholars_3
+            has_active_policy = foriegn_scholars_1
+            has_active_policy = foriegn_scholars_3
             }
         }
     }
 
-	advisor_cost = -0.20
+	advisor_cost = -0.15
 	promote_culture_cost = -0.30
 
 	
@@ -1192,7 +1613,7 @@ tdr_foriegn_scholars_2 = {
 		factor = 0.8		
 	}
 }
-tdr_foriegn_scholars_3 = {
+foriegn_scholars_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -1206,38 +1627,58 @@ tdr_foriegn_scholars_3 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_foriegn_scholars_2
-            has_active_policy = tdr_foriegn_scholars_1
+            has_active_policy = foriegn_scholars_2
+            has_active_policy = foriegn_scholars_1
             }
         }
     }
 
-	advisor_cost = -0.30
-	promote_culture_cost = -0.45
+	advisor_cost = -0.25
+	promote_culture_cost = -0.50
 
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
 
-tdr_enforce_dominat_culture_1 = {
+enforce_dominat_culture_1 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -1247,26 +1688,28 @@ tdr_enforce_dominat_culture_1 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_enforce_dominat_culture_2
-            has_active_policy = tdr_enforce_dominat_culture_3
+            has_active_policy = enforce_dominat_culture_2
+            has_active_policy = enforce_dominat_culture_3
             }
         }
+		dip_tech = 9
     }
 
-	advisor_cost = 0.10
+	advisor_cost = 0.075
 	culture_conversion_cost = -0.25
 
 	ai_will_do = {
@@ -1274,11 +1717,30 @@ tdr_enforce_dominat_culture_1 = {
 	}
 }
 
-tdr_enforce_dominat_culture_2 = {
+enforce_dominat_culture_2 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -1288,34 +1750,35 @@ tdr_enforce_dominat_culture_2 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_enforce_dominat_culture_1
-            has_active_policy = tdr_enforce_dominat_culture_3
+            has_active_policy = enforce_dominat_culture_1
+            has_active_policy = enforce_dominat_culture_3
             }
         }
     }
 
 	advisor_cost = 0.15
-	culture_conversion_cost = -0.50
+	culture_conversion_cost = -0.40
 
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-tdr_enforce_dominat_culture_3 = {
+enforce_dominat_culture_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -1329,26 +1792,27 @@ tdr_enforce_dominat_culture_3 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_enforce_dominat_culture_2
-            has_active_policy = tdr_enforce_dominat_culture_1
+            has_active_policy = enforce_dominat_culture_2
+            has_active_policy = enforce_dominat_culture_1
             }
         }
     }
 
-	advisor_cost = 0.20
+	advisor_cost = 0.25
 	culture_conversion_cost = -0.70
 
 	ai_will_do = {
@@ -1356,11 +1820,30 @@ tdr_enforce_dominat_culture_3 = {
 	}
 }
 
-tdr_spun_narritive_1 = {
+spun_narritive_1 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 3
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 2
+				}
+		}
 	}
 	
 	allow = {
@@ -1370,25 +1853,27 @@ tdr_spun_narritive_1 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_spun_narritive_2
-            has_active_policy = tdr_spun_narritive_3
+            has_active_policy = spun_narritive_2
+            has_active_policy = spun_narritive_3
             }
         }
+		dip_tech = 9
     }
-	ae_impact = -0.15
+	ae_impact = -0.10
 	spy_offence = 0.10
 	imperial_authority_value = 0.05
 
@@ -1397,11 +1882,30 @@ tdr_spun_narritive_1 = {
 	}
 }
 
-tdr_spun_narritive_2 = {
+spun_narritive_2 = {
 	monarch_power = DIP
 
 	potential = {
 		adm_tech = 7
+		not = {
+			calc_true_if = {
+				full_idea_group = spy_ideas
+				full_idea_group = diplomatic_ideas
+				full_idea_group = trade_ideas
+				full_idea_group = exploration_ideas
+				full_idea_group = influence_ideas
+				full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = frontier_ideas
+				full_idea_group = defined_ideas
+				full_idea_group = multicultural_ideas
+				full_idea_group = nationalism_ideas
+				full_idea_group = urban_ideas
+				full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
+				amount = 3
+				}
+		}
 	}
 	
 	allow = {
@@ -1411,26 +1915,27 @@ tdr_spun_narritive_2 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_spun_narritive_1
-            has_active_policy = tdr_spun_narritive_3
+            has_active_policy = spun_narritive_1
+            has_active_policy = spun_narritive_3
             }
         }
     }
 
-	ae_impact = -0.30
+	ae_impact = -0.20
 	spy_offence = 0.20
 	imperial_authority_value = 0.10
 
@@ -1439,7 +1944,7 @@ tdr_spun_narritive_2 = {
 		factor = 0.8		
 	}
 }
-tdr_spun_narritive_3 = {
+spun_narritive_3 = {
 	monarch_power = DIP
 
 	potential = {
@@ -1453,26 +1958,27 @@ tdr_spun_narritive_3 = {
 		full_idea_group = trade_ideas
 		full_idea_group = exploration_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = high_seas_ideas
-		full_idea_group = flotilla_ideas
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = frontier_ideas
 		full_idea_group = defined_ideas
 		full_idea_group = multicultural_ideas
 		full_idea_group = nationalism_ideas
 		full_idea_group = urban_ideas
 		full_idea_group = rural_ideas
+                        full_idea_group = court_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_spun_narritive_2
-            has_active_policy = tdr_spun_narritive_1
+            has_active_policy = spun_narritive_2
+            has_active_policy = spun_narritive_1
             }
         }
     }
 
-	ae_impact = -0.40
+	ae_impact = -0.35
 	spy_offence = 0.30
 	imperial_authority_value = 0.15
 

@@ -1,0 +1,613 @@
+# cost = x #==> cost in $ to build (subject to other modifiers)
+# time = x #==> number of months to build.
+# previous = x # a building that is the prerequisite of this building
+# modifier = m # a modifier on the province that the building gives
+# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# one_per_country = yes/no # if yes, only one of these can exist in a country
+# manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
+# onmap = yes/no # show as a sprite on the map
+
+# FROM = owner
+# ROOT = province
+
+
+
+#military investments
+artillery_foundry = {
+	cost = 500
+	time = 18
+	build_trigger = {
+		development = 30
+		OR = {
+		trade_goods = copper
+		trade_goods = iron
+		trade_goods = coal
+		trade_goods = naval_supplies
+		}
+	}
+	modifier = {
+		artillery_fire = 0.025
+		artillery_shock = 0.025
+		local_governing_cost_increase = 4
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+artillery_foundry_upgrade = {
+	cost = 700
+	time = 18
+	make_obsolete = artillery_foundry
+	build_trigger = {
+		development = 40
+		OR = {
+		trade_goods = copper
+		trade_goods = iron
+		trade_goods = coal
+		trade_goods = naval_supplies
+		}
+	}
+	modifier = {
+		artillery_fire = 0.04
+		artillery_shock = 0.04
+		local_governing_cost_increase = 6
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+army_provisions = {
+	cost = 150
+	time = 18
+	build_trigger = {
+		development = 15
+		OR = {
+		trade_goods = livestock
+		trade_goods = grain
+		trade_goods = fish
+		trade_goods = salt
+
+		}
+	}
+	modifier = {
+		global_supply_limit_modifier = 0.05
+		global_regiment_cost = -0.0075
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+gunpowder_mill = {
+	cost = 500
+	time = 24
+	build_trigger = {
+		development = 30
+	}
+	modifier = {
+		fire_damage = 0.0075
+		local_state_maintenance_modifier = 0.75
+		local_governing_cost_increase = 4
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+firearms_workshop = {
+	cost = 500
+	time = 18
+	build_trigger = {
+		development = 30
+		OR = {
+		trade_goods = iron
+		trade_goods = coal
+		trade_goods = naval_supplies
+		has_terrain = forest
+		has_terrain = woods
+		has_terrain = jungle
+		development = 35
+		}
+	}
+	modifier = {
+		local_state_maintenance_modifier = 0.40
+		infantry_fire = 0.025
+		cavalry_fire = 0.025
+		local_governing_cost_increase = 4
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+firearms_workshop_upgrade = {
+	cost = 700
+	time = 18
+	make_obsolete = firearms_workshop
+	build_trigger = {
+		development = 35
+		OR = {
+		trade_goods = iron
+		trade_goods = coal
+		trade_goods = naval_supplies
+		has_terrain = forest
+		has_terrain = woods
+		has_terrain = jungle
+		development = 40
+		}
+	}
+	modifier = {
+		local_state_maintenance_modifier = 0.4
+		infantry_fire = 0.04
+		cavalry_fire = 0.04
+		local_governing_cost_increase = 6
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+horse_breeding_grounds = {
+	cost = 500
+	time = 18
+	build_trigger = {
+		development = 30
+		OR = {
+		trade_goods = livestock
+		trade_goods = grain
+		has_terrain = grasslands
+		has_terrain = savannah
+		has_terrain = drylands
+		has_terrain = farmlands
+		development = 35
+		}
+	}
+	modifier = {
+		local_state_maintenance_modifier = 0.40
+		infantry_shock = 0.025
+		cavalry_shock = 0.025
+		local_governing_cost_increase = 4
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+horse_breeding_grounds_upgrade = {
+	cost = 700
+	time = 18
+	make_obsolete = horse_breeding_grounds
+	build_trigger = {
+		development = 35
+		OR = {
+		trade_goods = livestock
+		trade_goods = grain
+		has_terrain = grasslands
+		has_terrain = savannah
+		has_terrain = drylands
+		has_terrain = farmlands
+		development = 40
+		}
+	}
+	modifier = {
+		local_state_maintenance_modifier = 0.40
+		infantry_shock = 0.04
+		cavalry_shock = 0.04
+		local_governing_cost_increase = 6
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+officer_acedemy = {
+	cost = 500
+	time = 18
+	build_trigger = {
+		development = 30
+		
+		NOT = {
+			area_for_scope_province = {
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = officer_acedemy
+					has_construction = officer_acedemy
+				}
+			}
+		}
+	}
+	keep_trigger = {
+		NOT = {
+			area_for_scope_province = {
+				NOT = { province_id = root }
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = officer_acedemy
+					has_construction = officer_acedemy
+				}
+			}
+		}
+	}
+	modifier = {
+		yearly_army_professionalism = 0.001
+		morale_damage_received = -0.005
+		global_tax_income = -18
+		local_governing_cost_increase = 2
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+#more civilian based invsmtents
+basic_bitch_road = {
+	cost = 50
+	time = 6
+	
+	modifier = {
+		local_friendly_movement_speed = 0.1
+		local_development_cost = -0.025
+		allowed_num_of_buildings = 1
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+the_cooler_road = {
+	cost = 75
+	time = 8
+	make_obsolete = basic_bitch_road
+	modifier = {
+		local_friendly_movement_speed = 0.2
+		local_development_cost = -0.05
+		allowed_num_of_buildings = 1
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+the_cooler_road_dos = {
+	cost = 100
+	time = 10
+	make_obsolete = the_cooler_road
+	modifier = {
+		local_friendly_movement_speed = 0.3
+		local_development_cost = -0.1
+		allowed_num_of_buildings = 1	
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+the_road_before_railroads = {
+	cost = 125
+	time = 12
+	make_obsolete = the_cooler_road_dos
+	modifier = {
+		local_friendly_movement_speed = 0.4
+		local_development_cost = -0.175
+		allowed_num_of_buildings = 1	
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+experimental_railroads = {
+	cost = 400
+	time = 16
+	make_obsolete = the_road_before_railroads
+	modifier = {
+		local_friendly_movement_speed = 0.50
+		local_development_cost = -0.25
+		allowed_num_of_buildings = 2		
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+irragation_ditches = {
+	cost = 100
+	time = 20
+	build_trigger = {
+		development = 5
+		NOT = { has_terrain = mountain }
+		NOT = { has_terrain = hills }
+		NOT = { has_terrain = highlands }
+		NOT = { has_terrain = steppe }
+		NOT = { has_terrain = drylands }
+		#not = { has_terrain = cavern }
+		#not = { has_terrain = dwarven_road }
+		#not = { has_terrain = dwarven_hold }
+		#not = { has_terrain = dwarven_hold_surface }
+		#not = { has_terrain = cavern }
+	}
+	modifier = {
+		local_development_cost = -0.025
+		province_trade_power_value = 0.5
+		allowed_num_of_buildings = 1
+		local_hostile_movement_speed = -0.20
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+limited_canals = {
+	cost = 200
+	time = 30
+	make_obsolete = irragation_ditches
+
+	build_trigger = {
+		development = 10
+	}
+	modifier = {
+		local_development_cost = -0.05
+		province_trade_power_value = 0.5
+		allowed_num_of_buildings = 1
+		local_hostile_movement_speed = -0.30
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+urban_development_center = {
+	cost = 300
+	time = 24
+	build_trigger = {
+		development = 10
+	}
+	modifier = {
+		local_development_cost = -0.10
+		allowed_num_of_buildings = 2
+		local_state_maintenance_modifier = 0.75
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+early_steel_mill =  {
+	cost = 300
+	time = 12
+	build_trigger = {
+		development = 25
+		OR = {
+			trade_goods = iron
+			trade_goods = coal
+			}
+	}
+	modifier = {
+		build_time = -0.025
+		build_cost = -0.01
+		local_development_cost = -0.10
+		trade_goods_size = 0.5
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+glass_works = {
+	cost = 300
+	time = 18
+	build_trigger = {
+		development = 10
+		OR = {
+		trade_goods = glass
+		trade_goods = coal
+		trade_goods = dyes
+		trade_goods = chinaware
+		}
+	}
+	modifier = {
+		trade_goods_size_modifier = 0.30
+		local_development_cost = -0.05
+		innovativeness_gain = 0.075
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+distillery = {
+	cost = 300
+	time = 18
+	build_trigger = {
+		development = 5
+		OR = {
+		trade_goods = sugar
+		trade_goods = grain
+		trade_goods = wine
+		trade_goods = tea
+		}
+	}
+	modifier = {
+		trade_goods_size_modifier = 0.30
+		local_development_cost = -0.075
+		prestige = 0.05
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+coin_mint = {
+	cost = 500
+	time = 18
+	build_trigger = {
+		development = 10
+		OR = {
+		trade_goods = gold
+		trade_goods = copper
+		}
+	}
+	modifier = {
+		local_gold_depletion_chance_modifier = -0.7
+		trade_goods_size_modifier = -0.2
+		inflation_reduction = 0.025
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+luxury_goods = {
+	cost = 300
+	time = 18
+	build_trigger = {
+		development = 20
+		OR = {
+		trade_goods = cloth
+		trade_goods = gems
+		trade_goods = silk
+		trade_goods = chinaware
+		trade_goods = gold
+		}
+	}
+	modifier = {
+		trade_goods_size_modifier = 0.4
+		all_estate_loyalty_equilibrium = 0.005
+		local_development_cost = -0.025
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+printing_office = {
+	cost = 300
+	time = 18
+	build_trigger = {
+		development = 15
+		OR = {
+		trade_goods = paper
+		}
+	}
+	modifier = {
+		local_institution_spread = 0.1
+		global_institution_spread = 0.075
+		embracement_cost = -0.075
+		local_development_cost = -0.05
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+theatre_district = {
+	cost = 300
+	time = 18
+	build_trigger = {
+		development = 15
+	}
+	modifier = {
+		prestige_decay = -0.0025
+		culture_conversion_cost = -0.01
+		local_culture_conversion_time = -0.40
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+hunting_trails = {
+	cost = 300
+	time = 18
+	build_trigger = {
+		development = 7
+		OR = {
+		trade_goods = fish
+		trade_goods = fur
+		trade_goods = ivory
+		}
+	}
+	modifier = {
+		trade_goods_size_modifier = 0.4
+		local_development_cost = -0.05
+		local_friendly_movement_speed = 0.10  
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+exotic_spice_depot = {
+	cost = 300
+	time = 18
+	build_trigger = {
+		development = 10
+		OR = {
+		trade_goods = spices
+		trade_goods = cloves
+		trade_goods = sugar
+		trade_goods = cocoa
+		trade_goods = coffee
+		trade_goods = tobacco
+		}
+	}
+	modifier = {
+		trade_goods_size_modifier = 0.40
+		local_development_cost  = -0.05
+		mercantilism_cost = -0.025
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+colonial_trade_center = {
+	cost = 300
+	time = 18
+	build_trigger = {
+		development = 5
+		OR = {
+		trade_goods = tobacco
+		trade_goods = slaves
+		trade_goods = cotton
+		trade_goods = sugar
+		trade_goods = coffee
+		trade_goods = cocoa
+		}
+	}
+	modifier = {
+		trade_goods_size_modifier = 0.40
+		local_development_cost = -0.15
+		global_colonial_growth = 2
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

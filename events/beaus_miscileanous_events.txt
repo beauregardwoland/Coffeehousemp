@@ -1,0 +1,403 @@
+namespace = beaus_event_mobilization
+country_event = {
+	id = beaus_event_mobilization.1
+	title = "beaus_event_mobilization_1"
+	desc = "beaus_event_mobilization_1_desc"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_event_mobilization_option"
+		
+		add_yearly_manpower = 0.40
+		add_war_exhaustion = 1
+		add_mil_power = -25
+		add_country_modifier = {
+			name = "mobilization_lite"
+			duration = 1825
+		}
+		#country_event = { id = beaus_event_mobilization.60 days = 1825 }
+		clr_country_flag = mobing_question
+		
+	}
+
+}
+country_event = {
+	id = beaus_event_mobilization.60
+	title = "beaus_event_mobilization_3"
+	desc = "beaus_event_mobilization_3_desc"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_event_mobilization_3_option_a"
+		trigger = {
+			Not = {
+				has_country_modifier = demobilization_bad
+			}
+		}
+		add_years_of_income = -0.70
+		add_yearly_manpower = 0.75
+		add_war_exhaustion = 2
+		add_mil_power = -25
+		add_army_professionalism = -0.025
+		add_country_modifier = {
+			name = "mobilization"
+			duration = 2737
+		}
+		#country_event = { id = beaus_event_mobilization.65 days = 2737 }
+		clr_country_flag = mobing_question
+		hidden_effect = {
+			set_government_power = { # resets it to allow reverse counter
+      	 	mechanic_type = mobilization_mechanic
+       		power_type = mobilization_power
+     	    value = 0
+		}
+		}
+	}
+	option = {
+		name = "beaus_event_mobilization_3_option_b"
+		trigger = {
+			Not = {
+				has_country_modifier = demobilization_bad
+			}
+		}
+		demobelization = yes
+		add_country_modifier = {
+			name = "demobilization"
+			duration = 1825
+		}
+		clr_country_flag = mobing_question
+		hidden_effect = {
+			set_government_power = { # resets it to allow reverse counter
+      	 	mechanic_type = mobilization_mechanic
+       		power_type = mobilization_power
+     	    value = 0
+		}
+		}
+	}
+}
+country_event = {
+	id = beaus_event_mobilization.65
+	title = "beaus_event_mobilization_4"
+	desc = "beaus_event_mobilization_4_desc"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "beaus_event_mobilization_4_option_a"
+		trigger = {
+			Not = {
+				has_country_modifier = demobilization_bad
+			}
+		}
+		add_years_of_income = -1
+		add_yearly_manpower = 0.75
+		add_war_exhaustion = 4
+		add_mil_power = -25
+		add_army_professionalism = -0.05
+		add_country_modifier = {
+			name = "mobilization_scraping"
+			duration = 2737
+		}
+		
+		#country_event = { id = beaus_event_mobilization.65 days = 2737 }
+		clr_country_flag = mobing_question
+		hidden_effect = {
+			set_government_power = { # resets it to allow reverse counter
+      	 	mechanic_type = mobilization_mechanic
+       		power_type = mobilization_power
+     	    value = 0
+		}
+		}
+	}
+	option = {
+		name = "beaus_event_mobilization_4_option_b"
+		trigger = {
+			Not = {
+				has_country_modifier = demobilization_bad
+			}
+		}
+		demobelization = yes
+		add_dip_power = -75
+		add_country_modifier = {
+			name = "demobilization_bad"
+			duration = 1825
+		}
+		clr_country_flag = mobing_question
+		hidden_effect = {
+			set_government_power = { # resets it to allow reverse counter
+      	 	mechanic_type = mobilization_mechanic
+       		power_type = mobilization_power
+     	    value = 0
+		}
+		}
+	}
+	
+}
+country_event = {
+	id = beaus_event_mobilization.2
+	title = "beaus_event_mobilization_2"
+	desc = "beaus_event_mobilization_2_desc"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "beaus_event_mobilization_2_option"
+		demobelization = yes
+		add_country_modifier = {
+			name = "demobilization_bad"
+			duration = 1825
+		}
+		clr_country_flag = mobing_question
+		hidden_effect = {
+			set_government_power = { # resets it to allow reverse counter
+      	 	mechanic_type = mobilization_mechanic
+       		power_type = mobilization_power
+     	    value = 0
+		}
+		}
+	}
+	option = {
+		name = "beaus_event_mobilization_2_option_b"
+		clr_country_flag = mobing_question
+		hidden_effect = {
+			set_government_power = { # resets it to allow reverse counter
+      	 	mechanic_type = mobilization_mechanic
+       		power_type = mobilization_power
+     	    value = 0
+		}
+		}
+	}
+}
+
+
+country_event = {
+	id = beaus_event_mobilization.3
+	title = "beaus_funny_moment_1"
+	desc = "beaus_funny_moment_1_desc"
+	picture = beaus_funny_event
+	fire_only_once = yes
+	major = yes
+
+
+	trigger = {
+		is_year = 1701
+		has_institution = industrialization
+		is_great_power = yes 
+	}
+
+	option = {
+		name = beaus_funny_moment_option1
+		set_global_flag = beaus_funny_flag
+	}
+	
+
+
+}
+
+country_event = {
+	id = beaus_event_mobilization.30
+	title = "beaus_event_mobilization_30"
+	desc = "beaus_event_mobilization_30_desc"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_event_mobilization_30_optiona"
+		trigger = {
+			has_government_power = {
+				mechanic_type = naval_prof_mechanic
+				power_type = naval_prof
+				value = 5
+			}
+		}
+		add_navy_tradition = 10
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = -5
+		}
+		add_country_modifier = {
+			name = naval_prof_timer
+			duration = 1095
+		}
+		clr_country_flag = in_ntradition_menu
+	}
+	option = {
+		name = "beaus_event_mobilization_30_optionb"
+		trigger = {
+			navy_tradition  = 10
+		}
+		add_navy_tradition = -10
+		add_government_power = {
+			mechanic_type = naval_prof_mechanic
+			power_type = naval_prof
+			value = 2.5
+		}
+		add_country_modifier = {
+			name = naval_prof_timer
+			duration = 1095
+		}
+		clr_country_flag = in_ntradition_menu
+	}
+	option = {
+		name = "beaus_event_mobilization_30_optionc"
+		clr_country_flag = in_ntradition_menu
+	}
+}
+country_event = {
+	id = beaus_event_mobilization.31
+	title = "beaus_event_mobilization_31"
+	desc = "beaus_event_mobilization_31_desc"
+	picture = LIBERUM_VETO_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_event_mobilization_31_optiona"
+		trigger = {
+			army_professionalism = 0.05
+		}
+		add_army_tradition = 10
+		add_army_professionalism = -0.05
+		add_country_modifier = {
+			name = army_prof_timer
+			duration = 1095
+		}
+		clr_country_flag = in_atradition_menu
+	}
+	option = {
+		name = "beaus_event_mobilization_31_optionb"
+		trigger = {
+			army_tradition = 10
+		}
+		add_army_tradition = -10
+		add_army_professionalism = 0.025
+		add_country_modifier = {
+			name = army_prof_timer
+			duration = 1095
+		}
+		clr_country_flag = in_atradition_menu
+	}
+	option = {
+		name = "beaus_event_mobilization_31_optionc"
+		clr_country_flag = in_atradition_menu
+	}
+}
+country_event = {
+	id = beaus_event_mobilization.32
+	title = "beaus_event_mobilization_32"
+	desc = "beaus_event_mobilization_32_desc"
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "beaus_event_mobilization_32_optiona"
+		change_government_reform_progress = 35
+		add_country_modifier = {
+			name = debate_aftermath
+			duration = 5475
+		}
+	}
+	option = {
+		name = "beaus_event_mobilization_32_optionb"
+		add_innovativeness_big_effect = yes
+		add_country_modifier = {
+			name = debate_aftermath
+			duration = 5475
+		}
+	}
+	option = {
+		name = "beaus_event_mobilization_32_optionc"
+		add_estate_loyalty = {
+			estate = all
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = treat_people_better
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = debate_aftermath
+			duration = 5475
+		}
+	}
+	option = {
+		name = "beaus_event_mobilization_32_optiond"
+		add_years_of_income = 0.075
+	}
+}
+
+#rhine abil
+country_event = {
+	id = beaus_event_mobilization.89
+	title = "woland_rhine_mil_decision"
+	desc = "woland_rhine_mil_decision_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	option = {
+		name = "woland_rhine_mil_decision_a"
+		add_country_modifier = {
+			name = rhineabil_mil_reserves
+			duration = 1825
+		}
+		add_yearly_manpower = 1
+	}
+	option = {
+		name = "woland_rhine_mil_decision_b"
+		create_general = { 
+			tradition = 100 
+			add_fire = 1
+			add_shock = 1
+		}
+		add_country_modifier = {
+			name = rhineabil_mil_officers
+			duration = 1825
+		}
+	}
+}
+country_event = {
+	id = beaus_event_mobilization.890
+	title = "woland_leadership_buff"
+	desc = "woland_leadership_buff_desc"
+	picture = LIBERUM_VETO_eventPicture
+	goto = invest_set_save
+	is_triggered_only = yes
+	option = {
+		name = "woland_rhine_il_decision_a"
+		add_country_modifier = {
+			name = leadership_fire
+			duration = -1
+		}
+	}
+	option = {
+		name = "woland_rhine_il_decision_b"
+		
+		add_country_modifier = {
+			name = leadership_shock
+			duration = -1
+		}
+	}
+	option = {
+		name = "woland_rhine_il_decision_c"
+		
+		add_country_modifier = {
+			name = leadership_manuever
+			duration = -1
+		}
+	}
+	option = {
+		name = "woland_rhine_il_decision_d"
+		
+		add_country_modifier = {
+			name = leadership_siege
+			duration = -1
+		}
+	}
+}

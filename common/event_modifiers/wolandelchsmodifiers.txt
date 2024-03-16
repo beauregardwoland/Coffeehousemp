@@ -1,0 +1,929 @@
+#decisions
+marine_corps = {
+	allowed_marine_fraction = 0.10
+}
+enabled_mobilization = {
+	global_manpower_modifier= 0.05
+}
+mobilization_lite = {
+	manpower_recovery_speed= 0.30
+	global_manpower_modifier = 0.30
+	production_efficiency= -0.15
+	trade_goods_size_modifier= -0.15
+	global_tax_modifier = -0.15
+	interest = 0.5
+	global_unrest = 1
+	monthly_mobilization_power = 0.0167
+}
+cossack_steppe_cavalry  ={
+	shock_damage = 0.20
+	reinforce_speed = 0.20
+	is_banner_modifier = yes
+}
+mongolic_steppe_cavalry = {
+	discipline = 0.05
+	reinforce_speed = -0.30
+	regiment_manpower_usage = -0.45
+	is_banner_modifier = yes
+}
+suez_built = {
+	local_great_project_upgrade_cost = -0.90
+}
+
+mobilization = {
+	manpower_recovery_speed= 0.40
+	global_manpower_modifier = 0.40
+	production_efficiency= -0.35
+	trade_goods_size_modifier= -0.35
+	global_tax_modifier = -0.35
+	interest = 1.5
+	global_unrest = 2
+	monthly_mobilization_power = -0.0083
+}
+demobilization_bad = {
+	trade_goods_size = -0.20
+	production_efficiency = -0.20
+	global_tax_modifier = -0.20
+	inflation_reduction = -0.20
+	interest = 1.5
+}
+demobilization = {
+	manpower_recovery_speed= 0.10
+	trade_goods_size = -0.10
+	production_efficiency = -0.10
+	global_tax_modifier = -0.10
+	inflation_reduction = -0.10
+	interest = 1.1
+}
+mobilization_scraping = {
+	manpower_recovery_speed= 0.50
+	global_manpower_modifier = 0.50
+	production_efficiency= -0.40
+	trade_goods_size_modifier= -0.40
+	global_tax_modifier = -0.40
+	interest = 2
+	global_unrest = 2
+	all_power_cost = 0.025
+	monthly_mobilization_power = -0.0083
+}
+modernize_levies = {
+	discipline = 0.025
+	land_morale = 0.05
+	reinforce_speed = -0.30
+    is_musketeer_modifier  = yes
+}
+conscripts_levy = {
+	discipline = 0.05
+	land_morale = 0.05
+	reinforce_speed = -0.15
+    is_musketeer_modifier = yes
+}
+gaurds = {
+	discipline = 0.025
+	fire_damage_received = -0.05
+	is_cossack_modifier  = yes
+}
+elite_gaurds = {
+	discipline = 0.075
+	fire_damage_received = -0.15
+	is_cossack_modifier = yes
+}
+internal_migrat = {
+	colonists = -1
+	development_cost = -0.05
+}
+
+leadership_fire = {
+	max_general_fire = 1	
+	max_admiral_fire = 1
+}
+
+leadership_shock = {
+	max_admiral_shock = 1
+	max_general_shock = 1	
+
+}
+leadership_manuever = {
+	max_admiral_maneuver = 1
+	max_general_maneuver = 1	
+	movement_speed = 0.075
+	movement_speed_in_fleet_modifier = 0.75	
+}
+leadership_siege = {
+	max_admiral_siege = 1
+	max_general_siege = 1	
+
+}
+
+#missions
+
+rhi_fleet_experience = {
+	global_ship_recruit_speed = -0.20
+	global_ship_cost = -0.15
+	navy_tradition = 1
+}
+rhi_colonial_ambition = {
+	naval_forcelimit = 20
+	range = 0.30
+}
+rhi_place_in_sun = {
+	trade_efficiency = 0.10
+	navy_tradition = 1
+}
+rhi_mercs_1 = {
+	mercenary_cost  = -0.15
+	mercenary_manpower = 0.20
+}
+rhi_mercs_2 = {
+	mercenary_discipline = 0.05
+	infantry_power = 0.075
+}
+rhi_hessian_base = {
+	local_manpower = 1.5
+	land_forcelimit = 1
+}
+rhi_conquer_lowlands = {
+	num_accepted_cultures = 1
+	trade_efficiency = 0.10
+	global_own_trade_power = 0.05
+}
+rhi_lowlands_province = {
+	trade_goods_size = 0.50
+	province_trade_power_value = 1
+}
+
+rhi_diplo_lowlands = {
+	global_trade_goods_size_modifier = 0.05
+	trade_efficiency = 0.05
+	global_own_trade_power = 0.05
+}
+rhi_diplo_ally = {
+	global_trade_goods_size_modifier = 0.025
+	trade_efficiency = 0.075
+}
+rhi_garrision = {
+	local_garrison_size = 0.30
+	fort_level = 1
+}
+rhi_crushed_french = {
+	fire_damage_received = -0.05
+	prestige = 1
+}
+rhi_small_dev_boost = {
+	development_cost = -0.075
+	global_prosperity_growth = 0.10
+}
+rhi_rhur_belt = {
+	local_production_efficiency = 0.30
+	trade_goods_size = 0.5
+	local_manpower_modifier = 0.5
+}
+rhi_smart_iron = {
+	global_trade_goods_size = 0.10
+	ship_durability = 0.10
+	fire_damage = 0.05
+	innovativeness_gain = 0.25
+}
+rhi_minting = {
+	inflation_reduction = 0.1
+	global_tax_modifier = 0.10
+}
+rhi_reform = {
+	diplomatic_reputation = 1
+	imperial_authority = 0.20
+}
+rhi_elect = {
+	reasons_to_elect = 15
+	diplomatic_reputation = 1
+}
+rhi_old = {
+	local_development_cost = -0.10
+	imperial_authority_value = 0.025
+}
+rhi_new = {
+	free_city_imperial_authority = 0.25
+	imperial_authority_value = 0.025
+}
+rhi_tolerance_building = {
+	religious_unity = 0.10
+	tolerance_own = 1
+}
+rhi_parabellum = {
+	defensiveness = 0.25
+	garrison_size = 0.15
+}
+rhi_bellum = {
+	war_exhaustion = -0.15
+	reinforce_speed = 0.15
+}
+rhi_pax = {
+	tolerance_heretic = 2
+	tolerance_heathen = 2
+}
+rhi_devout = {
+	papal_influence = 2
+	monthly_fervor_increase = 2
+	church_power_modifier = 0.25
+}
+rhi_ger_consolidated_bonus = {
+	global_trade_goods_size = 0.15
+	ship_durability = 0.10
+	fire_damage_received = -0.125
+	innovativeness_gain = 0.50
+	prestige = 1
+}
+
+
+	#austria
+	eepy_habs = {
+		ae_impact = -0.10
+		improve_relation_modifier = 0.10
+	}
+	austria_development = {
+		build_cost = -0.075
+		development_cost = -0.075
+	}
+	adriatic_gates = {
+		local_own_coast_naval_combat_bonus = 1
+	}
+	adriatic_ports = {
+		naval_forcelimit = 2
+		local_sailors_modifier = 0.75
+	}
+	hab_geographic = {
+		governing_capacity_modifier = 0.10
+		global_trade_goods_size_modifier = 0.15
+	} 
+	hab_counter_refo = {
+		tolerance_own = 1
+		global_heretic_missionary_strength = 0.05
+		global_religious_conversion_resistance = 0.5
+		manpower_recovery_speed = 0.20
+		manpower_against_imperial_enemies = 15000
+	}
+	hab_proper_truimph = {
+		reasons_to_elect = 25
+		imperial_authority_value = 0.10
+	}
+	hab_truimph = {
+		global_religious_conversion_resistance = 0.25
+		tolerance_heretic = 2
+	}
+	hab_romania = {
+		num_accepted_cultures = 2
+	}
+	hab_roman_legacy = {
+		legitimacy = 1
+		imperial_authority = 0.15
+	}
+	hab_imperial_fleet = {
+		ship_recruit_speed = -0.75
+		ship_durability = 0.15
+		naval_forcelimit = 15
+	}
+	Wallenstien_revolt = {
+		land_forcelimit = 40
+		land_morale = 0.10
+		global_regiment_cost = -0.50
+		tax_income = 120
+	}
+	wallenstien_reh = {
+		global_regiment_recruit_speed = -0.10
+		manpower_recovery_speed = 0.10
+	}
+	wallen_legacy = {
+		global_regiment_recruit_speed  = -0.15
+		manpower_recovery_speed = 0.15
+	}
+	noveau_rich = {
+		nobles_loyalty_modifier = -0.075
+	}
+	hab_silver_mine = {
+		inflation_reduction = 0.05
+		interest = -0.25
+	}
+	hab_ducats = {
+		interest = -0.5
+		inflation_reduction = 0.05
+	}
+	hab_ducat_province = {
+		local_gold_depletion_chance_modifier = -0.75
+		trade_goods_size_modifier = 0.33
+	}
+	hab_austrian_mil = {
+		discipline = 0.025
+	}
+	hab_hungarian_mil = {
+		cavalry_power = 0.075
+		cavalry_cost = -0.10
+	}
+	hab_bohemian_mil = {
+		fire_damage_received = -0.05
+		shock_damage_received = -0.05
+	}
+	hab_croat_mil = {
+		morale_damage = 0.05
+		morale_damage_received = -0.05
+	}
+	#venice
+	fund_suez = {
+		global_trade_goods_size_modifier = -0.15
+		global_tax_modifier = -0.15
+		trade_efficiency = -0.20
+	}
+	ven_india = {
+		range = 0.5
+		trade_efficiency = 0.10
+	}
+	ven_global_empire = {
+		naval_forcelimit_modifier = 0.15
+		navy_tradition = 0.75
+	}
+	#neherlands
+	batavia_rewards = {
+		allowed_voc_indiamen_fraction = 0.10
+		light_ship_hull_size = 0.20
+	}
+	
+#governments
+rhineabil_trade_boost = {
+	global_prov_trade_power_modifier = 0.20
+	global_trade_goods_size_modifier = 0.10
+}
+rhineabil_dev_boost = {
+	development_cost  = -0.10
+	global_prosperity_growth = 0.25
+	global_unrest = 1.5
+}
+rhineabil_mil_weak = {
+	regiment_manpower_usage = -0.20
+	infantry_power = 0.05
+	is_revolutionary_guard_modifier = yes
+}
+rhineabil_mil_reserves = {
+	regiment_manpower_usage = -0.30
+	fire_damage  = 0.10
+	is_revolutionary_guard_modifier = yes
+}
+rhineabil_mil_officers = {
+	land_morale = 0.10
+	morale_damage_received = -0.05
+	is_revolutionary_guard_modifier = yes
+}
+
+
+
+####mission
+tirol_fort = {
+	province_trade_power_value = 10
+	local_garrison_size = 0.25
+	local_defensiveness = 0.10
+	local_manpower_modifier = 0.15
+	picture = "icon_trade_office"
+}
+ita_prestige = {
+	prestige_decay = -0.25
+	stability_cost_modifier = -0.25
+}
+
+ita_mogadishu = {
+	colonists = 1
+	global_colonial_growth = 25
+}
+
+ita_holy_land = {
+	global_missionary_strength = 0.02
+	missionaries = 1
+}
+
+take_littoral = {
+	galley_cost = -0.25
+	merchants = 1
+}
+
+ita_multiculturalism = {
+	num_accepted_cultures = 1
+}
+
+ita_greek_culture = {
+	num_accepted_cultures = 1
+}
+mogadishu_trade_post_modifier = {
+	local_culture_conversion_cost = -0.50
+	province_trade_power_value = 10
+	local_ship_repair = 0.33
+	local_development_cost_modifier = -0.25
+	picture = "icon_trade_office"
+}
+ned_linear_pike_shot = {
+	movement_speed = 0.25
+	fire_damage = 0.10
+}
+ned_dutch_bonus = {
+	trade_efficiency = 0.075
+	naval_morale = 0.10
+}
+ned_flemish_bonus = {
+	artillery_fire = 0.5
+	placed_merchant_power = 5
+}
+ned_walloon_bonus = {
+	production_efficiency = 0.15
+	global_trade_goods_size_modifier = 0.10
+}
+ned_frisian_bonus = {
+	land_morale = 0.075
+	privateer_efficiency = 0.35
+}
+flanders_field = {
+	local_defender_dice_roll_bonus = 1
+	local_defensiveness = 0.20
+	local_manpower_modifier = 0.10
+	province_trade_power_modifier = 0.30
+	local_development_cost = -0.10
+}
+frisian_communities = {
+	local_autonomy = 0.05
+	local_manpower = 500
+	development_cost = -0.025
+	local_unrest = -1
+}
+por_rieno_unido = {
+	governing_capacity_modifier = 0.15
+	num_accepted_cultures = 3
+}
+
+###funny infantry
+
+	##culture specific
+german_fencing = {
+	shock_damage = 0.10
+	discipline = 0.025
+	land_maintenance_modifier = 0.15
+	is_revolutionary_guard_modifier = yes
+}
+italian_fencing = {
+	infantry_power = 0.05
+	discipline = 0.05
+	land_maintenance_modifier = 0.25
+	is_revolutionary_guard_modifier = yes
+}
+gendarmies = {
+	cavalry_shock = 0.75
+	cavalry_cost = 0.30
+	is_revolutionary_guard_modifier = yes
+}
+ita_city_state_mercs = {
+	discipline = 0.025
+	regiment_manpower_usage = -0.1
+	is_revolutionary_guard_modifier = yes
+}
+riechslaufer = {
+	infantry_shock = 0.25
+	shock_damage_received = -0.075
+	is_revolutionary_guard_modifier = yes
+}
+riechslaufer_emp = {
+	infantry_shock = 0.30
+	shock_damage_received = -0.1
+	is_revolutionary_guard_modifier = yes
+}
+tatar_bands = {
+	morale_damage = 0.15
+	morale_damage_received = 0.10
+	regiment_manpower_usage = -0.2
+	is_revolutionary_guard_modifier = yes
+}
+camel_cavalry = {
+	land_attrition = -0.25
+	morale_damage = 0.05
+	is_revolutionary_guard_modifier = yes
+}
+swiss_pike = {
+	infantry_power = 0.10
+	shock_damage_received = -0.075
+	is_revolutionary_guard_modifier = yes
+}
+flemish_pikes = {
+	shock_damage_received = -0.10
+	shock_damage = 0.05
+	is_revolutionary_guard_modifier = yes
+}
+jinete = {
+	cavalry_shock = -0.75
+	morale_damage = 0.15
+	cavalry_cost = -0.15
+	is_revolutionary_guard_modifier = yes
+}
+isle_archers = {
+	infantry_fire = 0.35
+	infantry_cost = 0.10
+	regiment_manpower_usage = 0.05
+	is_revolutionary_guard_modifier = yes
+}
+
+
+	####general
+burgher_militia = {
+	regiment_manpower_usage = -0.25
+	discipline = -0.025
+	land_maintenance_modifier = -0.20
+	reinforce_cost_modifier = -0.40
+	is_revolutionary_guard_modifier = yes
+}
+noble_gaurds = {
+	discipline = 0.05
+	morale_damage = 0.10
+	reinforce_speed = -0.30
+	is_revolutionary_guard_modifier = yes
+}
+pious_volounteers = {
+	land_morale = 0.15
+	morale_damage_received = -0.1
+	fire_damage_received = 0.05
+	shock_damage_received = 0.05
+	is_revolutionary_guard_modifier = yes
+}
+
+semi_levy = {
+	regiment_manpower_usage = -0.15
+	land_maintenance_modifier = -0.075
+	is_revolutionary_guard_modifier = yes
+}
+
+mercenary_early_org = {
+	army_tradition_from_battle = 0.75
+	discipline = 0.025
+	is_revolutionary_guard_modifier = yes
+}
+
+heavy_merc_cooperation = {
+	land_morale_constant = 0.15
+	reinforce_cost_modifier = -0.25
+	is_mercenary_modifier = yes
+}
+
+absolutist_gaurds = {
+	discipline = 0.075
+	reinforce_speed = -0.30
+	is_revolutionary_guard_modifier = yes
+}
+
+absolutist_militias = {
+	regiment_manpower_usage = -0.25
+	discipline = -0.025
+	land_maintenance_modifier = -0.10
+	is_revolutionary_guard_modifier = yes
+}
+
+absolutist_regulars = {
+	land_morale = 0.15
+	morale_damage_received = -0.15
+	regiment_manpower_usage = 0.15
+	is_revolutionary_guard_modifier = yes
+}
+
+frontline_doctrine = {
+	shock_damage = 0.20
+	drill_gain_modifier = 0.30
+	is_revolutionary_guard_modifier = yes
+}
+heavy_doctrine = {
+	fire_damage_received = -0.10
+	shock_damage_received = -0.10
+	is_revolutionary_guard_modifier = yes
+}
+reserves_doctrine = {
+	reinforce_speed = 0.30
+	land_attrition = -0.25
+	recover_army_morale_speed = 0.30
+	is_revolutionary_guard_modifier = yes
+}
+cart_doctrine = {
+	shock_damage_received = -0.20
+	movement_speed = -0.25
+	is_revolutionary_guard_modifier = yes
+}
+
+noble_officers = {
+	discipline = 0.05
+	drill_gain_modifier = 0.50
+	land_maintenance_modifier = 0.20
+	is_revolutionary_guard_modifier = yes
+}
+burgher_officers = {
+	infantry_fire = 1
+	cavalry_fire = 1
+	morale_damage_received = 0.15
+	is_revolutionary_guard_modifier = yes
+}
+clergy_officers = {
+	land_morale = 0.10
+	recover_army_morale_speed = -0.35
+	is_revolutionary_guard_modifier = yes
+}
+#artillery
+heavy_cannons_primacy = {
+	artillery_power = -0.10
+	movement_speed = -0.25
+	is_revolutionary_guard_modifier = yes
+}
+light_cannons_primacy = {
+	artillery_shock = 2.5
+	artillery_fire = 0.75
+	shock_damage_received = -0.075
+	is_revolutionary_guard_modifier = yes
+}
+mortars_cannons_primacy = {
+	fire_damage = 0.075
+	artillery_power = -0.15
+	is_revolutionary_guard_modifier = yes
+}
+
+#general
+plate_armour = {
+	shock_damage_received = -0.10
+	fire_damage_received = -0.025
+	land_maintenance_modifier = 0.15
+	reinforce_cost_modifier = 0.30
+	is_revolutionary_guard_modifier = yes
+}
+blunderbuss_equipment = {
+	infantry_shock = 0.40
+	cavalry_fire = 0.40
+	shock_damage = 0.10
+	is_revolutionary_guard_modifier = yes
+}
+grenadiers = {
+	assault_fort_ability = 0.25
+	fire_damage = 0.05
+	land_maintenance_modifier = 0.05
+	is_revolutionary_guard_modifier = yes
+}
+balloon_recon = {
+	movement_speed = 0.10
+	morale_damage_received = -0.15
+	is_revolutionary_guard_modifier = yes
+}
+
+#cavalry
+demi_lancer = {
+	cavalry_shock = 0.35
+	morale_damage = 0.05
+	movement_speed = 0.20
+	is_revolutionary_guard_modifier = yes
+}
+harquebusier_equipment = {
+	cavalry_fire = 0.60
+	cavalry_power = 0.05
+	is_revolutionary_guard_modifier = yes
+}
+curasier_equipment = {
+	cavalry_power = 0.15
+	discipline = 0.025
+	is_revolutionary_guard_modifier = yes
+}
+dragoons_cav = {
+	cavalry_shock = -0.7
+	cavalry_fire = 1.5
+	cavalry_cost = -0.10
+	is_revolutionary_guard_modifier = yes
+}
+horse_artillery = {
+	cavalry_fire = 3
+	cavalry_shock = -3
+	cavalry_cost = 0.25
+	is_revolutionary_guard_modifier = yes
+}
+#infantry
+halberds = {
+	infantry_shock = 0.75
+	infantry_cost = 0.30
+	is_revolutionary_guard_modifier = yes
+}
+conscripted_hunters = {
+	infantry_fire = 0.40
+	regiment_manpower_usage = 0.10
+	is_revolutionary_guard_modifier = yes
+}
+regimental_guns = {
+	infantry_fire = 0.5
+	movement_speed = -0.15
+	is_revolutionary_guard_modifier = yes
+}
+sword_buckler = {
+	infantry_shock = 0.2
+	infantry_power = 0.05
+	is_revolutionary_guard_modifier = yes
+}
+early_rifles = {
+	infantry_fire = 0.20
+	infantry_power = 0.05
+	infantry_cost = 0.15
+	is_revolutionary_guard_modifier = yes
+}
+sappers = {
+	infantry_power = -0.10
+	infantry_cost = 0.35
+	movement_speed = 0.20
+	assault_fort_ability = 0.20
+	is_revolutionary_guard_modifier = yes
+}
+
+zepelins = {
+	infantry_shock = 6
+	fire_damage_received = 4
+	is_revolutionary_guard_modifier = yes
+}
+tanks = {
+	cavalry_fire = 4
+	morale_damage_received = 2
+	is_revolutionary_guard_modifier = yes
+}
+machine_gun_carts = {
+	infantry_fire = 6
+	infantry_cost = 4
+	is_revolutionary_guard_modifier = yes
+}
+
+##anbennar
+#plucked_mage = {
+#	mages_loyalty_modifier = -0.15
+#	mages_influence_modifier = -0.05
+#}
+
+#idea privleges
+cty_expansion = {
+	local_development_cost_modifier = -0.10
+	min_local_autonomy = 5
+}
+cty_military = {
+	local_manpower_modifier = 0.15
+	garrison_size = 0.25
+	local_development_cost = 0.1
+}
+rural_bonus = {
+	local_production_efficiency = 0.33
+	supply_limit_modifier = 0.25
+}
+debate_aftermath = {
+	prestige = 0.75
+}
+treat_people_better = {
+	global_unrest = -2
+	production_efficiency = 0.10
+}
+non_accepted_accept = {
+	local_tax_modifier = 0.50
+	local_missionary_strength = 0.02
+	local_manpower_modifier = 0.50
+	local_sailors_modifier = 0.40
+	local_unrest = -3					#1% revolt risk!
+	local_development_cost = -0.125
+}
+#test things
+beaus_test_modifier_province = {
+	tax_income = 1
+}
+
+beaus_test_modifier_province_1 = {
+	tax_income = 1
+}
+beaus_test_modifier_province_2 = {
+	tax_income = 2
+}
+beaus_test_modifier_province_3 = {
+	tax_income = 3
+}
+beaus_test_modifier_province_4 = {
+	tax_income = 4
+}
+beaus_test_modifier_province_5 = {
+	tax_income = 5
+}
+beaus_test_modifier_province_6 = {
+	tax_income = 6
+}
+
+
+
+
+
+
+
+
+##province selector
+
+beaus_invest_defense = {
+	local_defensiveness = 0.15
+	local_garrison_size = 0.30
+	garrison_growth = 0.50
+	local_garrison_damage = 0.25
+}
+
+beaus_invest_defense_cost = {
+	local_defensiveness = -0.25
+}
+
+beaus_invest_recruitmen = {
+	regiment_recruit_speed = -0.20
+	supply_limit_modifier = 0.20
+}
+
+beaus_invest_recruitmen2 = {
+	local_manpower_modifier = 0.30
+}
+beaus_invest_stage_set_cost = {
+	local_development_cost_modifier = 0.10
+	local_unrest = 1
+}
+beaus_invest_stage_set_attrition = {
+	max_attrition = 3
+	attrition = 5
+}
+
+beaus_invest_stage_set_defense = {
+	local_defender_dice_roll_bonus = 1
+}
+
+beaus_invest_stage_set_attack = {
+	local_attacker_dice_roll_bonus = 1
+}
+beaus_invest_angry = {
+	local_unrest = 2.5
+}
+beaus_invest_angry_big = {
+	local_unrest = 7
+}
+
+beaus_invest_tax_small = {
+	local_tax_modifier = 0.20
+	local_unrest = 3
+}
+beaus_invest_tax_big = {
+	local_tax_modifier = 0.40
+	local_unrest = 7
+}
+beaus_invest_quotas_big = {
+	local_production_efficiency = 0.40
+	local_development_cost = 0.1
+	local_unrest = 5
+}
+beaus_invest_quota_small = {
+	local_production_efficiency = 0.20
+	local_development_cost = 0.05
+	local_unrest = 2
+}
+beaus_invest_burghers_charter = {
+	min_local_autonomy = 25
+	province_trade_power_modifier = 0.75
+	province_trade_power_value = 5
+	trade_efficiency = 0.05
+}
+beaus_invest_expel_burghers = {
+	province_trade_power_modifier = 1.5
+	embargo_efficiency = 0.05
+	local_development_cost = 0.10
+}
+beaus_invest_settlers = {
+	local_culture_conversion_cost = -0.20
+	local_culture_conversion_time = -0.30
+	local_missionary_strength = 0.01
+}
+beaus_fast_dev_cooldown = {
+	global_tax_modifier = -0.05
+}
+
+
+beaus_invest_sustained_growth_investments = {
+	local_development_cost = -0.15
+	local_unrest = -1
+}
+
+beaus_invest_bolster_workforce_small = {
+	trade_goods_size = 1
+	local_manpower_modifier = -0.10
+	local_garrison_size = -0.15
+}
+
+beaus_invest_bolster_workforce_big = {
+	trade_goods_size = 2
+	local_manpower_modifier = -0.20
+	local_garrison_size = -0.20
+}
+
+beaus_invest_banking_family = {
+	interest = -0.75
+	inflation_reduction = 0.025
+	min_local_autonomy = 10
+}
+
+beaus_invest_construction_small = {
+	local_build_time = -0.35
+	local_build_cost = -0.05
+}
+
+beaus_invest_construction_big = {
+	local_build_cost = -0.25
+	local_build_time = -0.35
+}

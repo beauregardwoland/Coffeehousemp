@@ -1,0 +1,33 @@
+custom_button = {
+    name = province_selector
+    potential = {
+		root = {
+			owned_by = from
+			owner = {
+				ai = no
+			}
+		}
+		
+	}
+	trigger = {
+		root = {
+			owner = {
+				Not = { has_country_flag = in_province_selector }
+			}
+		}
+	}
+	effect = {
+		root = {
+			set_province_flag = mark_invest_start
+		}
+		mark_provinces_interest_2 = yes
+		root = {
+			owner = {
+				country_event = { id = woland_province_invest_end.90 }
+				set_country_flag = in_province_selector
+			}
+		}
+	}
+	tooltip = province_sel
+}
+

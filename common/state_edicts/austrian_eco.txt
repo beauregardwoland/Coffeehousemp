@@ -1,0 +1,23 @@
+hab_infrastructure_network = {
+	potential = {
+		custom_trigger_tooltip = {
+			tooltip = unlocked_if_tt
+			has_country_flag = hab_enable_infrastructure_network_flag
+		}
+	}
+	
+	allow = { }
+	
+	modifier = {
+		trade_goods_size_modifier = 0.05
+		local_production_efficiency = 0.15
+	}
+	
+	color = { 188 178 35 }
+	
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+}

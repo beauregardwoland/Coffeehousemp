@@ -136,12 +136,8 @@ spriteTypes = {
 		name = "GFX_faction_rr_girondists"	
 		texturefile = "gfx//interface//girondists_icon.tga"
 	}	
-
-
-
-
-
 	### sgf factions modded ####
+
 	spriteType = {
 		name = "GFX_faction_bg_SGF_princes"
 		texturefile = "gfx//interface//faction_purple_frame.tga"

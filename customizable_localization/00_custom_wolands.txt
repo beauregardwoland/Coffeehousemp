@@ -1,0 +1,100 @@
+defined_text = {
+    name = getifnavproftwenty
+	random = no
+    text = {
+        localisation_key = string_at_20_nav
+        trigger = {
+            has_government_power = { 
+				mechanic_type = naval_prof_mechanic
+				power_type = naval_prof
+				value = 20
+			}
+        }
+    }
+    text = {
+        localisation_key = ""
+        trigger = {
+            always = yes
+        }
+    }
+}
+defined_text = {
+    name = getifnavprofforty
+	random = no
+    text = {
+        localisation_key = string_at_40_nav
+        trigger = {
+            has_government_power = { 
+				mechanic_type = naval_prof_mechanic
+				power_type = naval_prof
+				value = 40
+			}
+        }
+    }
+    text = {
+        localisation_key = ""
+        trigger = {
+            always = yes
+        }
+    }
+}
+defined_text = {
+    name = getifnavprofsixty
+	random = no
+    text = {
+        localisation_key = string_at_60_nav
+        trigger = {
+            has_government_power = { 
+				mechanic_type = naval_prof_mechanic
+				power_type = naval_prof
+				value = 60
+			}
+        }
+    }
+    text = {
+        localisation_key = ""
+        trigger = {
+            always = yes
+        }
+    }
+}
+defined_text = {
+    name = getifnavprofeighty
+	random = no
+    text = {
+        localisation_key = string_at_80_nav
+        trigger = {
+            has_government_power = { 
+				mechanic_type = naval_prof_mechanic
+				power_type = naval_prof
+				value = 80
+			}
+        }
+    }
+    text = {
+        localisation_key = ""
+        trigger = {
+            always = yes
+        }
+    }
+}
+defined_text = {
+    name = getifnavprofcent
+	random = no
+    text = {
+        localisation_key = string_at_100_nav
+        trigger = {
+            has_government_power = { 
+				mechanic_type = naval_prof_mechanic
+				power_type = naval_prof
+				value = 100
+			}
+        }
+    }
+    text = {
+        localisation_key = ""
+        trigger = {
+            always = yes
+        }
+    }
+}

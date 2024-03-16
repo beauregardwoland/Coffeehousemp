@@ -27,7 +27,6 @@ france_region = {
 		pyrenees_area
 		poitou_area
 		orleans_area
-		bordeaux_area
 	}
 }
 
@@ -70,7 +69,6 @@ italy_region = {
 		lombardy_area
 		piedmont_area
 		tuscany_area
-		lower_tuscany_area
 		liguria_area
 		corsica_sardinia_area
 		sicily_area
@@ -189,11 +187,10 @@ iberia_region = {
 		galicia_area
 		baleares_area
 		extremadura_area
-		pyrenees_mtn_area
-		codorno_area
-		lisboa_area
 	}
 }
+
+
 
 british_isles_region = {
 	areas = {
@@ -282,7 +279,6 @@ balkan_region = {
 		albania_area
 		silistria_area
 		slavonia_area
-		crete_area
 	}
 }
 
@@ -1371,7 +1367,6 @@ carribeans_region = {
 		leeward_islands_area
 		windward_islands_area
 		lucayan_area
-		turks_area
 	}
 	monsoon = {
 		00.06.01

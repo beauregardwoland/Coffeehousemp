@@ -1,0 +1,252 @@
+rhine_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 1
+	available = {
+		OR = {
+			has_dlc = "Third Rome"
+			has_dlc = "Domination"
+		}
+		tag = RHI
+	}
+	
+	powers = {
+		rhine_adm_power = {
+			max = 150
+			monarch_power = ADM
+			base_monthly_growth = 0.4
+		}
+		rhine_dip_power = {
+			max = 150
+			monarch_power = DIP
+			base_monthly_growth = 0.4
+		}
+		rhine_mil_power = {
+			max = 150
+			monarch_power = MIL
+			base_monthly_growth = 0.4
+		}
+	}
+	
+	interactions = {
+		rhineabil_money = {
+			gui = rhine_mechanics_interaction_gui
+			icon = GFX_rhine_ability_ADM
+			cost_type = rhine_adm_power
+			cost = 100
+			trigger = {
+				always = yes
+			}
+			effect = {
+				if = {
+					limit = {
+						has_country_flag = upgrade_rhine_adm
+					}
+					add_country_modifier = {
+						name = rhineabil_dev_boost
+						duration = 2555
+					}
+					random_list = {
+						20 = {
+							random_owned_province = {
+								limit = {
+									Not = { religion = protestant}
+								}
+								change_religion = protestant
+								add_base_manpower = 1
+								add_base_production = 1
+								add_base_tax = 1
+							}
+						}
+						20 = {
+							random_owned_province = {
+								limit = {
+									Not = { religion = reformed}
+								}
+								change_religion = reformed
+								add_base_manpower = 1
+								add_base_production = 1
+								add_base_tax = 1
+							}
+						}
+						20 = {
+							random_owned_province = {
+								limit = {
+									Not = { religion = catholic}
+								}
+								change_religion = catholic
+								add_base_manpower = 1
+								add_base_production = 1
+								add_base_tax = 1
+							}
+						}
+						10 = {
+							random_owned_province = {
+								limit = {
+									Not = { religion = orthodox}
+								}
+								change_religion = orthodox
+								add_base_manpower = 1
+								add_base_production = 1
+								add_base_tax = 1
+							}
+						}
+						10 = {
+							random_owned_province = {
+								limit = {
+									Not = { religion = jewish}
+								}
+								change_religion = jewish
+								add_base_manpower = 1
+								add_base_production = 1
+								add_base_tax = 1
+							}
+							
+						}
+						20 = {
+							
+						}
+					}
+				}
+				else = {
+					add_country_modifier = {
+						name = rhineabil_dev_boost
+						duration = 1825
+					}
+					random_list = {
+						15 = {
+							random_owned_province = {
+								limit = {
+									Not = { religion = protestant}
+								}
+								change_religion = protestant
+							}
+						}
+						15 = {
+							random_owned_province = {
+								limit = {
+									Not = { religion = reformed}
+								}
+								change_religion = reformed
+							}
+						}
+						15 = {
+							random_owned_province = {
+								limit = {
+									Not = { religion = catholic}
+								}
+								change_religion = catholic
+							}
+						}
+						
+						55 = {
+							
+						}
+					}
+				}
+				
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 10
+			}
+		}
+		rhineabil_trade = {
+			gui = rhine_mechanics_interaction_gui
+			icon = GFX_rhine_ability_DIP
+			cost_type = rhine_dip_power
+			cost = 100
+			trigger = { 
+				always = yes
+			}
+			effect = { 
+				add_country_modifier = {
+					name = rhineabil_trade_boost
+					duration = 1825
+				}
+				if = {
+					limit = {
+						has_country_flag = upgrade_rhine_dip
+					}
+					add_years_of_income = 0.50
+					every_owned_province = {
+						add_prosperity = 10
+					}
+				}
+				else = {
+					add_years_of_income = 0.25
+				}
+				
+
+				
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 10
+				
+			}
+		}
+		rhineabil_jaegers = {
+			gui = rhine_mechanics_interaction_gui
+			icon = GFX_rhine_ability_MIL
+			cost_type = rhine_mil_power
+			cost = 100
+			trigger = {
+				capital_scope = {
+					controller = { 
+						tag = ROOT
+					}
+					has_siege = no
+				}
+			}
+			effect = { 
+				#create_unit_forcelimit_percentage = {
+				#	type = infantry
+				#	special_unit_category =
+				#	force_limit_percentage = 0.2
+				#}
+				#add_country_modifier = {
+				#	name = rhine_fuck_this
+				#	duration = 40
+				#}
+				if = {
+					limit = {
+						has_country_flag = upgrade_rhine_mil
+					}
+					create_unit_forcelimit_percentage = {
+						type = infantry
+						#special_unit_category = revolutionary_guard
+						force_limit_percentage = 0.10
+					}
+					create_unit_forcelimit_percentage = {
+						type = artillery
+						#special_unit_category = revolutionary_guard
+						force_limit_percentage = 0.05
+					}
+					custom_tooltip = rhine_choice_mil
+					country_event = {
+						id = beaus_event_mobilization.89
+					}
+				}
+				else = {
+					create_unit_forcelimit_percentage = {
+						type = infantry
+						#special_unit_category = revolutionary_guard
+						force_limit_percentage = 0.10
+					}
+					add_yearly_manpower = 0.20
+					add_country_modifier = {
+						name = rhineabil_mil_weak
+						duration = 1825
+					}
+				}
+				
+			}
+		
+			cooldown_years = 0
+			ai_chance = {
+				factor = 10
+				
+			}
+		}
+	}
+}

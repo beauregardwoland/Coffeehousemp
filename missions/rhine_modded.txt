@@ -1,0 +1,1679 @@
+first = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = RHI } 
+
+	rhi_encroach_saxons = {
+		icon = conquer_lower_saxony
+		position = 2
+		required_missions = { rhi_consolidate_rhine } 
+		provinces_to_highlight = {  
+			or = {
+				area = braunschweig_area
+				area = weser_area
+			}
+		} 
+
+		trigger = { 
+			or = {
+			has_country_flag = beautest
+			and = {	
+			weser_area ={
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			braunschweig_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			}
+			}
+		 } 
+
+		effect = {
+			 lower_saxony_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			 }
+			 mecklenburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			 }
+			add_permanent_power_projection = {
+				type = 5_permanent_power_projection
+				amount = 5
+			} 
+			
+		}
+	}
+
+	rhi_hansa_btfo = {
+		icon = mission_bane_of_the_hansa
+		position = 3
+		required_missions = { rhi_encroach_saxons } 
+		provinces_to_highlight = { 
+			or = {
+				area = mecklenburg_area
+				area = lower_saxony_area
+				province_id = 45
+			}
+			Not = { is_strongest_trade_power = ROOT }
+		 } 
+
+		trigger = {  
+			mecklenburg_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_saxony_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			45 = {
+				trade_share = {
+					country = ROOT 
+					share = 30
+				}
+			}
+		} 
+
+		effect = { 
+			north_german_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					Not = { culture_group = east_slavic } 
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = rhi_fleet_experience
+				duration = 7300
+			}
+		 } 
+	}
+
+	rhi_rhenish_fleet = {
+		icon = mission_heart_of_the_hansa
+		position = 4
+		required_missions = { rhi_hansa_btfo } 
+		provinces_to_highlight = {  } 
+
+		trigger = { 
+			or = {
+				num_of_light_ship = 20
+				num_of_heavy_ship = 15
+			}
+			naval_forcelimit = 30
+			if = { 
+				limit = { has_dlc = "Golden Century" }
+				has_flagship = yes 
+			}
+			else = { navy_tradition = 20 }
+		} 
+
+		effect = {  
+			add_country_modifier = {
+				name = rhi_colonial_ambition
+				duration = -1
+			}
+			add_navy_tradition = 20
+			add_prestige = 20
+		} 
+	}
+
+	rhi_colonial_ambition = {
+		icon = overseas_empire
+		position = 5
+		required_missions = { rhi_rhenish_fleet } 
+		provinces_to_highlight = {  
+
+		} 
+
+		trigger = {  
+			or = {
+				colony = 1
+				num_of_trade_companies = 2
+			}
+			or = {
+				is_great_power = yes
+
+				and = {
+					colony = 2
+					num_of_trade_companies = 4
+					num_of_trading_bonuses = 1
+				}
+			}
+			
+		} 
+
+		effect = { 
+			add_country_modifier = {
+				name = rhi_place_in_sun
+				duration = -1
+			}
+			add_permanent_power_projection = {
+				type = 10_permanent_power_projection
+				amount = 10
+			} 
+		} 
+	}
+
+	rhine_mercs = {
+		icon = mercenary_companies
+		position = 6
+		provinces_to_highlight = {  
+
+		} 
+
+		trigger = { 
+			army_organiser = 3
+			army_professionalism = 0.30
+		} 
+
+		effect = {  
+			add_mil_power = 50
+			add_army_professionalism = 0.05
+			add_country_modifier = {
+				name = rhi_mercs_1
+				duration = 10950
+			}
+			
+		} 
+	}
+
+	better_mercs = {
+		icon = mission_hessian_jaeger_corps
+		position = 7
+		required_missions = { rhine_mercs } 
+		provinces_to_highlight = { 
+			not = { 
+				and = {
+					base_manpower = 10
+					or = {
+						has_building = barracks 
+						has_building = training_fields
+					}
+					or = {
+						has_building = regimental_camp
+						has_building = conscription_center
+					}
+				}
+			}
+			owned_by = root
+		 } 
+
+		trigger = {  
+			custom_trigger_tooltip = {
+				tooltip = new_mercs_tt
+				has_global_flag = new_european_mercs
+			}
+			num_of_owned_provinces_with = {
+				base_manpower = 10
+				or = {
+					has_building = barracks 
+					has_building = training_fields
+				}
+				or = {
+					has_building = regimental_camp
+					has_building = conscription_center
+				}
+				value = 10
+			}
+			army_professionalism = 0.60
+			mil_power = 100
+		} 
+
+		effect = {  
+			add_country_modifier = {
+				name = rhi_mercs_2
+				duration = -1
+			}
+			for = {
+				custom_tooltip = rhi_hessia_tooltip
+				effect = "random_owned_province = { 
+					limit = { 
+						NOT = { has_province_flag = rhenish_merc_base } 
+						base_manpower = 10
+						or = {
+							has_building = barracks 
+							has_building = training_fields
+						}
+						or = {
+							has_building = regimental_camp
+							has_building = conscription_center
+						}
+					}
+					set_province_flag = rhenish_merc_base
+				}"
+				amount = 15
+			}
+			tooltip = {
+				add_province_modifier = {
+					name = rhi_hessian_base
+					duration = -1
+				}
+			}
+			set_country_flag = upgrade_rhine_mil
+			custom_tooltip = rhi_mil_upgrade
+			add_mil_power = -100
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_province_flag = rhenish_merc_base
+					}
+					clr_province_flag = rhenish_merc_base
+					add_province_modifier = { 
+						name = rhi_hessian_base 
+						duration = -1 
+					}
+				}
+			}
+		} 
+	}
+}
+second = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = RHI } 
+
+	rhi_whole_rhine = {
+		icon = mission_se_along_the_river
+		position = 2
+		required_missions = { rhi_consolidate_rhine } 
+		provinces_to_highlight = {
+			or = {
+				province_id = 99
+				province_id = 98
+				province_id = 4383
+			}
+		} 
+
+		trigger = { 
+			or = {
+				and = {
+					owns = 99
+					owns = 98
+					owns = 4383	 	
+				}
+				and = {
+					any_ally = {
+						owns = 99
+						owns = 98
+						owns = 4383	
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+						trust = {
+							who = ROOT
+							value = 70
+						}
+					}
+				}
+			}
+		} 
+
+		effect = {  
+			if = {
+				limit = {
+					any_ally = {
+						owns = 99
+						owns = 98
+						owns = 4383	
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+						trust = {
+							who = ROOT
+							value = 70
+						}
+					}
+				}
+				random_ally = {
+					limit = {
+						owns = 99
+						owns = 98
+						owns = 4383	
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+						trust = {
+							who = ROOT
+							value = 70
+						}
+					}
+					add_country_modifier = {
+						name = rhi_diplo_ally
+						duration = -1
+					}
+				}
+				add_country_modifier = {
+					name = rhi_diplo_lowlands
+					duration = -1
+				}
+				add_mercantilism = 5
+				1876 = {
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 80
+						key = RHI_RHINE_SUPREMACY
+					}
+				}
+				99 = {
+					add_province_modifier = {
+						name = rhi_lowlands_province
+						duration = -1
+					}
+				}
+				98 = {
+					add_province_modifier = {
+						name = rhi_lowlands_province
+						duration = -1
+					}
+				}
+				4383 ={
+					add_province_modifier = {
+						name = rhi_lowlands_province
+						duration = -1
+					}
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rhi_conquer_lowlands
+					duration = -1
+				}
+				1269 = {
+					add_trade_modifier = {
+						who = root
+						duration = -1
+						power = 30
+						key = RHI_CHANNEL_SUPREMACY
+					}
+				}
+				add_accepted_culture = dutch
+			}
+			custom_tooltip = general_tooltip_dynamic_reward
+		} 
+	}
+
+	rhi_global_rhine = {
+		icon = sources_of_trade
+		position = 3
+		required_missions = { rhi_whole_rhine } 
+		provinces_to_highlight = {  
+			or = {
+				province_id = 1876
+				province_id = 45
+			}
+		} 
+
+		trigger = {  
+			or = {
+				has_institution = global_trade
+				and = {
+					trader = 5
+					mercantilism = 40 
+				}
+				
+			}
+			mercantilism = 30
+			1876 = {
+				is_strongest_trade_power = ROOT
+			}
+			45 = {
+				is_strongest_trade_power = ROOT
+			}
+		} 
+
+		effect = {  
+			add_mercantilism = 10
+			add_years_of_income = 1
+			add_dip_power = 100
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						or = {
+							region = north_german_region
+							region = south_german_region
+						}
+					}
+					add_prosperity = 30
+				} 
+			}
+			custom_tooltip = rhi_prosperity_tooltip 
+		} 
+	}
+
+	rhi_rhine_watch = {
+		icon = fortify_the_passes
+		position = 4
+		required_missions = { rhi_global_rhine } 
+		provinces_to_highlight = {  
+			or = {
+				province_id = 72
+				province_id = 80
+				province_id = 4714
+				province_id = 1878
+			}
+		} 
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				or = {
+					area = palatinate_area
+					area = lower_rhineland_area
+					area = upper_rhineland_area
+					area = alsace_area
+				}
+				province_has_current_tech_fort_trigger = yes
+				value = 3
+			} 
+		} 
+
+		effect = {  
+			random_owned_province = {
+				limit = {
+					or = {
+					area = palatinate_area
+					area = lower_rhineland_area
+					area = upper_rhineland_area
+					area = alsace_area
+					}
+					province_has_current_tech_fort_trigger = yes
+				}
+				add_province_modifier = {
+					name = rhi_garrision
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					or = {
+					area = palatinate_area
+					area = lower_rhineland_area
+					area = upper_rhineland_area
+					area = alsace_area
+					}
+					province_has_current_tech_fort_trigger = yes
+				}
+				add_province_modifier = {
+					name = rhi_garrision
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					or = {
+					area = palatinate_area
+					area = lower_rhineland_area
+					area = upper_rhineland_area
+					area = alsace_area
+					}
+					province_has_current_tech_fort_trigger = yes
+				}
+				add_province_modifier = {
+					name = rhi_garrision
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					or = {
+					area = palatinate_area
+					area = lower_rhineland_area
+					area = upper_rhineland_area
+					area = alsace_area
+					}
+					province_has_current_tech_fort_trigger = yes
+				}
+				add_province_modifier = {
+					name = rhi_garrision
+					duration = -1
+				}
+			}
+			
+		} 
+	}
+
+	rhi_prospering = {
+		icon = rhineland_conquest
+		position = 5
+		required_missions = { rhi_rhine_watch } 
+		provinces_to_highlight = {  
+			
+		} 
+
+		trigger = {  
+			power_projection = 50
+			or = {
+				is_great_power = yes
+				total_development = 1000
+			}
+			total_development = 800
+			any_ally = {
+				is_great_power = yes
+			}
+		} 
+
+		effect = {  
+			alsace_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lorraine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_permanent_claim_province = {
+				province = 94
+			}
+			#94 = {
+			#	add_permanent_claim = ROOT
+			#}
+		} 
+	}
+
+	rhi_french_btfo = {
+		icon = weaken_france
+		position = 6
+		required_missions = { rhi_prospering } 
+		provinces_to_highlight = {
+			province_id = 183
+			area = alsace_area
+		} 
+
+		trigger = { 
+			or = {
+				and = {
+					owns = 94
+					lorraine_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				has_won_war_against = {
+					who = FRA
+				}
+				has_won_war_against = {
+					who = BUR
+				}
+			}
+			power_projection = 60
+			alsace_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
+
+		effect = {
+			add_country_modifier = {
+				name = rhi_crushed_french
+				duration = -1
+			}
+			wallonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			champagne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bourgogne_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		} 
+	}
+}
+third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = RHI } 
+
+	rhi_consolidate_rhine = {
+		icon = lead_the_empire
+		position = 1
+		provinces_to_highlight = {  
+			or = {
+						area = lower_rhineland_area
+						area = upper_rhineland_area
+						area = north_rhine_area
+						area = hesse_area
+						area = palatinate_area
+						area = north_westphalia_area
+						area = westphalia_area
+			}
+		} 
+
+		trigger = { 
+			or = {
+			has_country_flag = beautest
+			and = {
+			num_of_provinces_in_states = 20
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+					or = {
+						area = lower_rhineland_area
+						area = upper_rhineland_area
+						area = north_rhine_area
+						area = hesse_area
+						area = palatinate_area
+						area = north_westphalia_area
+						area = westphalia_area
+					}
+					is_city  = yes
+			}
+			}
+			}
+		}
+		effect = { 
+			weser_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			braunschweig_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			romandie_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			switzerland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			country_event = {
+				id = beaus_rhine.1000
+			}
+		} 
+	}
+
+	rhi_growing_cities = {
+		icon = mission_imperial_cities
+		position = 2
+		required_missions = { rhi_consolidate_rhine } 
+		provinces_to_highlight = { 
+			is_core = ROOT
+			or = {
+				and = {
+					NOT = { development = 15 } 
+					NOT = { has_building = temple }
+					NOT = { has_building = workshop }
+				}
+			} 
+			
+		} 
+
+		trigger = {  
+			num_of_owned_provinces_with = {
+				development = 15
+				has_building = workshop
+				has_building = temple
+				value = 15
+			}
+			num_of_owned_provinces_with = {
+				development = 20
+				OR = {
+					has_building = mills
+					has_building = farm_estate
+					has_building = tradecompany
+					has_building = plantations
+					has_building = textile
+					has_building = weapons
+					has_building = wharf
+					has_building = furnace
+				}
+				value = 5
+			}
+		} 
+
+		effect = {  
+			add_country_modifier = {
+				name = rhi_small_dev_boost
+				duration = 7300
+			}
+			custom_tooltip = rhi_manufactory
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						development = 20
+						OR = {
+							has_building = mills
+							has_building = farm_estate
+							has_building = tradecompany
+							has_building = plantations
+							has_building = textile
+							has_building = weapons
+							has_building = wharf
+							has_building = furnace
+						}
+					}
+					add_base_manpower = 1
+					add_base_production = 1
+					add_base_tax = 1
+				}
+			}
+			
+		} 
+	}
+
+	rhi_big_cities = {
+		icon = mission_build_up_to_force_limit
+		position = 3
+		required_missions = { rhi_growing_cities } 
+		provinces_to_highlight = {  
+			is_core = ROOT
+			or = {
+				and = {
+					NOT = { development = 20 } 
+					NOT = { has_building = manufactory }
+					NOT = { is_prosperous = yes }
+				}
+			} 
+		} 
+
+		trigger = {  
+			num_of_owned_provinces_with = {
+				development = 20
+				OR = {
+					has_building = mills
+					has_building = farm_estate
+					has_building = tradecompany
+					has_building = plantations
+					has_building = textile
+					has_building = weapons
+					has_building = wharf
+					has_building = furnace
+				}
+				is_prosperous = yes
+				value = 15
+			}
+			num_of_owned_provinces_with = {
+				development = 30
+				value = 7
+			}
+		} 
+
+		effect = {  
+			set_country_flag = upgrade_rhine_dip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						or = {
+							region = north_german_region
+							region = south_german_region
+						}
+					}
+					add_prosperity = 30
+				} 
+			}
+			custom_tooltip = rhi_prosperity_tooltip 
+			custom_tooltip = rhi_dip_upgrade
+			add_country_modifier = {
+				name = rhi_small_dev_boost
+				duration = 7300
+			}
+		} 
+	}
+
+	rhi_coal_early = {
+		icon = mission_rb_prospect_for_coal
+		position = 4
+		required_missions = { rhi_big_cities } 
+		provinces_to_highlight = { 
+			or = {
+				province_id = 82
+				province_id = 1878
+			}
+		} 
+
+		trigger = {  
+			82 ={
+				development = 35
+				base_production = 15
+				num_free_building_slots = 1
+				NOT = { has_construction = building }
+			}
+			1878 = {
+				development = 35
+				base_production = 15
+				num_free_building_slots = 1
+				NOT = { has_construction = building }
+			}
+			or = {
+				innovativeness = 40
+				full_idea_group = innovativeness_ideas 
+			}
+			treasury = 2500
+			adm_tech = 21
+		} 
+
+		effect = {  
+			82 = {
+				add_base_manpower = -1
+				add_base_production = -3
+				add_base_tax = -1
+				change_trade_goods = coal
+				add_building_construction = {
+					building = furnace
+					speed = 0.5
+					cost = 1
+				} 
+			}
+			1878 = {
+				add_base_manpower = -1
+				add_base_production = -3
+				add_base_tax = -1
+				change_trade_goods = coal
+				add_building_construction = {
+					building = furnace
+					speed = 0.5
+					cost = 1
+				}
+			}
+			add_treasury = -1500
+
+		} 
+	}
+
+	rhi_industrialize = {
+		icon = mission_rb_central_belt_coal_mining
+		position = 1
+		required_missions = { rhi_coal_early } 
+		provinces_to_highlight = {  
+			or = {
+				and = {
+					area = lower_rhineland_area
+					Not = { development = 30 }
+				}
+				and = {
+					area = north_rhine_area
+					Not = { development = 30 }
+				}
+				and = {
+					province_id  = 81
+					Not = { development = 30 }
+				}
+				and = {
+					province_id  = 1760
+					Not = { development = 30 }
+				}
+			}
+		} 
+
+		trigger = {  
+			lower_rhineland_area = {
+				development = 30
+			}
+			north_rhine_area = {
+				development = 30
+			}
+			80 = {
+				development = 30
+			}
+			1760 ={
+				development = 30
+			}
+			81 = {
+				development = 30
+			}
+			1760 ={
+				development = 30
+			}
+		} 
+
+		effect = {  
+			80 = {
+				change_trade_goods = iron
+				add_base_production = 2
+			}
+			1760 = {
+				change_trade_goods = coal
+				add_base_manpower = -1
+				add_base_production = -1
+				add_base_tax = -1
+			}
+			1761 = {
+				change_trade_goods = iron
+				add_base_production = 2
+			}
+			81 = {
+				change_trade_goods = coal
+				add_base_manpower = -1
+				add_base_production = -1
+				add_base_tax = -1
+				add_province_modifier = {
+					name = rhi_rhur_belt
+					duration = -1
+				}
+			}
+			north_rhine_area = {
+				add_province_modifier = {
+					name = rhi_rhur_belt
+					duration = -1
+				}
+			}
+			lower_rhineland_area = {
+				add_province_modifier = {
+					name = rhi_rhur_belt
+					duration = -1
+				}
+			}
+		} 
+	}
+
+	rhi_better_steel = {
+		icon = industrialized_rhineland
+		position = 6
+		required_missions = { rhi_industrialize } 
+		provinces_to_highlight = { 
+			is_core = root
+			or = {
+				trade_goods = coal
+				and = {
+					trade_goods = iron
+					Not = { base_production = 15 }
+				}
+			}
+		} 
+
+		trigger = { 
+			trading_bonus = {
+				trade_goods = coal
+				value = yes
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				trade_goods = iron
+				base_production = 15
+			}
+			innovativeness = 60
+		} 
+
+		effect = { 
+			country_event = {
+				id = beaus_rhine.1100
+			}
+			add_prestige = 20
+		} 
+	}
+
+	rhi_germany_united = {
+		icon = interfere_in_germany
+		position = 7
+		required_missions = {
+			rhi_better_steel
+			rhi_french_btfo
+			rhi_czech_experts
+		}
+		provinces_to_highlight = {  
+			or = {
+				north_german_region = {
+					type = all
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				south_german_region = {
+					type = all
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+			
+		} 
+
+		trigger = {  
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					region = north_german_region
+					region = south_german_region
+				}
+				value = 40
+			}
+		} 
+
+		effect = {  
+			rhi_ger = yes
+			add_country_modifier = {
+				name = rhi_ger_consolidated_bonus
+				duration = -1
+			}
+			change_tag = GER
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = formed_germany_flag
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+		} 
+	}
+}
+fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = RHI } 
+
+	rhi_claim_swiss = {
+		icon = reorganize_the_confederacy
+		position = 2
+		required_missions = { rhi_consolidate_rhine } 
+		provinces_to_highlight = {  
+			or = {
+				area = switzerland_area
+				area = romandie_area
+			}
+		} 
+
+		trigger = {  
+			romandie_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			switzerland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
+
+		effect = {  
+			add_army_tradition = 10
+			lower_swabia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_swabia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			franconia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_franconia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		} 
+	}
+
+	rhi_swabia_tyrol = {
+		icon = control_swabia
+		position = 3
+		required_missions = { rhi_claim_swiss } 
+		provinces_to_highlight = {  
+			or ={
+				area = lower_swabia_area
+				area = upper_swabia_area
+				area = franconia_area
+			}
+		} 
+
+		trigger = { 
+			lower_swabia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_swabia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			franconia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		} 
+
+		effect = {  
+			tirol_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_bavaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		} 
+	}
+
+	rhi_gold_designs = {
+		icon = dominant_economy
+		position = 4
+		required_missions = {
+			rhi_swabia_tyrol
+			rhi_big_cities
+		}
+		provinces_to_highlight = {  
+			or = {
+				province_id = 4710
+				province_id = 73
+				province_id = 4758
+				province_id = 1768
+			}
+		} 
+
+		trigger = {  
+			owns = 4710
+			owns = 73
+			owns = 4758
+			owns = 1768
+			73 = {
+				base_production = 10
+				development = 25
+				num_of_buildings_in_province = 5
+			}
+
+		} 
+
+		effect = {  
+			add_country_modifier = {
+				name = rhi_minting
+				duration = -1
+			}
+			add_inflation = -2
+			east_bavaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT	
+			}
+			lower_bavaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			inner_austria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			austria_proper_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		} 
+	}
+
+	rhi_backhand_habsburgs = {
+		icon = boh_humiliate_austria
+		position = 5
+		required_missions = { rhi_gold_designs } 
+		provinces_to_highlight = {  
+			or = {
+				area = inner_austria_area
+				area = upper_bavaria_area
+				area = east_bavaria_area
+				or = {
+					area = austria_proper_area
+					area = lower_bavaria_area
+				}
+			}
+		} 
+
+		trigger = {  
+			inner_austria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_bavaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_bavaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			or = {
+				austria_proper_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				lower_bavaria_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		} 
+
+		effect = {  
+			if ={
+				limit = {
+					austria_proper_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}	
+				}
+				add_accepted_culture = austrian
+			}
+			else = {
+				add_accepted_culture = bavarian
+			}
+			erzgebirge_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					is_emperor = yes
+				}
+				add_imperial_influence = 10
+			}
+
+		} 
+	}
+
+	rhi_czech_experts = {
+		icon = bohemian_borderlands
+		position = 6
+		required_missions = { rhi_backhand_habsburgs } 
+		provinces_to_highlight = {  
+			area = erzgebirge_area
+		} 
+
+		trigger = {  
+			or = {
+				and = {
+					erzgebirge_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				
+				erzgebirge_area = {
+					type = all
+						owner = {
+							alliance_with = root
+							has_opinion = {
+								who = ROOT 
+								value = 120
+							}
+							trust = {
+								who = root
+								value = 60
+							}
+						}
+				}
+			}
+		} 
+
+		effect = {  
+			if = {
+				limit = { 
+					erzgebirge_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				erzgebirge_area = {
+					add_base_production = 2
+					add_base_manpower = 2
+				}
+				add_accepted_culture = czech
+			}
+			else = {
+				erzgebirge_area = {
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+				add_innovativeness_big_effect = yes
+				random_owned_province = {
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+		} 
+	}
+
+	
+}
+
+
+
+hre_branch_1 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		tag = RHI 
+		has_reform = monarchy_mechanic
+	}
+	hre_reform = {
+		icon = influence_the_princes
+		position = 7
+		required_missions = { hre_emperor } 
+		provinces_to_highlight = {  
+
+		} 
+
+		trigger = {  
+			hre_reform_passed = emperor_reichsstabilitaet
+		} 
+
+		effect = {  
+			add_imperial_influence = 20
+			add_country_modifier = {
+				name = rhi_reform
+				duration = -1
+			}
+		} 
+	}
+}
+
+
+
+new_branch = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { tag = RHI } 
+
+	rhi_religous = {
+		icon = mission_noble_council
+		position = 2
+		required_missions = { rhi_consolidate_rhine } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  
+			has_global_modifier_value = {
+				which = tolerance_heretic
+				value = 1
+			}
+		} 
+
+		effect = {  
+			add_country_modifier = {
+				name = rhi_tolerance_building
+				duration = 9125
+			}
+		} 
+	}
+
+	rhi_religous_freedom = {
+		icon = prosperity_for_all
+		position = 3
+		required_missions = { rhi_religous } 
+		provinces_to_highlight = {  } 
+
+		trigger = {  
+			or = {
+				current_age = age_of_reformation
+				and = {
+					has_global_modifier_value = {
+						which = tolerance_heretic
+						value = 2
+					}
+					has_global_modifier_value = {
+						which = tolerance_heathen
+						value = 2
+					}
+					religious_unity = 1
+				}
+			}
+			religious_unity = 0.80
+		} 
+
+		effect = {  
+			add_country_modifier = {
+				name = rhi_small_dev_boost
+				duration = 3650
+			}
+			add_dip_power = 200
+		} 
+	}
+
+	rhi_religous_refugees = {
+		icon = peace_in_europe
+		position = 4
+		required_missions = { rhi_religous_freedom } 
+		provinces_to_highlight = {  
+
+		} 
+
+		trigger = {  
+			or = {
+				hre_leagues_enabled = yes
+				hre_religion_locked = yes
+				is_in_league_war = yes
+				hre_religion_treaty = yes
+				and = {
+					NOT = { current_age = age_of_reformation }
+				}
+			}
+		} 
+
+		effect = {  
+			if = {
+				limit = {
+					hre_leagues_enabled = yes
+				}
+				add_country_modifier = {
+					name = rhi_parabellum
+					duration = 10950
+				}
+			}
+			else_if = {
+				limit = { 
+					is_in_league_war = yes
+				}
+				add_country_modifier = {
+					name = rhi_bellum
+					duration = 7300
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = rhi_pax
+					duration = 7300
+				}
+			}
+			set_country_flag = upgrade_rhine_adm
+			custom_tooltip = rhi_adm_upgrade
+		} 
+	}
+
+	rhi_religion_change = {
+		icon = victor_for_the_true_faith
+		position = 5
+		required_missions = { rhi_religous_refugees } 
+		provinces_to_highlight = {  
+			
+		} 
+
+		trigger = {  
+			or = {
+				hre_religion_treaty = yes
+				and = {
+					religious_unity = 1
+					or = {
+						papal_influence = 100
+						fervor = 200
+						church_power = 200
+					}
+					
+				}
+			}
+			NOT = { unrest = -6 }
+		} 
+
+		effect = { 
+			country_event = {
+				id = beaus_rhine.1160
+			} 
+			add_prestige = 50
+		} 
+	}
+
+	
+}
+hre_branch_2 ={
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		tag = RHI 
+		has_reform = monarchy_mechanic
+	}
+	hre_emperor = {
+		icon = mission_rb_control_electors
+		position = 6
+		provinces_to_highlight = {
+			province_id = 1878
+		} 
+
+		trigger = {  
+			owns = 1878
+			1878 = {
+				development = 30
+				has_building = temple
+			}
+			treasury = 500
+			calc_true_if = {
+				desc = secure_the_imperial_crown.tooltip
+				all_elector = {
+					preferred_emperor = ROOT
+					has_opinion = { who = ROOT value = 100 }
+				}
+				amount = 2
+			}
+		} 
+
+		effect = {  
+			add_country_modifier = {
+				name = rhi_elect
+				duration = 5475
+			}
+			1878 = {
+				add_province_modifier = {
+					name = rhi_old
+					duration = -1
+				}
+			}
+			add_treasury = -500
+			country_event = {
+				id = beaus_rhine.1140
+			}
+		} 
+	}
+
+	new_seat_of_power = {
+		icon = join_the_empire
+		position = 7
+		required_missions = { hre_emperor } 
+		provinces_to_highlight = {  
+			province_id = 1876
+		} 
+
+		trigger = {  
+			is_emperor = yes
+			1876 = {
+				development = 30
+			}
+			government_reform_progress = 50
+			imperial_influence = 20
+		} 
+
+		effect = {  
+			add_imperial_influence = -5
+			change_government_reform_progress = -50
+			1876 = {
+				add_province_modifier = {
+					name = rhi_new
+					duration = -1
+				}
+			}
+			country_event = {
+				id = beaus_rhine.1150
+			}
+		} 
+	}
+}

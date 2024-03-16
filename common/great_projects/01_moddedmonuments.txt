@@ -1,0 +1,220 @@
+tidemans_folly = {
+	start = 356 
+	date = 100.01.01	
+	time = { months = 0	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+
+	build_trigger = {
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+	}
+
+	can_upgrade_trigger = {
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+			local_defensiveness = 0.10
+			hostile_disembark_speed = 0.5
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			war_exhaustion = -0.05
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1500
+		}
+		province_modifiers = {
+			local_defensiveness = 0.20
+			hostile_disembark_speed = 1
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			war_exhaustion = -0.075
+			garrison_damage = 0.05
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			local_defensiveness = 0.3
+			local_hostile_attrition = 1
+			hostile_disembark_speed = 2
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			war_exhaustion = -0.1
+			garrison_damage = 0.15
+		}
+		on_upgraded = {
+		}
+	}
+}
+
+scicilian_gold_mine = {
+	start = 4737 
+	date = 100.01.01	
+	time = { months = 0	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 1
+	type = monument
+
+	build_trigger = {
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+	}
+
+	can_upgrade_trigger = {
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+			trade_goods_size = 2
+		}
+		area_modifier = {
+			local_build_cost = -0.075
+			local_build_time = -0.075
+		}
+		country_modifiers = {
+			fire_damage = 0.025
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 1500
+		}
+		province_modifiers = {
+			trade_goods_size = 4
+		}
+		area_modifier = {
+			local_build_cost = -0.15
+			local_build_time = -0.15
+			trade_goods_size = 1
+		}
+		country_modifiers = {
+			fire_damage = 0.05
+		}
+		on_upgraded = {
+			change_trade_goods = iron
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_goods_size = 5
+		}
+		area_modifier = {
+			local_build_cost = -0.20
+			local_build_time = -0.20
+			trade_goods_size = 3
+		}
+		country_modifiers = {
+			fire_damage = 0.10
+		}
+		on_upgraded = {
+		}
+	}
+}

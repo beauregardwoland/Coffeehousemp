@@ -1,0 +1,126 @@
+spriteTypes = {
+	#spriteType = {
+	#	name = "millitary_loyalty_modifier"
+	#	texturefile = "gfx/interface/ideas_EU4/millitary_loyalty_modifier.dds"
+	#}
+	#spriteType = {
+	#	name = "millitary_influence_modifier"
+	#	texturefile = "gfx/interface/ideas_EU4/millitary_influence_modifier.dds"
+	#}
+	#spriteType = {
+	#	name = "millitary_privilege_slots"
+	#	texturefile = "gfx/interface/ideas_EU4/millitary_privilege_slots.dds"
+	#}
+	spriteType = {
+		name = "beaus_funny_event"
+		texturefile = "gfx//interface//beaus_funny_event.tga"
+	}
+	spriteType = {
+		name = "mobilize_background"
+		texturefile = "gfx//interface//button_standard_200.dds"
+	}
+	spriteType = {		
+		name = "GFX_mobilization_bar_frame"
+		texturefile = "gfx/interface/mobilization_progress_frame.dds"
+		loadType = "INGAME"
+	}
+	
+	progressbartype = {	
+		name = "GFX_mobilize_bar"
+		color = { 1.0 0.0 0.0 }
+        colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/mobilization_progress_2.dds"
+		textureFile2 = "gfx/interface/mobilization_progress_1.dds"
+		size = { x = 189 y = 16 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {	
+		name = "GFX_mobilize_bar_bad"
+		color = { 1.0 0.0 0.0 }
+        colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/badfireattempt.dds"   #badfireattempt
+		textureFile2 = "gfx/interface/mobilization_progress_1.dds"
+		size = { x = 189 y = 17 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	spriteType = {
+		name = "GFX_na_rank_1"
+		texturefile = "gfx//interface//army_professionalism//pa_rank_1.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_na_rank_2"
+		texturefile = "gfx//interface//army_professionalism//pa_rank_2.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_na_rank_3"
+		texturefile = "gfx//interface//army_professionalism//pa_rank_3.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_na_rank_4"
+		texturefile = "gfx//interface//army_professionalism//pa_rank_4.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_na_rank_5"
+		texturefile = "gfx//interface//army_professionalism//pa_rank_5.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_naval_prof_icon"
+		texturefile = "gfx/interface/naval_prof_icon.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_naval_excersises"
+		texturefile = "gfx/interface/naval_excersises.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_naval_prof_check"
+		texturefile = "gfx/interface/checkmark.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_naval_transformation"
+		texturefile = "gfx/interface/naval_transformation.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_army_transformation"
+		texturefile = "gfx/interface/army_transformation.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_soldier_to_sailor"
+		texturefile = "gfx/interface/soldier_to_sailor.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_sailor_to_soldier"
+		texturefile = "gfx/interface/sailor_to_soldier.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_red_ribbon"
+		texturefile = "gfx/interface/red_ribbon.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_redo_button"
+		texturefile = "gfx/interface/redobutton.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_cycle"
+		texturefile = "gfx/interface/cycletransfer.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_impressment"
+		texturefile = "gfx/interface/impressment.dds"
+		loadType = "INGAME"
+	}
+}

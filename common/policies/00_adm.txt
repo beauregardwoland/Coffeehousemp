@@ -1,8 +1,27 @@
-tdr_stab_1 = {
+stab_1 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 3
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 2
+		}
+	}
 	}
 	
 	allow = {
@@ -20,15 +39,18 @@ tdr_stab_1 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+	full_idea_group = infrastructure_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_stab_2
-            has_active_policy = tdr_stab_3
+            has_active_policy = stab_2
+            has_active_policy = stab_3
             }
         }
+		adm_tech = 9
     }
 
 	global_unrest= -1
@@ -39,11 +61,30 @@ tdr_stab_1 = {
 	}
 }
 
-tdr_stab_2 = {
+stab_2 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 7
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
+			amount = 3
+		}
+		}
 	}
 	
 	allow = {
@@ -61,13 +102,15 @@ tdr_stab_2 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_stab_1
-            has_active_policy = tdr_stab_3
+            has_active_policy = stab_1
+            has_active_policy = stab_3
             }
         }
     }
@@ -79,7 +122,7 @@ tdr_stab_2 = {
 		factor = 0.8		
 	}
 }
-tdr_stab_3 = {
+stab_3 = {
 	monarch_power = ADM
 
 	potential = {
@@ -101,13 +144,15 @@ tdr_stab_3 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+full_idea_group = infrastructure_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_stab_2
-            has_active_policy = tdr_stab_3
+            has_active_policy = stab_2
+            has_active_policy = stab_3
             }
         }
     }
@@ -119,11 +164,30 @@ tdr_stab_3 = {
 		factor = 0.8		
 	}
 }
-tdr_taxation_1 = {
+taxation_1 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 3
+		not = {calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 2
+		}
+		}
 	}
 	
 	allow = {
@@ -141,30 +205,52 @@ tdr_taxation_1 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_taxation_2
-            has_active_policy = tdr_taxation_3
+            has_active_policy = taxation_2
+            has_active_policy = taxation_3
             }
         }
+		adm_tech = 9
     }
 
 	global_tax_modifier = 0.15
-	global_tax_income = 12
+	global_tax_income = 18
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
 
-tdr_taxation_2 = {
+taxation_2 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 7
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 3
+			}
+		}
 	}
 	
 	allow = {
@@ -182,25 +268,27 @@ tdr_taxation_2 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_taxation_1
-            has_active_policy = tdr_taxation_3
+            has_active_policy = taxation_1
+            has_active_policy = taxation_3
             }
         }
     }
 
 	global_tax_modifier = 0.20
-	global_tax_income = 24
+	global_tax_income = 40
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-tdr_taxation_3 = {
+taxation_3 = {
 	monarch_power = ADM
 
 	potential = {
@@ -222,29 +310,50 @@ tdr_taxation_3 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_taxation_2
-            has_active_policy = tdr_taxation_1
+            has_active_policy = taxation_2
+            has_active_policy = taxation_1
             }
         }
     }
 
 	global_tax_modifier = 0.30
-	global_tax_income = 40
+	global_tax_income = 100
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-tdr_cultivation_1 = {
+cultivation_1 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 3
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -262,15 +371,18 @@ tdr_cultivation_1 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_cultivation_2
-            has_active_policy = tdr_cultivation_3
+            has_active_policy = cultivation_2
+            has_active_policy = cultivation_3
             }
         }
+		adm_tech = 9
     }
 
 	development_cost = -0.05
@@ -281,11 +393,30 @@ tdr_cultivation_1 = {
 	}
 }
 
-tdr_cultivation_2 = {
+cultivation_2 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 7
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 3
+			}
+		}
 	}
 	
 	allow = {
@@ -303,13 +434,15 @@ tdr_cultivation_2 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_cultivation_1
-            has_active_policy = tdr_cultivation_3
+            has_active_policy = cultivation_1
+            has_active_policy = cultivation_3
             }
         }
     }
@@ -321,7 +454,7 @@ tdr_cultivation_2 = {
 		factor = 0.8		
 	}
 }
-tdr_cultivation_3 = {
+cultivation_3 = {
 	monarch_power = ADM
 
 	potential = {
@@ -343,13 +476,15 @@ tdr_cultivation_3 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_cultivation_2
-            has_active_policy = tdr_cultivation_1
+            has_active_policy = cultivation_2
+            has_active_policy = cultivation_1
             }
         }
     }
@@ -361,11 +496,30 @@ tdr_cultivation_3 = {
 		factor = 0.8		
 	}
 }
-tdr_reform_1 = {
+reform_1 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 3
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -383,15 +537,18 @@ tdr_reform_1 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_reform_2
-            has_active_policy = tdr_reform_3
+            has_active_policy = reform_2
+            has_active_policy = reform_3
             }
         }
+		adm_tech = 9
     }
 
 	monthly_reform_progress_modifier = 0.10
@@ -401,11 +558,30 @@ tdr_reform_1 = {
 	}
 }
 
-tdr_reform_2 = {
+reform_2 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 7
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 3
+			}
+		}
 	}
 	
 	allow = {
@@ -423,13 +599,15 @@ tdr_reform_2 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_reform_1
-            has_active_policy = tdr_reform_3
+            has_active_policy = reform_1
+            has_active_policy = reform_3
             }
         }
     }
@@ -441,7 +619,7 @@ tdr_reform_2 = {
 		factor = 0.8		
 	}
 }
-tdr_reform_3 = {
+reform_3 = {
 	monarch_power = ADM
 
 	potential = {
@@ -463,13 +641,15 @@ tdr_reform_3 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_reform_2
-            has_active_policy = tdr_reform_1
+            has_active_policy = reform_2
+            has_active_policy = reform_1
             }
         }
     }
@@ -481,11 +661,30 @@ tdr_reform_3 = {
 		factor = 0.8		
 	}
 }
-tdr_cutting_corners_1 = {
+cutting_corners_1 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 3
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
+			amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -503,15 +702,18 @@ tdr_cutting_corners_1 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_cutting_corners_2
-            has_active_policy = tdr_cutting_corners_3
+            has_active_policy = cutting_corners_2
+            has_active_policy = cutting_corners_3
             }
         }
+		adm_tech = 9
     }
 
 	build_cost = -0.10
@@ -522,11 +724,30 @@ tdr_cutting_corners_1 = {
 	}
 }
 
-tdr_cutting_corners_2 = {
+cutting_corners_2 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 7
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 3
+			}
+		}
 	}
 	
 	allow = {
@@ -544,13 +765,15 @@ tdr_cutting_corners_2 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_cutting_corners_1
-            has_active_policy = tdr_cutting_corners_3
+            has_active_policy = cutting_corners_1
+            has_active_policy = cutting_corners_3
             }
         }
     }
@@ -562,11 +785,12 @@ tdr_cutting_corners_2 = {
 		factor = 0.8		
 	}
 }
-tdr_cutting_corners_3 = {
+cutting_corners_3 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 12
+		
 	}
 	
 	allow = {
@@ -584,13 +808,15 @@ tdr_cutting_corners_3 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_cutting_corners_2
-            has_active_policy = tdr_cutting_corners_1
+            has_active_policy = cutting_corners_2
+            has_active_policy = cutting_corners_1
             }
         }
     }
@@ -602,11 +828,30 @@ tdr_cutting_corners_3 = {
 		factor = 0.8		
 	}
 }
-tdr_hasty_masures_1 = {
+hasty_masures_1 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 3
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
+			amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -624,15 +869,18 @@ tdr_hasty_masures_1 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_hasty_masures_2
-            has_active_policy = tdr_hasty_masures_3
+            has_active_policy = hasty_masures_2
+            has_active_policy = hasty_masures_3
             }
         }
+		adm_tech = 9
     }
 
 	build_cost = 0.075
@@ -643,11 +891,30 @@ tdr_hasty_masures_1 = {
 	}
 }
 
-tdr_hasty_masures_2 = {
+hasty_masures_2 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 7
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 3
+			}
+		}
 	}
 	
 	allow = {
@@ -665,13 +932,15 @@ tdr_hasty_masures_2 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_hasty_masures_1
-            has_active_policy = tdr_hasty_masures_3
+            has_active_policy = hasty_masures_1
+            has_active_policy = hasty_masures_3
             }
         }
     }
@@ -683,7 +952,7 @@ tdr_hasty_masures_2 = {
 		factor = 0.8		
 	}
 }
-tdr_hasty_masures_3 = {
+hasty_masures_3 = {
 	monarch_power = ADM
 
 	potential = {
@@ -705,13 +974,15 @@ tdr_hasty_masures_3 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_hasty_masures_2
-            has_active_policy = tdr_hasty_masures_1
+            has_active_policy = hasty_masures_2
+            has_active_policy = hasty_masures_1
             }
         }
     }
@@ -724,11 +995,30 @@ tdr_hasty_masures_3 = {
 	}
 }
 
-tdr_strict_quotas_1 = {
+strict_quotas_1 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 3
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -746,18 +1036,21 @@ tdr_strict_quotas_1 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_strict_quotas_2
-            has_active_policy = tdr_strict_quotas_3
+            has_active_policy = strict_quotas_2
+            has_active_policy = strict_quotas_3
             }
         }
+		adm_tech = 9
     }
 
-	production_efficiency = 0.15
+	production_efficiency = 0.10
 	global_unrest = 1
 
 	ai_will_do = {
@@ -765,11 +1058,30 @@ tdr_strict_quotas_1 = {
 	}
 }
 
-tdr_strict_quotas_2 = {
+strict_quotas_2 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 7
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 3
+			}
+		}
 	}
 	
 	allow = {
@@ -787,25 +1099,27 @@ tdr_strict_quotas_2 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_strict_quotas_1
-            has_active_policy = tdr_strict_quotas_3
+            has_active_policy = strict_quotas_1
+            has_active_policy = strict_quotas_3
             }
         }
     }
 
 	production_efficiency = 0.20
-	global_unrest = 1.5
+	global_unrest = 2
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-tdr_strict_quotas_3 = {
+strict_quotas_3 = {
 	monarch_power = ADM
 
 	potential = {
@@ -827,30 +1141,51 @@ tdr_strict_quotas_3 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_strict_quotas_2
-            has_active_policy = tdr_strict_quotas_1
+            has_active_policy = strict_quotas_2
+            has_active_policy = strict_quotas_1
             }
         }
     }
 
 	production_efficiency = 0.30
-	global_unrest = 2.5
+	global_unrest = 3.5
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
 
-tdr_encourage_specialization_1 = {
+encourage_specialization_1 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 3
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -868,15 +1203,18 @@ tdr_encourage_specialization_1 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_encourage_specialization_2
-            has_active_policy = tdr_encourage_specialization_3
+            has_active_policy = encourage_specialization_2
+            has_active_policy = encourage_specialization_3
             }
         }
+		adm_tech = 9
     }
 
 	global_trade_goods_size_modifier = 0.05
@@ -887,11 +1225,30 @@ tdr_encourage_specialization_1 = {
 	}
 }
 
-tdr_encourage_specialization_2 = {
+encourage_specialization_2 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 7
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 3
+			}
+		}
 	}
 	
 	allow = {
@@ -909,13 +1266,15 @@ tdr_encourage_specialization_2 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_encourage_specialization_1
-            has_active_policy = tdr_encourage_specialization_3
+            has_active_policy = encourage_specialization_1
+            has_active_policy = encourage_specialization_3
             }
         }
     }
@@ -927,7 +1286,7 @@ tdr_encourage_specialization_2 = {
 		factor = 0.8		
 	}
 }
-tdr_encourage_specialization_3 = {
+encourage_specialization_3 = {
 	monarch_power = ADM
 
 	potential = {
@@ -949,13 +1308,15 @@ tdr_encourage_specialization_3 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_encourage_specialization_2
-            has_active_policy = tdr_encourage_specialization_1
+            has_active_policy = encourage_specialization_2
+            has_active_policy = encourage_specialization_1
             }
         }
     }
@@ -968,11 +1329,30 @@ tdr_encourage_specialization_3 = {
 	}
 }
 
-tdr_deficiet_spending_1 = {
+deficiet_spending_1 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 3
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -990,15 +1370,18 @@ tdr_deficiet_spending_1 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_deficiet_spending_2
-            has_active_policy = tdr_deficiet_spending_3
+            has_active_policy = deficiet_spending_2
+            has_active_policy = deficiet_spending_3
             }
         }
+		adm_tech = 9
     }
 
 	interest = -1
@@ -1009,11 +1392,30 @@ tdr_deficiet_spending_1 = {
 	}
 }
 
-tdr_deficiet_spending_2 = {
+deficiet_spending_2 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 7
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 3
+			}
+		}
 	}
 	
 	allow = {
@@ -1031,13 +1433,15 @@ tdr_deficiet_spending_2 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_deficiet_spending_1
-            has_active_policy = tdr_deficiet_spending_3
+            has_active_policy = deficiet_spending_1
+            has_active_policy = deficiet_spending_3
             }
         }
     }
@@ -1049,7 +1453,7 @@ tdr_deficiet_spending_2 = {
 		factor = 0.8		
 	}
 }
-tdr_deficiet_spending_3 = {
+deficiet_spending_3 = {
 	monarch_power = ADM
 
 	potential = {
@@ -1071,13 +1475,15 @@ tdr_deficiet_spending_3 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_deficiet_spending_2
-            has_active_policy = tdr_deficiet_spending_1
+            has_active_policy = deficiet_spending_2
+            has_active_policy = deficiet_spending_1
             }
         }
     }
@@ -1090,11 +1496,30 @@ tdr_deficiet_spending_3 = {
 	}
 }
 
-tdr_stabilize_inflation_1 = {
+stabilize_inflation_1 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 3
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -1112,15 +1537,18 @@ tdr_stabilize_inflation_1 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_stabilize_inflation_2
-            has_active_policy = tdr_stabilize_inflation_3
+            has_active_policy = stabilize_inflation_2
+            has_active_policy = stabilize_inflation_3
             }
         }
+		adm_tech = 9
     }
 
 	interest = 0.5
@@ -1131,11 +1559,30 @@ tdr_stabilize_inflation_1 = {
 	}
 }
 
-tdr_stabilize_inflation_2 = {
+stabilize_inflation_2 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 7
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 3
+			}
+		}
 	}
 	
 	allow = {
@@ -1153,25 +1600,27 @@ tdr_stabilize_inflation_2 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_stabilize_inflation_1
-            has_active_policy = tdr_stabilize_inflation_3
+            has_active_policy = stabilize_inflation_1
+            has_active_policy = stabilize_inflation_3
             }
         }
     }
 
-	interest = 1
+	interest = 1.5
 	inflation_reduction = 0.25 
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-tdr_stabilize_inflation_3 = {
+stabilize_inflation_3 = {
 	monarch_power = ADM
 
 	potential = {
@@ -1193,18 +1642,20 @@ tdr_stabilize_inflation_3 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_stabilize_inflation_2
-            has_active_policy = tdr_stabilize_inflation_1
+            has_active_policy = stabilize_inflation_2
+            has_active_policy = stabilize_inflation_1
             }
         }
     }
 
-	interest = 1.5
+	interest = 2.5
 	inflation_reduction = 0.35
 	
 	ai_will_do = {
@@ -1212,11 +1663,31 @@ tdr_stabilize_inflation_3 = {
 	}
 }
 
-tdr_employing_clergy_1 = {
+employing_clergy_1 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 3
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 2
+			}
+		}
+		 
 	}
 	
 	allow = {
@@ -1234,22 +1705,25 @@ tdr_employing_clergy_1 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_employing_clergy_2
-            has_active_policy = tdr_employing_clergy_3
+            has_active_policy = employing_clergy_2
+            has_active_policy = employing_clergy_3
             }
         }
+		adm_tech = 9
     }
 
 	global_missionary_strength = 0.01
 	papal_influence = 0.5
 	church_power_modifier = 0.15
 	monthly_fervor_increase = 3
-	yearly_patriarch_authority = 0.5
+	yearly_patriarch_authority = 0.005
 	harmonization_speed = 0.2
 
 	ai_will_do = {
@@ -1257,11 +1731,30 @@ tdr_employing_clergy_1 = {
 	}
 }
 
-tdr_employing_clergy_2 = {
+employing_clergy_2 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 7
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 3
+			}
+		}
 	}
 	
 	allow = {
@@ -1279,13 +1772,15 @@ tdr_employing_clergy_2 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_employing_clergy_1
-            has_active_policy = tdr_employing_clergy_3
+            has_active_policy = employing_clergy_1
+            has_active_policy = employing_clergy_3
             }
         }
     }
@@ -1294,14 +1789,14 @@ tdr_employing_clergy_2 = {
 	papal_influence = 1.5
 	church_power_modifier = 0.25
 	monthly_fervor_increase = 5
-	yearly_patriarch_authority = 1
+	yearly_patriarch_authority = 0.01
 	harmonization_speed = 0.4
 	
 	ai_will_do = {
 		factor = 0.8		
 	}
 }
-tdr_employing_clergy_3 = {
+employing_clergy_3 = {
 	monarch_power = ADM
 
 	potential = {
@@ -1323,13 +1818,15 @@ tdr_employing_clergy_3 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_employing_clergy_2
-            has_active_policy = tdr_employing_clergy_1
+            has_active_policy = employing_clergy_2
+            has_active_policy = employing_clergy_1
             }
         }
     }
@@ -1338,7 +1835,7 @@ tdr_employing_clergy_3 = {
 	papal_influence = 3
 	church_power_modifier = 0.40
 	monthly_fervor_increase = 7
-	yearly_patriarch_authority = 1.5
+	yearly_patriarch_authority = 0.015
 	harmonization_speed = 0.6
 	
 	ai_will_do = {
@@ -1346,11 +1843,30 @@ tdr_employing_clergy_3 = {
 	}
 }
 
-tdr_colonial_encouragement_1 = {
+colonial_encouragement_1 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 3
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 2
+			}
+		}
 	}
 	
 	allow = {
@@ -1368,15 +1884,18 @@ tdr_colonial_encouragement_1 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 1
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_colonial_encouragement_2
-            has_active_policy = tdr_colonial_encouragement_3
+            has_active_policy = colonial_encouragement_2
+            has_active_policy = colonial_encouragement_3
             }
         }
+		adm_tech = 9
     }
 
 	global_colonial_growth = 10
@@ -1387,11 +1906,30 @@ tdr_colonial_encouragement_1 = {
 	}
 }
 
-tdr_colonial_encouragement_2 = {
+colonial_encouragement_2 = {
 	monarch_power = ADM
 
 	potential = {
 		adm_tech = 7
+		not = { calc_true_if = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = religious_ideas
+			full_idea_group = humanist_ideas
+			full_idea_group = centralism_ideas
+			full_idea_group = administrative_ideas
+			full_idea_group = plutocracy_ideas
+			full_idea_group = theocracy_gov_ideas
+			full_idea_group = horde_gov_ideas
+			full_idea_group = federalism_ideas
+			full_idea_group = expansion_ideas
+			full_idea_group = legalism_ideas
+			full_idea_group = aristocracy_ideas
+			full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+			full_idea_group = infrastructure_ideas
+			amount = 3
+			}
+		}
 	}
 	
 	allow = {
@@ -1409,13 +1947,15 @@ tdr_colonial_encouragement_2 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+			full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 2
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_colonial_encouragement_1
-            has_active_policy = tdr_colonial_encouragement_3
+            has_active_policy = colonial_encouragement_1
+            has_active_policy = colonial_encouragement_3
             }
         }
     }
@@ -1428,7 +1968,7 @@ tdr_colonial_encouragement_2 = {
 		factor = 0.8		
 	}
 }
-tdr_colonial_encouragement_3 = {
+colonial_encouragement_3 = {
 	monarch_power = ADM
 
 	potential = {
@@ -1450,13 +1990,15 @@ tdr_colonial_encouragement_3 = {
 		full_idea_group = legalism_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = economic_ideas
+		full_idea_group = natural_science_ideas
+		full_idea_group = infrastructure_ideas
 		amount = 3
 		}
 		NOT = {
         calc_true_if = {
             amount = 1
-            has_active_policy = tdr_colonial_encouragement_2
-            has_active_policy = tdr_colonial_encouragement_1
+            has_active_policy = colonial_encouragement_2
+            has_active_policy = colonial_encouragement_1
             }
         }
     }

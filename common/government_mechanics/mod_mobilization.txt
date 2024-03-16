@@ -1,0 +1,62 @@
+mobilization_mechanic = {  #largely copied from parilmentary conflicts 
+	available = {
+		ai = no
+		has_country_flag = enabled_mobiliz
+	}
+
+	powers = {
+		mobilization_power = {
+			gui = mob_mechanice_backround
+			max = 100	#timer to full mob ability
+			min = -100	#timer to detrimental time spent mobed
+			base_monthly_growth = 0
+			scaled_modifier = {
+				trigger = {
+					has_government_power = { 
+						mechanic_type = mobilization_mechanic
+						power_type = mobilization_power
+						value = 0
+					}
+				}
+				modifier = {
+					#manpower_recovery_speed = 0.1
+				}
+				start_value = 0
+				end_value = 100			
+			}
+			reverse_scaled_modifier = {
+				trigger = {
+					NOT = {
+						has_government_power = { 
+							mechanic_type = mobilization_mechanic
+							power_type = mobilization_power
+							value = 0
+						}
+					}
+				}
+				modifier = {
+					#manpower_recovery_speed = -0.1
+				}
+				start_value = 0
+				end_value = -100
+			}
+			on_max_reached = {
+				custom_tooltip = parliament_vs_monarchy_mechanic_at
+				hidden_effect = {
+					country_event = {
+						id = beaus_event_mobilization.60
+					}
+					set_country_flag = mobing_question
+				}
+			}
+			on_min_reached = {
+				hidden_effect = {
+					country_event = {
+						id = beaus_event_mobilization.65
+					}
+					set_country_flag = mobing_question
+				}
+			}
+		}
+	}
+}

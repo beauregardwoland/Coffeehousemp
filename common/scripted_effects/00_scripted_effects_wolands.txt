@@ -1,0 +1,250 @@
+#unit pgrades
+upgrade_gaurds1 = {
+	remove_country_modifier = gaurds
+}
+upgrade_levy = {
+	remove_country_modifier = modernize_levies
+}
+demobelization ={
+	remove_country_modifier = mobilization
+	remove_country_modifier = mobilization_lite
+	remove_country_modifier = mobilization_scraping
+} 
+reopencontinent = {
+	remove_province_modifier  = cant_colonize 
+}
+refreemage = {
+	remove_country_modifier = plucked_mage
+}
+rhi_ger = {
+	remove_country_modifier = rhi_smart_iron
+	remove_country_modifier = rhi_crushed_french
+}
+nav_excises = {
+	remove_country_modifier = naval_prof_reverse
+}
+nav_no_prof = {
+	remove_country_modifier = nav_slacken
+}
+dev_related_estate_province_privleges = {
+	if = {
+		limit = {
+			development = 20
+		}
+		add_province_modifier = {
+			name = cty_expansion
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			development = 20
+		}
+		add_province_modifier = {
+			name = cty_military
+			duration = -1
+		}
+	}
+}
+naval_prof_mor_up = {
+	add_country_modifier = {
+		name = nav_refresh
+		duration = -1
+	}
+	remove_country_modifier = nav_refresh
+	export_to_variable = {
+		value = modifier:estate_placeholder_loyalty_modifier
+		which = naval_prof_mor
+	}
+	multiply_variable = {
+		which = naval_prof_mor
+		value = 0.2
+	}
+	export_to_variable = {
+		value = modifier:estate_placeholder_loyalty_modifier
+		which = naval_prof_blok
+	}
+	export_to_variable = {
+		value = modifier:estate_placeholder_loyalty_modifier
+		which = naval_prof_brg
+	}
+	multiply_variable = {
+		which = naval_prof_brg
+		value = -0.75
+	}
+	export_to_variable = {
+		value = modifier:estate_placeholder_loyalty_modifier
+		which = naval_prof_rec
+	}
+	multiply_variable = {
+		which = naval_prof_rec
+		value = -0.30
+	}
+	export_to_variable = {
+		value = modifier:estate_placeholder_loyalty_modifier
+		which = naval_prof_eng
+	}
+	multiply_variable = {
+		which = naval_prof_eng
+		value = 0.10
+	}
+}
+mark_provinces_interest_2 ={
+	
+	area = {
+		limit = {
+			has_province_flag = mark_invest_start
+		}
+		random_province_in_state = {
+			set_province_flag = invest_1
+			save_event_target_as = invest_save1
+		}
+	}
+	area = {
+		limit = {
+			has_province_flag = mark_invest_start
+		}
+		random_province_in_state = {
+			limit = {
+				Not = { has_province_flag  = invest_1 }
+			}
+			set_province_flag = invest_2
+			save_event_target_as = invest_save2
+		}
+	}
+	area = {
+		limit = {
+			has_province_flag = mark_invest_start
+		}
+		random_province_in_state = {
+			limit = {
+				Not = { has_province_flag = invest_1 }
+				Not = { has_province_flag = invest_2 }
+			}
+			set_province_flag = invest_3
+			save_event_target_as = invest_save3
+		}
+	}
+	area = {
+		limit = {
+			has_province_flag = mark_invest_start
+		}
+		random_province_in_state = {
+			limit = {
+				Not = { has_province_flag = invest_1 }
+				Not = { has_province_flag = invest_2 }
+				Not = { has_province_flag = invest_3 }
+			}
+			set_province_flag = invest_4
+			save_event_target_as = invest_save4
+		}
+	}
+	area = {
+		limit = {
+			has_province_flag = mark_invest_start
+		}
+		random_province_in_state = {
+			limit = {
+				Not = { has_province_flag = invest_1 }
+				Not = { has_province_flag = invest_2 }
+				Not = { has_province_flag = invest_3 }
+				Not = { has_province_flag = invest_4 }
+			}
+			set_province_flag = invest_5
+			save_event_target_as = invest_save5
+		}
+	}
+	area = {
+		limit = {
+			has_province_flag = mark_invest_start
+		}
+		random_province_in_state = {
+			limit = {
+				Not = { has_province_flag = invest_1 }
+				Not = { has_province_flag = invest_2 }
+				Not = { has_province_flag = invest_3 }
+				Not = { has_province_flag = invest_4 }
+				Not = { has_province_flag = invest_5 }
+			}
+			set_province_flag = invest_6
+			save_event_target_as = invest_save6
+		}
+	}
+}
+
+
+mark_provinces_for_invest = {
+	random_owned_province = {
+		limit = {
+			has_state_edict = edict_province_investment
+			
+		}
+		set_province_flag = invest_1
+		save_event_target_as = invest_save1
+	}
+	random_owned_province = {
+		limit = {
+			has_state_edict = edict_province_investment
+			not = {
+				has_province_flag = invest_1
+			}
+		}
+		set_province_flag = invest_2
+		save_event_target_as = invest_save2
+	}
+	random_owned_province = {
+		limit = {
+			has_state_edict = edict_province_investment
+			not = {
+					has_province_flag = invest_1
+					has_province_flag = invest_2
+			}
+		}
+		set_province_flag = invest_3
+		save_event_target_as = invest_save3
+	}
+	random_owned_province = {
+		limit = {
+			has_state_edict = edict_province_investment
+			not = {
+					has_province_flag = invest_1
+					has_province_flag = invest_2
+					has_province_flag = invest_3
+			}
+		}
+		set_province_flag = invest_4
+		save_event_target_as = invest_save4
+	}
+	random_owned_province = {
+		limit = {
+			has_state_edict = edict_province_investment
+			not = {
+					has_province_flag = invest_1
+					has_province_flag = invest_2
+					has_province_flag = invest_3
+					has_province_flag = invest_4
+			}
+		}
+		set_province_flag = invest_5
+		save_event_target_as = invest_save5
+	}
+	random_owned_province = {
+		limit = {
+			has_state_edict = edict_province_investment
+			not = {	
+					has_province_flag = invest_1
+					has_province_flag = invest_2
+					has_province_flag = invest_3
+					has_province_flag = invest_4
+					has_province_flag = invest_5
+			}
+		}
+		set_province_flag = invest_6
+		save_event_target_as = invest_save6
+	}
+}
+
+
+
+
+

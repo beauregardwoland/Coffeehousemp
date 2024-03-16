@@ -1,0 +1,32 @@
+#country_decisions = {
+#	province_interaction = {
+#		major = yes
+#		potential = {
+#			always = yes
+#		}
+#		provinces_to_highlight = {
+#			has_state_edict = edict_province_investment
+#			owned_by = ROOT
+#		}
+#		allow = {
+#			ai=no
+#			calc_true_if = {
+#				all_states = {
+#					has_state_edict = edict_province_investment
+#				}
+#				amount = 1
+#			}
+#			not = {
+#				has_country_flag = in_province_selector
+#			}
+#		}
+#		effect = {
+#			mark_provinces_for_invest = yes
+#			country_event = { id = woland_province_invest_end.90 }
+#			set_country_flag = in_province_selector
+#		}
+#		ai_will_do = {
+#			factor = 1			
+#		}
+#	}	
+#}

@@ -3,6 +3,7 @@ clerical_poverty_aspect = {
 	modifier = {
 		church_influence_modifier = -0.1
 		stability_cost_modifier = -0.15
+		global_tax_modifier = 0.05
 	}
 }
 
@@ -10,14 +11,15 @@ punishment_of_sins_aspect = {
 	cost = 100
 	modifier = {
 		nobles_influence_modifier = -0.1
-		yearly_corruption = -0.05
+		yearly_corruption = -0.15
 	}
 }
 
 orphan_hetmans_aspect = {
 	cost = 100
 	modifier = {
-		land_morale = 0.10
+		army_tradition_decay = -0.01
+		extra_manpower_at_religious_war = yes
 	}
 }
 
@@ -25,14 +27,14 @@ bread_and_wine_aspect = {
 	cost = 100
 	modifier = {
 		tolerance_own = 1
-		global_trade_goods_size_modifier = 0.05
+		global_trade_goods_size_modifier = 0.15
 	}
 }
 
 sola_scriptura_aspect = {
 	cost = 100
 	modifier = {
-		warscore_cost_vs_other_religion = -0.1
+		warscore_cost_vs_other_religion = -0.2
 	}
 }
 
@@ -40,6 +42,7 @@ adamite_services_aspect = {
 	cost = 100
 	modifier = {
 		culture_conversion_cost = -0.2
+		culture_conversion_time = -0.30
 	}
 }
 
@@ -47,7 +50,7 @@ pacifism_aspect = {
 	cost = 100
 	modifier = {
 		stability_cost_to_declare_war = 1
-		improve_relation_modifier = 0.3
+		development_cost = -0.10
 	}
 	ai_will_do = {
 		factor = 0
@@ -64,7 +67,7 @@ regular_defenestrations_aspect = {
 taborite_resurgence_aspect = {
 	cost = 100
 	modifier = {
-		manpower_in_true_faith_provinces = 0.2
+		global_manpower_modifier = 0.2
 	}
 }
 
@@ -73,5 +76,6 @@ freedom_to_preach_aspect = {
 	modifier = {
 		religious_unity = 0.1
 		tolerance_heretic = 1
+		land_morale_constant = 0.2
 	}
 }

@@ -1,0 +1,23 @@
+hab_culture_change = {
+	potential = {
+		custom_trigger_tooltip = {
+			tooltip = unlocked_if_tt
+			has_country_flag = hab_enable_infrastructure_network_flag
+		}
+	}
+	
+	allow = { }
+	
+	modifier = {
+		local_culture_conversion_time = -0.15
+		local_culture_conversion_cost = -0.20
+	}
+	
+	color = { 160 220 210 }
+	
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+}

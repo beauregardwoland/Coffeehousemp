@@ -1,0 +1,2906 @@
+##missions 
+hungarian_coop = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -20
+	loyalty = 0.15
+	influence = 0.1
+	is_valid = {
+		has_estate_privilege = hungarian_coop
+	}
+	can_select = {
+		
+	}
+	can_revoke = {
+		NOT = { 
+			any_subject_country = { liberty_desire = 5 }
+		}
+		estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 65
+		}
+	}
+	penalties = {
+		all_estate_loyalty_equilibrium = -0.075
+		global_tax_modifier = -0.15
+		reduced_liberty_desire = -20
+	}
+	benefits = {
+	}
+	on_revoked = {
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 5
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+##############################################
+##########  idea group privleges    ##########
+##############################################
+estate_city_expansion = {
+	icon = privilege_dev_cost
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+		any_owned_province = {
+			development = 20
+		}
+		custom_trigger_tooltip = {
+			tooltip = eastate_city_trigger_tt
+			has_idea = urban2
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_ideas_bigger_cities_gt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					development = 20
+				}
+				add_province_modifier = {
+					name = cty_expansion
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_ideas_bigger_cities_rt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = cty_expansion
+				}
+				remove_province_modifier = cty_expansion
+			}
+		}
+	}
+	penalties = {
+		global_tax_modifier = -0.10
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_city_militarized = {
+	icon = privilege_fort
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+		any_owned_province = {
+			development = 20
+		}
+		custom_trigger_tooltip = {
+			tooltip = eastate_city_trigger_tt
+			has_idea = urban2
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_ideas_militarized_cities_gt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					development = 20
+				}
+				add_province_modifier = {
+					name = cty_military
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_ideas_militarized_cities_rt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = cty_military
+				}
+				remove_province_modifier = cty_military
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+estate_rural_bonus = {
+	icon = privilege_serf
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+		any_owned_province = {
+			or = {
+				has_terrain = grasslands
+				has_terrain = farmlands
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = estate_rural_trigger_tt
+			has_idea = rural3
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_ideas_rural_bonus_gt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_terrain = grasslands
+				}
+				add_province_modifier = {
+					name = rural_bonus
+					duration = -1
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_terrain = farmlands
+				}
+				add_province_modifier = {
+					name = rural_bonus
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_ideas_rural_bonus_rt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = rural_bonus
+				}
+				remove_province_modifier = rural_bonus
+			}
+		}
+	}
+	penalties = {
+		innovativeness_gain = -0.05
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+estate_hummanist_bonus = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = hummanist_trigger_tt
+			has_idea = tolerance_idea
+		}
+	}
+	benefits = {
+		innovativeness_gain = 0.05
+	}
+	
+	on_granted = {
+		custom_tooltip = estate_hummanist_debate_tt
+	}
+	on_invalid = {
+	}
+	on_revoked = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+#army stuff
+estate_nobles_gaurd_organization = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate
+			not = { has_estate_privilege =  estate_burghers_militia_organization }
+			not = { has_estate_privilege = estate_church_volounteer_organization }
+			not = { has_estate_privilege = estate_nobles_early }
+			not = { has_estate_privilege = estate_merc_early }
+			not = { has_estate_privilege = estate_absolutist_gaurds }
+			not = { has_estate_privilege = estate_absolutist_militia }
+			not = { has_estate_privilege = estate_absolutist_regulars }
+		}
+		army_professionalism = 0.20
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = noble_gaurds
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+	}
+	benefits = {
+		millitary_privilege_slots = 2
+		ALLOWED_REV_GUARD_FRACTION = 0.20
+		nobles_influence_modifier = 0.05
+		nobles_loyalty_modifier = 0.025
+		can_recruit_revolutionary_guards = yes
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier = noble_gaurds
+		add_estate_loyalty = {
+			estate = estate_military
+			loyalty = 15
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_burghers_militia_organization = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate
+			not = { has_estate_privilege =  estate_nobles_gaurd_organization }
+			not = { has_estate_privilege = estate_church_volounteer_organization }
+			not = { has_estate_privilege = estate_nobles_early }
+			not = { has_estate_privilege = estate_merc_early }
+			not = { has_estate_privilege = estate_absolutist_gaurds }
+			not = { has_estate_privilege = estate_absolutist_militia }
+			not = { has_estate_privilege = estate_absolutist_regulars }
+		}
+		army_professionalism = 0.20
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = burgher_militia
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+	}
+	benefits = {
+		millitary_privilege_slots = 2
+		ALLOWED_REV_GUARD_FRACTION = 0.20
+		burghers_influence_modifier = 0.05
+		burghers_loyalty_modifier =  0.025
+		can_recruit_revolutionary_guards = yes
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier = burgher_militia
+		add_estate_loyalty = {
+			estate = estate_military
+			loyalty = 15
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+estate_church_volounteer_organization = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate
+			not = { has_estate_privilege =  estate_nobles_gaurd_organization }
+			not = { has_estate_privilege =  estate_burghers_militia_organization }
+			not = { has_estate_privilege = estate_nobles_early }
+			not = { has_estate_privilege = estate_merc_early }
+			not = { has_estate_privilege = estate_absolutist_gaurds }
+			not = { has_estate_privilege = estate_absolutist_militia }
+			not = { has_estate_privilege = estate_absolutist_regulars }
+		}
+		army_professionalism = 0.20
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = pious_volounteers
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+	}
+	benefits = {
+		millitary_privilege_slots = 2
+		ALLOWED_REV_GUARD_FRACTION = 0.20
+		church_influence_modifier  = 0.05
+		church_loyalty_modifier =  0.025
+		can_recruit_revolutionary_guards = yes
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier = pious_volounteers
+		add_estate_loyalty = {
+			estate = estate_military
+			loyalty = 15
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_nobles_early = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -10
+	loyalty = 0.025
+	influence = 0.05
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate
+			not = { has_estate_privilege =  estate_burghers_militia_organization }
+			not = { has_estate_privilege = estate_church_volounteer_organization }
+			not = { has_estate_privilege = estate_nobles_gaurd_organization }
+			not = { has_estate_privilege = estate_merc_early }
+			not = { has_estate_privilege = estate_absolutist_gaurds }
+			not = { has_estate_privilege = estate_absolutist_militia }
+			not = { has_estate_privilege = estate_absolutist_regulars }
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = semi_levy
+			duration = -1
+		}
+	}
+
+	penalties = {
+	}
+	benefits = {
+		nobles_influence_modifier = 0.05
+		ALLOWED_REV_GUARD_FRACTION = 0.10
+		can_recruit_revolutionary_guards = yes
+		yearly_army_professionalism = 0.0025
+	}
+	on_revoked = {
+		remove_country_modifier = semi_levy
+		add_estate_loyalty = {
+			estate = estate_military
+			loyalty = 15
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+
+estate_merc_early = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -10
+	loyalty = 0.025
+	influence = 0.05
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate
+			not = { has_estate_privilege =  estate_burghers_militia_organization }
+			not = { has_estate_privilege = estate_church_volounteer_organization }
+			not = { has_estate_privilege = estate_nobles_gaurd_organization }
+			not = { has_estate_privilege = estate_nobles_early }
+			not = { has_estate_privilege = estate_absolutist_gaurds }
+			not = { has_estate_privilege = estate_absolutist_militia }
+			not = { has_estate_privilege = estate_absolutist_regulars }
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = mercenary_early_org
+			duration = -1
+		}
+		add_country_modifier = {
+			name = heavy_merc_cooperation
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+	}
+	benefits = {
+		ALLOWED_REV_GUARD_FRACTION = 0.075
+		mercenary_cost = -0.10
+		can_recruit_revolutionary_guards = yes
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier = mercenary_early_org
+		remove_country_modifier = heavy_merc_cooperation
+		add_estate_loyalty = {
+			estate = estate_military
+			loyalty = 15
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_absolutist_gaurds = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 5
+	loyalty = 0.10
+	influence = 0.10
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate
+			not = { has_estate_privilege =  estate_burghers_militia_organization }
+			not = { has_estate_privilege = estate_church_volounteer_organization }
+			not = { has_estate_privilege = estate_nobles_gaurd_organization }
+			not = { has_estate_privilege = estate_nobles_early }
+			not = { has_estate_privilege = estate_absolutist_militia }
+			not = { has_estate_privilege = estate_absolutist_regulars }
+		}
+		army_professionalism = 0.60
+		absolutism = 30
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = absolutist_gaurds
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+	}
+	benefits = {
+		millitary_privilege_slots = 3
+		ALLOWED_REV_GUARD_FRACTION = 0.25
+		can_recruit_revolutionary_guards = yes
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier = absolutist_gaurds
+		add_estate_loyalty = {
+			estate = estate_military
+			loyalty = 15
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_absolutist_militia = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 5
+	loyalty = 0.10
+	influence = 0.10
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate
+			not = { has_estate_privilege =  estate_burghers_militia_organization }
+			not = { has_estate_privilege = estate_church_volounteer_organization }
+			not = { has_estate_privilege = estate_nobles_gaurd_organization }
+			not = { has_estate_privilege = estate_nobles_early }
+			not = { has_estate_privilege = estate_absolutist_gaurds }
+			not = { has_estate_privilege = estate_absolutist_regulars }
+		}
+		army_professionalism = 0.60
+		absolutism = 30
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = absolutist_militias
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+	}
+	benefits = {
+		millitary_privilege_slots = 3
+		ALLOWED_REV_GUARD_FRACTION = 0.25
+		can_recruit_revolutionary_guards = yes
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier = absolutist_militias
+		add_estate_loyalty = {
+			estate = estate_military
+			loyalty = 15
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_absolutist_regulars = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 5
+	loyalty = 0.10
+	influence = 0.10
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate
+			not = { has_estate_privilege =  estate_burghers_militia_organization }
+			not = { has_estate_privilege = estate_church_volounteer_organization }
+			not = { has_estate_privilege = estate_nobles_gaurd_organization }
+			not = { has_estate_privilege = estate_nobles_early }
+			not = { has_estate_privilege = estate_absolutist_gaurds }
+			not = { has_estate_privilege = estate_absolutist_militia }
+		}
+		army_professionalism = 0.60
+		absolutism = 30
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = absolutist_regulars
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+	}
+	benefits = {
+		millitary_privilege_slots = 3
+		ALLOWED_REV_GUARD_FRACTION = 0.25
+		can_recruit_revolutionary_guards = yes
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier = absolutist_regulars
+		add_estate_loyalty = {
+			estate = estate_military
+			loyalty = 15
+		}
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_nobles_german_fencing = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		or = {
+			AND = {
+				capital_scope = {
+					or = {
+						region = north_german_region
+						region = south_german_region
+					}
+				}
+				culture_group = germanic	
+			}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					region = north_german_region
+					region = south_german_region
+				}
+				value = 10
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		or = {
+			AND = {
+				capital_scope = {
+					or = {
+						region = north_german_region
+						region = south_german_region
+					}
+				}
+				culture_group = germanic
+			}
+			AND = {
+				num_of_owned_provinces_with = {
+					is_core = ROOT
+					OR = {
+						region = north_german_region
+						region = south_german_region
+					}
+					value = 10
+				}
+				or = {
+					accepted_culture = hessian
+					accepted_culture = lower_saxon
+					accepted_culture = swiss
+					accepted_culture = swabian
+					accepted_culture = pommeranian
+					accepted_culture = austrian
+					accepted_culture = bavarian
+					accepted_culture = franconian
+					accepted_culture = saxon
+					accepted_culture = hannoverian
+					accepted_culture = prussian
+				}
+			}
+		
+		}
+	}
+	
+	on_granted = {
+		add_country_modifier = {
+			name = german_fencing
+			duration = -1
+		}
+		add_prestige = 10
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		tax_income = -36
+	}
+	benefits = {
+		yearly_army_professionalism = 0.0025
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier = german_fencing
+	}
+	on_invalid = {
+		remove_country_modifier = german_fencing
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+estate_nobles_italian_fencing = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		or = {
+			AND = {
+				capital_scope = {
+					region = italy_region
+				}
+				culture_group = latin	
+			}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = italy_region
+				value = 7
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		or = {
+			AND = {
+				capital_scope = {
+					region = italy_region
+				}
+				culture_group = latin
+			}
+			AND = {
+				num_of_owned_provinces_with = {
+					is_core = ROOT
+					region = italy_region
+					value = 7
+				}
+				or = {
+					accepted_culture = dalmatian
+					accepted_culture = lombard
+					accepted_culture = tuscan
+					accepted_culture = swabian
+					accepted_culture = sardinian
+					accepted_culture = romagnan
+					accepted_culture = ligurian
+					accepted_culture = venetian
+					accepted_culture = neapolitan
+					accepted_culture = piedmontese
+					accepted_culture = umbrian
+					accepted_culture = sicilian
+					accepted_culture = maltese
+				}
+			}
+		
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = italian_fencing
+			duration = -1
+		}
+		add_prestige = 10
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		tax_income = -36
+	}
+	benefits = {
+		yearly_army_professionalism = 0.0025
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier = italian_fencing
+	}
+	on_invalid = {
+		remove_country_modifier = italian_fencing
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+frontline_military_doctrine = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate3
+			not = { has_estate_privilege = heavy_military_doctrine }
+			not = { has_estate_privilege = reserves_military_doctrine }
+			not = { has_estate_privilege = cart_military_doctrine }
+		}
+		
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = frontline_doctrine
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+
+	}
+	benefits = {
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier = frontline_doctrine
+	}
+	on_invalid = {
+		remove_country_modifier = frontline_doctrine
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+heavy_military_doctrine = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate3
+			not = { has_estate_privilege = frontline_military_doctrine }
+			not = { has_estate_privilege = reserves_military_doctrine }
+			not = { has_estate_privilege = cart_military_doctrine }
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = heavy_doctrine
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+
+	}
+	benefits = {
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier = heavy_doctrine
+	}
+	on_invalid = {
+		remove_country_modifier = heavy_doctrine
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+reserves_military_doctrine = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate3
+			not = { has_estate_privilege = frontline_military_doctrine }
+			not = { has_estate_privilege = heavy_military_doctrine }
+			not = { has_estate_privilege = cart_military_doctrine }
+		}
+		
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = reserves_doctrine
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+
+	}
+	benefits = {
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  reserves_doctrine
+	}
+	on_invalid = {
+		remove_country_modifier = reserves_doctrine
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+cart_military_doctrine = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate3
+			not = { has_estate_privilege = frontline_military_doctrine }
+			not = { has_estate_privilege = heavy_military_doctrine }
+			not = { has_estate_privilege = cart_military_doctrine }
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = cart_doctrine
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+
+	}
+	benefits = {
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  cart_doctrine
+	}
+	on_invalid = {
+		remove_country_modifier = cart_doctrine
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_nobles_officers = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate4
+			not = { has_estate_privilege = estate_zealous_officers }
+			not = { has_estate_privilege = estate_burgher_officers }
+		}
+		army_professionalism = 0.20
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = noble_officers
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		yearly_army_professionalism = -0.0025
+	}
+	benefits = {
+		nobles_influence_modifier = 0.05
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  noble_officers
+	}
+	on_invalid = {
+		remove_country_modifier = noble_officers
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_burgher_officers = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate4
+			not = { has_estate_privilege = estate_zealous_officers }
+			not = { has_estate_privilege = estate_nobles_officers }
+		}
+		army_professionalism = 0.20
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = burgher_officers
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		yearly_army_professionalism = -0.0025
+	}
+	benefits = {
+		burghers_influence_modifier = 0.05
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  burgher_officers
+	}
+	on_invalid = {
+		remove_country_modifier = burgher_officers
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_zealous_officers = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate4
+			not = { has_estate_privilege = estate_burgher_officers }
+			not = { has_estate_privilege = estate_nobles_officers }
+		}
+		
+		army_professionalism = 0.20
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = clergy_officers
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		yearly_army_professionalism = -0.0025
+	}
+	benefits = {
+		church_influence_modifier = 0.05
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  clergy_officers
+	}
+	on_invalid = {
+		remove_country_modifier = clergy_officers
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+####general 
+
+estate_grenadiers_equpment = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		mil_tech = 8
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = grenadiers
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+
+	}
+	benefits = {
+		garrison_damage = 0.15
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  grenadiers
+	}
+	on_invalid = {
+		remove_country_modifier = grenadiers
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+plate_armor_equipment = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		adm_tech = 6
+		innovativeness = 15
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = plate_armour
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  plate_armour
+	}
+	on_invalid = {
+		remove_country_modifier = plate_armour
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+
+estate_blunderbuss_equpment = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		mil_tech = 11
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = blunderbuss_equipment
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  blunderbuss_equipment
+	}
+	on_invalid = {
+		remove_country_modifier = blunderbuss_equipment
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_balloon_recon = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		is_year = 1750
+		innovativeness = 70
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = balloon_recon
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  balloon_recon
+	}
+	on_invalid = {
+		remove_country_modifier = balloon_recon
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+####artillery
+
+heavy_cannons_equpment = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate5
+			Not = { has_estate_privilege = mortar_cannons_equpment }
+			Not = { has_estate_privilege = light_cannons_equpment }
+		}
+		
+		mil_tech = 13
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = heavy_cannons_primacy
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		siege_ability = 0.075
+		artillery_barrage_cost = -0.50
+		artillery_levels_available_vs_fort = 2
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  heavy_cannons_primacy
+	}
+	on_invalid = {
+		remove_country_modifier = heavy_cannons_primacy
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+light_cannons_equpment = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate5
+			Not = { has_estate_privilege = heavy_cannons_equpment }
+			Not = { has_estate_privilege = mortar_cannons_equpment }
+		}
+		
+		mil_tech = 13
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = light_cannons_primacy
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		siege_ability = -0.05
+		artillery_level_modifier = -0.20
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  light_cannons_primacy
+	}
+	on_invalid = {
+		remove_country_modifier = light_cannons_primacy
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+mortar_cannons_equpment = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate5
+			Not = { has_estate_privilege = heavy_cannons_equpment }
+			Not = { has_estate_privilege = light_cannons_equpment }
+		}
+		
+		mil_tech = 13
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = mortars_cannons_primacy
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		siege_ability = 0.15
+		artillery_level_modifier = 0.30
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  mortars_cannons_primacy
+	}
+	on_invalid = {
+		remove_country_modifier = mortars_cannons_primacy
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+#cavalry
+
+demi_lancer_cav = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate6
+			Not = { has_estate_privilege = horse_artillery_cav_estate }
+			Not = { has_estate_privilege = dragoon_equipment_cav }
+			Not = { has_estate_privilege = curasier_equipment_cav }
+			Not = { has_estate_privilege = harquebusier_equipment_cav }
+			Not = { has_estate_privilege = estate_camel_cavalry }
+			Not = { has_estate_privilege = estate_jinete }
+		}
+		mil_tech = 6
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = demi_lancer
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  demi_lancer
+	}
+	on_invalid = {
+		remove_country_modifier = demi_lancer
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+harquebusier_equipment_cav = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate6
+			Not = { has_estate_privilege = horse_artillery_cav_estate }
+			Not = { has_estate_privilege = dragoon_equipment_cav }
+			Not = { has_estate_privilege = curasier_equipment_cav }
+			Not = { has_estate_privilege = demi_lancer_cav }
+			Not = { has_estate_privilege = estate_camel_cavalry }
+			Not = { has_estate_privilege = estate_jinete }
+		}
+		mil_tech = 14
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = harquebusier_equipment
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  harquebusier_equipment
+	}
+	on_invalid = {
+		remove_country_modifier = harquebusier_equipment
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+curasier_equipment_cav = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate6
+			Not = { has_estate_privilege = horse_artillery_cav_estate }
+			Not = { has_estate_privilege = dragoon_equipment_cav }
+			Not = { has_estate_privilege = harquebusier_equipment_cav }
+			Not = { has_estate_privilege = demi_lancer_cav }
+			Not = { has_estate_privilege = estate_camel_cavalry }
+			Not = { has_estate_privilege = estate_jinete }
+		}
+		mil_tech = 14
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = curasier_equipment
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  curasier_equipment
+	}
+	on_invalid = {
+		remove_country_modifier = curasier_equipment
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+dragoon_equipment_cav = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate6
+			Not = { has_estate_privilege = horse_artillery_cav_estate }
+			Not = { has_estate_privilege = curasier_equipment_cav }
+			Not = { has_estate_privilege = harquebusier_equipment_cav }
+			Not = { has_estate_privilege = demi_lancer_cav }
+			Not = { has_estate_privilege = estate_camel_cavalry }
+			Not = { has_estate_privilege = estate_jinete }
+		}
+		mil_tech = 11
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = dragoons_cav
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  dragoons_cav
+	}
+	on_invalid = {
+		remove_country_modifier = dragoons_cav
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+horse_artillery_cav_estate = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate6
+			Not = { has_estate_privilege = dragoon_equipment_cav }
+			Not = { has_estate_privilege = curasier_equipment_cav }
+			Not = { has_estate_privilege = harquebusier_equipment_cav }
+			Not = { has_estate_privilege = demi_lancer_cav }
+			Not = { has_estate_privilege = estate_camel_cavalry }
+			Not = { has_estate_privilege = estate_jinete }
+		}
+		mil_tech = 16
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = horse_artillery
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  horse_artillery
+	}
+	on_invalid = {
+		remove_country_modifier = horse_artillery
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_camel_cavalry = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		or = {
+			any_owned_province = {
+				has_terrain = drylands
+			}
+			any_owned_province = {
+				has_terrain = desert
+			}
+			any_owned_province = {
+				has_terrain = coastal_desert
+			}
+		}
+	}
+	can_select = {
+		or = {
+			any_owned_province = {
+				has_terrain = drylands
+				development = 10
+			}
+			any_owned_province = {
+				has_terrain = desert
+				development = 10
+			}
+			any_owned_province = {
+				has_terrain = coastal_desert
+				development = 10
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate6
+			Not = { has_estate_privilege = dragoon_equipment_cav }
+			Not = { has_estate_privilege = curasier_equipment_cav }
+			Not = { has_estate_privilege = harquebusier_equipment_cav }
+			Not = { has_estate_privilege = demi_lancer_cav }
+			Not = { has_estate_privilege = horse_artillery_cav_estate }
+			Not = { has_estate_privilege = estate_jinete }
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = camel_cavalry
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  camel_cavalry
+	}
+	on_invalid = {
+		remove_country_modifier = camel_cavalry
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_jinete = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		or = {
+			culture_group = iberian
+			accepted_culture = castillian
+			accepted_culture = leonese
+			accepted_culture = catalan
+			accepted_culture = aragonese
+			accepted_culture = portugese
+		}
+		NOT = { current_age = age_of_reformation }
+	}
+	can_select = {
+		or = {
+			culture_group = iberian
+			accepted_culture = castillian
+			accepted_culture = leonese
+			accepted_culture = catalan
+			accepted_culture = aragonese
+			accepted_culture = portugese
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate6
+			Not = { has_estate_privilege = dragoon_equipment_cav }
+			Not = { has_estate_privilege = curasier_equipment_cav }
+			Not = { has_estate_privilege = harquebusier_equipment_cav }
+			Not = { has_estate_privilege = demi_lancer_cav }
+			Not = { has_estate_privilege = horse_artillery_cav_estate }
+			Not = { has_estate_privilege = estate_camel_cavalry }
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = jinete
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  jinete
+	}
+	on_invalid = {
+		remove_country_modifier = jinete
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+#infantry
+
+melee_infantry = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_regimental_guns }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = estate_early_rifles }
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = sword_buckler
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  sword_buckler
+	}
+	on_invalid = {
+		remove_country_modifier = sword_buckler
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_halberds = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_regimental_guns }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = melee_infantry }
+			Not = { has_estate_privilege = estate_early_rifles }
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = halberds
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  halberds
+	}
+	on_invalid = {
+		remove_country_modifier = halberds
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_conscripted_hunters = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_regimental_guns }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = melee_infantry }
+			Not = { has_estate_privilege = estate_early_rifles }
+		}
+		adm_tech = 8
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = conscripted_hunters
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  conscripted_hunters
+	}
+	on_invalid = {
+		remove_country_modifier = conscripted_hunters
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_regimental_guns = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = melee_infantry }
+			Not = { has_estate_privilege = estate_early_rifles }
+		}
+		mil_tech = 10
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = regimental_guns
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  regimental_guns
+	}
+	on_invalid = {
+		remove_country_modifier = regimental_guns
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_early_rifles = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = melee_infantry }
+			Not = { has_estate_privilege = estate_regimental_guns }
+		}
+		is_year = 1700
+		innovativeness = 75
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = early_rifles
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  early_rifles
+	}
+	on_invalid = {
+		remove_country_modifier = early_rifles
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_irregulars = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_early_rifles }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = melee_infantry }
+			Not = { has_estate_privilege = estate_regimental_guns }
+		}
+	}	
+	on_granted = {
+		add_country_modifier = {
+			name = sappers
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		siege_ability = 0.10
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  sappers
+	}
+	on_invalid = {
+		remove_country_modifier = sappers
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_gendarmies = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		NOT = { current_age = age_of_absolutism }
+		or = {
+			culture_group = french
+			any_owned_province = {
+				culture_group = french
+			}
+		}
+	}
+	can_select = {
+		or = {
+			culture_group = french
+			accepted_culture = cosmopolitan_french
+			accepted_culture = breton
+			accepted_culture = wallonian
+			accepted_culture = burgundian
+			accepted_culture = gascon
+			accepted_culture = occitain
+			accepted_culture = normand
+			accepted_culture = aquitaine
+			accepted_culture = anglois
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = gendarmies
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  gendarmies
+	}
+	on_invalid = {
+		remove_country_modifier = gendarmies
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_riechslaufer_not_emp = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		NOT = { current_age = age_of_revolutions }
+		is_part_of_hre = yes
+	}
+	can_select = {
+		hre_reform_passed = emperor_reichsregiment
+		is_emperor = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = riechslaufer
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  riechslaufer
+	}
+	on_invalid = {
+		remove_country_modifier = riechslaufer
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_riechslaufer = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		NOT = { current_age = age_of_revolutions }
+		is_part_of_hre = yes
+	}
+	can_select = {
+		hre_reform_passed = emperor_reichsregiment
+		is_emperor = yes
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = riechslaufer_emp
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		imperial_authority = -0.05
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  riechslaufer_emp
+	}
+	on_invalid = {
+		remove_country_modifier = riechslaufer_emp
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_tatar_bands = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		religion_group = muslim
+	}
+	can_select = {
+		
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = tatar_bands
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		loot_amount = 0.20
+		available_province_loot = 0.20
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  tatar_bands
+	}
+	on_invalid = {
+		remove_country_modifier = tatar_bands
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_swiss_pike = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		or = {
+			culture = swiss
+			any_ally = {
+				culture = swiss
+			}
+			any_owned_province = {
+				culture = swiss
+			}
+		}
+		NOT = { current_age = age_of_absolutism }
+		NOT = { current_age = age_of_revolutions }
+	}
+	can_select = {
+		or = {
+			culture = swiss
+			any_ally = {
+				culture = swiss
+			}
+			and = {
+				any_owned_province = {
+					culture = swiss
+				}
+				accepted_culture = swiss
+			}
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = swiss_pike
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  swiss_pike
+	}
+	on_invalid = {
+		remove_country_modifier = swiss_pike
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_flemish_pikes = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		or = {
+			capital_scope = {
+				region = low_countries_region
+			}
+			any_owned_province = {
+				culture = flemish
+			}
+		}
+		NOT = { current_age = age_of_absolutism }
+		NOT = { current_age = age_of_revolutions }
+	}
+	can_select = {
+		or = {
+			capital_scope = {
+				region = low_countries_region
+			}
+			and = {
+				any_owned_province = {
+					culture = flemish
+				}
+				accepted_culture = flemish
+			}
+		}
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = flemish_pikes
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  flemish_pikes
+	}
+	on_invalid = {
+		remove_country_modifier = flemish_pikes
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_isle_archers = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		NOT = { current_age = age_of_reformation }
+		NOT = { current_age = age_of_absolutism }
+		NOT = { current_age = age_of_revolutions }
+		or = {
+			culture_group = british
+			culture = anglois
+			any_owned_province = {
+				culture_group = british
+			}
+		}
+	}
+	can_select = {
+		or = {
+			culture_group = british
+			culture = anglois
+			accepted_culture = english
+			accepted_culture = welsh
+			accepted_culture = scottish
+		}
+		
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = isle_archers
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  isle_archers
+	}
+	on_invalid = {
+		remove_country_modifier = isle_archers
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}

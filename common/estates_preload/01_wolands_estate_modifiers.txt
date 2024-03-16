@@ -1,0 +1,34 @@
+#Define estate loyalty and influence modifiers here
+
+estate_military = {
+	modifier_definition = {
+		type = loyalty
+		key = millitary_loyalty_modifier
+		trigger = {
+			has_estate = estate_military
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = millitary_influence_modifier
+		trigger = {
+			has_estate = estate_military
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = millitary_privilege_slots
+		trigger = {
+			has_estate = estate_military
+		}
+	}
+}
+estate_placeholder = {
+	modifier_definition = {
+		type = loyalty
+		key = estate_placeholder_loyalty_modifier
+		trigger = {
+			has_estate = estate_placeholder
+		}
+	}
+}

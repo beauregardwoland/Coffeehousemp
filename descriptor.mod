@@ -8,7 +8,8 @@ tags={
 	"Map"
 	"National Ideas"
 }
-name="TDR-MP"
-supported_version="1.34.4"
-path="C:/Users/josep/Documents/Paradox Interactive/Europa Universalis IV/mod/TDR-MP"
-remote_file_id="2905262139"
+name="beausideas"
+picture="thumbnail.png"
+supported_version="1.36.*"
+path="C:/Users/santi/OneDrive/Documents/Paradox Interactive/Europa Universalis IV/mod/beausideas"
+remote_file_id="2974232327"

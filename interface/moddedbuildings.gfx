@@ -30,7 +30,17 @@ spriteType = {
     loadType = "INGAME"
 }
 spriteType = {
+    name = "GFX_artillery_foundry_upgrade"
+    texturefile = "gfx//interface//buildings//artilleryfoundry.tga"
+    loadType = "INGAME"
+}
+spriteType = {
     name = "GFX_firearms_workshop"
+    texturefile = "gfx//interface//buildings//firearmsworkshop.tga"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_firearms_workshop_upgrade"
     texturefile = "gfx//interface//buildings//firearmsworkshop.tga"
     loadType = "INGAME"
 }
@@ -40,8 +50,13 @@ spriteType = {
     loadType = "INGAME"
 }
 spriteType = {
+    name = "GFX_horse_breeding_grounds_upgrade"
+    texturefile = "gfx//interface//buildings//horsebreedinggrounds.tga"
+    loadType = "INGAME"
+}
+spriteType = {
     name = "GFX_officer_acedemy"
-    texturefile = "gfx//interface//buildings//officeracedemy.tga"
+    texturefile = "gfx/interface/buildings/trade_company/military_administration.dds"
     loadType = "INGAME"
 }
 spriteType = {
@@ -75,6 +90,11 @@ spriteType = {
     loadType = "INGAME"
 }
 spriteType = {
+    name = "GFX_early_steel_mill"
+    texturefile = "gfx//interface//buildings//gunpowdermill.tga"
+    loadType = "INGAME"
+}
+spriteType = {
     name = "GFX_luxury_goods"
     texturefile = "gfx//interface//buildings//luxurygoods.tga"
     loadType = "INGAME"
@@ -101,7 +121,17 @@ spriteType = {
 }
 spriteType = {
     name = "GFX_colonial_trade_center"
-    texturefile = "gfx//interface//buildings//colonialtradecenter.tga"
+    texturefile = "gfx/interface/buildings/trade_company/township.dds"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_limited_canals"
+    texturefile = "gfx/interface/buildings/limited_canals.dds"
+    loadType = "INGAME"
+}
+spriteType = {
+    name = "GFX_irragation_ditches"
+    texturefile = "gfx/interface/buildings/native_irrigation.dds"
     loadType = "INGAME"
 }
 }

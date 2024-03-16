@@ -1,3 +1,406 @@
+ned_dutch_specific = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		or = {
+			was_tag = ned
+			tag = NED
+			tag = NT1
+		}	
+		primary_culture = dutch
+		not = {was_tag = BUR }
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	dutch_primacy = {
+		icon = consolidate_the_stadholders
+		required_missions = { ned_religious_unity }	
+		position = 4
+		provinces_to_highlight = {
+			region = low_countries_region
+		}
+		trigger = {
+			low_countries_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			set_country_flag = dutch_specific
+			country_event = {
+				id = beaus_rhine.6
+			}
+			add_prestige = 25
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+		}
+	}
+	dutch_spirit = {
+		icon = consolidate_the_stadholders
+		required_missions = { dutch_primacy }	
+		trigger = {
+			1269 = { # English Channel
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+			NOT = { unrest = -4 }
+			or = {
+				navy_size = 150
+				and = {
+				navy_size = GBR
+				navy_size = ENG
+				}
+			}
+		}
+		effect = {
+			1269 = {
+				add_trade_modifier = {
+					who = root
+					duration = 7300
+					power = 30
+					key = DUTCH_CHANNEL_SUPREMACY
+				}
+			}
+			add_country_modifier = {
+				name = ned_dutch_bonus
+				duration = -1
+			}
+		}
+	}
+
+
+}
+
+ned_flemish_specific = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		or = {
+			was_tag = ned
+			tag = NED
+			tag = NT2
+		}
+		primary_culture = flemish
+		or = {
+			not = { was_tag = BUR } 
+			not = { was_tag = BRB }
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	flemish_primacy = {
+		icon = consolidate_the_stadholders
+		required_missions = { fla_lowlands_three }	
+		trigger = {
+			low_countries_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			set_country_flag = flemish_specific
+			country_event = {
+				id = beaus_rhine.6
+			}
+			add_prestige = 25
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+		}
+	}
+	flanders_fields = {
+		icon = consolidate_the_stadholders
+		required_missions = { flemish_primacy }	
+		provinces_to_highlight = {
+			low_countries_region = {
+				type = all
+				not = { or = {
+					has_building = fort_17th
+					has_building = fort_18th
+					}
+				}	
+			}
+			flanders_area = {
+				type = all
+				NOT = {
+					development = 30
+				}
+			}
+		}
+		trigger = {
+			NOT = { unrest = -4 }
+			flanders_area = {
+				type = all
+				development = 30
+			}
+			num_of_owned_provinces_with = {
+				value = 8
+				region = low_countries_region
+				or = {
+					has_building = fort_17th
+					has_building = fort_18th
+
+				}
+			}
+			has_global_modifier_value = {
+				which = trade_efficiency
+				value = 0.45
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ned_flemish_bonus
+				duration = -1
+			}
+			flanders_area = {
+				add_province_modifier = {
+					name = flanders_field
+					duration = -1
+				}
+			}
+			brabant_area = {
+				add_province_modifier = {
+					name = flanders_field
+					duration = -1
+				}
+			}
+			wallonia_area = {
+				add_province_modifier = {
+					name = flanders_field
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+ned_walloon_specific = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		or = {
+			was_tag = ned
+			tag = NED
+			tag = NT3
+		}
+			or = {
+			primary_culture = wallonian
+			was_tag = BUR
+			was_tag = BRB
+			}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	wallonian_primacy = {
+		icon = consolidate_the_stadholders
+		required_missions = { ned_religious_unity }	
+		trigger = {
+			low_countries_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			set_country_flag = walloon_specific
+			country_event = {
+				id = beaus_rhine.6
+			}
+			add_prestige = 25
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+		}
+	}
+	wallonian_industry = {
+		icon = consolidate_the_stadholders
+		required_missions = { wallonian_primacy }	
+		trigger = {
+			adm_tech = 17
+			NOT = { unrest = -4 }
+			adm_power = 100
+			dip_power = 50
+		}
+		effect = {
+			add_adm_power = -100
+			add_dip_power = -50
+			add_country_modifier = {
+				name = ned_walloon_bonus
+				duration = -1
+			}
+			92 = {change_trade_goods = iron}
+			4769 = {change_trade_goods = iron}
+			1866 = {change_trade_goods = coal }
+			1742 = {change_trade_goods = coal }
+		}
+	}
+}
+
+ned_frisian_specific = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		or = {
+			was_tag = ned
+			tag = NED
+			tag = NT4
+		}
+		primary_culture = frisian
+		not = {was_tag = BUR}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	frisian_primacy = {
+		icon = consolidate_the_stadholders
+		required_missions = { ned_religious_unity }	
+		trigger = {
+			low_countries_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			set_country_flag = frisian_specific
+			country_event = {
+				id = beaus_rhine.6
+			}
+			add_prestige = 25
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+		}
+	}
+	free_frisians = {
+		icon = consolidate_the_stadholders
+		required_missions = { frisian_primacy }	
+		trigger = {
+			NOT = { unrest = -4 }
+			or = {
+				and = {
+					weser_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = root
+					}
+					holstein_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = root
+					}
+					adm_power = 100
+					prestige = 25
+				}
+				and = {
+					weser_area = {
+						type = all
+						owner = {
+							alliance_with = root
+							has_opinion = {
+								who = ROOT 
+								value = 165 
+							}
+							trust = {
+								who = root
+								value = 70
+							}
+						}
+					}
+					holstein_area = {
+						type = all
+						owner = {
+							alliance_with = root
+							has_opinion = {
+								who = ROOT 
+								value = 165 
+							}
+							trust = {
+								who = root
+								value = 70
+							}
+						}
+					}
+					dip_power = 50
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ned_frisian_bonus
+				duration = -1
+			}
+			add_government_reform = dutch_peasant_republic
+			custom_tooltip = frisian_final
+			hidden_effect = {
+				if = {
+					limit = { 
+						weser_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = root
+						}
+						holstein_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = root
+						} 
+					}
+					weser_area = {
+						add_core = NT4
+						change_culture = frisian
+					}
+					holstein_area = {
+						add_core = NT4
+						change_culture = frisian
+					}
+					add_adm_power = -100
+					add_prestige = -20
+				}
+				else = {
+					weser_area = {
+						add_province_modifier = {
+							name = frisian_communities
+							duration = -1
+						}
+					}
+					holstein_area = {
+						add_province_modifier = {
+							name = frisian_communities
+							duration = -1
+						}
+					}
+					45 = {
+						add_trade_modifier = {
+							who = root
+							duration = -1
+							power = 25
+							key = DUTCH_CHANNEL_SUPREMACY
+						}
+					}
+					add_dip_power = -50
+					add_prestige = 20
+				}	
+			}
+		}
+	}
+}
 emp_ned_slot1_branch = {
 	slot = 1
 	generic = no
@@ -81,6 +484,10 @@ emp_ned_slot1_branch = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = batavia_rewards
+				duration = -1
 			}
 		}
 	}
@@ -1507,3 +1914,5 @@ emp_ned_slot5_colony_branch = {
 		}
 	}
 }
+
+

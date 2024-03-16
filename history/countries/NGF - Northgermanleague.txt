@@ -1,5 +1,0 @@
-government = monarchy
-primary_culture = saxon
-religion = protestant
-technology_group = western
-capital = 81	# Kassel
