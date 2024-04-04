@@ -121,3 +121,45 @@ merc_elite_crusaders = {
 		morale_damage_received = -0.10
 	}
 }
+
+
+
+
+merc__local_grand_company = {
+    regiments_per_development = 0.05
+    cavalry_weight = 0.1
+    artillery_weight = 0.1
+    cavalry_cap = 2
+    cost_modifier = 0.75
+    trigger = {
+        total_development = 150
+        is_allowed_to_recruit_mercenaries = yes
+    }
+    # No home province means local mercenary company
+}
+merc__local_grand_company_2 = {
+    regiments_per_development = 0.05
+    cavalry_weight = 0.1
+    artillery_weight = 0.1
+    cavalry_cap = 2
+    cost_modifier = 0.75
+    trigger = {
+        total_development = 150
+        is_allowed_to_recruit_mercenaries = yes
+		land_forcelimit = 200
+    }
+    # No home province means local mercenary company
+}
+merc__local_grand_company_3 = {
+    regiments_per_development = 0.05
+    cavalry_weight = 0.1
+    artillery_weight = 0.1
+    cavalry_cap = 2
+    cost_modifier = 0.75
+    trigger = {
+        total_development = 150
+        is_allowed_to_recruit_mercenaries = yes
+		land_forcelimit = 300
+    }
+    # No home province means local mercenary company
+}

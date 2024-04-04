@@ -16345,7 +16345,45 @@ NGF_ideas = {
 		infantry_power = 0.15
 	}
 }
-
+LJL_ideas = {
+	start = {
+		cavalry_cost = -0.15
+		global_manpower_modifier = 0.20
+	}
+	
+	bonus = {
+		cav_to_inf_ratio = 0.25
+	}
+	
+	trigger = {
+		tag = NGF
+	}
+	free = yes 
+	
+	LJL_idea_1 = {
+		prestige = 1
+	}
+	LJL_idea_2 = {
+		global_tax_modifier = 0.15
+	}
+	LJL_idea_3 = {
+		cavalry_power = 0.20
+		can_recruit_hussars = yes
+	}
+	LJL_idea_4 = {
+		idea_cost = -0.10
+	}
+	LJL_idea_5 = {
+		production_efficiency = 0.10
+		development_cost = -0.05
+	}
+	LJL_idea_6 = {
+		global_own_trade_power = 0.30
+	}
+	LJL_idea_7 = {
+		discipline = 0.05
+	}
+}
 SWA_ideas = {
 	start = {
 		global_manpower_modifier = 0.2
