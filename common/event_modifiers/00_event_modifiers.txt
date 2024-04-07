@@ -835,11 +835,10 @@ hire_privateers = {
 
 counter_reformation = {
 	global_heretic_missionary_strength = 0.03
-	papal_influence = 0.5
+	papal_influence = 1.5
+	global_religious_conversion_resistance = 0.5
 	missionaries = 2
 	tolerance_heretic = -2
-	technology_cost = 0.05
-	idea_cost = 0.05
 	religion = yes
 }
 
@@ -1554,14 +1553,14 @@ severe_tax_reduction = {
 }
 
 papal_blessing = {
-	prestige = 1
+	fire_damage_received = -0.075
 	land_morale = 0.10
 	religion = yes
 }
 
 papal_sanction_for_holy_war = {
 	manpower_recovery_speed = 0.15
-	land_maintenance_modifier = -0.10
+	shock_damage = 0.10
 	religion = yes
 }
 
