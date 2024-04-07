@@ -977,6 +977,7 @@ hormuz_naval:0"Portuguese Forts"
 tidemans_folly:0"§RKaptein Karl's§! Folly Beach"
 scicilian_gold_mine:0"Sicilian "Gold"(Sulfur) Mines"
 tidemans_folly_desc:0"Said to be the very fortifications of the legendary failed landing of §RKaptein Karl§!. the details are shrouded by the lack of survivors and the utter disbelief in the failure of the Kaptein. Said to be his sole failure in his career and his potential end, the site is built well, with no expense spared by the wealthy merchant al-gem shir. It stands to remind the people of how the unthinkable isn't untenable."
+bordeax_port:0"Port of Bordeaux"
 
 #events 
 beaus_event_mobilization_1:0"§R[Root.Country.GetAdjective]§! Mobilization"

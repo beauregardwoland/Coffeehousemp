@@ -281,7 +281,8 @@ bordeax_port = {
 			province_trade_power_modifier = 0.10
 		}
 		country_modifiers = {
-			
+			range = 0.10
+			global_colonial_growth = 10
 		}
 		on_upgraded = {
 			owner = {
@@ -298,14 +299,21 @@ bordeax_port = {
 			factor = 1500
 		}
 		province_modifiers = {
-			
+			trade_value = 1.5
+		}
+		region_modifier = {
+			province_trade_power_modifier = 0.20
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			
+			range = 0.20
+			global_colonial_growth = 20
 		}
 		on_upgraded = {
+			owner = {
+				add_mercantilism = 3
+			}
 		}
 	}
 
@@ -317,14 +325,21 @@ bordeax_port = {
 			factor = 3000
 		}
 		province_modifiers = {
-			
+			trade_value = 2
+		}
+		region_modifier = {
+			province_trade_power_modifier = 0.35
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			
+			range = 0.20
+			global_colonial_growth = 30
 		}
 		on_upgraded = {
+			owner = {
+				add_mercantilism = 5
+			}
 		}
 	}
 }
