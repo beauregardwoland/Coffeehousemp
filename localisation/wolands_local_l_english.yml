@@ -978,6 +978,33 @@ tidemans_folly:0"§RKaptein Karl's§! Folly Beach"
 scicilian_gold_mine:0"Sicilian "Gold"(Sulfur) Mines"
 tidemans_folly_desc:0"Said to be the very fortifications of the legendary failed landing of §RKaptein Karl§!. the details are shrouded by the lack of survivors and the utter disbelief in the failure of the Kaptein. Said to be his sole failure in his career and his potential end, the site is built well, with no expense spared by the wealthy merchant al-gem shir. It stands to remind the people of how the unthinkable isn't untenable."
 bordeax_port:0"Port of Bordeaux"
+lousaina_port:0"Mouth of the Mississippi"
+lousiana_port_1:0"Mouth of the Mississippi Tier 1"
+desc_lousiana_port_1:0""
+lousiana_port_2:0"Mouth of the Mississippi Tier 2"
+desc_lousiana_port_2:0""
+lousiana_port_3:0"Mouth of the Mississippi Tier 3"
+desc_lousiana_port_3:0""
+LOUSIANA_FUR:0"Mississippian Economic Boom"
+beaus_price_change_1:0"Mississippian Economic Boom"
+beaus_price_change_1_desc:0"The port facilities at louisiana have bolstered commerce along the Mississippi and have caused an explosion of exports of goods from the indians, hunters and resources across the plains of America. These exports have now reahed some of their height of transport  much to the deligt of our coffers."
+beaus_price_change_1_a:0"Control of the Mississippi has never been better."
+lousiana_port_tt:0"Upon being upgraded global modifiers will aply to colonial overlord"
+
+new_england_port:0"Lumber yards of New England"
+new_england_port_1:0"Lumber yards of New England Tier 1"
+desc_new_england_port_1:0""
+new_england_port_2:0"Lumber yards of New England Tier 2"
+desc_new_england_port_2:0""
+new_england_port_3:0"Lumber yards of New England Tier 3"
+desc_new_england_port_3:0""
+
+NEW_ENGLAND_TIMBER:0"New English timber export boom"
+beaus_price_change_2:0"New English timber export boom"
+beaus_price_change_2_desc:0"Timber in the new world has been after millennia of being exploited has become quite controlled and rationed in across regions. Here in the eastern cost of America however there lies vast forests full of various good timbers that have largely remained unexploited untill now."
+beaus_price_change_2_a:0"America a land of infinite resources."
+
+
 
 #events 
 beaus_event_mobilization_1:0"§R[Root.Country.GetAdjective]§! Mobilization"

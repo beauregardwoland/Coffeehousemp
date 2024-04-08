@@ -401,3 +401,39 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = beaus_event_mobilization.33
+	title = "beaus_price_change_1"
+	desc = "beaus_price_change_1_desc"
+	major = yes
+	picture = LIBERUM_VETO_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "beaus_price_change_1_a"
+		change_price = {
+			trade_goods = fur
+			key = LOUSIANA_FUR
+			value = 0.15
+			duration = -1
+		}
+
+	}
+}
+country_event = {
+	id = beaus_event_mobilization.34
+	title = "beaus_price_change_2"
+	desc = "beaus_price_change_2_desc"
+	major = yes
+	picture = LIBERUM_VETO_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "beaus_price_change_2_a"
+		change_price = {
+			trade_goods = naval_supplies
+			key = NEW_ENGLAND_TIMBER
+			value = 0.30
+			duration = -1
+		}
+	}
+}

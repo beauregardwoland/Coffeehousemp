@@ -343,3 +343,345 @@ bordeax_port = {
 		}
 	}
 }
+
+lousaina_port = {
+	start = 893 
+	date = 100.01.01	
+	time = { months = 0	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
+
+	build_trigger = {
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+	}
+
+	can_upgrade_trigger = {
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+			trade_value = 1
+		}
+		area_modifier = {
+			local_defensiveness = 0.06
+		}
+		region_modifier = {
+			trade_goods_size = 0.2
+		}
+		country_modifiers = {
+			global_foreign_trade_power = 0.05
+		}
+		on_upgraded = {
+			custom_tooltip = lousiana_port_tt
+			hidden_effect = {
+				owner = {
+					if = {
+						limit = { 
+							is_colonial_nation = yes
+						}
+						overlord = {
+							louisiana_port_effect = yes
+							add_country_modifier = {
+								name = "lousiana_port_1"
+								duration = -1
+							}
+	
+						}
+					}
+				}
+			}
+			
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1500
+		}
+		province_modifiers = {
+			trade_value = 1.5
+		}
+		region_modifier = {
+			local_friendly_movement_speed = 0.10
+		}
+		area_modifier = {
+			local_defensiveness = 0.15
+		}
+		country_modifiers = {
+			global_foreign_trade_power = 0.10
+		}
+		on_upgraded = {
+			custom_tooltip = lousiana_port_tt
+			hidden_effect = {
+				owner = {
+					if = {
+						limit = { 
+							is_colonial_nation = yes
+						}
+						overlord = {
+							louisiana_port_effect = yes
+							add_country_modifier = {
+								name = "lousiana_port_2"
+								duration = -1
+							}
+	
+						}
+					}
+				}
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			trade_value = 1.5
+		}
+		region_modifier = {
+			local_friendly_movement_speed = 0.15
+		}
+		area_modifier = {
+			local_defensiveness = 0.25
+		}
+		country_modifiers = {
+			global_foreign_trade_power = 0.20
+		}
+		on_upgraded = {
+			custom_tooltip = lousiana_port_tt
+			hidden_effect = {
+				owner = {
+					if = {
+						limit = { 
+							is_colonial_nation = yes
+						}
+						overlord = {
+							louisiana_port_effect = yes
+							add_country_modifier = {
+								name = "lousiana_port_3"
+								duration = -1
+							}
+							country_event = {
+								id = beaus_event_mobilization.33
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+new_england_port = {
+	start = 1499 
+	date = 100.01.01	
+	time = { months = 0	}
+	build_cost = 0
+	can_be_moved = no
+	move_days_per_unit_distance = 10
+	starting_tier = 0
+	type = monument
+
+	build_trigger = {
+	}
+
+	on_built = {
+	}
+
+	on_destroyed = {
+	}
+
+	can_use_modifiers_trigger = {
+	}
+
+	can_upgrade_trigger = {
+	}
+
+	keep_trigger = {
+	}
+
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = {
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+			trade_value = 1
+		}
+		area_modifier = {
+
+		}
+		region_modifier = {
+			local_build_cost = -0.05
+		}
+		country_modifiers = {
+			ship_recruit_speed = -0.05
+		}
+		on_upgraded = {
+			custom_tooltip = lousiana_port_tt
+			hidden_effect = {
+				owner = {
+					if = {
+						limit = { 
+							is_colonial_nation = yes
+						}
+						overlord = {
+							louisiana_port_effect = yes
+							add_country_modifier = {
+								name = "new_england_port_1"
+								duration = -1
+							}
+	
+						}
+					}
+				}
+			}
+			
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 1500
+		}
+		province_modifiers = {
+			
+		}
+		region_modifier = {
+			local_build_cost = -0.10
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			ship_recruit_speed = -0.10
+		}
+		on_upgraded = {
+			custom_tooltip = lousiana_port_tt
+			hidden_effect = {
+				owner = {
+					if = {
+						limit = { 
+							is_colonial_nation = yes
+						}
+						overlord = {
+							louisiana_port_effect = yes
+							add_country_modifier = {
+								name = "new_england_port_2"
+								duration = -1
+							}
+	
+						}
+					}
+				}
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 3000
+		}
+		province_modifiers = {
+			
+		}
+		region_modifier = {
+			local_build_cost = -0.15
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+			ship_recruit_speed = -0.20
+		}
+		on_upgraded = {
+			custom_tooltip = lousiana_port_tt
+			hidden_effect = {
+				owner = {
+					if = {
+						limit = { 
+							is_colonial_nation = yes
+						}
+						overlord = {
+							louisiana_port_effect = yes
+							add_country_modifier = {
+								name = "new_england_port_3"
+								duration = -1
+							}
+							country_event = {
+								id = beaus_event_mobilization.34
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

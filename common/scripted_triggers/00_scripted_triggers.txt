@@ -648,6 +648,7 @@ was_never_german_regional_tag_trigger = {	#Country Scope
 	NOT = { was_tag = FKN }
 	NOT = { was_tag = WES }
 	NOT = { was_tag = HAN }
+	NOT = { was_tag = HSA }
 	
 	NOT = { tag = BRA }
 	NOT = { tag = PRU }
@@ -659,6 +660,7 @@ was_never_german_regional_tag_trigger = {	#Country Scope
 	NOT = { tag = FKN }
 	NOT = { tag = WES }
 	NOT = { tag = HAN }
+	NOT = { tag = HSA }
 	NOT = { tag = NGF }
 	NOT = { tag = SGF }
 	NOT = { tag = RHI }

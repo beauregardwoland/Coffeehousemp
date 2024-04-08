@@ -22,7 +22,7 @@ merc_gendarme = {
 	modifier = { 
 		cavalry_shock = 0.4
 		cav_to_inf_ratio = 1
-		discipline = 0.075
+		discipline = 0.05
 	}
 }
 
@@ -50,7 +50,7 @@ merc_landsknecht = {
 	}
 	}
 	modifier = { 
-		discipline = 0.075
+		discipline = 0.05
 		infantry_shock = 0.3
 	}
 }
