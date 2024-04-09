@@ -437,3 +437,20 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = beaus_event_mobilization.35
+	title = "beaus_price_change_3"
+	desc = "beaus_price_change_3_desc"
+	major = yes
+	picture = LIBERUM_VETO_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "beaus_price_change_3_a"
+		change_price = {
+			trade_goods = fish
+			key = GRAND_BANK_FISHERIES_STABLE
+			value = 0.30
+			duration = -1
+		}
+	}
+}

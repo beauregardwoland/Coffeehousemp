@@ -25,14 +25,221 @@ louisiana_port_effect = {
 	remove_country_modifier = lousiana_port_2
 	remove_country_modifier = lousiana_port_3
 }
+louisiana_port_overlord = {
+	if = {
+		limit = { 
+			has_great_project = {
+				type = lousaina_port
+				tier = 1
+			}
+		}
+		every_country = {
+			louisiana_port_effect = yes
+		}
+		owner = {
+			overlord = {
+				add_country_modifier = {
+					name = lousiana_port_1
+					duration = -1
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = { 
+			has_great_project = {
+				type = lousaina_port
+				tier = 2
+			}
+		}every_country = {
+			louisiana_port_effect = yes
+		}
+		owner = {
+			overlord = {
+				add_country_modifier = {
+					name = lousiana_port_2
+					duration = -1
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_great_project = {
+				type = lousaina_port
+				tier = 3
+			}
+		}
+		every_country = {
+			louisiana_port_effect = yes
+		}
+		owner = {
+			overlord = {
+				add_country_modifier = {
+					name = lousiana_port_3
+					duration = -1
+				}
+			}
+		}
+	}
+}
 new_england_port_effect = {
 	remove_country_modifier = new_england_port_1
 	remove_country_modifier = new_england_port_2
 	remove_country_modifier = new_england_port_3
 }
+new_england_overlord = {
+	if = {
+		limit = { 
+			has_great_project = {
+				type = new_england_port
+				tier = 1
+			}
+		}
+		every_country = {
+			new_england_port_effect = yes
+		}
+		owner = {
+			overlord = {
+				add_country_modifier = {
+					name = new_england_port_1
+					duration = -1
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = { 
+			has_great_project = {
+				type = new_england_port
+				tier = 2
+			}
+		}every_country = {
+			new_england_port_effect = yes
+		}
+		owner = {
+			overlord = {
+				add_country_modifier = {
+					name = new_england_port_2
+					duration = -1
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_great_project = {
+				type = new_england_port
+				tier = 3
+			}
+		}
+		every_country = {
+			new_england_port_effect = yes
+		}
+		owner = {
+			overlord = {
+				add_country_modifier = {
+					name = new_england_port_3
+					duration = -1
+				}
+			}
+		}
+	}
+}
+newfoundland_port_effect = {
+	remove_country_modifier = newfoundland_port_1
+	remove_country_modifier = newfoundland_port_2
+	remove_country_modifier = newfoundland_port_3
+}
+newfoundland_port_overlord = {
+	if = {
+		limit = { 
+			has_great_project = {
+				type = newfoundland_port
+				tier = 1
+			}
+		}
+		every_country = {
+			new_england_port_effect = yes
+		}
+		owner = {
+			overlord = {
+				add_country_modifier = {
+					name = newfoundland_port_1
+					duration = -1
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = { 
+			has_great_project = {
+				type = newfoundland_port
+				tier = 2
+			}
+		}every_country = {
+			newfoundland_port_effect = yes
+		}
+		owner = {
+			overlord = {
+				add_country_modifier = {
+					name = newfoundland_port_2
+					duration = -1
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_great_project = {
+				type = newfoundland_port
+				tier = 3
+			}
+		}
+		every_country = {
+			newfoundland_port_effect = yes
+		}
+		owner = {
+			overlord = {
+				add_country_modifier = {
+					name = newfoundland_port_3
+					duration = -1
+				}
+			}
+		}
+	}
+}
+carolinas_port_effect = {
+	remove_country_modifier = carolinas_port_1
+	remove_country_modifier = carolinas_port_2
+	remove_country_modifier = carolinas_port_3
+}
+guatamala_port_effect = {
+	remove_country_modifier = guatamala_port_1
+	remove_country_modifier = guatamala_port_2
+	remove_country_modifier = guatamala_port_3
+}
+suriname_port_effect = {
+	remove_country_modifier = suriname_port_1
+	remove_country_modifier = suriname_port_1
+	remove_country_modifier = suriname_port_1
+}
+porto_seguro_port_effect = {
+	remove_country_modifier = porto_seguro_port_1
+	remove_country_modifier = porto_seguro_port_2
+	remove_country_modifier = porto_seguro_port_3
+}
 
 
 
+
+
+
+new_england_port_effect = {
+	#remove_country_modifier = 
+	#remove_country_modifier = 
+	#remove_country_modifier = 
+}
 nav_excises = {
 	remove_country_modifier = naval_prof_reverse
 }
