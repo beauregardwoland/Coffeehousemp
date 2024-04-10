@@ -28,53 +28,7 @@ louisiana_port_effect = {
 louisiana_port_overlord = {
 	if = {
 		limit = {
-			983 = {
-				has_great_project = {
-					type = lousaina_port
-					tier = 1
-				}
-			} 
-		}
-		every_country = {
-			louisiana_port_effect = yes
-		}
-		983 = {
-			owner = {
-				overlord = {
-					add_country_modifier = {
-						name = lousiana_port_1
-						duration = -1
-					}
-				}
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			983 = {
-				has_great_project = {
-					type = lousaina_port
-					tier = 2
-				}
-			} 
-		}
-		every_country = {
-			louisiana_port_effect = yes
-		}
-		983 = {
-			owner = {
-				overlord = {
-					add_country_modifier = {
-						name = lousiana_port_2
-						duration = -1
-					}
-				}
-			}
-		}
-	}
-	else_if = {
-		limit = {
-			983 = {
+			893 = {
 				has_great_project = {
 					type = lousaina_port
 					tier = 3
@@ -82,9 +36,14 @@ louisiana_port_overlord = {
 			} 
 		}
 		every_country = {
-			louisiana_port_effect = yes
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				louisiana_port_effect = yes
+			}
 		}
-		983 = {
+		893 = {
 			owner = {
 				overlord = {
 					add_country_modifier = {
@@ -97,7 +56,63 @@ louisiana_port_overlord = {
 	}
 	else_if = {
 		limit = {
-			983 = {
+			893 = {
+				has_great_project = {
+					type = lousaina_port
+					tier = 2
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				louisiana_port_effect = yes
+			}
+		}
+		893 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = lousiana_port_2
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			893 = {
+				has_great_project = {
+					type = lousaina_port
+					tier = 1
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				louisiana_port_effect = yes
+			}
+		}
+		893 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = lousiana_port_1
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			893 = {
 				has_great_project = {
 					type = lousaina_port
 					tier = 0
@@ -105,7 +120,12 @@ louisiana_port_overlord = {
 			} 
 		}
 		every_country = {
-			louisiana_port_effect = yes
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				louisiana_port_effect = yes
+			}
 		}
 	}
 }
@@ -120,18 +140,23 @@ new_england_overlord = {
 			968 = {
 				has_great_project = {
 					type = new_england_port
-					tier = 1
+					tier = 3
 				}
 			} 
 		}
 		every_country = {
-			new_england_port_effect = yes
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				new_england_port_effect = yes
+			}
 		}
 		968 = {
 			owner = {
 				overlord = {
 					add_country_modifier = {
-						name = new_england_port_1
+						name = new_england_port_3
 						duration = -1
 					}
 				}
@@ -148,7 +173,12 @@ new_england_overlord = {
 			} 
 		}
 		every_country = {
-			new_england_port_effect = yes
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				new_england_port_effect = yes
+			}
 		}
 		968 = {
 			owner = {
@@ -166,18 +196,23 @@ new_england_overlord = {
 			968 = {
 				has_great_project = {
 					type = new_england_port
-					tier = 3
+					tier = 1
 				}
 			} 
 		}
 		every_country = {
-			new_england_port_effect = yes
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				new_england_port_effect = yes
+			}
 		}
 		968 = {
 			owner = {
 				overlord = {
 					add_country_modifier = {
-						name = new_england_port_3
+						name = new_england_port_1
 						duration = -1
 					}
 				}
@@ -194,7 +229,12 @@ new_england_overlord = {
 			} 
 		}
 		every_country = {
-			new_england_port_effect = yes
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				new_england_port_effect = yes
+			}
 		}
 	}
 }
@@ -209,18 +249,23 @@ newfoundland_port_overlord = {
 			980 = {
 				has_great_project = {
 					type = newfoundland_port
-					tier = 1
+					tier = 3
 				}
 			} 
 		}
 		every_country = {
-			newfoundland_port_effect = yes
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				newfoundland_port_effect = yes
+			}
 		}
 		980 = {
 			owner = {
 				overlord = {
 					add_country_modifier = {
-						name = newfoundland_port_1
+						name = newfoundland_port_3
 						duration = -1
 					}
 				}
@@ -237,7 +282,12 @@ newfoundland_port_overlord = {
 			} 
 		}
 		every_country = {
-			newfoundland_port_effect = yes
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				newfoundland_port_effect = yes
+			}
 		}
 		980 = {
 			owner = {
@@ -255,18 +305,23 @@ newfoundland_port_overlord = {
 			980 = {
 				has_great_project = {
 					type = newfoundland_port
-					tier = 3
+					tier = 1
 				}
 			} 
 		}
 		every_country = {
-			newfoundland_port_effect = yes
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				newfoundland_port_effect = yes
+			}
 		}
 		980 = {
 			owner = {
 				overlord = {
 					add_country_modifier = {
-						name = new_england_port_3
+						name = newfoundland_port_1
 						duration = -1
 					}
 				}
@@ -283,7 +338,12 @@ newfoundland_port_overlord = {
 			} 
 		}
 		every_country = {
-			newfoundland_port_effect = yes
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				newfoundland_port_effect = yes
+			}
 		}
 	}
 }
@@ -292,20 +352,436 @@ carolinas_port_effect = {
 	remove_country_modifier = carolinas_port_2
 	remove_country_modifier = carolinas_port_3
 }
+carolinas_port_overlord = {
+	if = {
+		limit = {
+			932 = {
+				has_great_project = {
+					type = carolinas_port
+					tier = 3
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				carolinas_port_effect = yes
+			}
+		}
+		932 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = carolinas_port_3
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			932 = {
+				has_great_project = {
+					type = carolinas_port
+					tier = 2
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				carolinas_port_effect = yes
+			}
+		}
+		932 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = carolinas_port_2
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			932 = {
+				has_great_project = {
+					type = carolinas_port
+					tier = 1
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				carolinas_port_effect = yes
+			}
+		}
+		932 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = carolinas_port_1
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			932 = {
+				has_great_project = {
+					type = carolinas_port
+					tier = 0
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				carolinas_port_effect = yes
+			}
+		}
+	}
+}
 guatamala_port_effect = {
 	remove_country_modifier = guatamala_port_1
 	remove_country_modifier = guatamala_port_2
 	remove_country_modifier = guatamala_port_3
+}
+guatamala_port_overlord = {
+	if = {
+		limit = {
+			2636 = {
+				has_great_project = {
+					type = guatamala_port
+					tier = 3
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				guatamala_port_effect = yes
+			}
+		}
+		2636 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = guatamala_port_3
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			2636 = {
+				has_great_project = {
+					type = guatamala_port
+					tier = 2
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				guatamala_port_effect = yes
+			}
+		}
+		2636 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = guatamala_port_2
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			2636 = {
+				has_great_project = {
+					type = guatamala_port
+					tier = 1
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				guatamala_port_effect = yes
+			}
+		}
+		2636 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = guatamala_port_1
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			2636 = {
+				has_great_project = {
+					type = guatamala_port
+					tier = 0
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				guatamala_port_effect = yes
+			}
+		}
+	}
 }
 suriname_port_effect = {
 	remove_country_modifier = suriname_port_1
 	remove_country_modifier = suriname_port_1
 	remove_country_modifier = suriname_port_1
 }
+suriname_port_overlord = {
+	if = {
+		limit = {
+			745 = {
+				has_great_project = {
+					type = suriname_port
+					tier = 3
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				suriname_port_effect = yes
+			}
+		}
+		745 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = suriname_port_3
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			745 = {
+				has_great_project = {
+					type = suriname_port
+					tier = 2
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				suriname_port_effect = yes
+			}
+		}
+		745 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = suriname_port_2
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			745 = {
+				has_great_project = {
+					type = suriname_port
+					tier = 1
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				suriname_port_effect = yes
+			}
+		}
+		745 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = suriname_port_1
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			745 = {
+				has_great_project = {
+					type = suriname_port
+					tier = 0
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				suriname_port_effect = yes
+			}
+		}
+	}
+}
 porto_seguro_port_effect = {
 	remove_country_modifier = porto_seguro_port_1
 	remove_country_modifier = porto_seguro_port_2
 	remove_country_modifier = porto_seguro_port_3
+}
+porto_seguroport_overlord = {
+	if = {
+		limit = {
+			757 = {
+				has_great_project = {
+					type = porto_seguro_port
+					tier = 3
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				porto_seguro_port_effect = yes
+			}
+		}
+		757 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = porto_seguro_port_3
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			757 = {
+				has_great_project = {
+					type = porto_seguro_port
+					tier = 2
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				porto_seguro_port_effect = yes
+			}
+		}
+		757 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = porto_seguro_port_2
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			757 = {
+				has_great_project = {
+					type = porto_seguro_port
+					tier = 1
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				porto_seguro_port_effect = yes
+			}
+		}
+		757 = {
+			owner = {
+				overlord = {
+					add_country_modifier = {
+						name = porto_seguro_port_1
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			757 = {
+				has_great_project = {
+					type = porto_seguro_port
+					tier = 0
+				}
+			} 
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			hidden_effect = {
+				porto_seguro_port_effect = yes
+			}
+		}
+	}
 }
 
 
