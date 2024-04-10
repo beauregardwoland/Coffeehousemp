@@ -15258,6 +15258,45 @@ TUN_ideas = {
 	}
 }
 
+IFR_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.25
+		galley_power = 0.25		
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = IFR
+	}
+	free = yes
+	saharan_logistics = {
+		land_attrition = -0.20
+	}
+	berber_ferocity = {
+		shock_damage = 0.10
+	}
+	african_scholarship = {
+		idea_cost = -0.05
+	}
+	mandinka_cavalry = {
+		cavalry_power = 0.2
+		cav_to_inf_ratio = 0.25
+	}
+	african_syncretism = {
+		monthly_piety_accelerator = 0.001
+		global_tax_modifier = 0.15
+	}
+	sahel_trade_links = {
+		global_own_trade_power = 0.15
+		trade_efficiency = 0.10
+	}
+	barbary_corsairs = {
+		privateer_efficiency = 0.3
+	}
+	
+}
+
 TEX_ideas = {
 	start = {	
 		fire_damage_received = -0.1

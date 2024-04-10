@@ -350,6 +350,7 @@ MZB = "countries/Mzab.txt"
 SLE = "countries/Sale.txt"
 TET = "countries/Tetouan.txt"
 MRK = "countries/Marrakesh.txt"
+IFR = "countries/Ifriqiya.txt"
 
 #Central Asia
 KZH	= "countries/Kazakh.txt"

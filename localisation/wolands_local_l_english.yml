@@ -22,6 +22,7 @@
  NT2:0 "Flanders-Wallonia"
  NT3:0 "Belgica"
  NT4:0 "Frisia"
+ IFR:0 "Ifriqiya"
  RHI_ADJ:0 "Rhenish"
  RH2_ADJ:0 "East Frankish"
  SGF_ADJ:0 "South German"
@@ -30,6 +31,7 @@
  NT2_ADJ:0 "Flemish_walloni"
  NT3_ADJ:0 "Belgian"
  NT4_ADJ:0 "Frisian"
+ IFR_ADJ:0 "Ifriqiyan"
 
  RHI_ideas:0"Rhenish Ideas"
  RHI_ideas_start:0"Rhenish Traditions"
