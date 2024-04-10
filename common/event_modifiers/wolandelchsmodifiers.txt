@@ -203,7 +203,10 @@ new_world_cooldown = {
 	global_tax_modifier = -0.05
 }
 #missions
-
+ita_med_bonus = {
+	naval_forcelimit = 2
+	local_production_efficiency = 0.25
+}
 rhi_fleet_experience = {
 	global_ship_recruit_speed = -0.20
 	global_ship_cost = -0.15

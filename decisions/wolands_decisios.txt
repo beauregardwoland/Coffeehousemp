@@ -34,57 +34,5 @@ country_decisions = {
 		}
 	}
 
-	colonial_check = {
-		color = { 195 160 20 }
-		potential = {
-			or = {
-				any_owned_province = {
-					or = {
-						superregion = north_america_superregion
-						superregion = south_america_superregion
-					}
-				}
-				any_subject_country = {
-					is_colonial_nation = yes
-				}
-			}
-			
-			ai = no
-		}
-		allow = {
-			NOT = {
-				has_country_modifier = new_world_cooldown
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = new_world_cooldown
-				duration = 60
-			}
-			if = {
-				limit = {
-					983 = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
-				983 = {
-					louisiana_port_overlord = yes
-				}
-			}
-			if = {
-				limit = {
-					968 = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
-				968 = {
-					new_england_overlord = yes
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	
 }
-#piss
