@@ -635,6 +635,10 @@ natural_science7:0"Preventing Famine"
 natural_science7_desc:0"Famine and starvation are somewhat seasonal but can be spurred from any number of disasters. Taking measures to improve preservation and ensure disease doesn't rifle through our store houses is necessary."
 
 ##########policies
+tier1_policies:0"Requires at least one completed idea group of related mana."
+tier2_policies:0"Requires at least two completed idea group of related mana."
+tier3_policies:0"Requires at least three completed idea group of related mana."
+
 stab_1:0"Conciliatory approaches 1"
 stab_2:0"Conciliatory approaches 2"
 stab_3:0"Conciliatory approaches 3"

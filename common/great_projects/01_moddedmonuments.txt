@@ -302,7 +302,7 @@ bordeax_port = {
 			trade_value = 1.5
 		}
 		region_modifier = {
-			province_trade_power_modifier = 0.20
+			province_trade_power_modifier = 0.15
 		}
 		area_modifier = {
 		}
@@ -328,7 +328,7 @@ bordeax_port = {
 			trade_value = 2
 		}
 		region_modifier = {
-			province_trade_power_modifier = 0.35
+			province_trade_power_modifier = 0.25
 		}
 		area_modifier = {
 		}

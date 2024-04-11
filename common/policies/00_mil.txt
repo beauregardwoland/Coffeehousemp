@@ -19,27 +19,31 @@ conscript_miners_1 = {
 				full_idea_group = equipment_ideas
 				full_idea_group = mercenary_ideas
 				amount = 2
-				}
+			}
 		}
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 1
+		custom_trigger_tooltip = {
+			tooltip = tier1_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 1
+				}
 		}
+		
 		NOT = {
         calc_true_if = {
             amount = 1
@@ -84,22 +88,26 @@ conscript_miners_2 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-			full_idea_group = mercenary_ideas
-		amount = 2
+		custom_trigger_tooltip = {
+			tooltip = tier2_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+			amount = 2
+			}
 		}
+		
 		NOT = {
         calc_true_if = {
             amount = 1
@@ -124,22 +132,26 @@ conscript_miners_3 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 3
+		custom_trigger_tooltip = {
+			tooltip = tier3_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+			}
 		}
+		
 		NOT = {
         calc_true_if = {
             amount = 1
@@ -183,21 +195,24 @@ resevred_drill_1 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 1
+		custom_trigger_tooltip = {
+			tooltip = tier1_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 1
+				}
 		}
 		NOT = {
         calc_true_if = {
@@ -243,21 +258,24 @@ resevred_drill_2 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-			full_idea_group = mercenary_ideas
-		amount = 2
+		custom_trigger_tooltip = {
+			tooltip = tier2_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+			amount = 2
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -284,21 +302,24 @@ resevred_drill_3 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 3
+		custom_trigger_tooltip = {
+			tooltip = tier3_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -343,21 +364,24 @@ pressed_conscription_1 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 1
+		custom_trigger_tooltip = {
+			tooltip = tier1_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 1
+				}
 		}
 		NOT = {
         calc_true_if = {
@@ -403,21 +427,24 @@ pressed_conscription_2 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-			full_idea_group = mercenary_ideas
-		amount = 2
+		custom_trigger_tooltip = {
+			tooltip = tier2_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+			amount = 2
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -444,21 +471,24 @@ pressed_conscription_3 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 3
+		custom_trigger_tooltip = {
+			tooltip = tier3_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -503,21 +533,24 @@ full_stomachs_clean_sheats_1 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 1
+		custom_trigger_tooltip = {
+			tooltip = tier1_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 1
+				}
 		}
 		NOT = {
         calc_true_if = {
@@ -563,21 +596,24 @@ full_stomachs_clean_sheats_2 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-			full_idea_group = mercenary_ideas
-		amount = 2
+		custom_trigger_tooltip = {
+			tooltip = tier2_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+			amount = 2
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -603,21 +639,24 @@ full_stomachs_clean_sheats_3 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 3
+		custom_trigger_tooltip = {
+			tooltip = tier3_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -662,21 +701,24 @@ long_marches_1 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 1
+		custom_trigger_tooltip = {
+			tooltip = tier1_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 1
+				}
 		}
 		NOT = {
         calc_true_if = {
@@ -722,21 +764,24 @@ long_marches_2 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-full_idea_group = mercenary_ideas
-		amount = 2
+		custom_trigger_tooltip = {
+			tooltip = tier2_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+			amount = 2
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -762,21 +807,24 @@ long_marches_3 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 3
+		custom_trigger_tooltip = {
+			tooltip = tier3_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -822,21 +870,24 @@ infantry_arms_procurement_1 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 1
+		custom_trigger_tooltip = {
+			tooltip = tier1_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 1
+				}
 		}
 		NOT = {
         calc_true_if = {
@@ -882,21 +933,24 @@ infantry_arms_procurement_2 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-			full_idea_group = mercenary_ideas
-		amount = 2
+		custom_trigger_tooltip = {
+			tooltip = tier2_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+			amount = 2
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -922,21 +976,24 @@ infantry_arms_procurement_3 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 3
+		custom_trigger_tooltip = {
+			tooltip = tier3_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -981,21 +1038,24 @@ cavalry_arms_procurement_1 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-full_idea_group = mercenary_ideas
-		amount = 1
+		custom_trigger_tooltip = {
+			tooltip = tier1_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 1
+				}
 		}
 		NOT = {
         calc_true_if = {
@@ -1041,21 +1101,24 @@ full_idea_group = mercenary_ideas
 	}
 	
 	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-			full_idea_group = mercenary_ideas
-		amount = 2
+		custom_trigger_tooltip = {
+			tooltip = tier2_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+			amount = 2
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -1081,21 +1144,24 @@ cavalry_arms_procurement_3 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 3
+		custom_trigger_tooltip = {
+			tooltip = tier3_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -1108,327 +1174,6 @@ cavalry_arms_procurement_3 = {
 
 	cavalry_power = 0.15
 	cavalry_cost = 0.25 
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-
-storm_assualts_1 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 3
-		not = {
-			calc_true_if = {
-				full_idea_group = offensive_ideas
-				full_idea_group = defensive_ideas
-				full_idea_group = quality_ideas
-				full_idea_group = quantity_ideas
-				full_idea_group = irregularwarfare_ideas
-				full_idea_group = grand_warfare_ideas
-				full_idea_group = levy_ideas
-				full_idea_group = profesionalism_ideas
-				full_idea_group = infantry_backbone_ideas
-				full_idea_group = cavalry_backbone_ideas
-				full_idea_group = leadership_ideas
-				full_idea_group = equipment_ideas
-				full_idea_group = mercenary_ideas
-				amount = 2
-				}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = storm_assualts_2
-            has_active_policy = storm_assualts_3
-            }
-        }
-		mil_tech = 9
-    }
-
-	assault_fort_ability = 0.10
-	morale_damage = 0.075
-
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-
-storm_assualts_2 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 7
-		not = {
-			calc_true_if = {
-				full_idea_group = offensive_ideas
-				full_idea_group = defensive_ideas
-				full_idea_group = quality_ideas
-				full_idea_group = quantity_ideas
-				full_idea_group = irregularwarfare_ideas
-				full_idea_group = grand_warfare_ideas
-				full_idea_group = levy_ideas
-				full_idea_group = profesionalism_ideas
-				full_idea_group = infantry_backbone_ideas
-				full_idea_group = cavalry_backbone_ideas
-				full_idea_group = leadership_ideas
-				full_idea_group = equipment_ideas
-				full_idea_group = mercenary_ideas
-				amount = 3
-				}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-			full_idea_group = mercenary_ideas
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = storm_assualts_1
-            has_active_policy = storm_assualts_3
-            }
-        }
-    }
-
-	assault_fort_ability = 0.20
-	morale_damage = 0.15
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-storm_assualts_3 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 12
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = storm_assualts_2
-            has_active_policy = storm_assualts_1
-            }
-        }
-    }
-
-	assault_fort_ability = 0.30
-	morale_damage = 0.20
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-
-defensive_batteries_1 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 3
-		not = {
-			calc_true_if = {
-				full_idea_group = offensive_ideas
-				full_idea_group = defensive_ideas
-				full_idea_group = quality_ideas
-				full_idea_group = quantity_ideas
-				full_idea_group = irregularwarfare_ideas
-				full_idea_group = grand_warfare_ideas
-				full_idea_group = levy_ideas
-				full_idea_group = profesionalism_ideas
-				full_idea_group = infantry_backbone_ideas
-				full_idea_group = cavalry_backbone_ideas
-				full_idea_group = leadership_ideas
-				full_idea_group = equipment_ideas
-				full_idea_group = mercenary_ideas
-				amount = 2
-				}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = defensive_batteries_2
-            has_active_policy = defensive_batteries_3
-            }
-        }
-		mil_tech = 9
-    }
-
-	shock_damage_received  = -0.05
-	artillery_power = 0.025
-	movement_speed = -0.10
-
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-
-defensive_batteries_2 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 7
-		not = {
-			calc_true_if = {
-				full_idea_group = offensive_ideas
-				full_idea_group = defensive_ideas
-				full_idea_group = quality_ideas
-				full_idea_group = quantity_ideas
-				full_idea_group = irregularwarfare_ideas
-				full_idea_group = grand_warfare_ideas
-				full_idea_group = levy_ideas
-				full_idea_group = profesionalism_ideas
-				full_idea_group = infantry_backbone_ideas
-				full_idea_group = cavalry_backbone_ideas
-				full_idea_group = leadership_ideas
-				full_idea_group = equipment_ideas
-full_idea_group = mercenary_ideas
-				amount = 3
-				}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-full_idea_group = mercenary_ideas
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = defensive_batteries_1
-            has_active_policy = defensive_batteries_3
-            }
-        }
-    }
-
-	shock_damage_received  = -0.075
-	artillery_power = 0.075
-	movement_speed = -0.15 
-	
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-defensive_batteries_3 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 12
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-full_idea_group = mercenary_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = defensive_batteries_2
-            has_active_policy = defensive_batteries_1
-            }
-        }
-    }
-
-	shock_damage_received  = -0.10
-	artillery_power = 0.15
-	movement_speed = -0.20
 	
 	ai_will_do = {
 		factor = 0.8		
@@ -1461,21 +1206,24 @@ peacetime_maintance_1 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-full_idea_group = mercenary_ideas
-		amount = 1
+		custom_trigger_tooltip = {
+			tooltip = tier1_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 1
+				}
 		}
 		NOT = {
         calc_true_if = {
@@ -1521,21 +1269,24 @@ full_idea_group = mercenary_ideas
 	}
 	
 	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-full_idea_group = mercenary_ideas
-		amount = 2
+		custom_trigger_tooltip = {
+			tooltip = tier2_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+			amount = 2
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -1561,21 +1312,24 @@ peacetime_maintance_3 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-full_idea_group = mercenary_ideas
-		amount = 3
+		custom_trigger_tooltip = {
+			tooltip = tier3_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -1620,21 +1374,24 @@ amphibous_operations_1 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-full_idea_group = mercenary_ideas
-		amount = 1
+		custom_trigger_tooltip = {
+			tooltip = tier1_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 1
+				}
 		}
 		NOT = {
         calc_true_if = {
@@ -1680,21 +1437,24 @@ amphibous_operations_2 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-			full_idea_group = mercenary_ideas
-		amount = 2
+		custom_trigger_tooltip = {
+			tooltip = tier2_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+			amount = 2
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -1721,21 +1481,24 @@ amphibous_operations_3 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-full_idea_group = mercenary_ideas
-		amount = 3
+		custom_trigger_tooltip = {
+			tooltip = tier3_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -1781,21 +1544,24 @@ full_idea_group = mercenary_ideas
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-full_idea_group = mercenary_ideas
-		amount = 1
+		custom_trigger_tooltip = {
+			tooltip = tier1_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 1
+				}
 		}
 		NOT = {
         calc_true_if = {
@@ -1841,21 +1607,24 @@ swift_recruitment_2 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-			full_idea_group = mercenary_ideas
-		amount = 2
+		custom_trigger_tooltip = {
+			tooltip = tier2_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+			amount = 2
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -1882,21 +1651,24 @@ swift_recruitment_3 = {
 	}
 	
 	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 3
+		custom_trigger_tooltip = {
+			tooltip = tier3_policies
+			calc_true_if = {
+				full_idea_group = offensive_ideas
+				full_idea_group = defensive_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = quantity_ideas
+				full_idea_group = irregularwarfare_ideas
+				full_idea_group = grand_warfare_ideas
+				full_idea_group = levy_ideas
+				full_idea_group = profesionalism_ideas
+				full_idea_group = infantry_backbone_ideas
+				full_idea_group = cavalry_backbone_ideas
+				full_idea_group = leadership_ideas
+				full_idea_group = equipment_ideas
+				full_idea_group = mercenary_ideas
+				amount = 3
+			}
 		}
 		NOT = {
         calc_true_if = {
@@ -1916,336 +1688,3 @@ swift_recruitment_3 = {
 	}
 }
 
-
-
-
-
-
-onto_the_melee_1 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 3
-		not = {
-			calc_true_if = {
-				full_idea_group = offensive_ideas
-				full_idea_group = defensive_ideas
-				full_idea_group = quality_ideas
-				full_idea_group = quantity_ideas
-				full_idea_group = irregularwarfare_ideas
-				full_idea_group = grand_warfare_ideas
-				full_idea_group = levy_ideas
-				full_idea_group = profesionalism_ideas
-				full_idea_group = infantry_backbone_ideas
-				full_idea_group = cavalry_backbone_ideas
-				full_idea_group = leadership_ideas
-				full_idea_group = equipment_ideas
-				full_idea_group = mercenary_ideas
-				amount = 2
-				}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = onto_the_melee_2
-            has_active_policy = onto_the_melee_3
-            }
-        }
-		NOT = { has_active_policy = fire_damage_1  }
-		mil_tech = 9
-    }
-
-	shock_damage = 0.10
-	fire_damage_received = -0.05
-	fire_damage = -0.025
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-
-onto_the_melee_2 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 7
-		not = {
-			calc_true_if = {
-				full_idea_group = offensive_ideas
-				full_idea_group = defensive_ideas
-				full_idea_group = quality_ideas
-				full_idea_group = quantity_ideas
-				full_idea_group = irregularwarfare_ideas
-				full_idea_group = grand_warfare_ideas
-				full_idea_group = levy_ideas
-				full_idea_group = profesionalism_ideas
-				full_idea_group = infantry_backbone_ideas
-				full_idea_group = cavalry_backbone_ideas
-				full_idea_group = leadership_ideas
-				full_idea_group = equipment_ideas
-				full_idea_group = mercenary_ideas
-				amount = 3
-				}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-			full_idea_group = mercenary_ideas
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = onto_the_melee_1
-            has_active_policy = onto_the_melee_3
-            }
-        }
-		NOT = { has_active_policy = fire_damage_2  }
-    }
-
-	shock_damage = 0.20
-	fire_damage_received = -0.10 
-	fire_damage = -0.05
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-onto_the_melee_3 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 12
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = onto_the_melee_2
-            has_active_policy = onto_the_melee_1
-            }
-        }
-		NOT = { has_active_policy = fire_damage_3  }
-    }
-
-	shock_damage = 0.30
-	fire_damage_received = -0.15
-	fire_damage = -0.075
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-
-
-
-
-fire_damage_1 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 3
-		not = {
-			calc_true_if = {
-				full_idea_group = offensive_ideas
-				full_idea_group = defensive_ideas
-				full_idea_group = quality_ideas
-				full_idea_group = quantity_ideas
-				full_idea_group = irregularwarfare_ideas
-				full_idea_group = grand_warfare_ideas
-				full_idea_group = levy_ideas
-				full_idea_group = profesionalism_ideas
-				full_idea_group = infantry_backbone_ideas
-				full_idea_group = cavalry_backbone_ideas
-				full_idea_group = leadership_ideas
-				full_idea_group = equipment_ideas
-				full_idea_group = mercenary_ideas
-				amount = 2
-				}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		
-		amount = 1
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = fire_damage_2
-            has_active_policy = fire_damage_3
-            }
-        }
-		NOT = { has_active_policy = onto_the_melee_1  }
-		mil_tech = 9
-    }
-
-	fire_damage = 0.10
-	morale_damage_received  = -0.05
-	shock_damage = -0.025
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-
-fire_damage_2 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 7
-		not = {
-			calc_true_if = {
-				full_idea_group = offensive_ideas
-				full_idea_group = defensive_ideas
-				full_idea_group = quality_ideas
-				full_idea_group = quantity_ideas
-				full_idea_group = irregularwarfare_ideas
-				full_idea_group = grand_warfare_ideas
-				full_idea_group = levy_ideas
-				full_idea_group = profesionalism_ideas
-				full_idea_group = infantry_backbone_ideas
-				full_idea_group = cavalry_backbone_ideas
-				full_idea_group = leadership_ideas
-				full_idea_group = equipment_ideas
-				full_idea_group = mercenary_ideas
-				amount = 3
-				}
-		}
-	}
-	
-	allow = {
-		calc_true_if = {
-			full_idea_group = offensive_ideas
-			full_idea_group = defensive_ideas
-			full_idea_group = quality_ideas
-			full_idea_group = quantity_ideas
-			full_idea_group = irregularwarfare_ideas
-			full_idea_group = grand_warfare_ideas
-			full_idea_group = levy_ideas
-			full_idea_group = profesionalism_ideas
-			full_idea_group = infantry_backbone_ideas
-			full_idea_group = cavalry_backbone_ideas
-			full_idea_group = leadership_ideas
-			full_idea_group = equipment_ideas
-			full_idea_group = mercenary_ideas
-		amount = 2
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = fire_damage_1
-            has_active_policy = fire_damage_3
-            }
-        }
-		NOT = { has_active_policy = onto_the_melee_2  }
-    }
-
-	fire_damage = 0.15
-	morale_damage_received = -0.075 
-	shock_damage = -0.05
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
-fire_damage_3 = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 12
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = irregularwarfare_ideas
-		full_idea_group = grand_warfare_ideas
-		full_idea_group = levy_ideas
-		full_idea_group = profesionalism_ideas
-		full_idea_group = infantry_backbone_ideas
-		full_idea_group = cavalry_backbone_ideas
-		full_idea_group = leadership_ideas
-		full_idea_group = equipment_ideas
-		full_idea_group = mercenary_ideas
-		amount = 3
-		}
-		NOT = {
-        calc_true_if = {
-            amount = 1
-            has_active_policy = fire_damage_2
-            has_active_policy = fire_damage_1
-            }
-        }
-		NOT = { has_active_policy = onto_the_melee_3  }
-    }
-
-	fire_damage = 0.25
-	morale_damage_received = -0.10
-	shock_damage = -0.075
-	ai_will_do = {
-		factor = 0.8		
-	}
-}
