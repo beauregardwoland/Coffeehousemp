@@ -226,19 +226,16 @@ GBR_ideas = {
 
 AVE_ideas = {
 	start = {
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.25
 		improve_relation_modifier = 0.3
 	}
-
 	bonus = {
 		years_of_nationalism = -5
 	}
-	
 	trigger = {
 		tag = AVE
 	}
 	free = yes		#will be added at load.
-
 	angevin_decentralized_rule = {
 		core_creation = -0.2
 	}
@@ -248,6 +245,7 @@ AVE_ideas = {
 	}
 	lessons_of_the_anglo_french_wars = {
 		discipline = 0.05
+		heavy_ship_hull_size = 0.075
 	}
 	the_many_thrones = {
 		heir_chance = 0.5
@@ -255,6 +253,7 @@ AVE_ideas = {
 	}
 	reformed_angevin_infantry = {
 		infantry_power = 0.1
+		naval_morale = 0.1
 	}
 	seneschal_of_france = {
 		governing_capacity_modifier = 0.15
@@ -15220,43 +15219,43 @@ MOR_ideas = {
 }
 
 TUN_ideas = {
-	start = {
-		galley_power = 0.2	
-		naval_attrition = -0.25	
-	}
-	bonus = {
-		naval_forcelimit_modifier = 0.25
-	}
-	trigger = {
-		tag = TUN
-	}
-	free = yes
-	dual_diplomacy = {
-		diplomatic_upkeep = 1
-	}
-	corsairs = {
-		navy_tradition = 1
-		privateer_efficiency = 0.10
-	}
-	tun_attract_foreign_pirates = {
-		global_sailors_modifier = 0.25
-	}
-	tun_board_of_captains = {
-		max_admiral_fire = 1
-	}
-	tun_export_monopolies = {
-		global_own_trade_power = 0.2
-		trade_efficiency = 0.05
-	}
-	tun_catalan_guard = {
-		infantry_shock = 1
-		infantry_power = 0.05
-	}
-	tun_caliphate = {
-		tolerance_own = 1
-		monthly_piety_accelerator = 0.001
-	}
+    start = {
+        global_sailors_modifier = 0.25
+        galley_power = 0.2
+    }
+    bonus = {
+        infantry_shock = 1
+    }
+    trigger = {
+        tag = TUN
+    }
+    free = yes
+    tun_catalan_guard = {
+        infantry_power = 0.1
+    }
+    dual_diplomacy = {
+        diplomatic_upkeep = 1
+    }
+    corsairs = {
+        navy_tradition = 1
+        privateer_efficiency = 0.10
+    }
+    tun_attract_foreign_pirates = {
+        naval_forcelimit_modifier = 0.25
+    }
+    tun_board_of_captains = {
+        max_admiral_fire = 1
+    }
+    tun_export_monopolies = {
+        global_own_trade_power = 0.2
+        trade_efficiency = 0.05
+    }
+    tun_caliphate = {
+        tolerance_own = 1
+        monthly_piety_accelerator = 0.001
+    }
 }
+
 
 TEX_ideas = {
 	start = {	
