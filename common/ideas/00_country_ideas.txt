@@ -15221,8 +15221,8 @@ MOR_ideas = {
 
 TUN_ideas = {
 	start = {
-		naval_attrition = -0.25
-		galley_power = 0.2		
+		galley_power = 0.2	
+		naval_attrition = -0.25	
 	}
 	bonus = {
 		naval_forcelimit_modifier = 0.25
@@ -15231,10 +15231,6 @@ TUN_ideas = {
 		tag = TUN
 	}
 	free = yes
-	tun_catalan_guard = {
-		mercenary_discipline = 0.05
-		infantry_power = 0.05
-	}
 	dual_diplomacy = {
 		diplomatic_upkeep = 1
 	}
@@ -15246,15 +15242,19 @@ TUN_ideas = {
 		global_sailors_modifier = 0.25
 	}
 	tun_board_of_captains = {
-		leader_naval_fire = 1
+		max_admiral_fire = 1
 	}
 	tun_export_monopolies = {
 		global_own_trade_power = 0.2
 		trade_efficiency = 0.05
 	}
+	tun_catalan_guard = {
+		infantry_shock = 1
+		infantry_power = 0.05
+	}
 	tun_caliphate = {
 		tolerance_own = 1
-		monthly_piety = 0.001
+		monthly_piety_accelerator = 0.001
 	}
 }
 

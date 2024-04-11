@@ -792,6 +792,22 @@ fire_damage_1:0"§R ***§!Keeping Distance 1 §R ***§!"
 fire_damage_2:0"§R ***§!Keeping Distance 2§R ***§!"
 fire_damage_3:0"§R ***§!Keeping Distance 3§R ***§!"
 
+bolster_garrisions_1:0"Bolster Garrisions 1"
+bolster_garrisions_2:0"Bolster Garrisions 2"
+bolster_garrisions_3:0"Bolster Garrisions 3"
+
+stricter_organiation_1:0"Strict Orginization 1"
+stricter_organiation_2:0"Strict Orginization 2"
+stricter_organiation_3:0"Strict Orginization 3"
+
+lossened_organiation_1:0"Officer Initiative 1"
+lossened_organiation_2:0"Officer Initiative 2"
+lossened_organiation_3:0"Officer Initiative 3"
+
+cav_reserve_1:0"Increased Cavalry Deployment 1"
+cav_reserve_2:0"Increased Cavalry Deployment 2"
+cav_reserve_3:0"Increased Cavalry Deployment 3"
+
 
 
 ##misions and their modifiers
