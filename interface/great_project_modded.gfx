@@ -14,4 +14,40 @@ spriteTypes = {
 		name = "GFX_great_project_scicilian_gold_mine"	
 		texturefile = "gfx//interface//great_projects//great_project_falun_copper_mine.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_lousaina_port"	
+		texturefile = "gfx//interface//lousaina_port.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_new_england_port"	
+		texturefile = "gfx//interface//new_england_port.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_newfoundland_port"	
+		texturefile = "gfx//interface//newfoundland_port.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_carolinas_port"	
+		texturefile = "gfx//interface//carolinas_port.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_guatamala_port"	
+		texturefile = "gfx//interface//great_projects//cartagena_de_indias.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_newfoundland_port"	
+		texturefile = "gfx//interface//suriname_port.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_algerian_breadbasket"	
+		texturefile = "gfx//interface//algerian_breadbasket.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_hansa_building"	
+		texturefile = "gfx//interface//hansa_building.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_bordeax_port"	
+		texturefile = "gfx//interface//bordeax_port.dds"
+	}
 }
