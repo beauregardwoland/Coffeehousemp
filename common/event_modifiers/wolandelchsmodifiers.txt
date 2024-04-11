@@ -203,6 +203,10 @@ new_world_cooldown = {
 	global_tax_modifier = -0.05
 }
 #missions
+england_100_year = {
+	land_forcelimit = 10
+	mercenary_cost = -0.15
+}
 ita_med_bonus = {
 	naval_forcelimit = 2
 	local_production_efficiency = 0.25

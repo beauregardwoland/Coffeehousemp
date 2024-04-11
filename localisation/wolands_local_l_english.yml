@@ -811,6 +811,8 @@ cav_reserve_3:0"Increased Cavalry Deployment 3"
 
 
 ##misions and their modifiers
+england_100_year:0"Last chance for English victory"
+desc_england_100_year:0"Last chance for English victory"
 el_gran_capitan_title:0"El Gran Capitán's Reforms"
 el_gran_capitan_desc:0"The dominance of french heavy cavalry and swiss pikemen has finally met its match a general our soldiers are calling El Gran Capitán has made a formation of infantry taking advantage of new developments in firearms and using pikemen and arquebusiers to cover each others weakness' and compliment their strengths."
 
