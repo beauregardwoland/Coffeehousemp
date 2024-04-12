@@ -1,5 +1,33 @@
 country_decisions = {
 
+
+
+	military_reform_esat = {
+		color = { 195 160 20 }
+		potential = {
+			ai = no
+			has_estate = estate_military
+		}
+		allow = {
+			NOT = {
+				has_country_modifier = mil_reform
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mil_reform
+				duration = 3650
+			}
+			add_estate_loyalty = {
+				estate = estate_military
+				loyalty = 30
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		
+		}
+	}
 	humanist_debates = {
 		color = { 195 160 20 }
 		potential = {

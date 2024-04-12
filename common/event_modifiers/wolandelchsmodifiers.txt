@@ -13,7 +13,7 @@ mobilization_lite = {
 	global_tax_modifier = -0.15
 	interest = 0.5
 	global_unrest = 1
-	monthly_mobilization_power = 0.0167
+	monthly_mobilization_power = 1.67
 }
 cossack_steppe_cavalry  ={
 	shock_damage = 0.20
@@ -38,7 +38,7 @@ mobilization = {
 	global_tax_modifier = -0.35
 	interest = 1.5
 	global_unrest = 2
-	monthly_mobilization_power = -0.0083
+	monthly_mobilization_power = -0.83
 }
 demobilization_bad = {
 	trade_goods_size = -0.20
@@ -64,7 +64,7 @@ mobilization_scraping = {
 	interest = 2
 	global_unrest = 2
 	all_power_cost = 0.025
-	monthly_mobilization_power = -0.0083
+	monthly_mobilization_power = -0.83
 }
 modernize_levies = {
 	discipline = 0.025
@@ -613,7 +613,16 @@ isle_archers = {
 	regiment_manpower_usage = 0.05
 	is_revolutionary_guard_modifier = yes
 }
-
+elephants = {
+	cavalry_shock = 1.5
+	morale_damage_received = 0.2
+	is_revolutionary_guard_modifier = yes
+}
+hakkapolita = {
+	cavalry_fire = 0.5
+	cavalry_shock = 0.5
+	is_revolutionary_guard_modifier = yes
+}
 
 	####general
 burgher_militia = {
@@ -860,6 +869,9 @@ rural_bonus = {
 }
 debate_aftermath = {
 	prestige = 0.75
+}
+mil_reform = {
+	millitary_loyalty_modifier = -0.05
 }
 treat_people_better = {
 	global_unrest = -2

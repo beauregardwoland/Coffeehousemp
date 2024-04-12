@@ -1742,20 +1742,7 @@ country_event = {
 				has_any_disaster = yes
 			}
 		}
-		capital_scope = {
-			revolutionary_guard_infantry = ROOT
-			revolutionary_guard_infantry = ROOT
-			revolutionary_guard_infantry = ROOT
-			revolutionary_guard_infantry = ROOT
-			revolutionary_guard_infantry = ROOT
-			revolutionary_guard_infantry = ROOT
-			revolutionary_guard_infantry = ROOT
-			revolutionary_guard_infantry = ROOT
-			large_cast_bronze_mortar = ROOT
-		}
-		add_mil_power = 50
 		add_treasury = 100
-		add_manpower = 23
 		add_country_modifier = {
 			name = england_100_year
 			duration = 3650
@@ -1799,6 +1786,10 @@ country_event = {
 				casus_belli = cb_core
 				war_goal_province = 177
 			}
+		}
+		country_event = {
+			id = beaus_event_mobilization.37
+			days = 1 
 		}
 	}
 	option = {

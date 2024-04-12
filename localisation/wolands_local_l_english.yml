@@ -22,6 +22,7 @@
  NT2:0 "Flanders-Wallonia"
  NT3:0 "Belgica"
  NT4:0 "Frisia"
+ IFR:0 "Ifriqiya"
  RHI_ADJ:0 "Rhenish"
  RH2_ADJ:0 "East Frankish"
  SGF_ADJ:0 "South German"
@@ -30,6 +31,8 @@
  NT2_ADJ:0 "Flemish_walloni"
  NT3_ADJ:0 "Belgian"
  NT4_ADJ:0 "Frisian"
+ IFR_ADJ:0 "Ifriqiyan"
+
 
  RHI_ideas:0"Rhenish Ideas"
  RHI_ideas_start:0"Rhenish Traditions"
@@ -107,7 +110,16 @@
 
  NGF_regularised_contribution:0"The Goosestep" 
  NGF_regularised_contribution_desc:0"" 
-
+ IFR_formable_title:0"Unite the Maghreb"
+ IFR_formable_desc:0""
+ IFR_ideas:0""
+ saharan_logistics:0"Saharan Loistics"
+ berber_ferocity:0"Berbe Ferocity"
+ african_scholarship:0"African Scholarship"
+ mandinka_cavalry:0"Mandinka Cavalry"
+ african_syncretism:0"African Syncretism"
+ sahel_trade_links:0"Sahel Trade Links"
+ barbary_corsairs:0"Barbary Corsairs"
 
 ##custom localisation
   #string_is_slavic: "Streltsy"
@@ -811,6 +823,24 @@ cav_reserve_3:0"Increased Cavalry Deployment 3"
 
 
 ##misions and their modifiers
+
+beaus_price_change_4:0"Angevin Dream Crushed "
+beaus_price_change_4_desc:0"It seems despite our best efforts the memory of English kings on the French throne is fading and seemingly impossible to restore. The firmly English parts of our court and factions have entrenched themselves in and started to build a english centric policy."
+beaus_price_change_4_a:0"To a new English age"
+
+beaus_price_change_5:0"last stage of the hundred years war"
+beaus_price_change_5_desc:0"Most Countries interested in the thrones of France of England have already been engaged or have been bribed out already the war now exists solely between the Dauphin and England "
+beaus_price_change_5_a:0"For the Dauphin"
+england_angevin:0"Has decided to attempt to restore the Plantagenet claims"
+ang_formable_eng_title:0"Restore Angevin Supremacy"
+ang_formable_eng_desc:0""
+eng_ave_lockout:0""Replace the @GBR §YBritish§! missions with the @AVE §YAngevin§! missions.\n§YAngevin§! missions focus on the §YDomination of Europe§! instead of the colonization of the New World and Asia.\n§RIf by 1465 there are less than 3 English provinces in france an event will fire that will go back to british missions§!.§!""
+ang_formable_fra_title:0"Forward Angevin Claims"
+ang_formable_fra_desc:0""
+
+DUA:0"Dual Monarchy"
+DUA_ADJ:0"French-Anglo"
+
 england_100_year:0"Last chance for English victory"
 desc_england_100_year:0"Last chance for English victory"
 el_gran_capitan_title:0"El Gran Capitán's Reforms"
@@ -1711,6 +1741,16 @@ estate_isle_archers:0"Isle Longbowmen"
 estate_isle_archers_desc:0""
 isle_archers:0"Longbowmen"
 desc_isle_archers:0""
+
+estate_hakkapolita:0"Hakkapeliitta"
+estate_hakkapolita_desc:0""
+hakkapolita:0"Hakkapeliitta"
+desc_hakkapolita:0""
+
+military_reform_esat_title:0"Military reform"
+military_reform_esat_desc:0""
+mil_reform:0""
+desc_mil_reform:0""
 
 estate_city_expansion:0"Codified City Planning"
 estate_city_expansion_desc:0""
