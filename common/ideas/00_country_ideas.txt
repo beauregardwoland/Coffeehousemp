@@ -15670,6 +15670,7 @@ ADU_ideas = {
 		core_creation = -0.15
 	}
 	adu_expeditionary_sentiment = {
+		
 		colonists = 1
 		effect = { remove_temporary_colonist = yes }
 	}
