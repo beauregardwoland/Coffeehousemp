@@ -145,8 +145,6 @@ technology = { #The Scythe
 	#The Scythe
 	production_efficiency 	=	0.02
 	distillery = yes
-	irragation_ditches = yes
-
 }
 
 technology = { #Modern Theocracy
@@ -266,7 +264,6 @@ technology = { #University
 	
 	university = yes	
 	officer_acedemy = yes
-	limited_canals = yes
 	governing_capacity = 250
 	
 	administrative_efficiency = 0.1
