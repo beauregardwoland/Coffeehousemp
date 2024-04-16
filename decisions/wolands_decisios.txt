@@ -1,5 +1,33 @@
 country_decisions = {
 
+
+
+	military_reform_esat = {
+		color = { 195 160 20 }
+		potential = {
+			ai = no
+			has_estate = estate_military
+		}
+		allow = {
+			NOT = {
+				has_country_modifier = mil_reform
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mil_reform
+				duration = 3650
+			}
+			add_estate_loyalty = {
+				estate = estate_military
+				loyalty = 30
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		
+		}
+	}
 	humanist_debates = {
 		color = { 195 160 20 }
 		potential = {
@@ -33,6 +61,104 @@ country_decisions = {
 			# England, France, Barbary Coast
 		}
 	}
-
-
+	colonial_check = {
+		color = { 195 160 20 }
+		potential = {
+			or = {
+				any_owned_province = {
+					or = {
+						superregion = north_america_superregion
+						superregion = south_america_superregion
+					}
+				}
+				any_subject_country = {
+					is_colonial_nation = yes
+				}
+			}
+			ai = no
+		}
+		allow = {
+			NOT = {
+				has_country_modifier = new_world_cooldown
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = new_world_cooldown
+				duration = 60
+			}
+			if = {
+				limit = {
+					893 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				louisiana_port_overlord = yes
+			}
+			if = {
+				limit = {
+					968 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				968 = {
+					new_england_overlord = yes
+				}
+			}
+			if = {
+				limit = {
+					980 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				980 = {
+					newfoundland_port_overlord = yes
+				}
+			}
+			if = {
+				limit = {
+					932 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				932 = {
+					carolinas_port_overlord = yes
+				}
+			}
+			if = {
+				limit = {
+					2636 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				2636 = {
+					guatamala_port_overlord = yes
+				}
+			}
+			if = {
+				limit = {
+					745 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				745 = {
+					suriname_port_overlord = yes
+				}
+			}
+			if = {
+				limit = {
+					757 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				757 = {
+					porto_seguroport_overlord = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 }

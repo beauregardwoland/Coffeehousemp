@@ -13,7 +13,7 @@ mobilization_lite = {
 	global_tax_modifier = -0.15
 	interest = 0.5
 	global_unrest = 1
-	monthly_mobilization_power = 0.0167
+	monthly_mobilization_power = 1.67
 }
 cossack_steppe_cavalry  ={
 	shock_damage = 0.20
@@ -38,7 +38,7 @@ mobilization = {
 	global_tax_modifier = -0.35
 	interest = 1.5
 	global_unrest = 2
-	monthly_mobilization_power = -0.0083
+	monthly_mobilization_power = -0.83
 }
 demobilization_bad = {
 	trade_goods_size = -0.20
@@ -64,7 +64,7 @@ mobilization_scraping = {
 	interest = 2
 	global_unrest = 2
 	all_power_cost = 0.025
-	monthly_mobilization_power = -0.0083
+	monthly_mobilization_power = -0.83
 }
 modernize_levies = {
 	discipline = 0.025
@@ -115,8 +115,98 @@ leadership_siege = {
 
 }
 
-#missions
 
+
+####colonial monuments
+lousiana_port_1 = {
+	global_foreign_trade_power = 0.05
+}
+lousiana_port_2 = {
+	global_foreign_trade_power = 0.15
+}
+lousiana_port_3 = {
+	global_foreign_trade_power = 0.20
+}
+
+new_england_port_1 = {
+	ship_recruit_speed = -0.05
+}
+new_england_port_2 = {
+	ship_recruit_speed = -0.10
+}
+new_england_port_3 = {
+	ship_recruit_speed = -0.20
+}
+
+newfoundland_port_1 = {
+	land_attrition = -0.05
+	naval_attrition = -0.05
+}
+newfoundland_port_2 = {
+	land_attrition = -0.10
+	naval_attrition = -0.10
+}
+newfoundland_port_3 = {
+	land_attrition = -0.15
+	naval_attrition = -0.15
+}
+carolinas_port_1 = {
+	global_prosperity_growth = 0.10
+}
+carolinas_port_2 = {
+	global_prosperity_growth = 0.20
+}
+carolinas_port_3 = {
+	global_prosperity_growth = 0.10
+	land_forcelimit_modifier = 0.10
+}
+
+guatamala_port_1 = {
+	development_cost = -0.02
+}
+guatamala_port_2 = {
+	development_cost = -0.3
+	free_maintenance_on_expl_conq = yes
+}
+guatamala_port_3 = {
+	development_cost = -0.3
+	free_maintenance_on_expl_conq = yes
+	monthly_splendor = 1.5
+}
+
+suriname_port_1 = {
+	production_efficiency = 0.05
+	land_morale = 0.025
+}
+suriname_port_2 = {
+	production_efficiency = 0.10
+	land_morale = 0.05
+}
+suriname_port_3 = {
+	production_efficiency = 0.20
+	land_morale = 0.05
+}
+
+porto_seguro_port_1 = {
+	trade_steering = 0.05
+	global_manpower_modifier = 0.075
+}
+porto_seguro_port_2 = {
+	trade_steering = 0.1
+	global_manpower_modifier = 0.10
+}
+porto_seguro_port_3 = {
+	trade_steering = 0.20
+	global_manpower_modifier = 0.15
+}
+new_world_cooldown = {
+	global_tax_modifier = -0.05
+}
+#missions
+ita_med_bonus = {
+	naval_forcelimit = 2
+	local_production_efficiency = 0.25
+}
 rhi_fleet_experience = {
 	global_ship_recruit_speed = -0.20
 	global_ship_cost = -0.15
@@ -457,15 +547,13 @@ por_rieno_unido = {
 
 	##culture specific
 german_fencing = {
-	shock_damage = 0.10
-	discipline = 0.025
-	land_maintenance_modifier = 0.15
+	shock_damage = 0.075
+	land_maintenance_modifier = 0.05
 	is_revolutionary_guard_modifier = yes
 }
 italian_fencing = {
-	infantry_power = 0.05
-	discipline = 0.05
-	land_maintenance_modifier = 0.25
+	discipline = 0.025
+	land_maintenance_modifier = 0.10
 	is_revolutionary_guard_modifier = yes
 }
 gendarmies = {
@@ -521,7 +609,16 @@ isle_archers = {
 	regiment_manpower_usage = 0.05
 	is_revolutionary_guard_modifier = yes
 }
-
+elephants = {
+	cavalry_shock = 1.5
+	morale_damage_received = 0.2
+	is_revolutionary_guard_modifier = yes
+}
+hakkapolita = {
+	cavalry_fire = 0.5
+	cavalry_shock = 0.5
+	is_revolutionary_guard_modifier = yes
+}
 
 	####general
 burgher_militia = {
@@ -768,6 +865,9 @@ rural_bonus = {
 }
 debate_aftermath = {
 	prestige = 0.75
+}
+mil_reform = {
+	millitary_loyalty_modifier = -0.05
 }
 treat_people_better = {
 	global_unrest = -2

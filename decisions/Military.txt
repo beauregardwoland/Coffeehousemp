@@ -401,6 +401,7 @@ country_decisions = {
 			custom_tooltip = enabled_mobilization
 			add_mil_power = -300
 			add_adm_power = -150
+			set_country_flag = enabled_mobiliz
 			add_country_modifier = {
 				name = "enabled_mobilization"
 				duration = -1

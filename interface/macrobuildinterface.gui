@@ -1712,42 +1712,6 @@ guiTypes = {
 			position = { x = 209 y = 873 }
 			spriteType = "GFX_building_upgrade_icon"
 		}
-
-
-		checkboxType = {
-			name = "build_irragation_ditches"
-			position = { x = 9 y = 937 }
-			quadTextureSprite = "GFX_irragation_ditches"
-		}		
-		instantTextBoxType={
-			name = "irragation_ditches_cost"
-			position = {x = 9 y = 987 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-		checkboxType = {
-			name = "build_limited_canals"
-			position = { x = 61 y = 937 }
-			quadTextureSprite = "GFX_limited_canals"
-		}		
-		instantTextBoxType={
-			name = "limited_canals_cost"
-			position = {x = 61 y = 987 }
-			font = "vic_18"
-			borderSize = {x = 0 y = 0}	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
-		iconType = {
-			name = "irragation_ditches_to_limited_canals"
-			position = { x = 51 y = 943 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
-	
 	}
 
 	# List entry for the window with a list of provinces that a specific building can be built in

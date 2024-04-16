@@ -45,14 +45,17 @@ custom_button = {
 		ai = no
 	}
 	trigger = {
-		NOT = {
-			has_government_power = { 
-				mechanic_type = naval_prof_mechanic
-				power_type = naval_prof
-				value = 100
+		or = {
+			and = {
+				or = {
+					heavy_ship_fraction = 0.20
+					galley_fraction = 0.30
+					light_ship_fraction = 0.50
+				}
+				navy_size_percentage = 0.75
 			}
+			has_country_modifier = naval_prof_reverse
 		}
-		navy_size_percentage = 0.75
 	}
 	effect = {
 		if = {

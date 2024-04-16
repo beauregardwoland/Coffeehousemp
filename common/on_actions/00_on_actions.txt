@@ -4953,6 +4953,16 @@ on_company_chartered = {
 # ROOT = Overlord, FROM = Minor
 on_dependency_gained = {
 	on_dependency_gained_effect = yes
+	if = {
+		limit ={
+			from = {
+				owns = 893
+			}
+		}
+		from = {
+			louisiana_port_overlord = yes
+		}
+	}
 }
 
 # ROOT = Overlord, FROM = Minor

@@ -4,9 +4,12 @@ country_event = {  ##mid
 	title = "naval_professionalism_1"
 	desc = "naval_professionalism_1_desc"
 	picture = TRADEGOODS_eventPicture
-	
+	trigger = {
+		any_owned_province = {
+			has_port= yes
+		}
+	}
 	is_triggered_only = yes
-
 	option = {
 		name = "naval_professionalism_1_optiona"
 		add_government_power = {
@@ -49,8 +52,11 @@ country_event = { ##mid
 			value = 2
 		}
 		army_professionalism = 0.025
+		any_owned_province = {
+			has_port= yes
+		}
 	}
-
+	is_triggered_only = yes
 	option = {
 		name = "naval_professionalism_2_optiona"
 		add_army_professionalism = 0.05
@@ -77,7 +83,11 @@ country_event = { ##good
 	picture = ECONOMY_eventPicture
 	trigger = {
 		is_at_war = no
+		any_owned_province = {
+			has_port = yes
+		}
 	}
+	is_triggered_only = yes
 	option = {
 		name = "naval_professionalism_3_optiona"
 		if = {
@@ -128,7 +138,7 @@ country_event = { ##bad
 			}
 		}
 	}
-
+	is_triggered_only = yes
 	option = {
 		name = "naval_professionalism_4_optiona"
 		add_country_modifier = {
@@ -157,7 +167,11 @@ country_event = { ###good
 				value = 100
 			}
 		}
+		any_owned_province = {
+			has_port = yes
+		}
 	}
+	is_triggered_only = yes
 	option = {
 		name = "naval_professionalism_5_optiona"
 		add_government_power = {
@@ -180,8 +194,11 @@ country_event = { ###mid
 			power_type = naval_prof
 			value = 5
 		}
+		any_owned_province = {
+			has_port= yes
+		}
 	}
-
+	is_triggered_only = yes
 	option = {
 		name = "naval_professionalism_6_optiona"
 		add_government_power = {
@@ -204,7 +221,11 @@ country_event = {  ##mid/good
 	trigger = {
 		has_estate = estate_burghers
 		is_at_war = no
+		any_owned_province = {
+			has_port = yes
+		}
 	}
+	is_triggered_only = yes
 	option = {
 		name = "naval_professionalism_7_optiona"
 		add_estate_loyalty = {
@@ -241,7 +262,11 @@ country_event = { ###good
 			power_type = naval_prof
 			value = 5
 		}
+		any_owned_province = {
+			has_port = yes
+		}
 	}
+	is_triggered_only = yes
 	option = {
 		name = "naval_professionalism_8_optiona"
 		create_admiral = {
@@ -274,8 +299,11 @@ country_event = { ##bad
 			value = 5
 		}
 		has_institution = printing_press
+		any_owned_province = {
+			has_port= yes
+		}
 	}
-
+	is_triggered_only = yes
 	option = {
 		name = "naval_professionalism_9_optiona"
 		add_years_of_income = -0.33
@@ -302,8 +330,11 @@ country_event = { ##bad
 			power_type = naval_prof
 			value = 10
 		}
+		any_owned_province = {
+			has_port= yes
+		}
 	}
-
+	is_triggered_only = yes
 	option = {
 		name = "naval_professionalism_10_optiona"
 		add_country_modifier = {
@@ -336,8 +367,11 @@ country_event = { ##mixed
 				value = 100
 			}
 		}
+		any_owned_province = {
+			has_port = yes
+		}
 	}
-
+	is_triggered_only = yes
 	option = {
 		name = "naval_professionalism_11_optiona"
 		add_country_modifier = {

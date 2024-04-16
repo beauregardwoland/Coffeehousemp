@@ -23,6 +23,7 @@
  NT3:0 "Belgica"
  NT4:0 "Frisia"
  IFR:0 "Ifriqiya"
+ IFR:0 "Ifriqiya"
  RHI_ADJ:0 "Rhenish"
  RH2_ADJ:0 "East Frankish"
  SGF_ADJ:0 "South German"
@@ -32,6 +33,8 @@
  NT3_ADJ:0 "Belgian"
  NT4_ADJ:0 "Frisian"
  IFR_ADJ:0 "Ifriqiyan"
+ IFR_ADJ:0 "Ifriqiyan"
+
 
  RHI_ideas:0"Rhenish Ideas"
  RHI_ideas_start:0"Rhenish Traditions"
@@ -109,7 +112,16 @@
 
  NGF_regularised_contribution:0"The Goosestep" 
  NGF_regularised_contribution_desc:0"" 
-
+ IFR_formable_title:0"Unite the Maghreb"
+ IFR_formable_desc:0""
+ IFR_ideas:0""
+ saharan_logistics:0"Saharan Loistics"
+ berber_ferocity:0"Berber Ferocity"
+ african_scholarship:0"African Scholarship"
+ mandinka_cavalry:0"Mandinka Cavalry"
+ african_syncretism:0"African Syncretism"
+ sahel_trade_links:0"Sahel Trade Links"
+ barbary_corsairs:0"Barbary Corsairs"
 
 ##custom localisation
   #string_is_slavic: "Streltsy"
@@ -637,6 +649,10 @@ natural_science7:0"Preventing Famine"
 natural_science7_desc:0"Famine and starvation are somewhat seasonal but can be spurred from any number of disasters. Taking measures to improve preservation and ensure disease doesn't rifle through our store houses is necessary."
 
 ##########policies
+tier1_policies:0"Requires at least one completed idea group of related mana."
+tier2_policies:0"Requires at least two completed idea group of related mana."
+tier3_policies:0"Requires at least three completed idea group of related mana."
+
 stab_1:0"Conciliatory approaches 1"
 stab_2:0"Conciliatory approaches 2"
 stab_3:0"Conciliatory approaches 3"
@@ -790,9 +806,45 @@ fire_damage_1:0"§R ***§!Keeping Distance 1 §R ***§!"
 fire_damage_2:0"§R ***§!Keeping Distance 2§R ***§!"
 fire_damage_3:0"§R ***§!Keeping Distance 3§R ***§!"
 
+bolster_garrisions_1:0"Bolster Garrisions 1"
+bolster_garrisions_2:0"Bolster Garrisions 2"
+bolster_garrisions_3:0"Bolster Garrisions 3"
+
+stricter_organiation_1:0"Strict Orginization 1"
+stricter_organiation_2:0"Strict Orginization 2"
+stricter_organiation_3:0"Strict Orginization 3"
+
+lossened_organiation_1:0"Officer Initiative 1"
+lossened_organiation_2:0"Officer Initiative 2"
+lossened_organiation_3:0"Officer Initiative 3"
+
+cav_reserve_1:0"Increased Cavalry Deployment 1"
+cav_reserve_2:0"Increased Cavalry Deployment 2"
+cav_reserve_3:0"Increased Cavalry Deployment 3"
+
 
 
 ##misions and their modifiers
+
+beaus_price_change_4:0"Angevin Dream Crushed "
+beaus_price_change_4_desc:0"It seems despite our best efforts the memory of English kings on the French throne is fading and seemingly impossible to restore. The firmly English parts of our court and factions have entrenched themselves in and started to build a english centric policy."
+beaus_price_change_4_a:0"To a new English age"
+
+beaus_price_change_5:0"last stage of the hundred years war"
+beaus_price_change_5_desc:0"Most Countries interested in the thrones of France of England have already been engaged or have been bribed out already the war now exists solely between the Dauphin and England "
+beaus_price_change_5_a:0"For the Dauphin"
+england_angevin:0"Has decided to attempt to restore the Plantagenet claims"
+ang_formable_eng_title:0"Restore Angevin Supremacy"
+ang_formable_eng_desc:0""
+eng_ave_lockout:0""Replace the @GBR §YBritish§! missions with the @AVE §YAngevin§! missions.\n§YAngevin§! missions focus on the §YDomination of Europe§! instead of the colonization of the New World and Asia.\n§RIf by 1465 there are less than 3 English provinces in france an event will fire that will go back to british missions§!.§!""
+ang_formable_fra_title:0"Forward Angevin Claims"
+ang_formable_fra_desc:0""
+
+DUA:0"Dual Monarchy"
+DUA_ADJ:0"French-Anglo"
+
+england_100_year:0"Last chance for English victory"
+desc_england_100_year:0"Last chance for English victory"
 el_gran_capitan_title:0"El Gran Capitán's Reforms"
 el_gran_capitan_desc:0"The dominance of french heavy cavalry and swiss pikemen has finally met its match a general our soldiers are calling El Gran Capitán has made a formation of infantry taking advantage of new developments in firearms and using pikemen and arquebusiers to cover each others weakness' and compliment their strengths."
 
@@ -979,6 +1031,99 @@ hormuz_naval:0"Portuguese Forts"
 tidemans_folly:0"§RKaptein Karl's§! Folly Beach"
 scicilian_gold_mine:0"Sicilian "Gold"(Sulfur) Mines"
 tidemans_folly_desc:0"Said to be the very fortifications of the legendary failed landing of §RKaptein Karl§!. the details are shrouded by the lack of survivors and the utter disbelief in the failure of the Kaptein. Said to be his sole failure in his career and his potential end, the site is built well, with no expense spared by the wealthy merchant al-gem shir. It stands to remind the people of how the unthinkable isn't untenable."
+bordeax_port:0"Port of Bordeaux"
+lousaina_port:0"Mouth of the Mississippi"
+lousiana_port_1:0"Mouth of the Mississippi Tier 1"
+desc_lousiana_port_1:0""
+lousiana_port_2:0"Mouth of the Mississippi Tier 2"
+desc_lousiana_port_2:0""
+lousiana_port_3:0"Mouth of the Mississippi Tier 3"
+desc_lousiana_port_3:0""
+LOUSIANA_FUR:0"Mississippian Economic Boom"
+beaus_price_change_1:0"Mississippian Economic Boom"
+beaus_price_change_1_desc:0"The port facilities at louisiana have bolstered commerce along the Mississippi and have caused an explosion of exports of goods from the indians, hunters and resources across the plains of America. These exports have now reahed some of their height of transport  much to the deligt of our coffers."
+beaus_price_change_1_a:0"Control of the Mississippi has never been better."
+lousiana_port_tt:0"Upon being upgraded global modifiers will aply to colonial overlord"
+
+new_england_port:0"Lumber yards of New England"
+new_england_port_1:0"Lumber yards of New England Tier 1"
+desc_new_england_port_1:0""
+new_england_port_2:0"Lumber yards of New England Tier 2"
+desc_new_england_port_2:0""
+new_england_port_3:0"Lumber yards of New England Tier 3"
+desc_new_england_port_3:0""
+
+NEW_ENGLAND_TIMBER:0"New English timber export boom"
+beaus_price_change_2:0"New English timber export boom"
+beaus_price_change_2_desc:0"Timber in the new world has been after millennia of being exploited has become quite controlled and rationed in across regions. Here in the eastern cost of America however there lies vast forests full of various good timbers that have largely remained unexploited untill now."
+beaus_price_change_2_a:0"America a land of infinite resources."
+
+newfoundland_port:0"Grand Banks Fisheries"
+newfoundland_port_1:0"Grand Banks Fisheries tier 1"
+desc_newfoundland_port_1:0""
+newfoundland_port_2:0"Grand Banks Fisheries tier 2"
+desc_newfoundland_port_2:0""
+newfoundland_port_3:0"Grand Banks Fisheries tier 3"
+desc_newfoundland_port_3:0""
+
+GRAND_BANK_FISHERIES_STABLE:0"Stabilization of the fish markets"
+beaus_price_change_3:0"Stabilization of the fish markets"
+beaus_price_change_3_desc:0"The waters surrounding the grand banks in the northern parts of america had lead to an explosive boom in the fish supply making impacts on markets far and wide. Now however it seems due to new large scale exploitation fish reserves have made great yields no longer feasible and the market for fish have seem to resurge with us still haveing a prime fishing location."
+beaus_price_change_3_a:0"Fish sold at a decent price? Satisfactory."
+
+carolinas_port:0"Charleston Port"
+carolinas_port_1:0"Charleston Port tier 1"
+desc_carolinas_port_1:0""
+carolinas_port_2:0"Charleston Port tier 2"
+desc_carolinas_port_2:0""
+carolinas_port_3:0"Charleston Port tier 3"
+desc_carolinas_port_3:0""
+
+guatamala_port:0"Santiago de los Caballeros de Guatemala"
+guatamala_port_1:0"Santiago de los Caballeros de Guatemala tier 1"
+desc_guatamala_port_1:0""
+guatamala_port_2:0"Santiago de los Caballeros de Guatemala tier 2"
+desc_guatamala_port_2:0""
+guatamala_port_3:0"Santiago de los Caballeros de Guatemala tier 3"
+desc_guatamala_port_3:0""
+
+suriname_port:0"Surinamian Sugar plantations"
+suriname_port_1:0"Surinamian Sugar plantations tier 1"
+desc_suriname_port_1:0""
+suriname_port_2:0"Surinamian Sugar plantations tier 2"
+desc_suriname_port_2:0""
+suriname_port_3:0"Surinamian Sugar plantations tier 3"
+desc_suriname_port_3:0""
+
+porto_seguro_port:0"Port Seguro"
+porto_seguro_port_1:0"Port Seguro tier 1"
+desc_porto_seguro_port_1:0""
+porto_seguro_port_2:0"Port Seguro tier 2"
+desc_porto_seguro_port_2:0""
+porto_seguro_port_3:0"Port Seguro tier 3"
+desc_porto_seguro_port_3:0""
+algerian_breadbasket:0"Algerian Breadbasket"
+hansa_building:0"Hansaetic Capital"
+frankfurt_parliment:0"Imperial diet at Frankfurt"
+
+new_world_cooldown:0"New world monument check cooldown"
+desc_new_world_cooldown:0""
+colonial_check_title:0"Colonial monument check"
+colonial_check_desc:0"In order to make sure that monument modifiers go away and apply whenever they change hands this is done manually."
+
+#new_england_port:0""
+#new_england_port_1:0""
+#desc_new_england_port_1:0""
+#new_england_port_2:0""
+#desc_new_england_port_2:0""
+#new_england_port_3:0""
+#desc_new_england_port_3:0""
+
+#GRAND_BANK_FISHERIES_STABLE
+#NEW_ENGLAND_TIMBER:0""
+#beaus_price_change_2:0"
+#beaus_price_change_2_desc:0""
+#beaus_price_change_2_a:0""
 
 #events 
 beaus_event_mobilization_1:0"§R[Root.Country.GetAdjective]§! Mobilization"
@@ -1598,6 +1743,16 @@ estate_isle_archers:0"Isle Longbowmen"
 estate_isle_archers_desc:0""
 isle_archers:0"Longbowmen"
 desc_isle_archers:0""
+
+estate_hakkapolita:0"Hakkapeliitta"
+estate_hakkapolita_desc:0""
+hakkapolita:0"Hakkapeliitta"
+desc_hakkapolita:0""
+
+military_reform_esat_title:0"Military reform"
+military_reform_esat_desc:0""
+mil_reform:0""
+desc_mil_reform:0""
 
 estate_city_expansion:0"Codified City Planning"
 estate_city_expansion_desc:0""

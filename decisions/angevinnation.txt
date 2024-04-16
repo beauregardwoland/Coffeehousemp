@@ -1,0 +1,189 @@
+country_decisions = {
+
+
+	ang_formable_eng = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { exists = AVE }
+			NOT = { tag = GBR }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			tag = ENG
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = brittany_area
+				area = poitou_area
+				area = normandy_area
+				province_id = 178
+				province_id = 174
+				province_id = 173
+				province_id = 177
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = england_angevin
+				has_country_flag = eng_took_ave_branch
+			}
+			is_at_war = no
+			brittany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			poitou_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			normandy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns_core_province = 178
+			owns_core_province = 174
+			owns_core_province = 173
+			owns_core_province = 177
+		}
+		effect = {
+			change_tag = AVE
+			#set_country_flag = enable_second_mil_level_flag
+			france_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AVE
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = AVE_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}	
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	ang_formable_fra = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { exists = AVE }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			tag = FRA
+			NOT = { is_year = 1520 }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = brittany_area
+				area = normandy_area
+				area = east_anglia_area
+				area = wessex_area
+				area = home_counties_area
+				province_id = 87
+				province_id = 178
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { is_year = 1510 }
+			is_at_war = no
+			brittany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_anglia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			normandy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			wessex_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			home_counties_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns_core_province = 87
+			owns_core_province = 178
+		}
+		effect = {
+			change_tag = AVE
+			override_country_name = DUA
+			#set_country_flag = enable_second_mil_level_flag
+			british_isles_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AVE
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = AVE_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}	
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+}

@@ -41,7 +41,7 @@ estate_military = {
 		}
 	}
 
-	base_influence = 20
+	base_influence = 5
 	
 	color = { 200 200 255 }
 
@@ -88,6 +88,7 @@ estate_military = {
 		estate_swiss_pike
 		estate_flemish_pikes
 		estate_isle_archers
+		estate_hakkapolita
 	}
 
 	agendas = {

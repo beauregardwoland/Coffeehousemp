@@ -329,53 +329,6 @@ experimental_railroads = {
 		factor = 1
 	}
 }
-irragation_ditches = {
-	cost = 100
-	time = 20
-	build_trigger = {
-		development = 5
-		NOT = { has_terrain = mountain }
-		NOT = { has_terrain = hills }
-		NOT = { has_terrain = highlands }
-		NOT = { has_terrain = steppe }
-		NOT = { has_terrain = drylands }
-		#not = { has_terrain = cavern }
-		#not = { has_terrain = dwarven_road }
-		#not = { has_terrain = dwarven_hold }
-		#not = { has_terrain = dwarven_hold_surface }
-		#not = { has_terrain = cavern }
-	}
-	modifier = {
-		local_development_cost = -0.025
-		province_trade_power_value = 0.5
-		allowed_num_of_buildings = 1
-		local_hostile_movement_speed = -0.20
-	}
-	on_obsolete = {
-	}
-	ai_will_do = {
-		factor = 1
-	}
-}
-limited_canals = {
-	cost = 200
-	time = 30
-	make_obsolete = irragation_ditches
-
-	build_trigger = {
-		development = 10
-	}
-	modifier = {
-		local_development_cost = -0.05
-		province_trade_power_value = 0.5
-		allowed_num_of_buildings = 1
-		local_hostile_movement_speed = -0.30
-	}
-	
-	ai_will_do = {
-		factor = 1
-	}
-}
 
 urban_development_center = {
 	cost = 300

@@ -8121,6 +8121,16 @@ kiev_pechersk_lavra = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			owner = {
+				define_general = {
+					name = "Phantom of Kyiv"
+					trait = strict_drillmaster_personality
+					fire = 7
+					shock = 3
+					manuever = 3
+					siege = 0
+				}
+			}
 		}
 	}
 
@@ -9019,6 +9029,9 @@ heddal_stave_church = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			add_base_manpower = 1
+			add_base_production = 1
+			add_base_tax = 1
 		}
 	}
 
@@ -9051,6 +9064,9 @@ heddal_stave_church = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			add_base_manpower = 2
+			add_base_production = 2
+			add_base_tax = 2
 		}
 	}
 
@@ -9082,7 +9098,17 @@ heddal_stave_church = {
 		}
 
 		#what effects happen when this tier is achieved
-		on_upgraded = {	
+		on_upgraded = {
+			owner = {
+				define_general = {
+					name = "Kapetien Karl"
+					trait = glory_seeker_personality
+					fire = 6
+					shock = 6
+					manuever = 0
+					siege = 2
+				}
+			}
 		}
 	}
 }
@@ -11081,6 +11107,7 @@ bran_castle = {
 			local_defensiveness = 0.15
 		}
 		area_modifier = {
+			regiment_recruit_speed = -0.10
 		}
 		country_modifiers = {
 			rival_border_fort_maintenance = -0.15
@@ -11102,6 +11129,9 @@ bran_castle = {
 		area_modifier = {
 			local_defensiveness = 0.15
 		}
+		region_modifier = {
+			regiment_recruit_speed = -0.1
+		}
 		country_modifiers = {
 			rival_border_fort_maintenance = -0.2
 			global_garrison_growth = 0.2
@@ -11121,6 +11151,9 @@ bran_castle = {
 		}
 		area_modifier = {
 			local_defensiveness = 0.25
+		}
+		region_modifier = {
+			regiment_recruit_speed = -0.20
 		}
 		country_modifiers = {
 			rival_border_fort_maintenance = -0.3
@@ -11865,6 +11898,9 @@ duomo_milano = {
 		area_modifier = {
 			local_religious_conversion_resistance = 0.33
 		}
+		region_modifier = {
+			local_development_cost = -0.02
+		}
 		country_modifiers = {
 			papal_influence = 0.5
 			monthly_fervor_increase = 0.25
@@ -11889,6 +11925,9 @@ duomo_milano = {
 		area_modifier = {
 			local_religious_conversion_resistance = 0.66
 		}
+		region_modifier = {
+			local_development_cost = -0.03
+		}
 		country_modifiers = {
 			papal_influence = 1
 			monthly_fervor_increase = 0.5
@@ -11912,6 +11951,9 @@ duomo_milano = {
 		}
 		area_modifier = {
 			local_religious_conversion_resistance = 1
+		}
+		region_modifier = {
+			local_development_cost = -0.035
 		}
 		country_modifiers = {
 			papal_influence = 2
@@ -14974,6 +15016,9 @@ royal_palace_caserta = {
 		}
 		area_modifier = {
 		}
+		region_modifier = {
+			local_tax_modifier = 0.075
+		}
 		country_modifiers = {
 			prestige = 0.25
 			reform_progress_growth = 0.05
@@ -14992,6 +15037,9 @@ royal_palace_caserta = {
 		province_modifiers = {
 		}
 		area_modifier = {
+		}
+		region_modifier = {
+			local_tax_modifier = 0.15
 		}
 		country_modifiers = {
 			prestige = 0.5
@@ -15012,6 +15060,9 @@ royal_palace_caserta = {
 		province_modifiers = {
 		}
 		area_modifier = {
+		}
+		region_modifier = {
+			local_tax_modifier = 0.20
 		}
 		country_modifiers = {
 			prestige = 1
