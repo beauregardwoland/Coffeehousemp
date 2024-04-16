@@ -65,10 +65,10 @@ country_event = {
 	option = {
 		name = "beaus_missions2_optiona"
 		add_treasury = 200
-		HAB = {
+		HUN = {
 			declare_war_with_cb = {
-				casus_belli = cb_restore_personal_union
-				who = HUN
+				casus_belli = cb_independence_war
+				who = HAB
 			}
 		}
 	}

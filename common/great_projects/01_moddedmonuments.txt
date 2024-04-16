@@ -1251,7 +1251,7 @@ suriname_port = {
 		region_modifier = {
 		}
 		country_modifiers = {
-			production_efficiency = 0.10
+			production_efficiency = 0.05
 			land_morale = 0.025
 		}
 		on_upgraded = {
@@ -1292,7 +1292,7 @@ suriname_port = {
 		region_modifier = {
 		}
 		country_modifiers = {
-			production_efficiency = 0.15
+			production_efficiency = 0.10
 			land_morale = 0.05
 		}
 		on_upgraded = {
@@ -1314,7 +1314,7 @@ suriname_port = {
 					}
 				}
 			}
-			change_trade_goods = dyes
+			change_trade_goods = sugar
 		}
 	}
 
@@ -1333,8 +1333,8 @@ suriname_port = {
 		region_modifier = {
 		}
 		country_modifiers = {
-			production_efficiency = 0.30
-			land_morale = 0.075
+			production_efficiency = 0.20
+			land_morale = 0.05
 		}
 		on_upgraded = {
 			custom_tooltip = lousiana_port_tt

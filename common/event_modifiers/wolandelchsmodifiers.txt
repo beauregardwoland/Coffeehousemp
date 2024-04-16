@@ -175,16 +175,16 @@ guatamala_port_3 = {
 }
 
 suriname_port_1 = {
-	production_efficiency = 0.10
+	production_efficiency = 0.05
 	land_morale = 0.025
 }
 suriname_port_2 = {
-	production_efficiency = 0.15
+	production_efficiency = 0.10
 	land_morale = 0.05
 }
 suriname_port_3 = {
-	production_efficiency = 0.30
-	land_morale = 0.075
+	production_efficiency = 0.20
+	land_morale = 0.05
 }
 
 porto_seguro_port_1 = {
@@ -203,10 +203,6 @@ new_world_cooldown = {
 	global_tax_modifier = -0.05
 }
 #missions
-england_100_year = {
-	land_forcelimit = 10
-	mercenary_cost = -0.15
-}
 ita_med_bonus = {
 	naval_forcelimit = 2
 	local_production_efficiency = 0.25

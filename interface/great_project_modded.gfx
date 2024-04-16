@@ -35,7 +35,7 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//cartagena_de_indias.dds"
 	}
 	spriteType = {
-		name = "GFX_great_project_newfoundland_port"	
+		name = "GFX_great_project_suriname_port"	
 		texturefile = "gfx//interface//suriname_port.dds"
 	}
 	spriteType = {

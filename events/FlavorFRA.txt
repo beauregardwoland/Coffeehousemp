@@ -1743,10 +1743,6 @@ country_event = {
 			}
 		}
 		add_treasury = 100
-		add_country_modifier = {
-			name = england_100_year
-			duration = 3650
-		}
 		177 = {
 			add_building = fort_15th
 		}

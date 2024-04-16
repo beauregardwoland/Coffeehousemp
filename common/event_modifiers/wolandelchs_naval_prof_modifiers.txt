@@ -1,7 +1,7 @@
 naval_prof_reverse = {
 	monthly_naval_prof = 0.1
-	recover_navy_morale_speed = -0.20
-	global_ship_trade_power = -0.20
+	recover_navy_morale_speed = -0.15
+	global_ship_trade_power = -0.30
 	naval_maintenance_modifier = 0.35
 	ship_recruit_speed = 0.25
 }
