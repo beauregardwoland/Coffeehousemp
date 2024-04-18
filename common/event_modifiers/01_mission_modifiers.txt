@@ -3716,7 +3716,7 @@ lit_conquered_rus = {
 # Moroccan missions
 
 mor_saharan_trade = {
-	caravan_power = 0.33
+	caravan_power = 0.25
 }
 
 conquest_of_benin_mor = {
@@ -3818,7 +3818,7 @@ spa_prepared_armada = {
 # Tunisian missions
 
 tun_berbers_pacified = {
-	global_unrest = -2
+	land_morale = 0.05
 }
 
 conquest_of_air = {
@@ -3847,6 +3847,14 @@ tun_morocco = {
 
 tun_restoration_of_alexandra = {
 	province_trade_power_modifier = 0.2
+}
+#jackson idea#
+tun_scholar_1 = {
+	idea_cost = -0.05
+}
+#jackson idea#
+tun_med_raider = {
+	galley_hull_size_modifier = 0.2
 }
 
 # Aragonese Missions
