@@ -189,6 +189,10 @@ jt_new_branch = {
 		  } 
 
 		effect = {
+			add_country_modifier = {
+				name = "conquest_of_air"
+			}
+			
 			sahel_region = {
 				discover_country = ROOT
 			}
