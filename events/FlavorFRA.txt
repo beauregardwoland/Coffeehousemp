@@ -1783,10 +1783,6 @@ country_event = {
 				war_goal_province = 177
 			}
 		}
-		country_event = {
-			id = beaus_event_mobilization.37
-			days = 1 
-		}
 	}
 	option = {
 		name = "flavor_fra.7.b" #Unpopular but preserves the peace?

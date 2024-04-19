@@ -203,7 +203,7 @@ country_event = {
 	title = "beaus_event_mobilization_30"
 	desc = "beaus_event_mobilization_30_desc"
 	picture = LIBERUM_VETO_eventPicture
-	major = yes
+	#major = yes
 	is_triggered_only = yes
 
 	option = {
@@ -254,7 +254,7 @@ country_event = {
 	title = "beaus_event_mobilization_31"
 	desc = "beaus_event_mobilization_31_desc"
 	picture = LIBERUM_VETO_eventPicture
-	major = yes
+	#major = yes
 	is_triggered_only = yes
 
 	option = {
@@ -293,7 +293,7 @@ country_event = {
 	title = "beaus_event_mobilization_32"
 	desc = "beaus_event_mobilization_32_desc"
 	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
-	major = yes
+	#major = yes
 	is_triggered_only = yes
 
 	option = {
