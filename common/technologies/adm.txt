@@ -104,6 +104,7 @@ technology = { #Workshop
 	workshop = yes
 	ramparts = yes
 	glass_works = yes
+	governing_capacity = 50
 }
 
 technology = { #Renaissance Thought
@@ -159,6 +160,7 @@ technology = { #Modern Theocracy
 	allowed_idea_groups = 4
 	theocratic_government = yes
 	the_cooler_road = yes
+	governing_capacity = 50
 }
 
 technology = { #Textile Manufactory
@@ -232,6 +234,7 @@ technology = { #Military Administration
 	
 	may_force_march = yes
 	soldier_households = yes
+	governing_capacity = 100
 }
 
 technology = { #Metallurgy
@@ -297,6 +300,7 @@ technology = { #Cathedral
 	
 	#Cathedral
 	cathedral = yes
+	governing_capacity = 50
 }
 
 technology = { #Absolute Rulership

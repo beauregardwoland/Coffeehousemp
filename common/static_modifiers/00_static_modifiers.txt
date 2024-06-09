@@ -184,7 +184,7 @@ land_province = {
 	#local_has_banners = yes
 	#local_has_carolean = yes
 	#local_has_samurai = yes
-	local_governing_cost_increase = 2
+	local_governing_cost_increase = 1.75
 }
 
 mild_winter = {
