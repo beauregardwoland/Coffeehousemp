@@ -2444,10 +2444,10 @@ estate_irregulars = {
 	modifier_by_land_ownership = {
 	}
 	penalties = {
-		
+		assault_fort_cost_modifier = 0.50
 	}
 	benefits = {
-		siege_ability = 0.10
+		siege_ability = 0.05
 	}
 	mechanics = {
 		

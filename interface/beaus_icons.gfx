@@ -123,4 +123,69 @@ spriteTypes = {
 		texturefile = "gfx/interface/impressment.dds"
 		loadType = "INGAME"
 	}
+
+
+
+
+
+
+
+
+
+	##################################################logi
+	spriteType = {		
+		name = "GFX_logi_menu_button"
+		texturefile = "gfx/interface/transition_icon.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_logi_menu"
+		texturefile = "gfx/interface/logi_menufinalaround550squared.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_logi_1"
+		texturefile = "gfx/interface/barfillingdos.dds"
+		loadType = "INGAME"
+	}
+	progressbartype = {	
+		name = "GFX_logi_bar_1"
+		color = { 1.0 0.0 0.0 }
+        colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx\\interface\\provinceView_progressbar_w92_h11_green.dds"
+		textureFile2 = "gfx\\interface\\provinceView_progressbar_w92_h11_black.dds"
+		size = { x = 60 y = 146 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = no
+	}
+	spriteType = {		
+		name = "GFX_food_icon"
+		texturefile = "gfx/interface/rations_icon.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_inf_icon"
+		texturefile = "gfx/interface/inf_logi.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_cav_icon"
+		texturefile = "gfx/interface/cav_logi.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_arty_icon"
+		texturefile = "gfx/interface/artillerytest.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_gun_icon"
+		texturefile = "gfx/interface/gunpowder_icon.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_officer_icon"
+		texturefile = "gfx/interface/oficer_logi.dds"
+		loadType = "INGAME"
+	}
 }

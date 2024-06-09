@@ -1,0 +1,111 @@
+test_beau = {
+	estate_placeholder_gunpowder_production = 2
+	estate_placeholder_food_production = 2
+	estate_placeholder_artillery_production = 2
+	estate_placeholder_horse_production = 2
+	estate_placeholder_infantry_production = 2
+	estate_placeholder_officer_production = 2
+}
+
+
+ration_supply1 = {
+	global_supply_limit_modifier = 0.1
+	global_regiment_cost = -0.05
+}
+ration_supply2 = {
+	global_supply_limit_modifier = 0.2
+	global_regiment_cost = -0.075
+}
+ration_supply3 = {
+	global_supply_limit_modifier = 0.3
+	global_regiment_cost = -0.1
+}
+ration_supply4 = {
+	global_supply_limit_modifier = 0.4
+	global_regiment_cost = -0.15
+}
+
+inf_supply1 = {
+	infantry_fire = 0.1
+	cavalry_fire = 0.1
+}
+inf_supply2 = {
+	infantry_fire = 0.2
+	cavalry_fire = 0.2
+}
+inf_supply3 = {
+	infantry_fire = 0.3
+	cavalry_fire = 0.3
+}
+inf_supply4 = {
+	infantry_fire = 0.45
+	cavalry_fire = 0.45
+}
+
+cav_supply1 = {
+	infantry_shock = 0.1
+	cavalry_shock = 0.1
+}
+cav_supply2 = {
+	infantry_shock = 0.2
+	cavalry_shock = 0.2
+}
+cav_supply3 = {
+	infantry_shock = 0.3
+	cavalry_shock = 0.3
+}
+cav_supply4 = {
+	infantry_shock = 0.45
+	cavalry_shock = 0.45
+}
+
+arty_supply1 = {
+	artillery_fire = 0.1
+	artillery_shock = 0.2
+}
+arty_supply2 = {
+	artillery_fire = 0.2
+	artillery_shock = 0.4
+}
+arty_supply3 = {
+	artillery_fire = 0.3
+	artillery_shock = 0.6
+}
+arty_supply4 = {
+	artillery_fire = 0.45
+	artillery_shock = 0.8
+}
+
+gunpowder_supply1 = {
+	siege_ability = 0.1
+	fire_damage = 0.05
+}
+gunpowder_supply2 = {
+	siege_ability = 0.2
+	fire_damage = 0.1
+}
+gunpowder_supply3 = {
+	siege_ability = 0.3
+	fire_damage = 0.15
+}
+gunpowder_supply4 = {
+	siege_ability = 0.4
+	fire_damage = 0.2
+}
+
+officer_supply1 = {
+	morale_damage_received = -0.05
+	shock_damage = 0.1
+}
+officer_supply2 = {
+	morale_damage_received = -0.075
+	shock_damage = 0.15
+}
+officer_supply3 = {
+	morale_damage_received = -0.1
+	shock_damage = 0.25
+}
+officer_supply4 = {
+	morale_damage_received = -0.15
+	shock_damage = 0.3
+}

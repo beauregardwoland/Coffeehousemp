@@ -98,3 +98,320 @@ defined_text = {
         }
     }
 }
+defined_text = {
+    name = supply_lvl_1
+	random = no
+    text = {
+        localisation_key = supply_lvl_1_yes
+        trigger = {
+           has_country_modifier = ration_supply1
+        }
+    }
+    text = {
+        localisation_key = supply_lvl_1_no
+    }
+}
+defined_text = {
+    name = supply_lvl_2
+	random = no
+    text = {
+        localisation_key = supply_lvl_2_yes
+        trigger = {
+           has_country_modifier = ration_supply2
+        }
+    }
+    text = {
+        localisation_key = supply_lvl_2_no
+    }
+}
+defined_text = {
+    name = supply_lvl_3
+	random = no
+    text = {
+        localisation_key = supply_lvl_3_yes
+        trigger = {
+           has_country_modifier = ration_supply3
+        }
+    }
+    text = {
+        localisation_key = supply_lvl_3_no
+    }
+}
+defined_text = {
+    name = supply_lvl_4
+	random = no
+    text = {
+        localisation_key = supply_lvl_4_yes
+        trigger = {
+           has_country_modifier = ration_supply4
+        }
+    }
+    text = {
+        localisation_key = supply_lvl_4_no
+    }
+}
+
+defined_text = {
+    name = firearms_lvl_1
+	random = no
+    text = {
+        localisation_key = firearms_lvl_1_yes
+        trigger = {
+           has_country_modifier = inf_supply1
+        }
+    }
+    text = {
+        localisation_key = firearms_lvl_1_no
+    }
+}
+defined_text = {
+    name = firearms_lvl_2
+	random = no
+    text = {
+        localisation_key = firearms_lvl_2_yes
+        trigger = {
+           has_country_modifier = inf_supply2
+        }
+    }
+    text = {
+        localisation_key = firearms_lvl_2_no
+    }
+}
+defined_text = {
+    name = firearms_lvl_3
+	random = no
+    text = {
+        localisation_key = firearms_lvl_3_yes
+        trigger = {
+           has_country_modifier = inf_supply3
+        }
+    }
+    text = {
+        localisation_key = firearms_lvl_3_no
+    }
+}
+defined_text = {
+    name = firearms_lvl_4
+	random = no
+    text = {
+        localisation_key = firearms_lvl_4_yes
+        trigger = {
+           has_country_modifier = inf_supply4
+        }
+    }
+    text = {
+        localisation_key = firearms_lvl_4_no
+    }
+}
+
+defined_text = {
+    name = pike_lvl_1
+	random = no
+    text = {
+        localisation_key = pike_lvl_1_yes
+        trigger = {
+           has_country_modifier = cav_supply1
+        }
+    }
+    text = {
+        localisation_key = pike_lvl_1_no
+    }
+}
+defined_text = {
+    name = pike_lvl_2
+	random = no
+    text = {
+        localisation_key = pike_lvl_2_yes
+        trigger = {
+           has_country_modifier = cav_supply2
+        }
+    }
+    text = {
+        localisation_key = pike_lvl_2_no
+    }
+}
+defined_text = {
+    name = pike_lvl_3
+	random = no
+    text = {
+        localisation_key = pike_lvl_3_yes
+        trigger = {
+           has_country_modifier = cav_supply3
+        }
+    }
+    text = {
+        localisation_key = pike_lvl_3_no
+    }
+}
+defined_text = {
+    name = pike_lvl_4
+	random = no
+    text = {
+        localisation_key = pike_lvl_4_yes
+        trigger = {
+           has_country_modifier = cav_supply4
+        }
+    }
+    text = {
+        localisation_key = pike_lvl_4_no
+    }
+}
+
+defined_text = {
+    name = artillery_lvl_1
+	random = no
+    text = {
+        localisation_key = artillery_lvl_1_yes
+        trigger = {
+           has_country_modifier = arty_supply1
+        }
+    }
+    text = {
+        localisation_key = artillery_lvl_1_no
+    }
+}
+defined_text = {
+    name = artillery_lvl_2
+	random = no
+    text = {
+        localisation_key = artillery_lvl_2_yes
+        trigger = {
+           has_country_modifier = arty_supply2
+        }
+    }
+    text = {
+        localisation_key = artillery_lvl_2_no
+    }
+}
+defined_text = {
+    name = artillery_lvl_3
+	random = no
+    text = {
+        localisation_key = artillery_lvl_3_yes
+        trigger = {
+           has_country_modifier = arty_supply3
+        }
+    }
+    text = {
+        localisation_key = artillery_lvl_3_no
+    }
+}
+defined_text = {
+    name = artillery_lvl_4
+	random = no
+    text = {
+        localisation_key = artillery_lvl_4_yes
+        trigger = {
+           has_country_modifier = arty_supply4
+        }
+    }
+    text = {
+        localisation_key = artillery_lvl_4_no
+    }
+}
+
+defined_text = {
+    name = gunpowder_lvl_1
+	random = no
+    text = {
+        localisation_key = gunpowder_lvl_1_yes
+        trigger = {
+           has_country_modifier = gunpowder_supply1
+        }
+    }
+    text = {
+        localisation_key = gunpowder_lvl_1_no
+    }
+}
+defined_text = {
+    name = gunpowder_lvl_2
+	random = no
+    text = {
+        localisation_key = gunpowder_lvl_2_yes
+        trigger = {
+           has_country_modifier = gunpowder_supply2
+        }
+    }
+    text = {
+        localisation_key = gunpowder_lvl_2_no
+    }
+}
+defined_text = {
+    name = gunpowder_lvl_3
+	random = no
+    text = {
+        localisation_key = gunpowder_lvl_3_yes
+        trigger = {
+           has_country_modifier = gunpowder_supply3
+        }
+    }
+    text = {
+        localisation_key = gunpowder_lvl_3_no
+    }
+}
+defined_text = {
+    name = gunpowder_lvl_4
+	random = no
+    text = {
+        localisation_key = gunpowder_lvl_4_yes
+        trigger = {
+           has_country_modifier = gunpowder_supply4
+        }
+    }
+    text = {
+        localisation_key = gunpowder_lvl_4_no
+    }
+}
+
+defined_text = {
+    name = officer_lvl_1
+	random = no
+    text = {
+        localisation_key = officer_lvl_1_yes
+        trigger = {
+           has_country_modifier = officer_supply1
+        }
+    }
+    text = {
+        localisation_key = officer_lvl_1_no
+    }
+}
+defined_text = {
+    name = officer_lvl_2
+	random = no
+    text = {
+        localisation_key = officer_lvl_2_yes
+        trigger = {
+           has_country_modifier = officer_supply2
+        }
+    }
+    text = {
+        localisation_key = officer_lvl_2_no
+    }
+}
+defined_text = {
+    name = officer_lvl_3
+	random = no
+    text = {
+        localisation_key = officer_lvl_3_yes
+        trigger = {
+           has_country_modifier = officer_supply3
+        }
+    }
+    text = {
+        localisation_key = officer_lvl_3_no
+    }
+}
+defined_text = {
+    name = officer_lvl_4
+	random = no
+    text = {
+        localisation_key = officer_lvl_4_yes
+        trigger = {
+           has_country_modifier = officer_supply4
+        }
+    }
+    text = {
+        localisation_key = officer_lvl_4_no
+    }
+}

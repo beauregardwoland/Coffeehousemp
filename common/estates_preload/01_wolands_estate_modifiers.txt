@@ -31,4 +31,53 @@ estate_placeholder = {
 			has_estate = estate_placeholder
 		}
 	}
+	modifier_definition = {
+		type = privileges
+		key = estate_placeholder_privilege_slots
+		trigger = {
+			has_estate = estate_placeholder
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = estate_placeholder_artillery_production
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = estate_placeholder_infantry_production
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = estate_placeholder_horse_production
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = estate_placeholder_gunpowder_production
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = estate_placeholder_food_production
+		trigger = {
+			always = yes
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = estate_placeholder_officer_production
+		trigger = {
+			always = yes
+		}
+	}
 }

@@ -7,6 +7,8 @@
 # ROOT = country picking the idea
 # groups set to colonial=yes will be higher prioritized by the AI when spending power
 
+#ideas in the group can have effect = {} and removed_effect = {}
+
 aristocracy_ideas = {
 	category = ADM
 
@@ -499,6 +501,7 @@ spy_ideas = {
 	blackmailing = {
 		monthly_favor_modifier = 0.33
 		accept_vassalization_reasons = 15
+		num_of_pronoiars = 1
 	}
 
 	ai_will_do = {
@@ -574,6 +577,7 @@ offensive_ideas = {
 
 	bonus = {
 		recover_army_morale_speed = 0.1
+		qizilbash_loyalty_modifier = 0.1
 	}
 
 	bayonet_leaders = {
@@ -588,6 +592,7 @@ offensive_ideas = {
 	}
 	glorious_arms = {
 		prestige_from_land = 1.0
+		num_of_pronoiars = 1
 	}
 	engineer_corps = {
 		siege_ability = 0.20
@@ -703,6 +708,35 @@ defensive_ideas = {
 	}
 	improved_foraging = {
 		garrison_size = 0.33
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = ned_buffed_forts_flag
+					}
+					every_owned_province = {
+						limit = {
+							region = low_countries_region
+							has_fort_building_trigger = yes
+						}
+						remove_province_modifier = ned_low_countries_fort_buff
+						add_province_modifier = {
+							name = ned_low_countries_fort_buff_buffed
+							duration = -1
+							hidden = yes
+						}
+					}
+				}
+			}
+		}
+		removed_effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = { has_province_modifier = ned_low_countries_fort_buff_buffed }
+					remove_province_modifier = ned_low_countries_fort_buff_buffed
+				}
+			}
+		}
 	}
 
 	#until_the_last_man = {
@@ -864,21 +898,21 @@ economic_ideas = {
 	national_bank = {
 		inflation_reduction = 0.1
 	}
-	smithian_economics = { 
-		#Mechanic: +1/-1 Dev from Manufactories		#Note for modders; the two mechanics introduced in 1.35   
-		production_efficiency = 0.1 				#for eco ideas are done so via on_actions 
- 	}												#for the loans and via the buildings file for the dev from manufactories! happy modding 
+	merchant_passes = {
+		merchants = 1
+	}
 	efficient_mining = {
 		gold_depletion_chance_modifier = -0.25
-	}
-	nationalistic_enthusiasm = {
-		land_maintenance_modifier = -0.05
 	}
 	debt_and_loans = {
 		interest = -0.5
 	}
-	merchant_passes = {
-		merchants = 1
+	nationalistic_enthusiasm = {
+		land_maintenance_modifier = -0.05
+	}
+	smithian_economics = { 
+		#Mechanic: +1/-1 Dev from Manufactories		#Note for modders; the two mechanics introduced in 1.35   
+		production_efficiency = 0.1					#for eco ideas are done so via on_actions 
 	}
 
 	ai_will_do = {
@@ -1113,6 +1147,7 @@ quality_ideas = {
 	bonus = {
 		discipline = 0.05
 		janissaries_loyalty_modifier = 0.1
+		ghulams_loyalty_modifier = 0.1
 	}
 
 	private_to_marshal = {
@@ -1207,9 +1242,11 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.33
+		num_of_pronoiars = 1
 	}
 	mass_army = {
 		global_manpower_modifier = 0.33
+		num_of_pronoiars = 1
 	}
 	the_young_can_serve = {
 		manpower_recovery_speed = 0.20
@@ -1372,6 +1409,7 @@ administrative_ideas = {
 	}
 	local_rule = {
 		advisor_pool = 1
+		num_of_pronoiars = 1
 	}
 	adaptability = {
 		core_creation = -0.25
@@ -1571,10 +1609,12 @@ court_ideas = {
 		meritocracy = 0.25 
 		imperial_mandate = 0.1
 		imperial_authority = 0.05
+		monthly_cultural_unity = 0.5
 	}
 	
 	long_echo = {
 		power_projection_from_insults = 1
+		diplomatic_reputation = 1
 	}
 	recognize_hierarchy = {
 		all_estate_loyalty_equilibrium = 0.1
@@ -1582,6 +1622,7 @@ court_ideas = {
 	}
 	welcoming_ceremonies = {
 		prestige = 1 
+		monthly_persian_influence = 0.1
 	}
 	tranquil_coordination = {
 		reform_progress_growth = 0.2

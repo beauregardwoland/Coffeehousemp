@@ -1,0 +1,407 @@
+custom_button = {
+    name = open_logi_menu
+    potential = {
+		ai = no
+		NOT = { has_country_flag = in_logi_menu }
+	}
+	trigger = {
+		
+	}
+	effect = {
+		set_country_flag = in_logi_menu
+	}
+	tooltip = open_logi_menu_tt
+}
+custom_window = {
+	name = logi_interface
+	potential = {
+		ai = no
+		has_country_flag = in_logi_menu
+	}
+}
+custom_button = {
+    name = close_logi_menu
+    potential = {
+		always = yes 
+	}
+	trigger = {
+	}
+	effect = {
+		clr_country_flag = in_logi_menu
+	}
+	tooltip = close_logi_menu_tt
+}
+
+custom_icon = {
+	name = logi_menu
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	#tooltip = mobing_bar_tooltip
+}
+
+custom_icon = {
+	name = logi_bar_1	
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	#frame_variable = food_production_ratio
+	frame = {
+		number = 100
+		trigger = {
+			check_variable = {
+				which = food_production_ratio
+				value = 2
+			}
+		}
+	}
+	frame = {
+		number = 68
+		trigger = {
+			check_variable = {
+				which = food_production_ratio
+				value = 1.75
+			}
+		}
+	}
+	frame = {
+		number = 48
+		trigger = {
+			check_variable = {
+				which = food_production_ratio
+				value = 1.5
+			}
+		}
+	}
+	frame = {
+		number = 28
+		trigger = {
+			check_variable = {
+				which = food_production_ratio
+				value = 1.25
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = logi_bar_2
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	frame = {
+		number = 100
+		trigger = {
+			check_variable = {
+				which = inf_production_ratio
+				value = 2
+			}
+		}
+	}
+	frame = {
+		number = 68
+		trigger = {
+			check_variable = {
+				which = inf_production_ratio
+				value = 1.75
+			}
+		}
+	}
+	frame = {
+		number = 48
+		trigger = {
+			check_variable = {
+				which = inf_production_ratio
+				value = 1.5
+			}
+		}
+	}
+	frame = {
+		number = 28
+		trigger = {
+			check_variable = {
+				which = inf_production_ratio
+				value = 1.25
+			}
+		}
+	}	
+}
+
+custom_icon = {
+	name = logi_bar_3
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	frame = {
+		number = 100
+		trigger = {
+			check_variable = {
+				which = cav_production_ratio
+				value = 2
+			}
+		}
+	}
+	frame = {
+		number = 68
+		trigger = {
+			check_variable = {
+				which = cav_production_ratio
+				value = 1.75
+			}
+		}
+	}
+	frame = {
+		number = 48
+		trigger = {
+			check_variable = {
+				which = cav_production_ratio
+				value = 1.5
+			}
+		}
+	}
+	frame = {
+		number = 28
+		trigger = {
+			check_variable = {
+				which = cav_production_ratio
+				value = 1.25
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = logi_bar_4
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	frame = {
+		number = 100
+		trigger = {
+			check_variable = {
+				which = arty_production_ratio
+				value = 2
+			}
+		}
+	}
+	frame = {
+		number = 68
+		trigger = {
+			check_variable = {
+				which = arty_production_ratio
+				value = 1.75
+			}
+		}
+	}
+	frame = {
+		number = 48
+		trigger = {
+			check_variable = {
+				which = arty_production_ratio
+				value = 1.5
+			}
+		}
+	}
+	frame = {
+		number = 28
+		trigger = {
+			check_variable = {
+				which = arty_production_ratio
+				value = 1.25
+			}
+		}
+	}
+}
+custom_icon = {
+	name = logi_bar_5
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	frame = {
+		number = 100
+		trigger = {
+			check_variable = {
+				which = gunpowder_production_ratio
+				value = 2
+			}
+		}
+	}
+	frame = {
+		number = 68
+		trigger = {
+			check_variable = {
+				which = gunpowder_production_ratio
+				value = 1.75
+			}
+		}
+	}
+	frame = {
+		number = 48
+		trigger = {
+			check_variable = {
+				which = gunpowder_production_ratio
+				value = 1.5
+			}
+		}
+	}
+	frame = {
+		number = 28
+		trigger = {
+			check_variable = {
+				which = gunpowder_production_ratio
+				value = 1.25
+			}
+		}
+	}
+}
+
+custom_icon = {
+	name = logi_bar_6	
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	frame = {
+		number = 100
+		trigger = {
+			check_variable = {
+				which = officer_production_ratio
+				value = 2
+			}
+		}
+	}
+	frame = {
+		number = 68
+		trigger = {
+			check_variable = {
+				which = officer_production_ratio
+				value = 1.75
+			}
+		}
+	}
+	frame = {
+		number = 48
+		trigger = {
+			check_variable = {
+				which = officer_production_ratio
+				value = 1.5
+			}
+		}
+	}
+	frame = {
+		number = 28
+		trigger = {
+			check_variable = {
+				which = officer_production_ratio
+				value = 1.25
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+custom_icon = {
+	name = logi_1
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	tooltip = logi_1_tooltip
+}
+
+custom_icon = {
+	name = logi_2
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	tooltip = logi_2_tooltip
+}
+
+custom_icon = {
+	name = logi_3
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	tooltip = logi_3_tooltip
+}
+
+custom_icon = {
+	name = logi_4
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	tooltip = logi_4_tooltip
+}
+
+custom_icon = {
+	name = logi_5
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	tooltip = logi_6_tooltip
+}
+
+custom_icon = {
+	name = logi_6
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	tooltip = logi_5_tooltip
+}
+
+custom_icon = {
+	name = rations_icon
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	tooltip = rations_icon_tt
+}
+
+custom_icon = {
+	name = inf_icon
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	tooltip = inf_icon_tt
+}
+
+custom_icon = {
+	name = cav_icon
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	tooltip = cav_icon_tt
+}
+
+custom_icon = {
+	name = arty_icon
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	tooltip = arty_icon_tt
+}
+custom_icon = {
+	name = gunpowder_icon
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	tooltip = gunpowder_icon_tt
+}
+custom_icon = {
+	name = officer_icon
+	potential = {
+		has_country_flag = in_logi_menu
+	}
+	tooltip = officer_icon_tt
+}

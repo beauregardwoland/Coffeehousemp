@@ -223,6 +223,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
 	gra_rally_the_volunteers = {
 		potential = {
 			has_government_attribute = can_rally_volunteers_from_allies

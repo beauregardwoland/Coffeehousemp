@@ -126,7 +126,7 @@ NDiplomacy = {
 	DESIRED_NUM_OF_ELECTORS = 7,
 	MAX_FREE_CITIES = 12,
 	MIN_NUM_ELECTORS_FOR_REMOVE_ELECTORATE = 2,		-- Limit is inclusive.
-	HRE_PRINCE_AUTHORITY_THRESHOLD = 20,			-- Threshold below which you lose IA, and above which you gain it
+	HRE_PRINCE_AUTHORITY_THRESHOLD = 25,			-- Threshold below which you lose IA, and above which you gain it
 	IMPERIAL_AUTHORITY_FROM_PRINCES = 0.075,			-- Scales to threshold
 	HRE_FOREIGN_CONTROL_PENALTY = -0.005,			-- Each foreign-controlled province in the empire (owned or vassalised) lowers IA by this amount
 	HRE_HERETIC_PENALTY = -0.01,					-- Per heretic prince (halved by Peace of Westphalia)
@@ -504,7 +504,7 @@ NCountry = {
 	SPLENDOR_ABILITY_COST = 800,
 	PROSPERITY_MONTHLY_DECLINE = -2,				-- monthly tick
 	PROSPERITY_INCREASE_SIZE= 1,				-- if diceroll of d20< monarch stat, while possible ot increase
-	CORRUPTION_FROM_BANNERS = 0,
+	CORRUPTION_FROM_BANNERS = 0.1,
 	FORCE_CONVERT_COOLDOWN_DURATION = 10,				-- Years
 
 
@@ -729,7 +729,7 @@ NCountry = {
 	CONVERSION_COOLDOWN = 120,						-- months before you can convert again.
 	CONVERSION_COOLDOWN_SECONDARY = 120,			-- months before you can convert secondary religion again.
 
-	IDEA_TO_TECH = -0.02,			-- percentage on tech reduction per idea.
+	IDEA_TO_TECH = -0.015,			-- percentage on tech reduction per idea.
 	TECH_TIME_COST = 0.3,			-- tech grow with 20% cost over time.
 	TECH_AHEAD_OF_TIME = 0.1,		-- per year ahead.
 
@@ -1468,17 +1468,17 @@ NMilitary = {
 	MUSKETEER_USES_CONSTRUCTION = 0,
 	MUSKETEER_BASE_COST_MODIFIER = 1.0,
 	MUSKETEER_MANPOWER_COST_MODIFIER = 1.0,
-	MUSKETEER_PRESTIGE_COST = 0.1,
+	MUSKETEER_PRESTIGE_COST = 0,
 	MUSKETEER_ABSOLUTISM_COST = 0,
-	MUSKETEER_STARTING_STRENGTH = 0.75,
+	MUSKETEER_STARTING_STRENGTH = 0.1,
 	MUSKETEER_STARTING_MORALE = 0.4, 
 
 	SAMURAI_USES_CONSTRUCTION = 1,
 	SAMURAI_BASE_COST_MODIFIER = 1.0,
-	SAMURAI_MANPOWER_COST_MODIFIER = 0,
+	SAMURAI_MANPOWER_COST_MODIFIER = 1.0,
 	SAMURAI_LEGITIMACY_COST = 0,
-	SAMURAI_STARTING_STRENGTH = 1,
-	SAMURAI_STARTING_MORALE = 0.5, 
+	SAMURAI_STARTING_STRENGTH = 1.0,
+	SAMURAI_STARTING_MORALE = 0.1, 
 
 	QIZILBASH_USES_CONSTRUCTION = 1,
 	QIZILBASH_BASE_COST_MODIFIER = 0.7,
@@ -1609,6 +1609,11 @@ NMilitary = {
 	SIEGE_BONUS_FOOD_SHORTAGE = 2,
 	SIEGE_BONUS_WATER_SHORTAGE = 3,
 	SIEGE_BONUS_DEFENDERS_DESERT = 2,
+
+	MINIMUM_DRILL_DECAY_MODIFIER = 0, -- Change this to a negative value so values below -100% drill decay will actually give drill
+	MINIMUM_MERCENARY_HIRE_PRICE = 0.1, -- Lower cap for mercenary cost modifier, change it to 0 for free mercs
+
+	OPEN_SEA_PATHFIND_PENALTY = 3,
 },
 
 NAI = {
@@ -2179,6 +2184,8 @@ NAI = {
 	FIRE_PIP_MULT = 3, -- This means having one of each fire pip applies a modifier of 17/13 to the fire phase estimate, as desired (since it's equivalent to +1 dice modifier)
 	SHOCK_PIP_MULT = 3, -- Ditto
 	MORALE_PIP_MULT = 2, -- Morale pips are counted in both phases, but only applies to morale damage, which we guesstimate to be worth twice as much as casualties (=2/3, or ~1.32/2, of total)
+
+	MIN_DAYS_AFTER_TRUCE_ENDS = 5, -- How long AI needs to wait after a truce ends to declare a war, some time needed for the player to take any action since AI can do it immediately
 },
 
 NAIEconomy = {

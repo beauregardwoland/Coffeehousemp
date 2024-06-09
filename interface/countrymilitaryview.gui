@@ -223,7 +223,7 @@ guiTypes = {
 		hide_position = { x=-600 y =140 }	
 		animation_type = "decelerated"
 		animation_time = 300	
-		size = { x=1024 y=600 }
+		size = { x=1024 y=620 }
 		moveable = 0
 		Orientation = "UPPER_LEFT"
 		upsound = tab_military
@@ -2110,6 +2110,158 @@ guiTypes = {
 			spriteType = "GFX_mobilize_bar_bad"
 			scripted = yes
 		}
+###########################################################################################
+############################## wolands logi menu   ########################################
+###########################################################################################
+		guiButtonType = {
+			name ="open_logi_menu"
+			position = { x= 550 y = 384 }
+			quadTextureSprite ="GFX_logi_menu_button"
+			scripted = yes
+		}
+		WindowType = {
+			name = "logi_interface"
+			position = { x= 533 y = 140 }
+			#upsound = age_of_discovery
+			scripted = yes
+			iconType = {
+				name = "logi_menu"
+				position = { x= 0 y = 6 }
+				#alwaystransparent = yes
+				spriteType = "GFX_logi_menu"
+				scripted = yes
+			}
+			guiButtonType = {
+				name ="close_logi_menu"
+				position = { x= 543 y = 0 }
+				quadTextureSprite ="GFX_closebutton"
+				scripted = yes
+			}
+			iconType = {
+				name = "logi_bar_1"
+				position = { x= 52 y = 100 }
+				spriteType = "GFX_logi_bar_1"
+				scripted = yes
+			}
+			iconType = {
+				name = "logi_bar_2"
+				position = { x= 137 y = 100 }
+				spriteType = "GFX_logi_bar_1"
+				scripted = yes
+			}
+			iconType = {
+				name = "logi_bar_3"
+				position = { x= 222 y = 100 }
+				spriteType = "GFX_logi_bar_1"
+				scripted = yes
+			}
+			iconType = {
+				name = "logi_bar_4"
+				position = { x= 307 y = 100 }
+				spriteType = "GFX_logi_bar_1"
+				scripted = yes
+			}
+			iconType = {
+				name = "logi_bar_5"
+				position = { x= 392 y = 100 }
+				spriteType = "GFX_logi_bar_1"
+				scripted = yes
+			}
+			iconType = {
+				name = "logi_bar_6"
+				position = { x= 477 y = 100 }
+				spriteType = "GFX_logi_bar_1"
+				scripted = yes
+			}
+			
+			iconType = {
+				name = "logi_1"
+				position = { x= 50 y = 100 }
+				spriteType = "GFX_logi_1"
+				scripted = yes
+			}
+			iconType = {
+				name = "logi_2"
+				position = { x= 135 y = 100 }
+				spriteType = "GFX_logi_1"
+				scripted = yes
+			}
+			iconType = {
+				name = "logi_3"
+				position = { x= 220 y = 100 }
+				spriteType = "GFX_logi_1"
+				scripted = yes
+			}
+			iconType = {
+				name = "logi_4"
+				position = { x= 305 y = 100 }
+				spriteType = "GFX_logi_1"
+				scripted = yes
+			}
+			iconType = {
+				name = "logi_5"
+				position = { x= 390 y = 100 }
+				spriteType = "GFX_logi_1"
+				scripted = yes
+			}
+			iconType = {
+				name = "logi_6"
+				position = { x= 475 y = 100 }
+				spriteType = "GFX_logi_1"
+				scripted = yes
+			}
+			iconType = {
+				name = "rations_icon"
+				position = { x= 68 y = 58 }
+				spriteType = "GFX_food_icon"
+				scripted = yes
+			}
+			iconType = {
+				name = "inf_icon"
+				position = { x= 152 y = 58 }
+				spriteType = "GFX_inf_icon"
+				scripted = yes
+			}
+			iconType = {
+				name = "cav_icon"
+				position = { x= 238 y = 58 }
+				spriteType = "GFX_cav_icon"
+				scripted = yes
+			}
+			iconType = {
+				name = "arty_icon"
+				position = { x= 320 y = 58 }
+				spriteType = "GFX_arty_icon"
+				scale = 1.2
+				scripted = yes
+			}
+			iconType = {
+				name = "gunpowder_icon"
+				position = { x= 404 y = 58 }
+				spriteType = "GFX_gun_icon"
+				scripted = yes
+			}
+			iconType = {
+				name = "officer_icon"
+				position = { x= 488 y = 58 }
+				spriteType = "GFX_officer_icon"
+				scripted = yes
+			}
+		}
+		#iconType = {
+		#	name = "logi_menu"
+		#	position = { x= 533 y = 146 }
+			#alwaystransparent = yes
+		#	spriteType = "GFX_logi_menu"
+		#	scripted = yes
+		#}
+		#guiButtonType = {
+		#	name ="close_logi_menu"
+		#	position = { x= 1076 y = 140 }
+		#	quadTextureSprite ="GFX_closebutton"
+		#	scripted = yes
+		#}
+		
 	}
 
 	### UNIT SELECT WINDOW

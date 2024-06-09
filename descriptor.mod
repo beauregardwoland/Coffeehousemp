@@ -10,6 +10,6 @@ tags={
 }
 name="beausideas"
 picture="thumbnail.png"
-supported_version="1.36.*"
+supported_version="1.37.*"
 path="C:/Users/santi/OneDrive/Documents/Paradox Interactive/Europa Universalis IV/mod/beausideas"
 remote_file_id="2974232327"

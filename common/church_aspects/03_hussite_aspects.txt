@@ -3,7 +3,22 @@ clerical_poverty_aspect = {
 	modifier = {
 		church_influence_modifier = -0.1
 		stability_cost_modifier = -0.15
-		global_tax_modifier = 0.05
+	}
+	effect = {
+		hidden_effect = { 
+			if = {
+				limit = {
+					has_country_flag = boh_aspect_refund_chance
+				}
+				random_list = { 
+					20 = { 
+						add_church_power = 25
+					}
+					80 = { 
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -11,7 +26,23 @@ punishment_of_sins_aspect = {
 	cost = 100
 	modifier = {
 		nobles_influence_modifier = -0.1
-		yearly_corruption = -0.15
+		yearly_corruption = -0.05
+	}
+	effect = {
+		hidden_effect = { 
+			if = {
+				limit = {
+					has_country_flag = boh_aspect_refund_chance
+				}
+				random_list = { 
+					20 = { 
+						add_church_power = 25
+					}
+					80 = { 
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -19,7 +50,22 @@ orphan_hetmans_aspect = {
 	cost = 100
 	modifier = {
 		army_tradition_decay = -0.01
-		extra_manpower_at_religious_war = yes
+	}
+	effect = {
+		hidden_effect = { 
+			if = {
+				limit = {
+					has_country_flag = boh_aspect_refund_chance
+				}
+				random_list = { 
+					20 = { 
+						add_church_power = 25
+					}
+					80 = { 
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -27,14 +73,46 @@ bread_and_wine_aspect = {
 	cost = 100
 	modifier = {
 		tolerance_own = 1
-		global_trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.05
+	}
+	effect = {
+		hidden_effect = { 
+			if = {
+				limit = {
+					has_country_flag = boh_aspect_refund_chance
+				}
+				random_list = { 
+					20 = { 
+						add_church_power = 25
+					}
+					80 = { 
+					}
+				}
+			}
+		}
 	}
 }
 
 sola_scriptura_aspect = {
 	cost = 100
 	modifier = {
-		warscore_cost_vs_other_religion = -0.2
+		warscore_cost_vs_other_religion = -0.1
+	}
+	effect = {
+		hidden_effect = { 
+			if = {
+				limit = {
+					has_country_flag = boh_aspect_refund_chance
+				}
+				random_list = { 
+					20 = { 
+						add_church_power = 25
+					}
+					80 = { 
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -42,7 +120,22 @@ adamite_services_aspect = {
 	cost = 100
 	modifier = {
 		culture_conversion_cost = -0.2
-		culture_conversion_time = -0.30
+	}
+	effect = {
+		hidden_effect = { 
+			if = {
+				limit = {
+					has_country_flag = boh_aspect_refund_chance
+				}
+				random_list = { 
+					20 = { 
+						add_church_power = 25
+					}
+					80 = { 
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -50,10 +143,26 @@ pacifism_aspect = {
 	cost = 100
 	modifier = {
 		stability_cost_to_declare_war = 1
-		development_cost = -0.10
+		improve_relation_modifier = 0.3
 	}
 	ai_will_do = {
 		factor = 0
+	}
+	effect = {
+		hidden_effect = { 
+			if = {
+				limit = {
+					has_country_flag = boh_aspect_refund_chance
+				}
+				random_list = { 
+					20 = { 
+						add_church_power = 25
+					}
+					80 = { 
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -62,12 +171,44 @@ regular_defenestrations_aspect = {
 	modifier = {
 		harsh_treatment_cost = -0.33
 	}
+	effect = {
+		hidden_effect = { 
+			if = {
+				limit = {
+					has_country_flag = boh_aspect_refund_chance
+				}
+				random_list = { 
+					20 = { 
+						add_church_power = 25
+					}
+					80 = { 
+					}
+				}
+			}
+		}
+	}
 }
 
 taborite_resurgence_aspect = {
 	cost = 100
 	modifier = {
 		global_manpower_modifier = 0.2
+	}
+	effect = {
+		hidden_effect = { 
+			if = {
+				limit = {
+					has_country_flag = boh_aspect_refund_chance
+				}
+				random_list = { 
+					20 = { 
+						add_church_power = 25
+					}
+					80 = { 
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -76,6 +217,48 @@ freedom_to_preach_aspect = {
 	modifier = {
 		religious_unity = 0.1
 		tolerance_heretic = 1
-		land_morale_constant = 0.2
+	}
+	effect = {
+		hidden_effect = { 
+			if = {
+				limit = {
+					has_country_flag = boh_aspect_refund_chance
+				}
+				random_list = { 
+					20 = { 
+						add_church_power = 25
+					}
+					80 = { 
+					}
+				}
+			}
+		}
+	}
+}
+
+rekindle_the_hussite_wars_aspect = {
+	cost = 200
+	trigger = {
+		has_dlc = "Domination" #to be changed to 1.37
+		mission_completed = boh_defenestrate_the_heretics
+	}
+	modifier = {
+		cb_on_religious_enemies = yes
+	}
+	effect = {
+		hidden_effect = { 
+			if = {
+				limit = {
+					has_country_flag = boh_aspect_refund_chance
+				}
+				random_list = { 
+					20 = { 
+						add_church_power = 25
+					}
+					80 = { 
+					}
+				}
+			}
+		}
 	}
 }

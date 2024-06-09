@@ -1,0 +1,683 @@
+export_goods_produced_effect = {
+    if = {
+        limit = {
+            #conditions to start checking, e.g. year = 1830
+        }
+        every_country = {
+            limit = {
+                ai = no
+            }
+            set_variable = { which = coal_produced value = 0 }
+            set_variable = { which = iron_produced value = 0 }
+			set_variable = { which = copper_produced value = 0 }
+			set_variable = { which = fish_produced value = 0 }
+			set_variable = { which = livestock_produced value = 0 }
+			set_variable = { which = grain_produced value = 0 }
+            export_to_variable = { which = goods_produced_mod value = modifier:global_trade_goods_size_modifier }
+            every_owned_province = {
+                trigger_switch = {
+                    on_trigger = trade_goods
+                    coal = {
+                        export_produced_goods_helper = { good = coal }
+                    }
+                    iron = {
+                        export_produced_goods_helper = { good = iron }
+                    }
+					copper = {
+                        export_produced_goods_helper = { good = copper }
+                    }
+					grain = {
+                        export_produced_goods_helper = { good = grain }
+                    }
+					fish = {
+                        export_produced_goods_helper = { good = fish }
+                    }
+					livestock = {
+                        export_produced_goods_helper = { good = livestock }
+                    }
+                }
+            }
+        }
+    }
+}
+
+export_produced_goods_helper = { #good
+    PREV = {
+        export_to_variable = { which = add value = trigger_value:base_production who = PREV }
+        multiply_variable = { which = add value = 0.12 } #prod per dev
+        export_to_variable = { which = temp value = modifier:trade_goods_size who = PREV }
+        change_variable = { which = add which = temp }
+        export_to_variable = { which = temp value = modifier:trade_goods_size_modifier who = PREV }
+        change_variable = { which = temp which = goods_produced_mod }
+        change_variable = { which = temp value = 1 }
+        multiply_variable = { which = add which = temp }
+        change_variable = { which = $good$_produced which = add }
+    }
+}
+update_goods = {
+	set_variable = { which = $GOODS$_produced value = 0.00 }          	
+	every_owned_province = { 
+		limit = { 
+			trade_goods = $GOODS$
+		}
+
+		export_to_variable = {
+			variable_name = $GOODS$_produced    
+			value = modifier:trade_goods_size                         
+		}	
+		
+		export_to_variable = {
+			variable_name = tradegood_modifier     
+			value = modifier:trade_goods_size_modifier                        
+		}
+		
+		export_to_variable = {
+			variable_name = tradegood_modifier_glob    
+			value = modifier:global_trade_goods_size_modifier 
+			who = owner 
+		}
+		
+		change_variable = {            
+			which = tradegood_modifier 
+			which = tradegood_modifier_glob  
+		}
+
+		multiply_variable = {
+			which = tradegood_modifier
+			which = $GOODS$_produced
+		}
+
+		change_variable = {            
+			which = $GOODS$_produced
+			which = tradegood_modifier 
+		}
+		
+		owner = {
+			change_variable = {            
+				which = $GOODS$_produced
+				which = PREV  
+			}
+		}
+	}
+}
+beaus_logi_reset = {
+	export_to_variable = {
+		which = building_production
+		value = modifier:estate_placeholder_loyalty_modifier
+	}
+	export_to_variable = {
+		which = num_of_army
+		value = trigger_value:army_size
+	}
+	export_to_variable = {
+		which = num_of_inf
+		value = trigger_value:num_of_infantry
+	}
+	export_to_variable = {
+		which = num_of_cav
+		value = trigger_value:num_of_cavalry
+	}
+	export_to_variable = {
+		which = num_of_arty
+		value = trigger_value:num_of_artillery
+	}
+
+	if = {
+		limit = { 
+			NOT = { army_size = 0 }
+		}
+		set_variable = {
+			which = food_production_ratio
+			value = 0
+		}
+		set_variable = {
+			which = gunpowder_production_ratio
+			value = 0
+		}
+		set_variable = {
+			which = officer_production_ratio
+			value = 0
+		}
+	}
+	else = {
+		set_variable = {
+			which = food_production
+			value = 0
+		}
+		export_to_variable = {
+			which = food_production
+			value = modifier:estate_placeholder_food_production
+		}
+		set_variable = {
+			which = food_production_ratio
+			which = food_production
+		}
+		multiply_variable = {
+			which = food_production_ratio
+			value = 10
+		}
+		change_variable = {
+			which = food_production_ratio
+			which = grain_produced
+		}
+		change_variable = {
+			which = food_production_ratio
+			which = livestock_produced
+		}
+		change_variable = {
+			which = food_production_ratio
+			which = fish_produced
+		}
+		divide_variable = {
+			which = food_production_ratio
+			which = num_of_army
+		}
+
+		set_variable = {
+			which = officer_production
+			value = 0.00
+		}
+		export_to_variable = {
+			which = officer_production
+			value = modifier:estate_placeholder_officer_production
+		}
+		set_variable = {
+			which = officer_production_ratio
+			which = officer_production
+		}
+		multiply_variable = {
+			which = officer_production_ratio
+			value = 10
+		}
+		change_variable = {
+			which = officer_production_ratio
+			which = cloth_produced
+		}
+		change_variable = {
+			which = officer_production_ratio
+			which = silk_produced
+		}
+		divide_variable = {
+			which = officer_production_ratio
+			which = num_of_army
+		}
+	
+		set_variable = {
+			which = gunpowder_production
+			value = 0.00
+		}
+		export_to_variable = {
+			which = gunpowder_production
+			value = modifier:estate_placeholder_gunpowder_production
+		}
+		set_variable = {
+			which = gunpowder_production_ratio
+			which = gunpowder_production
+		}
+		multiply_variable = {
+			which = gunpowder_production_ratio
+			value = 14
+		}
+		divide_variable = {
+			which = gunpowder_production_ratio
+			which = num_of_army
+		}
+	}
+	
+	if = {
+		limit = { 
+			NOT = { num_of_infantry = 1 }
+		}
+		set_variable = {
+			which = inf_production_ratio
+			value = 0
+		}
+	}
+	else = {
+		set_variable = {
+			which = inf_production
+			value = 0.00
+		}
+		export_to_variable = {
+			which = inf_production
+			value = modifier:estate_placeholder_infantry_production
+		}
+		set_variable = {
+			which = inf_production_ratio
+			which = inf_production
+		}
+		multiply_variable = {
+			which = inf_production_ratio
+			value = 14
+		}
+		change_variable = {
+			which = inf_production_ratio
+			which = iron_produced
+		}
+		change_variable = {
+			which = inf_production_ratio
+			which = copper_produced
+		}
+		divide_variable = {
+			which = inf_production_ratio
+			which = num_of_army
+		}
+	}
+	
+
+	if = {
+		limit = { 
+			NOT = { num_of_cavalry = 1 }
+		}
+		set_variable = {
+			which = cav_production_ratio
+			value = 0
+		}
+	}
+	else = {
+		set_variable = {
+			which = cav_production
+			value = 0.00
+		}
+		export_to_variable = {
+			which = cav_production
+			value = modifier:estate_placeholder_horse_production
+		}
+		set_variable = {
+			which = cav_production_ratio
+			which = cav_production
+		}
+		multiply_variable = {
+			which = cav_production_ratio
+			value = 14
+		}
+		change_variable = {
+			which = cav_production_ratio
+			which = iron_produced
+		}
+		change_variable = {
+			which = cav_production_ratio
+			which = copper_produced
+		}
+		divide_variable = {
+			which = cav_production_ratio
+			which = num_of_army
+		}
+	}
+	
+	if = {
+		limit = {
+			NOT = { num_of_artillery = 1 }
+		}
+		set_variable = {
+			which = arty_production_ratio
+			value = 0
+		}
+	}
+	else = {
+		set_variable = {
+			which = arty_production
+			value = 0.00
+		}
+		export_to_variable = {
+			which = arty_production
+			value = modifier:estate_placeholder_artillery_production
+		}
+		set_variable = {
+			which = arty_production_ratio
+			which = arty_production
+		}
+		multiply_variable = {
+			which = arty_production_ratio
+			value = 14
+		}
+		change_variable = {
+			which = arty_production_ratio
+			which = iron_produced
+		}
+		change_variable = {
+			which = arty_production_ratio
+			which = copper_produced
+		}
+		divide_variable = {
+			which = arty_production_ratio
+			which = num_of_arty
+		}
+	}
+	
+}
+logi_buff_give = {
+	if = {
+		limit = {
+			check_variable = {
+				which = food_production_ratio
+				value = 2
+			}
+		}
+		add_country_modifier = {
+			name = ration_supply4
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = food_production_ratio
+				value = 1.75
+			}
+		}
+		add_country_modifier = {
+			name = ration_supply3
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = food_production_ratio
+				value = 1.5
+			}
+		}
+		add_country_modifier = {
+			name = ration_supply2
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = food_production_ratio
+				value = 1.25
+			}
+		}
+		add_country_modifier = {
+			name = ration_supply1
+			duration = -1
+		}
+	}
+	else = {
+		
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = cav_production_ratio
+				value = 2
+			}
+		}
+		add_country_modifier = {
+			name = cav_supply4
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = cav_production_ratio
+				value = 1.75
+			}
+		}
+		add_country_modifier = {
+			name = cav_supply3
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = cav_production_ratio
+				value = 1.5
+			}
+		}
+		add_country_modifier = {
+			name = cav_supply2
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = cav_production_ratio
+				value = 1.25
+			}
+		}
+		add_country_modifier = {
+			name = cav_supply1
+			duration = -1
+		}
+	}
+	else = {
+		
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = inf_production_ratio
+				value = 2
+			}
+		}
+		add_country_modifier = {
+			name = inf_supply4
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = inf_production_ratio
+				value = 1.75
+			}
+		}
+		add_country_modifier = {
+			name = inf_supply3
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = inf_production_ratio
+				value = 1.5
+			}
+		}
+		add_country_modifier = {
+			name = inf_supply2
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = inf_production_ratio
+				value = 1.25
+			}
+		}
+		add_country_modifier = {
+			name = inf_supply1
+			duration = -1
+		}
+	}
+	else = {
+		
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				which = arty_production_ratio
+				value = 2
+			}
+		}
+		add_country_modifier = {
+			name = arty_supply4
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = arty_production_ratio
+				value = 1.75
+			}
+		}
+		add_country_modifier = {
+			name = arty_supply3
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = arty_production_ratio
+				value = 1.5
+			}
+		}
+		add_country_modifier = {
+			name = arty_supply2
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = arty_production_ratio
+				value = 1.25
+			}
+		}
+		add_country_modifier = {
+			name = arty_supply1
+			duration = -1
+		}
+	}
+	else = {
+		
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = gunpowder_production_ratio
+				value = 2
+			}
+		}
+		add_country_modifier = {
+			name = gunpowder_supply4
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = gunpowder_production_ratio
+				value = 1.75
+			}
+		}
+		add_country_modifier = {
+			name = gunpowder_supply3
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = gunpowder_production_ratio
+				value = 1.5
+			}
+		}
+		add_country_modifier = {
+			name = gunpowder_supply2
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = gunpowder_production_ratio
+				value = 1.25
+			}
+		}
+		add_country_modifier = {
+			name = gunpowder_supply1
+			duration = -1
+		}
+	}
+	else = {
+		
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = officer_production_ratio
+				value = 2
+			}
+		}
+		add_country_modifier = {
+			name = officer_supply4
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = officer_production_ratio
+				value = 1.75
+			}
+		}
+		add_country_modifier = {
+			name = officer_supply3
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = officer_production_ratio
+				value = 1.5
+			}
+		}
+		add_country_modifier = {
+			name = officer_supply2
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				which = officer_production_ratio
+				value = 1.25
+			}
+		}
+		add_country_modifier = {
+			name = officer_supply1
+			duration = -1
+		}
+	}
+	else = {
+		
+	}
+}
+beaus_test_effect ={
+	export_to_variable = {
+		which = num_of_army
+		value = trigger_value:army_size
+	}
+	set_variable = {
+		which = food_production
+		value = 0.00
+	}
+	export_to_variable = {
+		which = food_production
+		value = modifier:estate_placeholder_food_production
+	}
+	set_variable = {
+		which = food_production_ratio
+		which = food_production
+	}
+	multiply_variable = {
+		which = food_production_ratio
+		value = 14
+	}
+	divide_variable = {
+		which = food_production_ratio
+		which = num_of_army
+	}
+}

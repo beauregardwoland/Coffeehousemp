@@ -1,0 +1,92 @@
+﻿l_english:
+ open_logi_menu_tt:0"Opens logistics menu"
+ close_logi_menu_tt:0"Closes logistics menu"
+ 
+ estate_placeholder_gunpowder_production:0"Gunpowder Production"
+ estate_placeholder_food_production:0"Ration Procurement"
+ estate_placeholder_artillery_production:0"Artillery Production"
+ estate_placeholder_horse_production:0"Cavalry equipment Production"
+ estate_placeholder_infantry_production:0"Infantry equipment Production"
+ estate_placeholder_officer_production:0"Officer Training"
+
+ estate_placeholder_loyalty_modifier:0"testmodifier"
+ beaus_test_title:0"testing"
+ beaus_test_desc:0"number of gunpowder  [Root.gunpowder_production_ratio.GetValue] number of food [Root.food_production_ratio.GetValue] number of artillery [Root.arty_production_ratio.GetValue] number of cav [Root.cav_production_ratio.GetValue] number of inf [Root.inf_production_ratio.GetValue] number of officers [Root.officer_production_ratio.GetValue]"
+
+ supply_lvl_1_yes:0"§YNational Supply Limit Modifier:§G +10%§!\nRegiment Costs:§G -5%§!§!"
+ supply_lvl_1_no:0"National Supply Limit Modifier:§G +10%§!\nRegiment Costs:§G -5%§!"
+ supply_lvl_2_yes:0"§YNational Supply Limit Modifier:§G +20%§!\nRegiment Costs:§G -7.5%§!§!"
+ supply_lvl_2_no:0"National Supply Limit Modifier:§G +20%§!\nRegiment Costs:§G -7.5%§!"
+ supply_lvl_3_yes:0"§YNational Supply Limit Modifier:§G +30%§!\nRegiment Costs:§G -10%§!§!"
+ supply_lvl_3_no:0"National Supply Limit Modifier:§G +30%§!\nRegiment Costs:§G -10%§!"
+ supply_lvl_4_yes:0"§YNational Supply Limit Modifier:§G +40%§!\nRegiment Costs:§G -15%§!§!"
+ supply_lvl_4_no:0"National Supply Limit Modifier:§G +40%§!\nRegiment Costs:§G -15%§!"
+
+ rations_icon_tt:0"A measure of the quality of the general provisions of your army.\nDepending on your Provisons level the following bonus' can be given(current level highlighted in yellow)\n[Root.supply_lvl_1]\n[Root.supply_lvl_2]\n[Root.supply_lvl_3]\n[Root.supply_lvl_4]"
+
+ firearms_lvl_1_yes:0"§YInfantry Fire:§G +0.1§!\nInfantry Shock:§G +0.1§!§!"
+ firearms_lvl_1_no:0"Infantry Fire:§G +0.1§!\nInfantry Shock:§G +0.1§!"
+ firearms_lvl_2_yes:0"§YInfantry Fire:§G +0.2§!\nInfantry Shock:§G +0.2§!§!"
+ firearms_lvl_2_no:0"Infantry Fire:§G +0.2§!\nInfantry Shock:§G +0.2§!"
+ firearms_lvl_3_yes:0"§YInfantry Fire:§G +0.3§!\nInfantry Shock:§G +0.3§!§!"
+ firearms_lvl_3_no:0"Infantry Fire:§G +0.3§!\nInfantry Shock:§G +0.3§!"
+ firearms_lvl_4_yes:0"§YInfantry Fire:§G +0.45%§!\nInfantry Shock:§G +0.45§!§!"
+ firearms_lvl_4_no:0"Infantry Fire:§G +0.45§!\nInfantry Shock:§G +0.45§!"
+
+ inf_icon_tt:0"A measure of the quality and supply of firearms to your army.\nDepending on your firearms supply level the following bonus' can be given(current level highlighted in yellow)\n[Root.firearms_lvl_1]\n[Root.firearms_lvl_2]\n[Root.firearms_lvl_3]\n[Root.firearms_lvl_4]"
+
+ pike_lvl_1_yes:0"§YCavalry Fire:§G +0.1§!\nCavalry Shock:§G +0.1§!§!"
+ pike_lvl_1_no:0"Cavalry Fire:§G +0.1§!\nCavalry Shock:§G +0.1§!"
+ pike_lvl_2_yes:0"§YCavalry Fire:§G +0.2§!\nCavalry Shock:§G +0.2§!§!"
+ pike_lvl_2_no:0"Cavalry Fire:§G +0.2§!\nCavalry Shock:§G +0.2§!"
+ pike_lvl_3_yes:0"§YCavalry Fire:§G +0.3§!\nCavalry Shock:§G +0.3§!§!"
+ pike_lvl_3_no:0"Cavalry Fire:§G +0.3§!\nCavalry Shock:§G +0.3§!"
+ pike_lvl_4_yes:0"§YCavalry Fire:§G +0.45%§!\nCavalry Shock:§G +0.45§!§!"
+ pike_lvl_4_no:0"Cavalry Fire:§G +0.45§!\nCavalry Shock:§G +0.45§!"
+
+ cav_icon_tt:0"A measure of the quality and supply of pikes to your army.\nDepending on your pikes supply level the following bonus' can be given(current level highlighted in yellow)\n[Root.pike_lvl_1]\n[Root.pike_lvl_2]\n[Root.pike_lvl_3]\n[Root.pike_lvl_4]"
+
+ artillery_lvl_1_yes:0"§YArtillery Fire:§G +0.1§!\nArtillery Shock:§G +0.2§!§!"
+ artillery_lvl_1_no:0"Artillery Fire:§G +0.1§!\nArtillery Shock:§G +0.2§!"
+ artillery_lvl_2_yes:0"§YArtillery Fire:§G +0.2§!\nArtillery Shock:§G +0.4§!§!"
+ artillery_lvl_2_no:0"Artillery Fire:§G +0.2§!\nArtillery Shock:§G +0.4§!"
+ artillery_lvl_3_yes:0"§YArtillery Fire:§G +0.3§!\nArtillery Shock:§G +0.6§!§!"
+ artillery_lvl_3_no:0"Artillery Fire:§G +0.3§!\nArtillery Shock:§G +0.6§!"
+ artillery_lvl_4_yes:0"§YArtillery Fire:§G +0.45§!\nArtillery Shock:§G +0.8§!§!"
+ artillery_lvl_4_no:0"Artillery Fire:§G +0.45§!\nArtillery Shock:§G +0.8§!"
+
+ arty_icon_tt:0"A measure of the quality and supply of artillery to your army.\nDepending on your artillery supply level the following bonus' can be given(current level highlighted in yellow)\n[Root.artillery_lvl_1]\n[Root.artillery_lvl_2]\n[Root.artillery_lvl_3]\n[Root.artillery_lvl_4]"
+
+ gunpowder_lvl_1_yes:0"§YSiege Ability:§G +10%§!\nFire Damage:§G +5%§!§!"
+ gunpowder_lvl_1_no:0"Siege Ability:§G +10%§!\nFire Damage:§G +5%§!"
+ gunpowder_lvl_2_yes:0"§YSiege Ability:§G +20%§!\nFire Damage:§G +10%§!§!"
+ gunpowder_lvl_2_no:0"Siege Ability:§G +20%§!\nFire Damage:§G +10%§!"
+ gunpowder_lvl_3_yes:0"§YSiege Ability:§G +30%§!\nFire Damage:§G +15%§!§!"
+ gunpowder_lvl_3_no:0"Siege Ability:§G +30%§!\nFire Damage:§G +15%§!"
+ gunpowder_lvl_4_yes:0"§YSiege Ability:§G +40%§!\nFire Damage:§G +20%§!§!"
+ gunpowder_lvl_4_no:0"Siege Ability:§G +40%§!\nFire Damage:§G +20%§!"
+
+
+ gunpowder_icon_tt:0"A measure of the quality and supply of artillery to your army.\nDepending on your artillery supply level the following bonus' can be given(current level highlighted in yellow)\n[Root.gunpowder_lvl_1]\n[Root.gunpowder_lvl_2]\n[Root.gunpowder_lvl_3]\n[Root.gunpowder_lvl_4]"
+ 
+ officer_lvl_1_yes:0"§YMorale Damage Recieved:§G -5%§!\nShock Damage:§G +10%§!§!"
+ officer_lvl_1_no:0"Morale Damage Recieved:§G -5%§!\nShock Damage:§G +10%§!"
+ officer_lvl_2_yes:0"§YMorale Damage Recieved:§G -7.5%§!\nShock Damage:§G +15%§!§!"
+ officer_lvl_2_no:0"Morale Damage Recieved:§G -7.5%§!\nShock Damage:§G +15%§!"
+ officer_lvl_3_yes:0"§YMorale Damage Recieved:§G -10%§!\nShock Damage:§G +25%§!§!"
+ officer_lvl_3_no:0"Morale Damage Recieved:§G -10%§!\nShock Damage:§G +25%§!"
+ officer_lvl_4_yes:0"§YMorale Damage Recieved:§G -15%§!\nShock Damage:§G +30%§!§!"
+ officer_lvl_4_no:0"Morale Damage Recieved:§G -15%§!\nShock Damage:§G +30%§!"
+
+ officer_icon_tt:0"A measure of the quality and supply of trained officers to your army.\nDepending on your offcer effectiveness level the following bonus' can be given(current level highlighted in yellow)\n[Root.officer_lvl_1]\n[Root.officer_lvl_2]\n[Root.officer_lvl_3]\n[Root.officer_lvl_4]"
+
+ logi_1_tooltip:0"current ration production is §Y[Root.food_production_ratio.GetValue]§!"
+ logi_2_tooltip:0"current firearms production is §Y[Root.inf_production_ratio.GetValue]§!"
+ logi_3_tooltip:0"current lance/pike production  is §Y[Root.cav_production_ratio.GetValue]§!"
+ logi_4_tooltip:0"current artillery production is §Y[Root.arty_production_ratio.GetValue]§!"
+ logi_5_tooltip:0"current Officer effectivness is §Y[Root.officer_production_ratio.GetValue]§!"
+ logi_6_tooltip:0"current gunpowder production is §Y[Root.gunpowder_production_ratio.GetValue]§!"
+
+ logi_24_tooltip:0"iron [Root.iron_produced.GetValue] grain [Root.grain_produced.GetValue]"
+ logi_25_tooltip:0"iron [Root.iron_produced.GetValue] grain [Root.grain_produced.GetValue] cloth grain [Root.cloth_produced.GetValue]"
+
