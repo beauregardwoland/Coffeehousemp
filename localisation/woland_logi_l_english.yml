@@ -1,6 +1,7 @@
 ﻿l_english:
  open_logi_menu_tt:0"Opens logistics menu"
  close_logi_menu_tt:0"Closes logistics menu"
+ logi_header:0"Army Logistics"
  
  estate_placeholder_gunpowder_production:0"Gunpowder Production"
  estate_placeholder_food_production:0"Ration Procurement"

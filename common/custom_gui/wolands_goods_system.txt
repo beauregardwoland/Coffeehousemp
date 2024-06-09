@@ -1,3 +1,8 @@
+custom_text_box = {
+	name = logi_header
+	potential = { has_country_flag = in_logi_menu }
+}
+
 custom_button = {
     name = open_logi_menu
     potential = {
