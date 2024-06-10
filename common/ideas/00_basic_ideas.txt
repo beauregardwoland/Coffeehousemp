@@ -2395,7 +2395,7 @@ rural_ideas = {
 			}
 		}
 	rural1 = {
-		governing_capacity_modifier = 0.20
+		governing_capacity_modifier = 0.15
 	}
 	rural2 = {
 		movement_speed	 = 0.20

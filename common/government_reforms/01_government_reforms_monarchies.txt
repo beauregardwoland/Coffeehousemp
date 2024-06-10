@@ -5844,7 +5844,7 @@ regional_council_reform = {
 		}
 	}
 	modifiers = {
-		state_maintenance_modifier = -0.33
+		state_maintenance_modifier = 0.25
 	}
 	conditional = {
 		allow = { has_dlc = "Mandate of Heaven" }
@@ -6460,8 +6460,8 @@ royal_decree_reform = {
 		is_revolutionary = no
 	}
 	modifiers = {
-		max_absolutism = 5
-		yearly_absolutism = 0.5
+		max_absolutism = 10
+		yearly_absolutism = 1
 	}
 	ai = {
 		factor = 1
