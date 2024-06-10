@@ -1812,7 +1812,7 @@ enforce_dominat_culture_1 = {
     }
 
 	advisor_cost = 0.075
-	culture_conversion_cost = -0.25
+	culture_conversion_time = -0.10
 
 	ai_will_do = {
 		factor = 0.8		
@@ -1876,7 +1876,7 @@ enforce_dominat_culture_2 = {
     }
 
 	advisor_cost = 0.15
-	culture_conversion_cost = -0.40
+	culture_conversion_time = -0.25
 
 	
 	ai_will_do = {
@@ -1921,7 +1921,7 @@ enforce_dominat_culture_3 = {
     }
 
 	advisor_cost = 0.25
-	culture_conversion_cost = -0.70
+	culture_conversion_time = -0.50
 
 	ai_will_do = {
 		factor = 0.8		
