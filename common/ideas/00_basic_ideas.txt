@@ -2508,7 +2508,7 @@ natural_science_ideas = {
 		monthly_splendor = 1
 	}
 	natural_science1 = {
-		production_efficiency = 0.15
+		production_efficiency = 0.10
 	}
 	natural_science2 = {
 		global_allowed_num_of_buildings = 1
@@ -2524,7 +2524,7 @@ natural_science_ideas = {
 		build_time = -0.05
 	}
 	natural_science6 = {
-		monarch_lifespan = 0.20
+		monarch_lifespan = 0.15
 	}
 	natural_science7 = {
 		global_monthly_devastation = -0.1
