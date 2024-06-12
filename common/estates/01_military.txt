@@ -79,6 +79,7 @@ estate_military = {
 		estate_early_rifles
 		estate_grenadiers_equpment
 		estate_blunderbuss_equpment
+		estate_caltrap_equipment
 		plate_armor_equipment
 		estate_balloon_recon
 		estate_gendarmies

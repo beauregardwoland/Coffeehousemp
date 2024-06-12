@@ -1417,6 +1417,57 @@ estate_blunderbuss_equpment = {
 	}
 }
 
+estate_caltrap_equipment = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		mil_tech = 8
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = caltrap_equipment
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  caltrap_equipment
+	}
+	on_invalid = {
+		remove_country_modifier = caltrap_equipment
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
 estate_balloon_recon = {
 	icon = privilege_spawn_rajput_regiments
 	max_absolutism = 0

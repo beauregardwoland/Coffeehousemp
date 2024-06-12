@@ -750,6 +750,12 @@ blunderbuss_equipment = {
 	shock_damage = 0.05
 	is_revolutionary_guard_modifier = yes
 }
+caltrap_equipment = {
+	shock_damage_received = -0.05
+	shock_damage = -0.05
+	land_maintenance_modifier = 0.05
+	is_revolutionary_guard_modifier = yes
+}
 grenadiers = {
 	assault_fort_ability = 0.2
 	fire_damage = 0.05

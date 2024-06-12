@@ -1619,6 +1619,12 @@ estate_blunderbuss_equpment_desc:0"The blunderbuss and similar one man operated 
 blunderbuss_equipment:0"Blunderbuss equipment"
 desc_blunderbuss_equipment:0""
 
+estate_caltrap_equipment:0"Equip Caltraps'"
+estate_caltrap_equipment_desc:0"Nasty anti cavalry obstacles though resstricing chrages from both sides."
+caltrap_equipment:0"Caltraps"
+desc_caltrap_equipment:0""
+
+
 estate_balloon_recon:0"Balloon Reconnaissance"
 estate_balloon_recon_desc:0"Initially designed and envisioned for other purposes the Hot air balloons offer a platform to observe vast distances ahead of an army without the peril and need to send out multiple scouts offering a distinct advantage shuld we seek to harness it."
 balloon_recon:0"Balloon Reconaissance"
