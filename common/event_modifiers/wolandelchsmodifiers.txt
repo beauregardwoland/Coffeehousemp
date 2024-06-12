@@ -67,15 +67,14 @@ mobilization_scraping = {
 	monthly_mobilization_power = -0.83
 }
 modernize_levies = {
-	discipline = 0.025
-	land_morale = 0.05
-	reinforce_speed = -0.30
+	discipline = 0.05
+	reinforce_speed = -0.15
     is_musketeer_modifier  = yes
 }
 conscripts_levy = {
 	discipline = 0.05
-	land_morale = 0.05
-	reinforce_speed = -0.15
+	morale_damage_received = -0.1
+	reinforce_speed = -0.30
     is_musketeer_modifier = yes
 }
 gaurds = {
