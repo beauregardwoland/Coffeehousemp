@@ -759,7 +759,7 @@ categories =  {
 
 		movement_cost = 1.00
 		local_development_cost = 0.20
-		trade_goods_size_modifier = -0.15
+		trade_goods_size_modifier = -0.20
 		nation_designer_cost_multiplier = 0.9	
 		supply_limit = 6
 		local_has_banners = yes
