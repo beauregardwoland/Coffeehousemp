@@ -100,6 +100,7 @@ update_goods = {
 		}
 	}
 }
+
 beaus_logi_reset = {
 	export_to_variable = {
 		which = building_production
