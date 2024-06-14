@@ -1673,9 +1673,9 @@ horse_artillery_cav_estate_desc:0"Used to Help the mobility of canons and for th
 horse_artillery_cav:0"Horse Artillery"
 desc_horse_artillery_cav:0""
 #infantry color is jade §O*****§!
-melee_infantry:0"Mellee Infantry§J*****§!"
+melee_infantry:0"Melee Infantry§J*****§!"
 melee_infantry_desc:0"Pike formations have begun to dominante the battlefield and alienate traditional infantry weapons though when two pike formations fight each other these weapons can be used to great effiecency to attempt to break the enemy formation."
-sword_buckler:0"Melee centered infantry"
+sword_buckler:0"Melee-centered Infantry"
 desc_sword_buckler:0""
 
 estate_halberds:0"Halberds§J*****§!"
