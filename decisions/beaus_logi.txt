@@ -31,8 +31,11 @@ country_decisions = {
 			update_goods = { GOODS = livestock }
 			update_goods = { GOODS = grain }
 			update_goods = { GOODS = fish }
-			update_goods = { GOODS = cloth }
-			update_goods = { GOODS = silk }
+			#update_goods = { GOODS = cloth }
+			#update_goods = { GOODS = silk }
+			beau_raw_goods = yes
+			beaus_logi_reset = yes
+			logi_buff_give = yes
 			custom_tooltip = logi_25_tooltip
 		}
 		ai_will_do = {
@@ -80,7 +83,6 @@ country_decisions = {
 				which = food_production_ratio
 				value = 2
 			}
-			export_goods_produced_effect = yes
 			custom_tooltip = logi_24_tooltip
 		}
 		ai_will_do = {
