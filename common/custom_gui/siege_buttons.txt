@@ -1,0 +1,35 @@
+custom_button = {
+	name = mine_siege
+	tooltip = mine_siege_tt
+	potential = {
+		always = yes
+	}
+	trigger = {
+		ROOT = {
+			controller = {
+				war_with = FROM
+			}
+			sieged_by = FROM
+			NOT = { has_province_modifier = mining_operation }
+		}
+		from = {
+			mil_power = 50 
+		}
+	}
+	effect = {
+		ROOT  = {
+			save_event_target_as = siege_province_mineing
+			add_province_modifier = {
+				name = mining_operation
+				duration = 70
+			}
+		} 
+		from = {
+			country_event_with_insight = {
+				id = beaus_logi.2
+				insight_tooltip = siege_button_tt
+			}
+			add_mil_power = -50
+		}
+	}
+}

@@ -6,7 +6,9 @@ test_beau = {
 	estate_placeholder_infantry_production = 2
 	estate_placeholder_officer_production = 2
 }
-
+mining_operation = {
+	attrition = 1
+}
 
 ration_supply1 = {
 	global_supply_limit_modifier = 0.1

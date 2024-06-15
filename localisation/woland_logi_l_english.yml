@@ -91,6 +91,40 @@
  logi_24_tooltip:0"iron [Root.iron_produced.GetValue] grain [Root.grain_produced.GetValue]"
  logi_25_tooltip:0"\niron [Root.iron_produced.GetValue] \ncopper [Root.copper_produced.GetValue] \ngrain [Root.grain_produced.GetValue] \nlivestock [Root.livestock_produced.GetValue] \nfish [Root.fish_produced.GetValue]"
 
+
+ mine_siege_tt:0"Start Mining Operations"
  beaus_beaus_logi_1:0"Provisioning a Campaign"
  beaus_beaus_logi_1_desc:0"placeholder"
  beaus_beaus_logi_1_optiona:0"proceed"
+
+ beaus_beaus_logi_2:0"Siege Mining operation"
+ beaus_beaus_logi_2_desc:0"placeholder"
+ beaus_beaus_logi_2_optiona:0"20 days"
+ beaus_beaus_logi_2_optionb:0"35 days"
+ beaus_beaus_logi_2_optionc:0"50 days"
+ beaus_beaus_logi_2_optiond:0"go back"
+
+ beaus_beaus_logi_3:0"20 days"
+ beaus_beaus_logi_3_desc:0"placeholder"
+ beaus_beaus_logi_3_optiona:0"proceed"
+ 
+ beaus_beaus_logi_4:0"35 days"
+ beaus_beaus_logi_4_desc:0"placeholder"
+ beaus_beaus_logi_4_optiona:0"proceed"
+
+ beaus_beaus_logi_5:0"50 days"
+ beaus_beaus_logi_5_desc:0"placeholder"
+ beaus_beaus_logi_5_optiona:0"proceed"
+ siege_button_tt:0"fires an event with the choice of changing siege progress by\n1 in 20 days\n2 in 35 days\n3 in 50 days"
+
+ beaus_beaus_logi_6:0"Walls undermined"
+ beaus_beaus_logi_6_desc:0"placeholder"
+ beaus_beaus_logi_6_optiona:0"proceed"
+
+ beaus_beaus_logi_7:0"Walls devastated"
+ beaus_beaus_logi_7_desc:0"placeholder"
+ beaus_beaus_logi_7_optiona:0"proceed"
+
+ beaus_beaus_logi_8:0"Walls Collapsing"
+ beaus_beaus_logi_8_desc:0"placeholder"
+ beaus_beaus_logi_8_optiona:0"proceed"

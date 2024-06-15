@@ -3,7 +3,7 @@ country_event = {
 	id = beaus_logi.1
 	title = "beaus_beaus_logi_1"
 	desc = "beaus_beaus_logi_1_desc"
-	picture = COURT_eventPicture
+	picture = TRADEGOODS_eventPicture
 	is_triggered_only = yes
 	immediate = {
 		beau_raw_goods = yes
@@ -13,4 +13,158 @@ country_event = {
 		name = "beaus_beaus_logi_1_optiona"
 		
 	}
+}
+country_event = {
+	id = beaus_logi.2
+	title = "beaus_beaus_logi_2"
+	desc = "beaus_beaus_logi_2_desc"
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+	option = {
+		name = "beaus_beaus_logi_2_optiona"
+		country_event = {
+			id = beaus_logi.3
+			days = 20
+		}
+	}
+	option = {
+		name = "beaus_beaus_logi_2_optionb"
+		country_event = {
+			id = beaus_logi.4
+			days = 35
+		}
+	}
+	option = {
+		name = "beaus_beaus_logi_2_optionc"
+		country_event = {
+			id = beaus_logi.5
+			days = 50
+		}
+	}
+	option = {
+		name = "beaus_beaus_logi_2_optiond"
+		add_mil_power = 50
+		event_target:siege_province_mineing = {
+			remove_province_modifier = mining_operation
+		}
+	}
+}
+country_event = {
+	id = beaus_logi.3
+	title = "beaus_beaus_logi_3"
+	desc = "beaus_beaus_logi_3_desc"
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = "beaus_beaus_logi_3_optiona"
+		event_target:siege_province_mineing = {
+			controller = {
+				country_event = {
+					id = beaus_logi.6
+				}
+			}
+			change_siege = 1
+		}
+	}
+}
+country_event = {
+	id = beaus_logi.4
+	title = "beaus_beaus_logi_4"
+	desc = "beaus_beaus_logi_4_desc"
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = "beaus_beaus_logi_4_optiona"
+		event_target:siege_province_mineing = {
+			controller = {
+				country_event = {
+					id = beaus_logi.7
+				}
+			}
+			change_siege = 2
+		}
+	}
+	
+}
+country_event = {
+	id = beaus_logi.5
+	title = "beaus_beaus_logi_5"
+	desc = "beaus_beaus_logi_5_desc"
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = "beaus_beaus_logi_5_optiona"
+		event_target:siege_province_mineing = {
+			controller = {
+				country_event = {
+					id = beaus_logi.8
+				}
+			}
+			change_siege = 3
+		}
+	}
+	
+}
+country_event = {
+	id = beaus_logi.6
+	title = "beaus_beaus_logi_6"
+	desc = "beaus_beaus_logi_6_desc"
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = "beaus_beaus_logi_6_optiona"
+		event_target:siege_province_mineing = {
+			tooltip = {
+				change_siege = 1
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = beaus_logi.7
+	title = "beaus_beaus_logi_7"
+	desc = "beaus_beaus_logi_7_desc"
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = "beaus_beaus_logi_7_optiona"
+		event_target:siege_province_mineing = {
+			tooltip = {
+				change_siege = 2
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = beaus_logi.8
+	title = "beaus_beaus_logi_8"
+	desc = "beaus_beaus_logi_8_desc"
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = "beaus_beaus_logi_8_optiona"
+		event_target:siege_province_mineing = {
+			tooltip = {
+				change_siege = 3
+			}
+		}
+	}
+	
 }
