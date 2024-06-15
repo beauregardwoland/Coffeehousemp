@@ -6,14 +6,11 @@ country_event = {
 	picture = COURT_eventPicture
 	is_triggered_only = yes
 	immediate = {
-		
+		beau_raw_goods = yes
+		beaus_logi_reset = yes
 	}
 	option = {
 		name = "beaus_beaus_logi_1_optiona"
-		
-	}
-	option = {
-		name = "beaus_beaus_logi_1_optionb"
 		
 	}
 }
