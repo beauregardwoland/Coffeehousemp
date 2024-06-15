@@ -92,7 +92,7 @@
  logi_25_tooltip:0"\niron [Root.iron_produced.GetValue] \ncopper [Root.copper_produced.GetValue] \ngrain [Root.grain_produced.GetValue] \nlivestock [Root.livestock_produced.GetValue] \nfish [Root.fish_produced.GetValue]"
 
 
- mine_siege_tt:0"Start Mining Operations"
+ mine_siege_tt:0"Start Mineing Operations"
  beaus_beaus_logi_1:0"Provisioning a Campaign"
  beaus_beaus_logi_1_desc:0"placeholder"
  beaus_beaus_logi_1_optiona:0"proceed"
