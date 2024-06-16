@@ -9,7 +9,9 @@ test_beau = {
 mining_operation = {
 	attrition = 1
 }
-
+sailed_reinforcements = {
+	local_defensiveness = -0.05
+}
 ration_supply1 = {
 	global_supply_limit_modifier = 0.1
 	global_regiment_cost = -0.05
