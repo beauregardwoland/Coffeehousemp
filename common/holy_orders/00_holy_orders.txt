@@ -582,11 +582,11 @@ santiago_order = {
 shadhili_order = {
     icon = GFX_holy_order_shadhili
     trigger = {
-        OR = {
-			primary_culture = andalucian
-			has_country_flag = ARB_grant_access_to_muslim_holy_orders_flag
-			has_country_flag = TIM_holy_orders
-		}
+        #OR = {
+		#	primary_culture = andalucian
+		#	has_country_flag = ARB_grant_access_to_muslim_holy_orders_flag
+		#	has_country_flag = TIM_holy_orders
+		#}
         religion_group = muslim
     }
     color = { 80 255 120 }
@@ -607,8 +607,8 @@ shadhili_order = {
         }
     }
     modifier = {
-        local_missionary_strength = 0.015
-        local_institution_spread = 0.10
+        local_tax_modifier = 0.1
+        local_institution_spread = 0.15
     }
     ai_priority = {
         factor = 2
@@ -623,11 +623,11 @@ shadhili_order = {
 qadiri_order = {
     icon = GFX_holy_order_qadiri
     trigger = {
-        OR = {
-			primary_culture = andalucian
-			has_country_flag = ARB_grant_access_to_muslim_holy_orders_flag
-			has_country_flag = TIM_holy_orders
-		}
+        #OR = {
+		#	primary_culture = andalucian
+		#	has_country_flag = ARB_grant_access_to_muslim_holy_orders_flag
+		#	has_country_flag = TIM_holy_orders
+		#}
         religion_group = muslim
     }
     color = { 170 230 30 }
@@ -664,11 +664,11 @@ qadiri_order = {
 aissawa_order = {
     icon = GFX_holy_order_aissawa
     trigger = {
-        OR = {
-			primary_culture = andalucian
-			has_country_flag = ARB_grant_access_to_muslim_holy_orders_flag
-			has_country_flag = TIM_holy_orders
-		}
+        #OR = {
+		#	primary_culture = andalucian
+		#	has_country_flag = ARB_grant_access_to_muslim_holy_orders_flag
+		#	has_country_flag = TIM_holy_orders
+		#}
         religion_group = muslim
     }
     color = { 255 170 30 }
@@ -689,7 +689,7 @@ aissawa_order = {
         }
     }
     modifier = {
-        local_unrest = -1
+        local_defensiveness = 0.1
         local_monthly_devastation = -0.25
     }
     ai_priority = {

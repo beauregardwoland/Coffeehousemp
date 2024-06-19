@@ -17,6 +17,24 @@ custom_button = {
 	}
 	tooltip = open_logi_menu_tt
 }
+custom_button = {
+    name = open_logi_menu
+    potential = {
+		ai = no
+	}
+	trigger = {
+	}
+	effect = {
+		if = {
+			limit = { has_country_flag = gib_event }
+			clr_country_flag = gib_event
+		}
+		else = {
+			set_country_flag = gib_event
+		}
+	}
+	#tooltip = open_logi_menu_tt
+}
 custom_window = {
 	name = logi_interface
 	potential = {
