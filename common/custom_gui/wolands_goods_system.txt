@@ -18,7 +18,7 @@ custom_button = {
 	tooltip = open_logi_menu_tt
 }
 custom_button = {
-    name = open_logi_menu
+    name = toggle_event_logi
     potential = {
 		ai = no
 	}
@@ -34,6 +34,13 @@ custom_button = {
 		}
 	}
 	#tooltip = open_logi_menu_tt
+}
+custom_icon = {
+	name = toggled_event_logi
+	potential = {
+		has_country_flag = gib_event
+	}
+	#tooltip = mobing_bar_tooltip
 }
 custom_window = {
 	name = logi_interface
