@@ -144,6 +144,11 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 	spriteType = {		
+		name = "GFX_toggle_event_logi"
+		texturefile = "gfx/interface/1234image.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
 		name = "GFX_logi_1"
 		texturefile = "gfx/interface/barfillingdos.dds"
 		loadType = "INGAME"

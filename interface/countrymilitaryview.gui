@@ -2137,6 +2137,19 @@ guiTypes = {
 				quadTextureSprite ="GFX_closebutton"
 				scripted = yes
 			}
+			guiButtonType = {
+				name ="toggle_event_logi"
+				position = { x= 515 y = 460 }
+				quadTextureSprite ="GFX_toggle_event_logi"
+				scripted = yes
+			}
+			iconType = {
+				name = "toggled_event_logi"
+				alwaystransparent = yes
+				position = { x= 522 y = 470 }
+				spriteType = "GFX_naval_prof_check"
+				scripted = yes
+			}
 			instantTextBoxType = {
 				name = "logi_header"
 				position = { x= 230 y = 23 }

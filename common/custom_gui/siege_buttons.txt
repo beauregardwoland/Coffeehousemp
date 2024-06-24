@@ -1,0 +1,68 @@
+custom_button = {
+	name = mine_siege
+	tooltip = mine_siege_tt
+	potential = {
+		ai = no
+	}
+	trigger = {
+		ROOT = {
+			controller = {
+				war_with = FROM
+			}
+			sieged_by = FROM
+			NOT = { has_province_modifier = mining_operation }
+		}
+		from = {
+			mil_power = 50 
+		}
+	}
+	effect = {
+		ROOT  = {
+			save_event_target_as = siege_province_mineing
+			add_province_modifier = {
+				name = mining_operation
+				duration = 70
+			}
+		} 
+		from = {
+			country_event_with_insight = {
+				id = beaus_logi.2
+				insight_tooltip = siege_button_tt
+			}
+			add_mil_power = -50
+		}
+	}
+}
+
+custom_button = {
+	name = naval_reinforce
+	#tooltip = mine_siege_tt
+	potential = {
+		ai = no
+	}
+	trigger = {
+		ROOT = {
+			controlled_by = FROM
+			has_siege = yes
+			has_port = yes
+			NOT = { has_province_modifier = sailed_reinforcements }
+			light_ships_in_province = 2
+		}
+		from = {
+			mil_power = 50 
+		}
+	}
+	effect = {
+		from = {
+			add_mil_power = -50
+		}
+		root = {
+			kill_units = {
+				who = controller
+				type = light_ship
+				amount = 2
+			}
+			
+		}
+	}
+}

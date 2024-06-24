@@ -177,3 +177,180 @@ prot_mil = {
     }
     localization = holy_order
 }
+
+reformed_adm = {
+    icon = GFX_holy_order_benedictines
+    trigger = {
+    	religion = reformed
+    }
+    color = { 141 153 119 }
+    cost = 50
+    cost_type = adm_power
+	per_province_effect = {
+        add_base_tax = 1
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+        hidden_effect = {
+            if = {
+                limit = { NOT = { base_tax = 1 } }
+                set_base_tax = 1
+            }
+        }
+    }
+    modifier = {
+        local_state_maintenance_modifier = -0.2
+        local_unrest = -1
+    }
+    ai_priority = {
+        factor = 2
+    }
+    localization = holy_order
+}
+
+reformed_dip = {
+    icon = GFX_holy_order_benedictines
+    trigger = {
+    	religion = reformed
+    }
+    color = { 141 153 119 }
+    cost = 50
+    cost_type = dip_power
+    per_province_effect = {
+        add_base_production = 1
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+        hidden_effect = {
+            if = {
+                limit = { NOT = { base_production = 1 } }
+                set_base_production = 1
+            }
+        }
+    }
+    modifier = {
+        local_build_cost = -0.05
+    }
+    ai_priority = {
+        factor = 2
+    }
+    localization = holy_order
+}
+
+reformed_mil = {
+    icon = GFX_holy_order_benedictines
+    trigger = {
+    	religion = reformed
+    }
+    color = { 141 153 119 }
+    cost = 50
+    cost_type = mil_power
+    per_province_effect = {
+        add_base_manpower = 1
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+        hidden_effect = {
+            if = {
+                limit = { NOT = { base_manpower = 1 } }
+                set_base_manpower = 1
+            }
+        }
+    }
+    modifier = {
+		local_manpower_modifier = 0.05
+    }
+    ai_priority = {
+        factor = 2
+    }
+    localization = holy_order
+}
+
+anglican_adm = {
+    icon = GFX_holy_order_benedictines
+    trigger = {
+    	religion = anglican
+    }
+    color = { 141 153 119 }
+    cost = 50
+    cost_type = adm_power
+	per_province_effect = {
+        add_base_tax = 1
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+        hidden_effect = {
+            if = {
+                limit = { NOT = { base_tax = 1 } }
+                set_base_tax = 1
+            }
+        }
+    }
+    modifier = {
+        local_ship_cost = -0.15
+        local_build_time = -0.1
+    }
+    ai_priority = {
+        factor = 2
+    }
+    localization = holy_order
+}
+
+anglican_dip = {
+    icon = GFX_holy_order_benedictines
+    trigger = {
+    	religion = anglican
+    }
+    color = { 141 153 119 }
+    cost = 50
+    cost_type = dip_power
+    per_province_effect = {
+        add_base_production = 1
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+        hidden_effect = {
+            if = {
+                limit = { NOT = { base_production = 1 } }
+                set_base_production = 1
+            }
+        }
+    }
+    modifier = {
+        local_production_efficiency = 0.075
+    }
+    ai_priority = {
+        factor = 2
+    }
+    localization = holy_order
+}
+
+anglican_mil = {
+    icon = GFX_holy_order_benedictines
+    trigger = {
+    	religion = anglican
+    }
+    color = { 141 153 119 }
+    cost = 50
+    cost_type = mil_power
+    per_province_effect = {
+        add_base_manpower = 1
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+        hidden_effect = {
+            if = {
+                limit = { NOT = { base_manpower = 1 } }
+                set_base_manpower = 1
+            }
+        }
+    }
+    modifier = {
+		local_sailors_modifier = 0.1
+        local_defensiveness = 0.15
+    }
+    ai_priority = {
+        factor = 2
+    }
+    localization = holy_order
+}
