@@ -6,7 +6,7 @@ country_event = {
 	picture = TRADEGOODS_eventPicture
 	is_triggered_only = yes
 	immediate = {
-		beau_raw_goods = yes
+		#beau_raw_goods = yes
 		beaus_logi_reset = yes
 	}
 	option = {

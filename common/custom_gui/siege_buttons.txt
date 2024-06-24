@@ -36,7 +36,7 @@ custom_button = {
 
 custom_button = {
 	name = naval_reinforce
-	tooltip = mine_siege_tt
+	#tooltip = mine_siege_tt
 	potential = {
 		ai = no
 	}
