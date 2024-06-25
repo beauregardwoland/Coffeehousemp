@@ -2,7 +2,9 @@ custom_button = {
 	name = mine_siege
 	tooltip = mine_siege_tt
 	potential = {
-		ai = no
+		from = {
+			ai = no
+		}
 	}
 	trigger = {
 		ROOT = {
@@ -38,7 +40,9 @@ custom_button = {
 	name = naval_reinforce
 	#tooltip = mine_siege_tt
 	potential = {
-		ai = no
+		from = {
+			ai = no
+		}
 	}
 	trigger = {
 		ROOT = {
