@@ -2025,6 +2025,17 @@ on_yearly_pulse = {
 	events = {
 		flavor_mos.3 #Yearly Tatar Yoke Tribute
 	}
+	if ={
+		limit = { has_country_flag = gib_event }
+		country_event = {
+			id = beaus_logi.1
+		}
+	}
+	else = {
+		country_event = {
+			id = beaus_logi.11
+		}
+	}
 }
 on_yearly_pulse_2 = {
 }

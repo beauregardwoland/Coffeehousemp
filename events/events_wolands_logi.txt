@@ -15,6 +15,26 @@ country_event = {
 	}
 }
 country_event = {
+	id = beaus_logi.11
+	title = "beaus_beaus_logi_11"
+	desc = "beaus_beaus_logi_11_desc"
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		#beau_raw_goods = yes
+		beaus_logi_reset = yes
+	}
+	option = {
+		name = "beaus_beaus_logi_11_optiona"
+		
+		ai_chance = {
+			factor = 100
+		}
+		
+	}
+}
+country_event = {
 	id = beaus_logi.2
 	title = "beaus_beaus_logi_2"
 	desc = "beaus_beaus_logi_2_desc"
