@@ -2424,7 +2424,7 @@ estate_early_rifles = {
 			Not = { has_estate_privilege = estate_regimental_guns }
 		}
 		is_year = 1700
-		innovativeness = 75
+		innovativeness = 70
 	}
 	on_granted = {
 		add_country_modifier = {

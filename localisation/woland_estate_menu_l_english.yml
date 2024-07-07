@@ -5,6 +5,11 @@
  estate_org_cat2:0"Estate"
  estate_org_cat3:0"Absolutism"
  estate_org_cat4:0"Doctrines"
+ estate_org_cat5:0"Infantry"
+ estate_org_cat6:0"Cavalry"
+ estate_org_cat7:0"Artillery"
+ estate_org_cat8:0"Officers"
+
 
  mil_estate_org_1_tt:0"Organize Noble Retinues"
  mil_estate_org_2_tt:0"Organize Mercenary Contingent"
@@ -18,4 +23,18 @@
  mil_estate_org_10_tt:0"Heavy Equipment"
  mil_estate_org_11_tt:0"Reserves "
  mil_estate_org_12_tt:0"War Wagons"
+ mil_estate_org_13_tt:0"Noble officers"
+ mil_estate_org_14_tt:0"Burgher officers "
+ mil_estate_org_15_tt:0"Zealous officers"
+ mil_estate_org_16_tt:0" "
+ mil_estate_org_17_tt:0""
+ mil_estate_org_18_tt:0" "
+ mil_estate_org_19_tt:0" "
+ mil_estate_org_20_tt:0" "
+ mil_estate_org_21_tt:0" "
+ mil_estate_org_22_tt:0" "
+ mil_estate_org_23_tt:0" "
+ mil_estate_org_24_tt:0" "
+ mil_estate_org_25_tt:0" "
+
 

@@ -580,19 +580,430 @@ custom_button = {
 		always = yes 
 	}
 	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate4
+			not = { has_estate_privilege = estate_zealous_officers }
+			not = { has_estate_privilege = estate_burgher_officers }
+		}
+		army_professionalism = 0.20
+	}
+	effect = {
+		if = {
+			limit = { has_estate_privilege = estate_nobles_officers	}
+			remove_estate_privilege = estate_nobles_officers
+		}
+		else = {
+			set_estate_privilege = estate_nobles_officers
+		}
+	}
+	tooltip = mil_estate_org_13s_tt
+}
+
+custom_button = {
+    name = mil_estate_org_14
+    potential = {
+		always = yes 
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate4
+			not = { has_estate_privilege = estate_zealous_officers }
+			not = { has_estate_privilege = estate_nobles_officers }
+		}
+		army_professionalism = 0.20
+	}
+	effect = {
+		if = {
+			limit = { has_estate_privilege = estate_burgher_officers	}
+			remove_estate_privilege = estate_burgher_officers
+		}
+		else = {
+			set_estate_privilege = estate_burgher_officers
+		}
+	}
+	tooltip = mil_estate_org_14_tt
+}
+
+custom_button = {
+    name = mil_estate_org_15
+    potential = {
+		always = yes 
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate4
+			not = { has_estate_privilege = estate_burgher_officers }
+			not = { has_estate_privilege = estate_nobles_officers }
+		}
+		army_professionalism = 0.20
+	}
+	effect = {
+		if = {
+			limit = { has_estate_privilege = estate_zealous_officers	}
+			remove_estate_privilege = estate_zealous_officers
+		}
+		else = {
+			set_estate_privilege = estate_zealous_officers
+		}
+	}
+	tooltip = mil_estate_org_15_tt
+}
+
+custom_button = {
+    name = mil_estate_org_16
+    potential = {
+		always = yes 
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_regimental_guns }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = estate_early_rifles }
+		}
+	}
+	effect = {
+		if = {
+			limit = { has_estate_privilege = melee_infantry	}
+			remove_estate_privilege = melee_infantry
+		}
+		else = {
+			set_estate_privilege = melee_infantry
+		}
+	}
+	tooltip = mil_estate_org_16_tt
+}
+
+custom_button = {
+    name = mil_estate_org_17
+    potential = {
+		always = yes 
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_regimental_guns }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = melee_infantry }
+			Not = { has_estate_privilege = estate_early_rifles }
+		}
+	}
+	effect = {
+		if = {
+			limit = { has_estate_privilege = estate_halberds	}
+			remove_estate_privilege = estate_halberds
+		}
+		else = {
+			set_estate_privilege = estate_halberds
+		}
+	}
+	tooltip = mil_estate_org_17_tt
+}
+
+custom_button = {
+    name = mil_estate_org_18
+    potential = {
+		always = yes 
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_regimental_guns }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = melee_infantry }
+			Not = { has_estate_privilege = estate_early_rifles }
+		}
+		adm_tech = 8
+	}
+	effect = {
+		if = {
+			limit = { has_estate_privilege = estate_conscripted_hunters	}
+			remove_estate_privilege = estate_conscripted_hunters
+		}
+		else = {
+			set_estate_privilege = estate_conscripted_hunters
+		}
+	}
+	tooltip = mil_estate_org_18_tt
+}
+
+custom_button = {
+    name = mil_estate_org_19
+    potential = {
+		always = yes 
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = melee_infantry }
+			Not = { has_estate_privilege = estate_early_rifles }
+		}
+		mil_tech = 10
+	}
+	effect = {
+		if = {
+			limit = { has_estate_privilege = estate_regimental_guns	}
+			remove_estate_privilege = estate_regimental_guns
+		}
+		else = {
+			set_estate_privilege = estate_regimental_guns
+		}
+	}
+	tooltip = mil_estate_org_19_tt
+}
+
+custom_button = {
+    name = mil_estate_org_20
+    potential = {
+		always = yes 
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = melee_infantry }
+			Not = { has_estate_privilege = estate_regimental_guns }
+		}
+		is_year = 1700
+		innovativeness = 70
+	}
+	effect = {
+		if = {
+			limit = { has_estate_privilege = estate_early_rifles	}
+			remove_estate_privilege = estate_early_rifles
+		}
+		else = {
+			set_estate_privilege = estate_early_rifles
+		}
+	}
+	tooltip = mil_estate_org_20_tt
+}
+
+custom_button = {
+    name = mil_estate_org_21
+    potential = {
+		always = yes 
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_early_rifles }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = melee_infantry }
+			Not = { has_estate_privilege = estate_regimental_guns }
+		}
+	}
+	effect = {
+		if = {
+			limit = { has_estate_privilege = estate_irregulars	}
+			remove_estate_privilege = estate_irregulars
+		}
+		else = {
+			set_estate_privilege = estate_irregulars
+		}
+	}
+	tooltip = mil_estate_org_21_tt
+}
+
+custom_button = {
+    name = mil_estate_org_22
+    potential = {
+		always = yes 
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate6
+			Not = { has_estate_privilege = horse_artillery_cav_estate }
+			Not = { has_estate_privilege = dragoon_equipment_cav }
+			Not = { has_estate_privilege = curasier_equipment_cav }
+			Not = { has_estate_privilege = harquebusier_equipment_cav }
+			Not = { has_estate_privilege = estate_camel_cavalry }
+			Not = { has_estate_privilege = estate_jinete }
+		}
+		mil_tech = 6
+	}
+	effect = {
+		if = {
+			limit = { has_estate_privilege = demi_lancer_cav	}
+			remove_estate_privilege = demi_lancer_cav
+		}
+		else = {
+			set_estate_privilege = demi_lancer_cav
+		}
+	}
+	tooltip = mil_estate_org_22_tt
+}
+
+custom_button = {
+    name = mil_estate_org_23
+    potential = {
+		always = yes 
+	}
+	trigger = {
 		
 	}
 	effect = {
 		if = {
-			limit = { has_estate_privilege = heavy_military_doctrine	}
-			remove_estate_privilege = heavy_military_doctrine
+			limit = { has_estate_privilege = estate_burgher_officers	}
+			remove_estate_privilege = estate_burgher_officers
 		}
 		else = {
-			set_estate_privilege = heavy_military_doctrine
+			set_estate_privilege = estate_burgher_officers
 		}
 	}
-	tooltip = mil_estate_org_8_tt
+	tooltip = mil_estate_org_23_tt
 }
+
 
 custom_text_box = {
 	name = estate_org_cat1
@@ -608,5 +1019,21 @@ custom_text_box = {
 }
 custom_text_box = {
 	name = estate_org_cat4
+	potential = { always = yes }
+}
+custom_text_box = {
+	name = estate_org_cat5
+	potential = { always = yes }
+}
+custom_text_box = {
+	name = estate_org_cat6
+	potential = { always = yes }
+}
+custom_text_box = {
+	name = estate_org_cat7
+	potential = { always = yes }
+}
+custom_text_box = {
+	name = estate_org_cat8
 	potential = { always = yes }
 }

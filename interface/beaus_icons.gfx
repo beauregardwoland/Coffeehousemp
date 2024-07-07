@@ -166,7 +166,36 @@ spriteTypes = {
 		texturefile = "gfx/interface/mil_estate_menu_doc.dds"
 		loadType = "INGAME"
 	}
-
+	spriteType = {		
+		name = "GFX_mil_estate_menu_inf"
+		texturefile = "gfx/interface/mil_estate_menu_inf.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_mil_estate_menu_arty"
+		texturefile = "gfx/interface/mil_estate_menu_arty.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_mil_estate_menu_cav"
+		texturefile = "gfx/interface/mil_estate_menu_cav.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_mil_estate_menu_misc"
+		texturefile = "gfx/interface/mil_estate_menu_misc.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_mil_estate_menu_cult"
+		texturefile = "gfx/interface/mil_estate_menu_culture.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_mil_estate_menu_off"
+		texturefile = "gfx/interface/mil_estate_menu_officers.dds"
+		loadType = "INGAME"
+	}
 
 	##################################################logi
 	spriteType = {		
