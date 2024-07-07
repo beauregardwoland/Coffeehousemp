@@ -233,7 +233,7 @@ estate_nobles_gaurd_organization = {
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = beaus_mil_estate
-			not = { has_estate_privilege =  estate_burghers_militia_organization }
+			not = { has_estate_privilege = estate_burghers_militia_organization }
 			not = { has_estate_privilege = estate_church_volounteer_organization }
 			not = { has_estate_privilege = estate_nobles_early }
 			not = { has_estate_privilege = estate_merc_early }
@@ -283,7 +283,7 @@ estate_burghers_militia_organization = {
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = beaus_mil_estate
-			not = { has_estate_privilege =  estate_nobles_gaurd_organization }
+			not = { has_estate_privilege = estate_nobles_gaurd_organization }
 			not = { has_estate_privilege = estate_church_volounteer_organization }
 			not = { has_estate_privilege = estate_nobles_early }
 			not = { has_estate_privilege = estate_merc_early }
@@ -332,8 +332,8 @@ estate_church_volounteer_organization = {
 	can_select = {
 		custom_trigger_tooltip = {
 			tooltip = beaus_mil_estate
-			not = { has_estate_privilege =  estate_nobles_gaurd_organization }
-			not = { has_estate_privilege =  estate_burghers_militia_organization }
+			not = { has_estate_privilege = estate_nobles_gaurd_organization }
+			not = { has_estate_privilege = estate_burghers_militia_organization }
 			not = { has_estate_privilege = estate_nobles_early }
 			not = { has_estate_privilege = estate_merc_early }
 			not = { has_estate_privilege = estate_absolutist_gaurds }
@@ -857,7 +857,6 @@ frontline_military_doctrine = {
 			not = { has_estate_privilege = reserves_military_doctrine }
 			not = { has_estate_privilege = cart_military_doctrine }
 		}
-		
 	}
 	on_granted = {
 		add_country_modifier = {
@@ -993,8 +992,7 @@ reserves_military_doctrine = {
 			not = { has_estate_privilege = frontline_military_doctrine }
 			not = { has_estate_privilege = heavy_military_doctrine }
 			not = { has_estate_privilege = cart_military_doctrine }
-		}
-		
+		}	
 	}
 	on_granted = {
 		add_country_modifier = {
@@ -1061,7 +1059,7 @@ cart_military_doctrine = {
 			tooltip = beaus_mil_estate3
 			not = { has_estate_privilege = frontline_military_doctrine }
 			not = { has_estate_privilege = heavy_military_doctrine }
-			not = { has_estate_privilege = cart_military_doctrine }
+			not = { has_estate_privilege = reserves_military_doctrine }
 		}
 	}
 	on_granted = {

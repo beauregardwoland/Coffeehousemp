@@ -33,7 +33,7 @@ custom_button = {
 			set_country_flag = gib_event
 		}
 	}
-	#tooltip = open_logi_menu_tt
+	tooltip = toggle_event_logi_tt
 }
 custom_icon = {
 	name = toggled_event_logi

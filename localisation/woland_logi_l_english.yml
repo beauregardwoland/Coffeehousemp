@@ -2,6 +2,7 @@
  open_logi_menu_tt:0"Opens logistics menu"
  close_logi_menu_tt:0"Closes logistics menu"
  logi_header:0"Army Logistics"
+ toggle_event_logi_tt:0"§YToggle yearly logistics breakdown event§!\n\nNormally there is a hidden event that fires every year to calculate logistics with this enabled the event will no longer be hidden."
  
  estate_placeholder_gunpowder_production:0"Gunpowder Production"
  estate_placeholder_food_production:0"Ration Procurement"

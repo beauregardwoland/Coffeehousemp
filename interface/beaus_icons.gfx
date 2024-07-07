@@ -126,10 +126,46 @@ spriteTypes = {
 
 
 
-
-
-
-
+	spriteType = {		
+		name = "GFX_open_estate_menu"
+		texturefile = "gfx/interface/open_mil_estate_menu.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_estate_organisations"
+		texturefile = "gfx/interface/estate_organisations.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_mil_estate_navigation_1"
+		texturefile = "gfx/interface/mil_estate_navigation_1.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_mil_estate_navigation_2"
+		texturefile = "gfx/interface/mil_estate_navigation_2.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_mil_estate_navigation_3"
+		texturefile = "gfx/interface/mil_estate_navigation_3.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_mil_estate_navigation_4"
+		texturefile = "gfx/interface/mil_estate_navigation_4.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_mil_estate_org"
+		texturefile = "gfx/interface/mil_estate_org.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {		
+		name = "GFX_mil_estate_menu_doc"
+		texturefile = "gfx/interface/mil_estate_menu_doc.dds"
+		loadType = "INGAME"
+	}
 
 
 	##################################################logi
@@ -145,7 +181,7 @@ spriteTypes = {
 	}
 	spriteType = {		
 		name = "GFX_toggle_event_logi"
-		texturefile = "gfx/interface/1234image.dds"
+		texturefile = "gfx/interface/alert_logi_button.dds"
 		loadType = "INGAME"
 	}
 	spriteType = {		

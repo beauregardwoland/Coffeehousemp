@@ -2110,6 +2110,8 @@ guiTypes = {
 			spriteType = "GFX_mobilize_bar_bad"
 			scripted = yes
 		}
+
+		
 ###########################################################################################
 ############################## wolands logi menu   ########################################
 ###########################################################################################
@@ -2117,6 +2119,12 @@ guiTypes = {
 			name ="open_logi_menu"
 			position = { x= 550 y = 384 }
 			quadTextureSprite ="GFX_logi_menu_button"
+			scripted = yes
+		}
+		guiButtonType = {
+			name ="open_estate_menu"
+			position = { x= 550 y = 450 }
+			quadTextureSprite ="GFX_open_estate_menu"
 			scripted = yes
 		}
 		WindowType = {
@@ -2139,14 +2147,14 @@ guiTypes = {
 			}
 			guiButtonType = {
 				name ="toggle_event_logi"
-				position = { x= 515 y = 460 }
+				position = { x= 264 y = 460 }
 				quadTextureSprite ="GFX_toggle_event_logi"
 				scripted = yes
 			}
 			iconType = {
 				name = "toggled_event_logi"
 				alwaystransparent = yes
-				position = { x= 522 y = 470 }
+				position = { x= 271 y = 470 }
 				spriteType = "GFX_naval_prof_check"
 				scripted = yes
 			}
@@ -2287,6 +2295,202 @@ guiTypes = {
 		#	scripted = yes
 		#}
 		
+		WindowType = {
+			name = "estate_interface_window"
+			position = { x= 533 y = 140 }
+			#upsound = age_of_discovery
+			scripted = yes
+			iconType = {
+				name = "estate_menu"
+				position = { x= 0 y = 6 }
+				#alwaystransparent = yes
+				spriteType = "GFX_logi_menu"
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "estate_header_custom"
+				position = { x= 205 y = 23 }
+				scripted = yes
+				textureFile = ""
+				font = "vic_29s"
+				borderSize = {x = 2 y = 2}
+				maxWidth = 500
+				maxHeight = 18
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name ="close_estate_menu"
+				position = { x= 543 y = 0 }
+				quadTextureSprite ="GFX_closebutton"
+				scripted = yes
+			}
+			
+			guiButtonType = {
+				name ="mil_estate_navigation"
+				position = { x= 35 y = 60 }
+				quadTextureSprite ="GFX_estate_organisations"
+				scripted = yes
+			}
+			guiButtonType = {
+				name ="mil_estate_navigation_1"
+				position = { x= 135 y = 60 }
+				quadTextureSprite ="GFX_mil_estate_navigation_1"
+				scripted = yes
+			}
+			guiButtonType = {
+				name ="mil_estate_navigation_2"
+				position = { x= 235 y = 60 }
+				quadTextureSprite ="GFX_mil_estate_navigation_2"
+				scripted = yes
+			}
+			guiButtonType = {
+				name ="mil_estate_navigation_3"
+				position = { x= 335 y = 60 }
+				quadTextureSprite ="GFX_mil_estate_navigation_3"
+				scripted = yes
+			}
+			guiButtonType = {
+				name ="mil_estate_navigation_4"
+				position = { x= 435 y = 60 }
+				quadTextureSprite ="GFX_mil_estate_navigation_4"
+				scripted = yes
+			}
+			WindowType = {
+				name = "estate_interface_window_1"
+				position = { x= 0 y = 0 }
+				#upsound = age_of_discovery
+				scripted = yes
+				guiButtonType = {
+					name ="mil_estate_org_1"
+					position = { x= 113 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_org"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_2"
+					position = { x= 113 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_org"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_3"
+					position = { x= 266 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_org"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_4"
+					position = { x= 266 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_org"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_5"
+					position = { x= 266 y = 260 }
+					quadTextureSprite ="GFX_mil_estate_org"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_6"
+					position = { x= 414 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_org"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_7"
+					position = { x= 414 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_org"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_8"
+					position = { x= 414 y = 260 }
+					quadTextureSprite ="GFX_mil_estate_org"
+					scripted = yes
+				}
+	
+				instantTextBoxType = {
+					name = "estate_org_cat1"
+					position = { x= 113 y = 90 }
+					scripted = yes
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					maxWidth = 500
+					maxHeight = 18
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "estate_org_cat2"
+					position = { x= 270 y = 90 }
+					scripted = yes
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					maxWidth = 500
+					maxHeight = 18
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "estate_org_cat3"
+					position = { x= 402 y = 90 }
+					scripted = yes
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					maxWidth = 500
+					maxHeight = 18
+					format = left
+					alwaystransparent = yes
+				}
+			}
+			WindowType = {
+				name = "estate_interface_window_2"
+				position = { x= 0 y = 0 }
+				#upsound = age_of_discovery
+				scripted = yes
+				guiButtonType = {
+					name ="mil_estate_org_9"
+					position = { x= 244 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_org"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_10"
+					position = { x= 244 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_org"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_11"
+					position = { x= 288 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_org"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_12"
+					position = { x= 288 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_org"
+					scripted = yes
+				}
+
+				instantTextBoxType = {
+					name = "estate_org_cat4"
+					position = { x= 258 y = 90 }
+					scripted = yes
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					maxWidth = 500
+					maxHeight = 18
+					format = left
+					alwaystransparent = yes
+				}
+			}
+		}
 	}
 
 	### UNIT SELECT WINDOW
