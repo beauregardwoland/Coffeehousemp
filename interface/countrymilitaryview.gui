@@ -2455,43 +2455,43 @@ guiTypes = {
 				guiButtonType = {
 					name ="mil_estate_org_9"
 					position = { x= 344 y = 140 }
-					quadTextureSprite ="GFX_mil_estate_org"
+					quadTextureSprite ="GFX_mil_estate_menu_doc"
 					scripted = yes
 				}
 				guiButtonType = {
 					name ="mil_estate_org_10"
 					position = { x= 344 y = 200 }
-					quadTextureSprite ="GFX_mil_estate_org"
+					quadTextureSprite ="GFX_mil_estate_menu_doc"
 					scripted = yes
 				}
 				guiButtonType = {
 					name ="mil_estate_org_11"
 					position = { x= 388 y = 140 }
-					quadTextureSprite ="GFX_mil_estate_org"
+					quadTextureSprite ="GFX_mil_estate_menu_doc"
 					scripted = yes
 				}
 				guiButtonType = {
 					name ="mil_estate_org_12"
 					position = { x= 388 y = 200 }
-					quadTextureSprite ="GFX_mil_estate_org"
+					quadTextureSprite ="GFX_mil_estate_menu_doc"
 					scripted = yes
 				}
 				guiButtonType = {
 					name ="mil_estate_org_13"
 					position = { x= 144 y = 140 }
-					quadTextureSprite ="GFX_mil_estate_org"
+					quadTextureSprite ="GFX_mil_estate_menu_off"
 					scripted = yes
 				}
 				guiButtonType = {
 					name ="mil_estate_org_14"
 					position = { x= 144 y = 200 }
-					quadTextureSprite ="GFX_mil_estate_org"
+					quadTextureSprite ="GFX_mil_estate_menu_off"
 					scripted = yes
 				}
 				guiButtonType = {
 					name ="mil_estate_org_15"
 					position = { x= 184 y = 140 }
-					quadTextureSprite ="GFX_mil_estate_org"
+					quadTextureSprite ="GFX_mil_estate_menu_off"
 					scripted = yes
 				}
 				
@@ -2526,16 +2526,135 @@ guiTypes = {
 				position = { x= 0 y = 0 }
 				#upsound = age_of_discovery
 				scripted = yes
+
+				#infantry
 				guiButtonType = {
 					name ="mil_estate_org_16"
 					position = { x= 95 y = 140 }
-					quadTextureSprite ="GFX_mil_estate_org"
+					quadTextureSprite ="GFX_mil_estate_menu_inf"
 					scripted = yes
 				}
 				guiButtonType = {
 					name ="mil_estate_org_17"
 					position = { x= 139 y = 140 }
-					quadTextureSprite ="GFX_mil_estate_org"
+					quadTextureSprite ="GFX_mil_estate_menu_inf"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_18"
+					position = { x= 95 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_inf"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_19"
+					position = { x= 139 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_inf"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_20"
+					position = { x= 95 y = 260 }
+					quadTextureSprite ="GFX_mil_estate_menu_inf"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_21"
+					position = { x= 139 y = 260 }
+					quadTextureSprite ="GFX_mil_estate_menu_inf"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_42"
+					position = { x= 95 y = 320 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_43"
+					position = { x= 139 y = 320 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_44"
+					position = { x= 95 y = 380 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				
+				#cavalry
+				guiButtonType = {
+					name ="mil_estate_org_22"
+					position = { x= 245 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_cav"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_23"
+					position = { x= 289 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_cav"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_24"
+					position = { x= 245 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_cav"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_25"
+					position = { x= 289 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_cav"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_26"
+					position = { x= 245 y = 260 }
+					quadTextureSprite ="GFX_mil_estate_menu_cav"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_27"
+					position = { x= 289 y = 260 }
+					quadTextureSprite ="GFX_mil_estate_menu_cav"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_28"
+					position = { x= 245 y = 320 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_45"
+					position = { x= 289 y = 320 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				#artillery
+				guiButtonType = {
+					name ="mil_estate_org_29"
+					position = { x= 395 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_arty"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_30"
+					position = { x= 439 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_arty"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_31"
+					position = { x= 395 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_arty"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_32"
+					position = { x= 439 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_arty"
 					scripted = yes
 				}
 				instantTextBoxType = {
@@ -2565,6 +2684,191 @@ guiTypes = {
 				instantTextBoxType = {
 					name = "estate_org_cat7"
 					position = { x= 410 y = 90 }
+					scripted = yes
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					maxWidth = 500
+					maxHeight = 18
+					format = left
+					alwaystransparent = yes
+				}
+			}
+			WindowType = {
+				name = "estate_interface_window_4"
+				position = { x= 0 y = 0 }
+				#upsound = age_of_discovery
+				scripted = yes
+				guiButtonType = {
+					name ="mil_estate_org_33"
+					position = { x= 144 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_misc"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_34"
+					position = { x= 184 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_misc"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_35"
+					position = { x= 144 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_misc"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_36"
+					position = { x= 184 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_misc"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_37"
+					position = { x= 144 y = 260 }
+					quadTextureSprite ="GFX_mil_estate_menu_misc"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_38"
+					position = { x= 344 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_39"
+					position = { x= 388 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_40"
+					position = { x= 344 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_41"
+					position = { x= 388 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				
+				instantTextBoxType = {
+					name = "estate_org_cat9"
+					position = { x= 165 y = 90 }
+					scripted = yes
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					maxWidth = 500
+					maxHeight = 18
+					format = left
+					alwaystransparent = y9es
+				}
+				instantTextBoxType = {
+					name = "estate_org_cat10"
+					position = { x= 361 y = 90 }
+					scripted = yes
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					maxWidth = 500
+					maxHeight = 18
+					format = left
+					alwaystransparent = yes
+				}
+
+			}
+			WindowType = {
+				name = "estate_interface_window_5"
+				position = { x= 0 y = 0 }
+				#upsound = age_of_discovery
+				scripted = yes
+				guiButtonType = {
+					name ="mil_estate_org_42"
+					position = { x= 95 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_43"
+					position = { x= 139 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_44"
+					position = { x= 95 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+
+				guiButtonType = {
+					name ="mil_estate_org_28"
+					position = { x= 245 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_45"
+					position = { x= 289 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_38"
+					position = { x= 395 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_39"
+					position = { x= 439 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_40"
+					position = { x= 395 y = 200 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+				guiButtonType = {
+					name ="mil_estate_org_41"
+					position = { x= 439 y = 140 }
+					quadTextureSprite ="GFX_mil_estate_menu_cult"
+					scripted = yes
+				}
+
+				
+				instantTextBoxType = {
+					name = "estate_org_cat11"
+					position = { x= 113 y = 90 }
+					scripted = yes
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					maxWidth = 500
+					maxHeight = 18
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "estate_org_cat12"
+					position = { x= 265 y = 90 }
+					scripted = yes
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					maxWidth = 500
+					maxHeight = 18
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "estate_org_cat13"
+					position = { x= 418 y = 90 }
 					scripted = yes
 					textureFile = ""
 					font = "vic_18"

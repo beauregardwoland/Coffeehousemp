@@ -64,13 +64,15 @@ estate_military = {
 		light_cannons_equpment
 		heavy_cannons_equpment
 		mortar_cannons_equpment
+		guild_cannons_equpment
 		curasier_equipment_cav
 		harquebusier_equipment_cav
 		demi_lancer_cav
 		dragoon_equipment_cav
 		horse_artillery_cav_estate
-		estate_jinete
 		estate_camel_cavalry
+		estate_jinete
+		estate_hakkapolita
 		melee_infantry
 		estate_halberds
 		estate_conscripted_hunters
@@ -89,7 +91,6 @@ estate_military = {
 		estate_swiss_pike
 		estate_flemish_pikes
 		estate_isle_archers
-		estate_hakkapolita
 	}
 
 	agendas = {

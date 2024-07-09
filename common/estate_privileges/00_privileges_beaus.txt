@@ -1545,6 +1545,7 @@ heavy_cannons_equpment = {
 			tooltip = beaus_mil_estate5
 			Not = { has_estate_privilege = mortar_cannons_equpment }
 			Not = { has_estate_privilege = light_cannons_equpment }
+			Not = { has_estate_privilege = guild_cannons_equpment }
 		}
 		
 		mil_tech = 13
@@ -1604,6 +1605,7 @@ light_cannons_equpment = {
 			tooltip = beaus_mil_estate5
 			Not = { has_estate_privilege = heavy_cannons_equpment }
 			Not = { has_estate_privilege = mortar_cannons_equpment }
+			Not = { has_estate_privilege = guild_cannons_equpment }
 		}
 		
 		mil_tech = 13
@@ -1662,6 +1664,7 @@ mortar_cannons_equpment = {
 			tooltip = beaus_mil_estate5
 			Not = { has_estate_privilege = heavy_cannons_equpment }
 			Not = { has_estate_privilege = light_cannons_equpment }
+			Not = { has_estate_privilege = guild_cannons_equpment }
 		}
 		
 		mil_tech = 13
@@ -1689,6 +1692,64 @@ mortar_cannons_equpment = {
 	}
 	on_invalid = {
 		remove_country_modifier = mortars_cannons_primacy
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+guild_cannons_equpment = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate5
+			Not = { has_estate_privilege = heavy_cannons_equpment }
+			Not = { has_estate_privilege = light_cannons_equpment }
+			Not = { has_estate_privilege = mortar_cannons_equpment }
+		}
+		mil_tech = 10
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = guild_cannons_primacy
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		artillery_cost = -0.05
+		all_estate_influence_modifier = 0.025
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  guild_cannons_primacy
+	}
+	on_invalid = {
+		remove_country_modifier = guild_cannons_primacy
 	}
 	ai_will_do = {
 		factor = 10
@@ -1726,6 +1787,7 @@ demi_lancer_cav = {
 			Not = { has_estate_privilege = harquebusier_equipment_cav }
 			Not = { has_estate_privilege = estate_camel_cavalry }
 			Not = { has_estate_privilege = estate_jinete }
+			Not = { has_estate_privilege = estate_hakkapolita }
 		}
 		mil_tech = 6
 	}
@@ -1786,6 +1848,7 @@ harquebusier_equipment_cav = {
 			Not = { has_estate_privilege = demi_lancer_cav }
 			Not = { has_estate_privilege = estate_camel_cavalry }
 			Not = { has_estate_privilege = estate_jinete }
+			Not = { has_estate_privilege = estate_hakkapolita }
 		}
 		mil_tech = 14
 	}
@@ -1846,6 +1909,7 @@ curasier_equipment_cav = {
 			Not = { has_estate_privilege = demi_lancer_cav }
 			Not = { has_estate_privilege = estate_camel_cavalry }
 			Not = { has_estate_privilege = estate_jinete }
+			Not = { has_estate_privilege = estate_hakkapolita }
 		}
 		mil_tech = 14
 	}
@@ -1906,6 +1970,7 @@ dragoon_equipment_cav = {
 			Not = { has_estate_privilege = demi_lancer_cav }
 			Not = { has_estate_privilege = estate_camel_cavalry }
 			Not = { has_estate_privilege = estate_jinete }
+			Not = { has_estate_privilege = estate_hakkapolita }
 		}
 		mil_tech = 11
 	}
@@ -1966,6 +2031,7 @@ horse_artillery_cav_estate = {
 			Not = { has_estate_privilege = demi_lancer_cav }
 			Not = { has_estate_privilege = estate_camel_cavalry }
 			Not = { has_estate_privilege = estate_jinete }
+			Not = { has_estate_privilege = estate_hakkapolita }
 		}
 		mil_tech = 16
 	}
@@ -2029,20 +2095,6 @@ estate_camel_cavalry = {
 		}
 	}
 	can_select = {
-		or = {
-			any_owned_province = {
-				has_terrain = drylands
-				development = 10
-			}
-			any_owned_province = {
-				has_terrain = desert
-				development = 10
-			}
-			any_owned_province = {
-				has_terrain = coastal_desert
-				development = 10
-			}
-		}
 		custom_trigger_tooltip = {
 			tooltip = beaus_mil_estate6
 			Not = { has_estate_privilege = dragoon_equipment_cav }
@@ -2051,6 +2103,16 @@ estate_camel_cavalry = {
 			Not = { has_estate_privilege = demi_lancer_cav }
 			Not = { has_estate_privilege = horse_artillery_cav_estate }
 			Not = { has_estate_privilege = estate_jinete }
+			Not = { has_estate_privilege = estate_hakkapolita }
+		}
+		num_of_owned_provinces_with = {
+			value = 4
+			or = {
+				has_terrain = drylands
+				has_terrain = desert
+				has_terrain = coastal_desert
+			}
+			development = 10
 		}
 	}
 	on_granted = {
@@ -2112,14 +2174,6 @@ estate_jinete = {
 		NOT = { current_age = age_of_reformation }
 	}
 	can_select = {
-		or = {
-			culture_group = iberian
-			accepted_culture = castillian
-			accepted_culture = leonese
-			accepted_culture = catalan
-			accepted_culture = aragonese
-			accepted_culture = portugese
-		}
 		custom_trigger_tooltip = {
 			tooltip = beaus_mil_estate6
 			Not = { has_estate_privilege = dragoon_equipment_cav }
@@ -2128,7 +2182,17 @@ estate_jinete = {
 			Not = { has_estate_privilege = demi_lancer_cav }
 			Not = { has_estate_privilege = horse_artillery_cav_estate }
 			Not = { has_estate_privilege = estate_camel_cavalry }
+			Not = { has_estate_privilege = estate_hakkapolita }
 		}
+		or = {
+			culture_group = iberian
+			accepted_culture = castillian
+			accepted_culture = leonese
+			accepted_culture = catalan
+			accepted_culture = aragonese
+			accepted_culture = portugese
+		}
+		NOT = { current_age = age_of_reformation }
 	}
 	on_granted = {
 		add_country_modifier = {
@@ -2157,7 +2221,73 @@ estate_jinete = {
 		factor = 10
 	}
 }
-
+estate_hakkapolita = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = 0
+	influence = 0.05
+	is_valid = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate2
+			or = {
+				has_estate_privilege = estate_nobles_gaurd_organization
+				has_estate_privilege = estate_burghers_militia_organization
+				has_estate_privilege = estate_church_volounteer_organization
+				has_estate_privilege = estate_nobles_early
+				has_estate_privilege = estate_merc_early
+				has_estate_privilege = estate_absolutist_gaurds 
+				has_estate_privilege = estate_absolutist_militia 
+				has_estate_privilege = estate_absolutist_regulars 
+				has_estate_privilege = estate_nobles_german_fencing
+			}
+		}
+		any_owned_province = {
+			culture = finnish
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate6
+			Not = { has_estate_privilege = dragoon_equipment_cav }
+			Not = { has_estate_privilege = curasier_equipment_cav }
+			Not = { has_estate_privilege = harquebusier_equipment_cav }
+			Not = { has_estate_privilege = demi_lancer_cav }
+			Not = { has_estate_privilege = horse_artillery_cav_estate }
+			Not = { has_estate_privilege = estate_camel_cavalry }
+			Not = { has_estate_privilege = estate_jinete }
+		}
+		or = {
+			culture = finnish
+			accepted_culture = finnish
+		}
+		
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = hakkapolita
+			duration = -1
+		}
+	}
+	modifier_by_land_ownership = {
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	mechanics = {
+		
+	}
+	on_revoked = {
+		remove_country_modifier =  hakkapolita
+	}
+	on_invalid = {
+		remove_country_modifier = hakkapolita
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
 #infantry
 
 melee_infantry = {
@@ -2188,6 +2318,9 @@ melee_infantry = {
 			Not = { has_estate_privilege = estate_conscripted_hunters }
 			Not = { has_estate_privilege = estate_halberds }
 			Not = { has_estate_privilege = estate_early_rifles }
+			Not = { has_estate_privilege = estate_isle_archers }
+			Not = { has_estate_privilege = estate_flemish_pikes }
+			Not = { has_estate_privilege = estate_swiss_pike }
 		}
 	}
 	on_granted = {
@@ -2246,6 +2379,9 @@ estate_halberds = {
 			Not = { has_estate_privilege = estate_conscripted_hunters }
 			Not = { has_estate_privilege = melee_infantry }
 			Not = { has_estate_privilege = estate_early_rifles }
+			Not = { has_estate_privilege = estate_isle_archers }
+			Not = { has_estate_privilege = estate_flemish_pikes }
+			Not = { has_estate_privilege = estate_swiss_pike }
 		}
 	}
 	on_granted = {
@@ -2304,6 +2440,9 @@ estate_conscripted_hunters = {
 			Not = { has_estate_privilege = estate_halberds }
 			Not = { has_estate_privilege = melee_infantry }
 			Not = { has_estate_privilege = estate_early_rifles }
+			Not = { has_estate_privilege = estate_isle_archers }
+			Not = { has_estate_privilege = estate_flemish_pikes }
+			Not = { has_estate_privilege = estate_swiss_pike }
 		}
 		adm_tech = 8
 	}
@@ -2363,6 +2502,9 @@ estate_regimental_guns = {
 			Not = { has_estate_privilege = estate_halberds }
 			Not = { has_estate_privilege = melee_infantry }
 			Not = { has_estate_privilege = estate_early_rifles }
+			Not = { has_estate_privilege = estate_isle_archers }
+			Not = { has_estate_privilege = estate_flemish_pikes }
+			Not = { has_estate_privilege = estate_swiss_pike }
 		}
 		mil_tech = 10
 	}
@@ -2422,6 +2564,9 @@ estate_early_rifles = {
 			Not = { has_estate_privilege = estate_halberds }
 			Not = { has_estate_privilege = melee_infantry }
 			Not = { has_estate_privilege = estate_regimental_guns }
+			Not = { has_estate_privilege = estate_isle_archers }
+			Not = { has_estate_privilege = estate_flemish_pikes }
+			Not = { has_estate_privilege = estate_swiss_pike }
 		}
 		is_year = 1700
 		innovativeness = 70
@@ -2482,6 +2627,9 @@ estate_irregulars = {
 			Not = { has_estate_privilege = estate_halberds }
 			Not = { has_estate_privilege = melee_infantry }
 			Not = { has_estate_privilege = estate_regimental_guns }
+			Not = { has_estate_privilege = estate_isle_archers }
+			Not = { has_estate_privilege = estate_flemish_pikes }
+			Not = { has_estate_privilege = estate_swiss_pike }
 		}
 	}	
 	on_granted = {
@@ -2774,6 +2922,17 @@ estate_swiss_pike = {
 		NOT = { current_age = age_of_revolutions }
 	}
 	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_regimental_guns }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = estate_early_rifles }
+			Not = { has_estate_privilege = estate_isle_archers }
+			Not = { has_estate_privilege = estate_flemish_pikes }
+			Not = { has_estate_privilege = melee_infantry }
+		}
 		or = {
 			culture = swiss
 			any_ally = {
@@ -2846,6 +3005,17 @@ estate_flemish_pikes = {
 		NOT = { current_age = age_of_revolutions }
 	}
 	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_regimental_guns }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = estate_early_rifles }
+			Not = { has_estate_privilege = estate_isle_archers }
+			Not = { has_estate_privilege = estate_swiss_pike }
+			Not = { has_estate_privilege = melee_infantry }
+		}
 		or = {
 			capital_scope = {
 				region = low_countries_region
@@ -2905,9 +3075,7 @@ estate_isle_archers = {
 				has_estate_privilege = estate_nobles_german_fencing
 			}
 		}
-		NOT = { current_age = age_of_reformation }
-		NOT = { current_age = age_of_absolutism }
-		NOT = { current_age = age_of_revolutions }
+		current_age = age_of_discovery
 		or = {
 			culture_group = british
 			culture = anglois
@@ -2917,6 +3085,17 @@ estate_isle_archers = {
 		}
 	}
 	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = beaus_mil_estate7
+			Not = { has_estate_privilege = estate_irregulars }
+			Not = { has_estate_privilege = estate_regimental_guns }
+			Not = { has_estate_privilege = estate_conscripted_hunters }
+			Not = { has_estate_privilege = estate_halberds }
+			Not = { has_estate_privilege = estate_early_rifles }
+			Not = { has_estate_privilege = estate_flemish_pikes }
+			Not = { has_estate_privilege = estate_swiss_pike }
+			Not = { has_estate_privilege = melee_infantry }
+		}
 		or = {
 			culture_group = british
 			culture = anglois
@@ -2948,63 +3127,6 @@ estate_isle_archers = {
 	}
 	on_invalid = {
 		remove_country_modifier = isle_archers
-	}
-	ai_will_do = {
-		factor = 10
-	}
-}
-estate_hakkapolita = {
-	icon = privilege_spawn_rajput_regiments
-	max_absolutism = 0
-	influence = 0.05
-	is_valid = {
-		custom_trigger_tooltip = {
-			tooltip = beaus_mil_estate2
-			or = {
-				has_estate_privilege = estate_nobles_gaurd_organization
-				has_estate_privilege = estate_burghers_militia_organization
-				has_estate_privilege = estate_church_volounteer_organization
-				has_estate_privilege = estate_nobles_early
-				has_estate_privilege = estate_merc_early
-				has_estate_privilege = estate_absolutist_gaurds 
-				has_estate_privilege = estate_absolutist_militia 
-				has_estate_privilege = estate_absolutist_regulars 
-				has_estate_privilege = estate_nobles_german_fencing
-			}
-		}
-		any_owned_province = {
-			culture = finnish
-		}
-	}
-	can_select = {
-		or = {
-			culture = finnish
-			accepted_culture = finnish
-		}
-		
-	}
-	on_granted = {
-		add_country_modifier = {
-			name = hakkapolita
-			duration = -1
-		}
-	}
-	modifier_by_land_ownership = {
-	}
-	penalties = {
-		
-	}
-	benefits = {
-		
-	}
-	mechanics = {
-		
-	}
-	on_revoked = {
-		remove_country_modifier =  hakkapolita
-	}
-	on_invalid = {
-		remove_country_modifier = hakkapolita
 	}
 	ai_will_do = {
 		factor = 10

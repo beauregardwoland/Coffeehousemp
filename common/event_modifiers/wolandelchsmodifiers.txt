@@ -557,6 +557,7 @@ italian_fencing = {
 }
 gendarmies = {
 	cavalry_shock = 0.75
+	shock_damage_received = -0.05
 	cavalry_cost = 0.30
 	is_revolutionary_guard_modifier = yes
 }
@@ -735,7 +736,11 @@ mortars_cannons_primacy = {
 	artillery_power = -0.15
 	is_revolutionary_guard_modifier = yes
 }
-
+guild_cannons_primacy ={
+	artillery_cost = -0.15
+	artillery_power = 0.075
+	is_revolutionary_guard_modifier = yes
+}
 #general
 plate_armour = {
 	shock_damage_received = -0.10

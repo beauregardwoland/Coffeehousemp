@@ -1647,6 +1647,11 @@ mortar_cannons_equpment_desc:0"A much more crude type of cannon mortars yet requ
 mortars_cannons_primacy:0"Mortar"
 desc_mortars_cannons_primacy:0""
 
+guild_cannons_equpment:0"Inrease Guild Cooperation§b*****§!"
+guild_cannons_equpment_desc:0"Early Artillery pieces are heavily intertwined with the specialists that make these behemoths, with the operators of cannons often times being the ones to forge the cannons and maintain them. Close cooperation with the guilds will supply us with much needed specialists experts and their cannons."
+guild_cannons_primacy:0"Inreased Guild Cooperation"
+desc_guild_cannons_primacy:0""
+
 #cavalry color is orange §O*****§!
 demi_lancer_cav:0"Demi Lancers§O*****§!"
 demi_lancer_cav_desc:0"More lightly armored then tradition lancers the armor is rated enough to stop pistol shot and some musket shot whilst bringing greater mobility more nesssascary then ever to avoid and flank massed gunmen."
@@ -1728,12 +1733,12 @@ estate_camel_cavalry_desc:0"Excellent in arid and dry conditions. These animals 
 camel_cavalry:0"Camel Cavalry"
 desc_camel_cavalry:0""
 
-estate_swiss_pike:0"Swiss Reisläufer"
+estate_swiss_pike:0"Swiss Reisläufer§J*****§!"
 estate_swiss_pike_desc:0""
 swiss_pike:0"Swiss Pikes"
 desc_swiss_pike:0""
 
-estate_flemish_pikes:0"Flemish Pikemen"
+estate_flemish_pikes:0"Flemish Pikemen§J*****§!"
 estate_flemish_pikes_desc:0""
 flemish_pikes:0"Flemish Pikes"
 desc_flemish_pikes:0""
@@ -1743,12 +1748,12 @@ estate_jinete_desc:0""
 jinete:0"Jinetes"
 desc_jinete:0""
 
-estate_isle_archers:0"Longbowmen"
+estate_isle_archers:0"Longbowmen§J*****§!"
 estate_isle_archers_desc:0""
 isle_archers:0"Longbowmen"
 desc_isle_archers:0""
 
-estate_hakkapolita:0"Hakkapeliitta"
+estate_hakkapolita:0"Hakkapeliitta§O*****§"
 estate_hakkapolita_desc:0""
 hakkapolita:0"Hakkapeliitta"
 desc_hakkapolita:0""
